@@ -27,12 +27,9 @@ jobs:
       ISSUE: ${{ github.event.issue.number }}
       ISSUE_BODY: ${{ github.event.issue.body }}
       COMMENT: ${{ github.event.comment.body }}
-      IKAS_CLIENT_ID: ${{ secrets.IKAS_CLIENT_ID }}
-      IKAS_CLIENT_SECRET: ${{ secrets.IKAS_CLIENT_SECRET }}
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-      UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
-      PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
       PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+      PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
       CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL }}
     steps:
       - uses: actions/checkout@v4
@@ -51,18 +48,15 @@ jobs:
           SLUG=$(printf '%s' "$ISSUE_BODY" | grep -o '<!-- draft:[a-z0-9-]* -->' | head -1 | sed 's/<!-- draft:\(.*\) -->/\1/')
           if [ -z "$SLUG" ]; then gh issue comment "$ISSUE" --body "⚠️ Bu issue'da taslak kimliği bulunamadı."; exit 1; fi
           echo "slug=$SLUG" >> "$GITHUB_OUTPUT"
-          gh issue comment "$ISSUE" --body "⏳ Komut alındı, işleniyor…"
 
-      - name: Yayınla
+      - name: Onayla
         if: startsWith(env.COMMENT, '/yayinla') || startsWith(env.COMMENT, '/yayınla')
-        id: pub
         run: |
-          node src/cli.js publish "${{ steps.meta.outputs.slug }}"
-          git add -A drafts state && git commit -m "Yayınlandı: ${{ steps.meta.outputs.slug }}" && git push
-      - if: steps.pub.outcome == 'success'
-        run: |
-          gh issue comment "$ISSUE" --body "✅ Yayınlandı: ${{ steps.pub.outputs.url }} (site önbelleği nedeniyle birkaç dakika içinde görünür)"
-          gh issue close "$ISSUE"
+          node src/cli.js approve "${{ steps.meta.outputs.slug }}"
+          git add -A drafts && git commit -m "Onaylandı: ${{ steps.meta.outputs.slug }}" && git push
+          gh label create onaylandi --color 0E8A16 --description "Onaylandı, ikas'a eklenmeyi bekliyor" 2>/dev/null || true
+          gh issue edit "$ISSUE" --add-label onaylandi
+          gh issue comment "$ISSUE" --body "✅ Onaylandı. ikas panelinde **Blog Yayınla** yer imine tıklayın (veya bilgisayarınızda Claude'a \"onaylı blogları yayınla\" deyin). Yazı sitede yayına girince bu sayfa otomatik kapanır."
 
       - name: İptal
         if: startsWith(env.COMMENT, '/iptal')
@@ -75,11 +69,13 @@ jobs:
       - name: Yeniden yaz
         if: startsWith(env.COMMENT, '/yeniden')
         run: |
+          gh issue comment "$ISSUE" --body "⏳ Yeniden yazılıyor…"
           TOPIC=$(node src/cli.js topic-of "${{ steps.meta.outputs.slug }}")
           FEEDBACK=$(printf '%s' "$COMMENT" | sed '1s#^/yeniden##')
           node src/cli.js discard "${{ steps.meta.outputs.slug }}"
           node src/cli.js draft --topic "$TOPIC" --feedback "$FEEDBACK" > out.txt
           git add -A drafts state && git commit -m "Yeniden yazıldı: $TOPIC" && git push
+          sleep 5
           NEW=$(gh issue create --title "📝 Blog taslağı: $TOPIC" --body-file out/issue.md --label taslak --assignee "${{ github.repository_owner }}")
           gh issue comment "$ISSUE" --body "🔁 Yeni taslak hazırlandı: $NEW"
           gh issue close "$ISSUE" --reason "not planned"

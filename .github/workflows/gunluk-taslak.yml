@@ -33,12 +33,9 @@ jobs:
       - name: Taslak oluştur
         id: draft
         env:
-          IKAS_CLIENT_ID: ${{ secrets.IKAS_CLIENT_ID }}
-          IKAS_CLIENT_SECRET: ${{ secrets.IKAS_CLIENT_SECRET }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
-          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL }}
           TOPIC: ${{ github.event.inputs.topic }}
         run: |
@@ -48,7 +45,7 @@ jobs:
         run: |
           git config user.name "soydas-blog-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add drafts state
+          git add -A drafts state
           git commit -m "Taslak: ${{ steps.draft.outputs.title }}" || echo "değişiklik yok"
           git push
 
@@ -58,4 +55,6 @@ jobs:
           TITLE: ${{ steps.draft.outputs.title }}
         run: |
           gh label create taslak --color FBCA04 --description "Onay bekleyen blog taslağı" 2>/dev/null || true
+          gh label create onaylandi --color 0E8A16 --description "Onaylandı, ikas'a eklenmeyi bekliyor" 2>/dev/null || true
+          sleep 5   # görsellerin raw adreste hazır olması için
           gh issue create --title "📝 Blog taslağı: $TITLE" --body-file out/issue.md --label taslak --assignee "${{ github.repository_owner }}"

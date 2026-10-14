@@ -1,0 +1,43 @@
+name: Yayın senkronu
+
+on:
+  schedule:
+    - cron: '23 * * * *'   # saat başı
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: blog-bot
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Yayına girenleri bul
+        run: node src/cli.js sync
+      - name: Kaydet ve issue'ları kapat
+        run: |
+          git config user.name "soydas-blog-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A drafts state
+          git commit -m "Yayına girenler senkronlandı" && git push || echo "değişiklik yok"
+          for row in $(jq -c '.[] | {slug, url}' out/synced.json); do
+            SLUG=$(echo "$row" | jq -r .slug); URL=$(echo "$row" | jq -r .url)
+            for N in $(gh issue list --state open --label taslak --json number,body --jq ".[] | select(.body | contains(\"draft:$SLUG \")) | .number"); do
+              gh issue comment "$N" --body "🎉 Yayında: $URL"
+              gh issue close "$N"
+            done
+          done
