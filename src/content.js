@@ -30,9 +30,9 @@ const POST_TOOL = {
       shortDescription: { type: 'string', description: '~150 karakter özet' },
       seoTitle: { type: 'string', description: '"<Başlık> | Soydaş Motosiklet"' },
       seoDescription: { type: 'string', description: 'En fazla 160 karakter meta açıklama' },
-      coverQuery: { type: 'string', description: 'Kapak için İNGİLİZCE Unsplash arama ifadesi (2-4 kelime, somut nesne, ör. "motorcycle brake disc")' },
+      coverQuery: { type: 'string', description: 'Kapak için İNGİLİZCE stok fotoğraf arama ifadesi (2-4 kelime, somut nesne, ör. "motorcycle brake disc")' },
       coverQueryAlt: { type: 'string', description: 'Yedek İngilizce kapak araması (daha genel)' },
-      inlineQuery: { type: 'string', description: 'İçerik fotoğrafı için İNGİLİZCE Unsplash araması (kapaktan farklı)' },
+      inlineQuery: { type: 'string', description: 'İçerik fotoğrafı için İNGİLİZCE stok fotoğraf araması (kapaktan farklı)' },
       collageProducts: {
         type: 'array', items: { type: 'string' },
         description: 'Ürün kolajı için verilen ürün listesinden 3-4 ürün yolu (ör. "/motul-c2-..."). Uygun ürün yoksa boş dizi.',

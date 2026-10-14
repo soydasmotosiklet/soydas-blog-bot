@@ -1,30 +1,82 @@
-// Unsplash'ten gerçek fotoğraf bulma ve kapak / içerik / ürün kolajı görsellerini üretme.
+// Pexels/Unsplash'ten gerçek fotoğraf bulma ve kapak / içerik / ürün kolajı görsellerini üretme.
 import sharp from 'sharp';
 import { config } from './config.js';
 
 const COVER_W = 1920, COVER_H = 1080;
 
-export async function searchUnsplash(query, { orientation = 'landscape', exclude = [] } = {}) {
+// Fotoğraf sağlayıcısı (öncelik sırası): Pexels → Pixabay → Unsplash → yok.
+// Hiçbir anahtar yoksa kapak, mağazanın kendi ürün fotoğraflarından üretilir.
+export const provider = () =>
+  config.pexels.apiKey ? 'pexels' : config.pixabay.apiKey ? 'pixabay' : config.unsplash.accessKey ? 'unsplash' : 'none';
+
+export async function searchPhotos(query, { orientation = 'landscape', exclude = [] } = {}) {
+  if (provider() === 'none') return [];
+  if (provider() === 'pixabay') {
+    const u = new URL('https://pixabay.com/api/');
+    u.search = new URLSearchParams({ key: config.pixabay.apiKey, q: query.slice(0, 100), image_type: 'photo', orientation: orientation === 'landscape' ? 'horizontal' : 'all', min_width: '1600', safesearch: 'true', per_page: '20' });
+    const res = await fetch(u);
+    if (!res.ok) throw new Error(`Pixabay araması başarısız (HTTP ${res.status})`);
+    const json = await res.json();
+    return (json.hits || [])
+      .filter((p) => !exclude.includes(String(p.id)))
+      .map((p) => ({
+        provider: 'pixabay',
+        id: String(p.id),
+        width: p.imageWidth,
+        height: p.imageHeight,
+        user: { name: p.user, links: { html: `https://pixabay.com/users/${p.user}-${p.user_id}/` } },
+        links: { html: p.pageURL },
+        urls: { raw: p.largeImageURL },
+      }));
+  }
+  if (provider() === 'pexels') {
+    const u = new URL('https://api.pexels.com/v1/search');
+    u.search = new URLSearchParams({ query, orientation, per_page: '15' });
+    const res = await fetch(u, { headers: { Authorization: config.pexels.apiKey } });
+    if (!res.ok) throw new Error(`Pexels araması başarısız (HTTP ${res.status})`);
+    const json = await res.json();
+    return (json.photos || [])
+      .filter((p) => p.width >= 1600 && !exclude.includes(String(p.id)))
+      .map((p) => ({
+        provider: 'pexels',
+        id: String(p.id),
+        width: p.width,
+        height: p.height,
+        user: { name: p.photographer, links: { html: p.photographer_url } },
+        links: { html: p.url },
+        urls: { raw: `${p.src.original}?auto=compress&cs=tinysrgb` },
+      }));
+  }
   const key = config.unsplash.accessKey;
-  if (!key) throw new Error('UNSPLASH_ACCESS_KEY tanımlı değil.');
+  if (!key) throw new Error('PEXELS_API_KEY veya UNSPLASH_ACCESS_KEY tanımlı değil.');
   const u = new URL('https://api.unsplash.com/search/photos');
   u.search = new URLSearchParams({ query, orientation, per_page: '15', content_filter: 'high' });
   const res = await fetch(u, { headers: { Authorization: `Client-ID ${key}`, 'Accept-Version': 'v1' } });
   if (!res.ok) throw new Error(`Unsplash araması başarısız (HTTP ${res.status})`);
   const json = await res.json();
-  return (json.results || []).filter((p) => p.width >= 1600 && !exclude.includes(p.id));
+  return (json.results || [])
+    .filter((p) => p.width >= 1600 && !exclude.includes(p.id))
+    .map((p) => ({ ...p, provider: 'unsplash' }));
 }
 
-export async function downloadUnsplash(photo, params) {
-  // Unsplash API kuralı: kullanılan fotoğraf için download endpoint'i tetiklenmeli.
-  fetch(`${photo.links.download_location}&client_id=${config.unsplash.accessKey}`).catch(() => {});
-  const url = `${photo.urls.raw}&${new URLSearchParams(params)}`;
+export async function downloadPhoto(photo, params) {
+  if (photo.provider === 'unsplash' && photo.links.download_location) {
+    // Unsplash API kuralı: kullanılan fotoğraf için download endpoint'i tetiklenmeli.
+    fetch(`${photo.links.download_location}&client_id=${config.unsplash.accessKey}`).catch(() => {});
+  }
+  const url = photo.provider === 'pixabay' ? photo.urls.raw : `${photo.urls.raw}&${new URLSearchParams(params)}`;
   const res = await fetch(url);
   if (!res.ok) throw new Error(`Fotoğraf indirilemedi (HTTP ${res.status})`);
   return Buffer.from(await res.arrayBuffer());
 }
 
 export const credit = (photo, label = 'Fotoğraf') => {
+  if (photo.provider === 'pixabay') {
+    return `${label}: <a href="${photo.user.links.html}">${escapeHtml(photo.user.name)}</a> / <a href="https://pixabay.com/">Pixabay</a>`;
+  }
+  if (photo.provider === 'pexels') {
+    return `${label}: <a href="${photo.user.links.html}">${escapeHtml(photo.user.name)}</a> / <a href="https://www.pexels.com">Pexels</a>`;
+  }
   const utm = `utm_source=${config.unsplash.appName}&utm_medium=referral`;
   return `${label}: <a href="${photo.user.links.html}?${utm}">${escapeHtml(photo.user.name)}</a> / <a href="https://unsplash.com/?${utm}">Unsplash</a>`;
 };
@@ -59,6 +111,25 @@ export async function makeCover(buffer, style = config.coverStyle) {
     .toBuffer();
   return sharp(bg)
     .composite([{ input: feathered, left: Math.round((COVER_W - FW) / 2), top: Math.round((COVER_H - FH) / 2) }])
+    .jpeg({ quality: 90 })
+    .toBuffer();
+}
+
+// Fotoğraf sağlayıcısı yoksa: koyu zemin üzerinde beyaz panelde mağaza ürünleri.
+export async function makeProductCover(buffers) {
+  const bg = Buffer.from(
+    `<svg width="${COVER_W}" height="${COVER_H}" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="g" cx="50%" cy="48%" r="65%"><stop offset="0" stop-color="#3a2a1e"/><stop offset="0.55" stop-color="#15110e"/><stop offset="1" stop-color="#050505"/></radialGradient></defs><rect width="100%" height="100%" fill="url(#g)"/></svg>`,
+  );
+  if (!buffers?.length) return sharp(bg).jpeg({ quality: 90 }).toBuffer();
+  const panel = await makeCollage(buffers.slice(0, 4), 1100, 480);
+  const rounded = await sharp(panel)
+    .composite([{ input: Buffer.from('<svg width="1100" height="480"><rect width="1100" height="480" rx="28" ry="28"/></svg>'), blend: 'dest-in' }])
+    .png()
+    .toBuffer();
+  // Sitede başlık kapağın ortasına beyaz yazıyla geliyor: okunabilsin diye karart.
+  const shade = Buffer.from(`<svg width="${COVER_W}" height="${COVER_H}"><rect width="100%" height="100%" fill="#000" fill-opacity="0.5"/></svg>`);
+  return sharp(bg)
+    .composite([{ input: rounded, left: (COVER_W - 1100) / 2, top: (COVER_H - 480) / 2 }, { input: shade }])
     .jpeg({ quality: 90 })
     .toBuffer();
 }

@@ -22,6 +22,12 @@ export const config = {
     model: env.CLAUDE_MODEL || '', // boşsa en yeni Sonnet modeli otomatik seçilir
     webSearch: (env.CLAUDE_WEB_SEARCH || 'true') !== 'false',
   },
+  pixabay: {
+    apiKey: env.PIXABAY_API_KEY,
+  },
+  pexels: {
+    apiKey: env.PEXELS_API_KEY,
+  },
   unsplash: {
     accessKey: env.UNSPLASH_ACCESS_KEY,
     appName: env.UNSPLASH_APP_NAME || 'soydas_blog_bot',

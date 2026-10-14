@@ -17,6 +17,27 @@ const setOutput = (k, v) => {
   if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, `${k}<<__EOF__\n${v}\n__EOF__\n`);
 };
 
+async function testEndpoints() {
+  // Resmi API'de blog yoksa: aynı token'la ikas panelinin kullandığı uç noktaları dene.
+  const { config } = await import('./config.js');
+  const urls = ['https://api.myikas.com/api/admin/graphql', 'https://api.myikas.com/api/v1/admin/graphql'];
+  for (const u of urls) {
+    config.ikas.graphqlUrl = u;
+    try {
+      const blogs = await ikas.listBlogs();
+      console.log(`   ✓ ${u} → ${blogs.length} blog:`, blogs.map((b) => b.title).join(' | '));
+      try {
+        const d = await ikas.gql(`query getImageUploadUrl($imageDir: String, $imageId: String!) { getImageUploadUrl(imageDir: $imageDir, imageId: $imageId) }`, { imageId: crypto.randomUUID() }, 'getImageUploadUrl');
+        console.log('     ✓ görsel yükleme:', d.getImageUploadUrl ? 'destekleniyor' : 'boş');
+      } catch (e) { console.log('     ✗ görsel yükleme:', e.message.slice(0, 200)); }
+      return u;
+    } catch (e) {
+      console.log(`   ✗ ${u} →`, e.message.slice(0, 250));
+    }
+  }
+  return null;
+}
+
 async function testIkas() {
   console.log('1) Token alınıyor…');
   await ikas.getToken();
@@ -46,6 +67,11 @@ async function testIkas() {
   } catch (e) {
     console.log('   ✗ Blog listesi okunamadı:', e.message);
   }
+  console.log('3b) Alternatif uç noktalar deneniyor…');
+  const alt = await testEndpoints();
+  if (alt) console.log('   → Çalışan uç nokta:', alt, '(IKAS_GRAPHQL_URL olarak kullanılabilir)');
+  const { config: cfg } = await import('./config.js');
+  cfg.ikas.graphqlUrl = process.env.IKAS_GRAPHQL_URL || 'https://api.myikas.com/api/v2/admin/graphql';
   console.log('4) Görsel yükleme adresi isteniyor (dosya yüklenmez)…');
   try {
     const d = await ikas.gql(

@@ -5,7 +5,7 @@ import { config } from './config.js';
 import * as ikas from './ikas.js';
 import { loadSiteIndex, relevantProducts, productImageUrl, urlOk, fold } from './site.js';
 import { generatePost, pickModel } from './content.js';
-import { searchUnsplash, downloadUnsplash, makeCover, makeInline, makeCollage, credit, servedSize } from './images.js';
+import { searchPhotos, downloadPhoto, makeCover, makeProductCover, makeInline, makeCollage, credit, servedSize } from './images.js';
 import { renderBlocksHtml, wrapContent, toContentData, blocksToMarkdown, blockId } from './render.js';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
@@ -44,7 +44,7 @@ async function chooseTopicWithClaude(existingTitles, collections) {
 
 function sanitizeLinks(html, allowed, broken) {
   return String(html).replace(/<a href="([^"]*)">(.*?)<\/a>/g, (m, href, text) => {
-    if (/^https:\/\/(unsplash\.com|www\.unsplash\.com)\//.test(href)) return m;
+    if (/^https:\/\/(www\.)?(unsplash|pexels|pixabay)\.com(\/|$)/.test(href)) return m;
     let p = href.replace(/^https?:\/\/(www\.)?soydasmotosiklet\.com/, '');
     if (!p.startsWith('/') || !allowed.has(p) || broken.has(p)) return text;
     return `<a href="${p}">${text}</a>`;
@@ -87,28 +87,32 @@ export async function createDraft({ topic: forcedTopic, feedback, skipIkas = fal
   // Görseller
   log('Görseller hazırlanıyor…');
   const usedPhotoIds = [];
-  let coverPhoto = (await searchUnsplash(post.coverQuery))[0];
-  if (!coverPhoto && post.coverQueryAlt) coverPhoto = (await searchUnsplash(post.coverQueryAlt))[0];
-  if (!coverPhoto) coverPhoto = (await searchUnsplash('motorcycle'))[0];
-  usedPhotoIds.push(coverPhoto.id);
-  const coverBuf = await makeCover(await downloadUnsplash(coverPhoto, { w: '2400', q: '85', fm: 'jpg' }));
-
-  let inlinePhoto = (await searchUnsplash(post.inlineQuery, { exclude: usedPhotoIds }))[0];
-  if (!inlinePhoto) inlinePhoto = (await searchUnsplash(post.coverQueryAlt || 'motorcycle maintenance', { exclude: usedPhotoIds }))[0];
-  const inlineBuf = inlinePhoto ? await makeInline(await downloadUnsplash(inlinePhoto, { w: '1600', q: '85', fm: 'jpg' })) : null;
-
-  let collageBuf = null;
+  // Ürün fotoğrafları (kolaj ve gerekirse kapak için)
+  const productBufs = [];
   const collagePaths = (post.collageProducts || []).filter((p) => site.all.has(p)).slice(0, 4);
-  if (collagePaths.length >= 2) {
-    const bufs = [];
-    for (const p of collagePaths) {
-      const u = await productImageUrl(p);
-      if (!u) continue;
-      const r = await fetch(u);
-      if (r.ok) bufs.push(Buffer.from(await r.arrayBuffer()));
-    }
-    if (bufs.length >= 2) collageBuf = await makeCollage(bufs);
+  for (const p of collagePaths) {
+    const u = await productImageUrl(p);
+    if (!u) continue;
+    const r = await fetch(u);
+    if (r.ok) productBufs.push(Buffer.from(await r.arrayBuffer()));
   }
+  const collageBuf = productBufs.length >= 2 ? await makeCollage(productBufs) : null;
+
+  let coverPhoto = (await searchPhotos(post.coverQuery))[0];
+  if (!coverPhoto && post.coverQueryAlt) coverPhoto = (await searchPhotos(post.coverQueryAlt))[0];
+  if (!coverPhoto) coverPhoto = (await searchPhotos('motorcycle'))[0];
+  let coverBuf;
+  if (coverPhoto) {
+    usedPhotoIds.push(coverPhoto.id);
+    coverBuf = await makeCover(await downloadPhoto(coverPhoto, { w: '2400', q: '85', fm: 'jpg' }));
+  } else {
+    log('Fotoğraf sağlayıcısı yok/sonuç yok: kapak ürün fotoğraflarından üretiliyor.');
+    coverBuf = await makeProductCover(productBufs);
+  }
+
+  let inlinePhoto = (await searchPhotos(post.inlineQuery, { exclude: usedPhotoIds }))[0];
+  if (!inlinePhoto && coverPhoto) inlinePhoto = (await searchPhotos(post.coverQueryAlt || 'motorcycle maintenance', { exclude: usedPhotoIds }))[0];
+  const inlineBuf = inlinePhoto ? await makeInline(await downloadPhoto(inlinePhoto, { w: '1600', q: '85', fm: 'jpg' })) : null;
 
   // ikas'a yükle (yüklemek yayınlamak değildir; görseller sadece CDN'de durur)
   const upload = async (buf) => (skipIkas ? null : ikas.uploadImage(buf));
@@ -140,7 +144,7 @@ export async function createDraft({ topic: forcedTopic, feedback, skipIkas = fal
       }
     }
   }
-  blocks.push({ id: blockId(), type: 'paragraph', data: { text: `<i>${credit(coverPhoto, 'Kapak fotoğrafı')}</i>` } });
+  if (coverPhoto) blocks.push({ id: blockId(), type: 'paragraph', data: { text: `<i>${credit(coverPhoto, 'Kapak fotoğrafı')}</i>` } });
 
   let slug = fold(post.slug || topic);
   if (existingSlugs.has(slug) || (!skipIkas && (await ikas.checkSlug(slug)))) slug = `${slug}-${new Date().getFullYear()}`;
@@ -155,7 +159,7 @@ export async function createDraft({ topic: forcedTopic, feedback, skipIkas = fal
     seoTitle: post.seoTitle,
     seoDescription: post.seoDescription.slice(0, 160),
     coverImageId,
-    coverPhoto: { id: coverPhoto.id, user: coverPhoto.user.name, link: coverPhoto.links.html },
+    coverPhoto: coverPhoto ? { provider: coverPhoto.provider, id: coverPhoto.id, user: coverPhoto.user.name, link: coverPhoto.links.html } : null,
     inlinePhoto: inlinePhoto ? { id: inlinePhoto.id, user: inlinePhoto.user.name, link: inlinePhoto.links.html } : null,
     blocks,
     contentHtml: wrapContent(renderBlocksHtml(blocks, imageSizes)),
@@ -187,7 +191,7 @@ ${cover}
 | SEO başlığı | ${c(draft.seoTitle)} |
 | SEO açıklaması | ${c(draft.seoDescription)} |
 | Yaklaşık kelime | ${words} |
-| Kapak fotoğrafı | [${draft.coverPhoto.user} / Unsplash](${draft.coverPhoto.link}) |
+| Kapak fotoğrafı | ${draft.coverPhoto ? `[${draft.coverPhoto.user} / ${{ pexels: 'Pexels', pixabay: 'Pixabay', unsplash: 'Unsplash' }[draft.coverPhoto.provider]}](${draft.coverPhoto.link})` : 'Mağaza ürün fotoğraflarından üretildi'} |
 ${draft.removedLinks.length ? `| Kaldırılan geçersiz linkler | ${draft.removedLinks.join(', ')} |\n` : ''}
 **Yayınlamak için** bu sayfaya \`/yayinla\` yazın.
 **Yeniden yazdırmak için** \`/yeniden\` ve isteğinizi yazın (ör. \`/yeniden daha kısa olsun, tabloya fiyat aralığı ekleme\`).
