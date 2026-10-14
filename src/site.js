@@ -17,7 +17,10 @@ export async function loadSiteIndex() {
     sitemapPaths('pages.xml').catch(() => ['/pages/iletisim']),
     sitemapPaths('blogs.xml').catch(() => []),
   ]);
-  return { collections, products, pages, blogs, all: new Set([...collections, ...products, ...pages]) };
+  const knownPages = ['/pages/iletisim', '/pages/sss', '/pages/hakkimizda', '/pages/brands'];
+  const allPages = [...new Set([...pages.filter((p) => p.startsWith('/pages/')), ...knownPages])];
+  const blogPaths = blogs.filter((p) => p.startsWith('/blog/') && p !== '/blog');
+  return { collections, products, pages: allPages, blogs, all: new Set([...collections, ...products, ...allPages, ...blogPaths]) };
 }
 
 // Sitede yayında olan blog slug'ları (sitemap gerçek zamanlı güncelleniyor)

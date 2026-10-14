@@ -78,7 +78,7 @@ export async function generatePost({ topic, existingTitles, collections, product
   const model = await pickModel();
   const user = `Konu (başlık olarak aynen kullan): ${topic}
 
-Sitedeki mevcut blog yazıları (tekrar etme, uygunsa bunlara da link verebilirsin /blog/<slug> değil, sadece konuya değin): ${existingTitles.join(' | ') || '-'}
+Sitedeki mevcut blog yazıları (konuyu tekrar etme; ilgiliyse aşağıdaki yollarla bunlara link verebilirsin): ${existingTitles.join(' ') || '-'}
 
 KULLANABİLECEĞİN KATEGORİ YOLLARI:
 ${collections.join(' ')}
@@ -86,7 +86,7 @@ ${collections.join(' ')}
 KONUYLA İLGİLİ OLABİLECEK ÜRÜN YOLLARI (ürün linki ve collageProducts için sadece bunlar):
 ${products.join(' ') || '(uygun ürün bulunamadı — sadece kategorilere link ver, collageProducts boş olsun)'}
 
-SAYFALAR: /pages/iletisim /pages/sss
+SAYFALAR: /pages/iletisim /pages/sss /pages/hakkimizda
 ${feedback ? `\nKULLANICININ DÜZELTME İSTEĞİ (önceki taslak için): ${feedback}\n` : ''}`;
 
   const tools = [POST_TOOL];

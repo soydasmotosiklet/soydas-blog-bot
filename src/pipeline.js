@@ -78,7 +78,7 @@ export async function createDraft({ topic: forcedTopic, feedback } = {}) {
   log('Site haritası okunuyor…');
   const site = await loadSiteIndex();
   const liveSlugs = site.blogs.filter((p) => p.startsWith('/blog/')).map((p) => p.slice(6));
-  const existingLabels = liveSlugs.map((s) => s.replace(/-/g, ' '));
+  const existingLabels = liveSlugs.map((s) => `/blog/${s}`);
 
   let topic = forcedTopic || pickTopic(liveSlugs);
   if (!topic) topic = await chooseTopicWithClaude(existingLabels, site.collections);
