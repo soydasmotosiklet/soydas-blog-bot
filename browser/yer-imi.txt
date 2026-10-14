@@ -1,0 +1,1 @@
+javascript:(()=>{fetch('https://api.github.com/repos/soydasmotosiklet/soydas-blog-bot/contents/browser/ikas-yayinla.js?ref=main&t='+Date.now(),{headers:{Accept:'application/vnd.github.raw'},cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.text()}).then(c=>eval(c)).catch(e=>alert('Blog Yayınla: '+e.message))})();
