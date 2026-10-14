@@ -1,0 +1,20 @@
+name: ikas API testi
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: ikas bağlantısını test et
+        env:
+          IKAS_CLIENT_ID: ${{ secrets.IKAS_CLIENT_ID }}
+          IKAS_CLIENT_SECRET: ${{ secrets.IKAS_CLIENT_SECRET }}
+        run: node src/cli.js test-ikas
