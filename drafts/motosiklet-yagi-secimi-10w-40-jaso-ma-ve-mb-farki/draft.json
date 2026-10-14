@@ -1,13 +1,13 @@
 {
   "topic": "Motosiklet Yağı Seçimi: 10W-40, JASO MA ve MB Farkı",
   "approved": false,
-  "createdAt": "2026-10-14T23:16:21.310Z",
+  "createdAt": "2026-10-14T23:21:15.040Z",
   "model": "claude-sonnet-5-5",
   "title": "Motosiklet Yağı Seçimi: 10W-40, JASO MA ve MB Farkı",
   "slug": "motosiklet-yagi-secimi-10w-40-jaso-ma-ve-mb-farki",
-  "shortDescription": "10W-40 ne anlama gelir, JASO MA ile MB arasındaki fark nedir? Motorunuza ve debriyaj tipine uygun motosiklet yağını doğru seçmenin pratik yolu.",
+  "shortDescription": "10W-40 ne demek, JASO MA ile MB arasındaki fark nedir? Motorlu ve vites kutulu, scooter ve vitesli motosikletler için doğru yağı seçmenin yolları.",
   "seoTitle": "Motosiklet Yağı Seçimi: 10W-40, JASO MA ve MB Farkı | Soydaş Motosiklet",
-  "seoDescription": "10W-40 viskozite ne demek, JASO MA ve MB farkı nedir? Scooter ve vitesli motosiklet için doğru yağı seçmenin adımları bu rehberde.",
+  "seoDescription": "10W-40 ne demek, JASO MA ve MB farkı nedir? Scooter ve vitesli motosikletler için doğru motor yağını seçmenin pratik rehberi.",
   "images": {
     "cover": "cover.jpg",
     "collage": "collage.jpg"
@@ -15,14 +15,14 @@
   "coverPhoto": null,
   "blocks": [
     {
-      "id": "qb4qk00001",
+      "id": "qhfdr00001",
       "type": "paragraph",
       "data": {
-        "text": "Rafta onlarca yağ bidonu var ve hepsinin üzerinde 10W-40, JASO MA2, API SN gibi kodlar yazıyor. Yanlış seçim çoğu zaman hemen belli olmaz. Debriyaj kayması, artan motor sesi ve erken aşınma zamanla ortaya çıkar. Bu rehberde viskozite kodunu, <b>JASO MA ve MB</b> farkını ve kendi motosikletiniz için doğru yağı nasıl seçeceğinizi sade bir dille anlatıyoruz."
+        "text": "Motosiklet yağı kutusunun üzerinde \"10W-40\", \"JASO MA2\" ya da \"MB\" gibi ifadeler görürsünüz. Çoğu kullanıcı yalnızca viskoziteye bakıp yağı seçiyor; oysa motosikletlerde yağ aynı zamanda debriyajı ve şanzımanı da yağlıyor. Yanlış yağ debriyajın kaymasına, vites geçişlerinde sertliğe ve erken aşınmaya yol açabilir. Bu rehberde 10W-40'ın ne anlama geldiğini, <b>JASO MA ile MB arasındaki farkı</b> ve motosikletinize uygun yağı nasıl seçeceğinizi anlatıyoruz."
       }
     },
     {
-      "id": "qb4qk00002",
+      "id": "qhfdr00002",
       "type": "header",
       "data": {
         "text": "10W-40 Ne Anlama Geliyor?",
@@ -30,67 +30,88 @@
       }
     },
     {
-      "id": "qb4qk00003",
+      "id": "qhfdr00003",
       "type": "paragraph",
       "data": {
-        "text": "SAE viskozite kodu yağın akışkanlığını gösterir. <b>10W</b>, soğuk havada (W = winter) yağın akışkanlığını belirtir. Sayı küçüldükçe soğuk motorda yağ daha hızlı dolaşır. <b>40</b> ise çalışma sıcaklığındaki koyuluk sınıfıdır. Sayı büyüdükçe sıcakta film tabakası kalınlaşır."
+        "text": "Bu ifade SAE viskozite sınıfıdır ve yağın akışkanlığını gösterir. İki bölümden oluşur:"
       }
     },
     {
-      "id": "qb4qk00004",
-      "type": "paragraph",
+      "id": "qhfdr00004",
+      "type": "list",
       "data": {
-        "text": "10W-40 yağlar, Türkiye iklimi ve çoğu 125–400 cc motosiklet için yaygın bir tercihtir. Yine de üreticiler bazı modellerde 10W-30, 10W-50 veya 15W-50 gibi farklı değerler önerir. Doğru viskozite her zaman <b>kullanım kılavuzundaki</b> değerdir. <i>Kesin değer için aracınızın kullanım kılavuzunu esas alın.</i>"
+        "style": "unordered",
+        "items": [
+          "<b>10W:</b> Soğukta akışkanlık değeridir. \"W\" kış (winter) anlamına gelir. Sayı küçüldükçe yağ soğukta daha rahat akar ve ilk çalıştırmada motor daha hızlı yağlanır.",
+          "<b>40:</b> Motor çalışma sıcaklığındaki (yaklaşık 100 °C) viskozite sınıfıdır. Sayı büyüdükçe yağ sıcakta daha kalın bir film tabakası oluşturur."
+        ]
       }
     },
     {
-      "id": "qb4qk00005",
+      "id": "qhfdr00005",
+      "type": "paragraph",
+      "data": {
+        "text": "10W-40, Türkiye iklimi ve çoğu 125–400 cc motosiklet için yaygın kullanılan bir sınıftır. Yine de üretici 10W-30, 10W-50 ya da 15W-50 gibi farklı bir değer belirtmiş olabilir. <i>Kesin viskozite için aracınızın kullanım kılavuzunu esas alın.</i>"
+      }
+    },
+    {
+      "id": "qhfdr00006",
       "type": "header",
       "data": {
-        "text": "JASO MA, MA1, MA2 ve MB Farkı",
+        "text": "JASO MA ve MB Farkı Nedir?",
         "level": 2
       }
     },
     {
-      "id": "qb4qk00006",
+      "id": "qhfdr00007",
       "type": "paragraph",
       "data": {
-        "text": "Otomobil yağlarında API ve ACEA standartları öne çıkar. Motosikletlerde ise Japonya kökenli <b>JASO T903</b> standardı önemlidir. Çünkü çoğu vitesli motosiklette motor, şanzıman ve ıslak debriyaj aynı yağı paylaşır. Yağın sürtünme karakteri bu yüzden kritiktir."
+        "text": "JASO, Japonya'da geliştirilen ve özellikle 4 zamanlı motosiklet yağları için kullanılan bir standarttır. Yağın debriyaj sürtünme karakterini ölçer. Otomobil yağlarında genellikle sürtünmeyi azaltan katkılar bulunur; bu katkılar motosikletin yağlı (ıslak) debriyajında kaymaya sebep olabilir. JASO bu yüzden önemlidir."
       }
     },
     {
-      "id": "qb4qk00007",
+      "id": "qhfdr00008",
       "type": "table",
       "data": {
         "withHeadings": true,
         "content": [
           [
-            "<b>Standart</b>",
-            "<b>Sürtünme Karakteri</b>",
-            "<b>Tipik Kullanım</b>"
+            "<b>Özellik</b>",
+            "<b>JASO MA / MA1 / MA2</b>",
+            "<b>JASO MB</b>"
           ],
           [
-            "JASO MA / MA1 / MA2",
-            "Yüksek sürtünme, debriyaj tutunur",
-            "Vitesli motosikletler, ıslak debriyajlı motorlar"
+            "Debriyaj türü",
+            "Islak, çok diskli debriyaj",
+            "Genellikle kuru debriyaj veya CVT varyatör"
           ],
           [
-            "JASO MB",
-            "Düşük sürtünme, yakıt ekonomisi odaklı",
-            "Kuru debriyajlı ve CVT'li scooterlar"
+            "Sürtünme karakteri",
+            "Yüksek sürtünme, debriyaj tutuşu net",
+            "Düşük sürtünme"
+          ],
+          [
+            "Tipik kullanım",
+            "Vitesli motosikletler, bazı maxi scooterlar",
+            "Çoğu otomatik scooter"
+          ],
+          [
+            "Dikkat",
+            "MA2 daha yüksek sürtünme aralığındadır",
+            "Vitesli motosiklette debriyaj kaymasına neden olabilir"
           ]
         ]
       }
     },
     {
-      "id": "qb4qk00008",
+      "id": "qhfdr00009",
       "type": "paragraph",
       "data": {
-        "text": "MA2, MA'nın daha yüksek performans gerektiren alt sınıfıdır. Pratikte MA, MA1 ve MA2 yağlar ıslak debriyaj için uygundur. MB yağlar ise sürtünmeyi azaltan katkılar içerir. Vitesli bir motosiklette MB yağ kullanırsanız debriyaj kayabilir. Özellikle yüksek devirde hızlı gaz açınca bu fark hissedilir."
+        "text": "Kısaca: motor, şanzıman ve debriyaj aynı yağı paylaşıyorsa <b>MA</b>, motor yağı ayrı ve debriyaj kuru çalışıyorsa genellikle <b>MB</b> aranır. Ancak bazı scooter üreticileri MA yağ da önerebilir. Bu yüzden kutudaki etiketten çok kılavuzdaki özelliğe bakın."
       }
     },
     {
-      "id": "qb4qk00009",
+      "id": "qhfdr0000a",
       "type": "header",
       "data": {
         "text": "Hangi Motosiklete Hangi Yağ?",
@@ -98,7 +119,7 @@
       }
     },
     {
-      "id": "qb4ql0000a",
+      "id": "qhfdr0000b",
       "type": "header",
       "data": {
         "text": "Vitesli motosikletler",
@@ -106,14 +127,14 @@
       }
     },
     {
-      "id": "qb4ql0000b",
+      "id": "qhfdr0000c",
       "type": "paragraph",
       "data": {
-        "text": "Pulsar, CBR, MT veya R25 gibi vitesli modellerde ıslak debriyaj kullanılır. Bu motorlarda <b>JASO MA veya MA2</b> yağ arayın. Otomobil için üretilmiş, \"enerji tasarruflu\" ibaresi taşıyan yağlardan uzak durun. Bu yağlardaki sürtünme düşürücüler debriyajı kaydırabilir."
+        "text": "Pulsar, CBF, R25, MT-25 gibi vitesli modellerde motor, debriyaj ve şanzıman ortak yağlanır. Burada JASO MA veya MA2 onaylı bir 4T yağ gerekir. Spor kullanımda ya da sıcak havada daha yüksek sınıf (ör. 10W-50) gündeme gelebilir, ancak bu karar üretici önerisine göre verilmelidir."
       }
     },
     {
-      "id": "qb4ql0000c",
+      "id": "qhfdr0000d",
       "type": "header",
       "data": {
         "text": "Scooterlar",
@@ -121,77 +142,68 @@
       }
     },
     {
-      "id": "qb4ql0000d",
+      "id": "qhfdr0000e",
       "type": "paragraph",
       "data": {
-        "text": "CVT'li scooterların çoğunda kuru santrifüj debriyaj bulunur ve üreticiler genellikle MB yağ önerir. Ancak bazı maxi scooterlar MA yağ ister. Honda PCX veya Yamaha NMAX için önce kılavuza bakın. Bu modellerin bakım ayrıntılarını diğer rehberlerimizde de bulabilirsiniz."
+        "text": "PCX, NMAX gibi otomatik scooterlarda genellikle kuru debriyaj ve varyatör sistemi bulunur; bu modellerde MB sınıfı yağ öne çıkar. Modelinize özel bakım detayları için <a href=\"/blog/honda-pcx-125-yedek-parca-rehberi\">Honda PCX 125 rehberimize</a> ve <a href=\"/blog/yamaha-nmax-125-bakim-ve-yedek-parca-rehberi\">Yamaha NMAX 125 bakım rehberimize</a> göz atabilirsiniz."
       }
     },
     {
-      "id": "qb4ql0000e",
-      "type": "list",
-      "data": {
-        "style": "unordered",
-        "items": [
-          "Vitesli ve ıslak debriyajlı: genellikle JASO MA / MA2",
-          "CVT'li scooter: kılavuz aksini söylemiyorsa genellikle JASO MB",
-          "Kılavuzda belirtilen API sınıfını (SL, SM, SN gibi) altına düşürmeyin",
-          "Viskoziteyi kılavuzdaki sıcaklık tablosuna göre seçin"
-        ]
-      }
-    },
-    {
-      "id": "qb4ql0000f",
+      "id": "qhfdr0000f",
       "type": "header",
       "data": {
-        "text": "Mineral, Yarı Sentetik ve Tam Sentetik",
+        "text": "Mineral, Yarı Sentetik ve Tam Sentetik Yağ",
         "level": 2
       }
     },
     {
-      "id": "qb4ql0000g",
+      "id": "qhfdr0000g",
       "type": "paragraph",
       "data": {
-        "text": "Aynı 10W-40 koduna sahip yağlar baz yağ kalitesine göre değişir. <b>Mineral</b> yağlar ekonomiktir ve düşük yüklü, eski tasarım motorlarda yeterli olur. <b>Yarı sentetik</b> yağlar günlük kullanım ve şehir içi trafikte dengeli bir seçimdir. <b>Tam sentetik</b> yağlar yüksek ısıya ve sert kullanıma daha dayanıklıdır. Bu yağlarda değişim aralığı üretici verisine göre daha uzun olabilir."
+        "text": "Baz yağ tipi, yağın ısıya dayanımını ve değişim aralığını etkiler. Mineral yağlar günlük ve düşük yükteki kullanım için yeterlidir. Yarı sentetikler daha kararlı bir film sağlar. Tam sentetikler yüksek devir, sıcak hava ve yoğun şehir içi kullanımda ısıl dayanıklılıkta öne çıkar. Hangisini seçerseniz seçin, JASO ve viskozite uyumu önceliklidir."
       }
     },
     {
-      "id": "qb4ql0000h",
-      "type": "paragraph",
-      "data": {
-        "text": "Sık dur-kalk yapıyorsanız veya motor sıcak çalışıyorsa daha kaliteli bir baz yağ mantıklıdır. Değişim aralığını yağın etiketine değil, motosikletin servis tablosuna göre belirleyin."
-      }
-    },
-    {
-      "id": "qb4ql0000i",
+      "id": "qhfdr0000h",
       "type": "image",
       "data": {
         "file": {
           "url": "__IMG_collage__"
         },
-        "caption": "10W-40 motosiklet yağı örnekleri – Soydaş Motosiklet",
+        "caption": "10W-40 motosiklet yağı seçenekleri – Soydaş Motosiklet",
         "withBorder": false,
         "stretched": false,
         "withBackground": false
       }
     },
     {
-      "id": "qb4ql0000j",
-      "type": "header",
-      "data": {
-        "text": "Ürün Örnekleri",
-        "level": 2
-      }
-    },
-    {
-      "id": "qb4ql0000k",
+      "id": "qhfdr0000i",
       "type": "paragraph",
       "data": {
-        "text": "Tüm seçenekleri <a href=\"/yaglar\">motosiklet yağları</a> kategorisinde görebilirsiniz. <a href=\"/motul\">Motul</a>, <a href=\"/castrol\">Castrol</a>, <a href=\"/putoline\">Putoline</a> ve <a href=\"/repsol\">Repsol</a> sayfalarında marka bazlı arama da yapabilirsiniz. Scooter kullanıyorsanız <a href=\"/motul-scooter-expert-mb-4t-10w-40-motosiklet-yagi-1-lt\">Motul Scooter Expert MB 10W-40</a> MB sınıfı bir örnektir. Aynı serinin <a href=\"/motul-scooter-expert-ma-4t-10w-40-motosiklet-yagi-1-lt\">MA versiyonu</a> ise MA yağ isteyen scooterlar içindir. Vitesli motorlar için <a href=\"/castrol-power-1-4t-10w-40-motosiklet-yagi-1-lt\">Castrol Power 1 4T 10W-40</a> veya tam sentetik tercih edenler için <a href=\"/motul-7100-4t-10w-40-motosiklet-yagi-1-lt\">Motul 7100 10W-40</a> değerlendirilebilir. Ürün sayfasındaki JASO bilgisini mutlaka kılavuzunuzla karşılaştırın."
+        "text": "Mağazamızdaki <a href=\"/yaglar\">yağ kategorisinde</a> farklı ihtiyaçlara yönelik seçenekler var:"
       }
     },
     {
-      "id": "qb4ql0000l",
+      "id": "qhfdr0000j",
+      "type": "list",
+      "data": {
+        "style": "unordered",
+        "items": [
+          "Scooter kullanıcıları için <a href=\"/motul-scooter-expert-mb-4t-10w-40-motosiklet-yagi-1-lt\">Motul Scooter Expert MB 10W-40</a> MB sınıfında bir seçenektir; MA gerektiren scooterlar için <a href=\"/motul-scooter-expert-ma-4t-10w-40-motosiklet-yagi-1-lt\">Scooter Expert MA</a> de mevcuttur.",
+          "Vitesli modellerde günlük kullanım için <a href=\"/castrol-power-1-4t-10w-40-motosiklet-yagi-1-lt\">Castrol Power 1 4T 10W-40</a> veya <a href=\"/motul-5100-4t-10w-40-motosiklet-yagi-1-lt\">Motul 5100 10W-40</a> değerlendirilebilir.",
+          "Daha sıcak ve yüksek performanslı kullanımda <a href=\"/motul-7100-4t-10w-40-motosiklet-yagi-1-lt\">Motul 7100</a> veya <a href=\"/putoline-n-tech-pro-r-10w-40-tam-sentetik-motosiklet-yagi-1-lt\">Putoline N-Tech Pro R 10W-40</a> gibi tam sentetik yağlara bakabilirsiniz."
+        ]
+      }
+    },
+    {
+      "id": "qhfdr0000k",
+      "type": "paragraph",
+      "data": {
+        "text": "Marka sayfalarından <a href=\"/motul\">Motul</a>, <a href=\"/castrol\">Castrol</a> ve <a href=\"/putoline\">Putoline</a> ürünlerini de inceleyebilirsiniz. Ürün seçiminden önce JASO onayını ürün açıklamasından kontrol edin."
+      }
+    },
+    {
+      "id": "qhfdr0000l",
       "type": "header",
       "data": {
         "text": "Yağ Değişiminde Dikkat Edilecekler",
@@ -199,28 +211,28 @@
       }
     },
     {
-      "id": "qb4ql0000m",
+      "id": "qhfdr0000m",
       "type": "list",
       "data": {
         "style": "ordered",
         "items": [
-          "Motoru kısa süre çalıştırıp ısıtın, sıcak yağ daha iyi boşalır.",
-          "Boşaltma tapasının contasını ve sızdırmazlığını kontrol edin.",
-          "Her yağ değişiminde ya da kılavuzdaki aralıkta <a href=\"/yag-filtresi\">yağ filtresini</a> yenileyin. Modelinize uygun parçayı <a href=\"/filtre-grubu\">filtre grubu</a> sayfasından bulabilirsiniz.",
-          "Yağı kılavuzdaki miktarda doldurun, seviye çubuğu veya gözetleme camından kontrol edin.",
-          "Aşırı doldurmayın, fazla yağ köpürme ve basınç sorununa yol açabilir."
+          "Motor ılıkken yağı boşaltın; yağ daha rahat akar ve atıkla birlikte kirlilik de tahliye olur.",
+          "Her değişimde <a href=\"/yag-filtresi\">yağ filtresini</a> de yenileyin. Modelinize uygun filtreyi <a href=\"/yag-filtresi\">filtre kategorisinde</a> bulabilirsiniz.",
+          "Boşaltma tapasının contasını ve sıkma torkunu kontrol edin; fazla sıkmak diş yuvasına zarar verir.",
+          "Kılavuzdaki yağ miktarını kullanın, seviye çubuğu veya gözetleme camıyla motor düz konumdayken kontrol edin.",
+          "Yağı karıştırmak yerine aynı özellikte yağla tamamlamaya çalışın."
         ]
       }
     },
     {
-      "id": "qb4ql0000n",
+      "id": "qhfdr0000n",
       "type": "paragraph",
       "data": {
-        "text": "Yağ değişimiyle birlikte zincir bakımına da göz atın. Konuyla ilgili zincir dişli seti seçimi rehberimiz yardımcı olacaktır. Bakım sarf malzemeleri için <a href=\"/bakim-urunleri\">bakım ürünleri</a> ve <a href=\"/motosiklet-yedek-parca\">yedek parça</a> kategorilerini de inceleyebilirsiniz."
+        "text": "Değişim aralığı kullanıma göre değişir. Birçok üretici yaklaşık 3.000–6.000 km veya yılda bir değişim önerir; şehir içi, kısa mesafe ve yoğun trafik koşullarında süre kısalabilir. <i>Kesin aralık için aracınızın kullanım kılavuzunu esas alın.</i> Bakım sırasında zincir durumunu da kontrol etmek isterseniz <a href=\"/blog/motosiklet-zincir-disli-seti-secimi-ve-degisim-rehberi\">zincir dişli seti rehberimiz</a> işinize yarar. Diğer ürünler için <a href=\"/bakim-urunleri\">bakım ürünleri</a> sayfasına bakabilirsiniz."
       }
     },
     {
-      "id": "qb4ql0000o",
+      "id": "qhfdr0000o",
       "type": "header",
       "data": {
         "text": "Sık Sorulan Sorular",
@@ -228,62 +240,59 @@
       }
     },
     {
-      "id": "qb4ql0000p",
+      "id": "qhfdr0000p",
       "type": "header",
       "data": {
-        "text": "Otomobil yağı motosiklette kullanılır mı?",
+        "text": "Otomobil motor yağını motosiklette kullanabilir miyim?",
         "level": 3
       }
     },
     {
-      "id": "qb4ql0000q",
+      "id": "qhfdr0000q",
       "type": "paragraph",
       "data": {
-        "text": "Önerilmez. Otomobil yağları genellikle sürtünme düşürücü katkılar içerir ve ıslak debriyajlı motosikletlerde kaymaya yol açabilir. Ayrıca motosiklet motorları yüksek devirde çalıştığı için yağın kesme dayanımı da önemlidir. JASO sertifikalı motosiklet yağı tercih edin."
+        "text": "Önerilmez. Otomobil yağlarındaki sürtünme azaltıcı katkılar ıslak debriyajda kaymaya yol açabilir. Ayrıca motosiklet motorları yüksek devirde çalıştığı için yağdan daha fazla kayma ve ısı dayanımı beklenir. JASO onaylı motosiklet yağı kullanın."
       }
     },
     {
-      "id": "qb4ql0000r",
+      "id": "qhfdr0000r",
       "type": "header",
       "data": {
-        "text": "MA yağı scooterda kullanabilir miyim?",
+        "text": "Scooterda MA yağ kullanırsam ne olur?",
         "level": 3
       }
     },
     {
-      "id": "qb4ql0000s",
+      "id": "qhfdr0000s",
       "type": "paragraph",
       "data": {
-        "text": "Kılavuz izin veriyorsa kullanılabilir. Ancak kuru debriyajlı scooterlarda MB yağ genellikle önerilir. Aksini söyleyen bir üretici notu yoksa kılavuzdaki sınıfı esas alın. <i>Kesin değer için aracınızın kullanım kılavuzunu esas alın.</i>"
+        "text": "Üretici MB öneriyorsa MA kullanmak genellikle hemen arıza yapmaz ama sürtünme karakteri farklı olduğundan önerilen sınıf tercih edilmelidir. Aksine, ıslak debriyajlı bir motosiklete MB yağ koymak ise kayma riski taşıdığı için kaçınılmalıdır."
       }
     },
     {
-      "id": "qb4ql0000t",
+      "id": "qhfdr0000t",
       "type": "header",
       "data": {
-        "text": "Yağ ne sıklıkla değişmeli?",
+        "text": "Yağ markasını değiştirebilir miyim?",
         "level": 3
       }
     },
     {
-      "id": "qb4ql0000u",
+      "id": "qhfdr0000u",
       "type": "paragraph",
       "data": {
-        "text": "Aralık modele ve yağ tipine göre değişir. Birçok üretici kilometre veya süre sınırı verir. Şehir içi yoğun kullanımda daha kısa aralık mantıklıdır. Daha fazla soru için sık sorulan sorular sayfamıza da göz atabilirsiniz."
+        "text": "Evet, viskozite ve JASO sınıfı uyumluysa marka değiştirmek sorun yaratmaz. Daha fazla soru için <a href=\"/pages/sss\">sıkça sorulan sorular</a> sayfamıza da göz atabilirsiniz."
       }
     },
     {
-      "id": "qb4ql0000v",
+      "id": "qhfdr0000v",
       "type": "paragraph",
       "data": {
-        "text": "Özetle önce kılavuzdaki viskoziteye, ardından debriyaj tipinize uygun JASO sınıfına bakın. Doğru yağ seçimi motor ömrünü ve sürüş konforunu doğrudan etkiler. Hangi yağın modelinize uygun olduğundan emin değilseniz bizimle iletişime geçin, birlikte bakalım."
+        "text": "Doğru yağ seçimi, 10W-40 gibi viskozite değerini ve JASO MA ya da MB sınıfını birlikte değerlendirmekten geçer. Emin olmadığınızda kılavuzu kontrol etmek en güvenli yoldur. Modelinize uygun yağ ve filtre konusunda yardım isterseniz <a href=\"/pages/iletisim\">bizimle iletişime geçin</a>; daha fazla bakım içeriği için <a href=\"/blog/motosiklet-rehberleri\">motosiklet rehberlerimizi</a> inceleyebilirsiniz."
       }
     }
   ],
-  "contentHtml": "<html lang=\"en\">\n          <style>.ikas-editor-v1>table,td,th{border:1px solid #e8e8eb;border-collapse:collapse;font-size:14px}.ikas-editor-v1>th,td{padding:6px 12px}.ikas-editor-v1 ul,.ikas-editor-v1 ol{padding-left:20px}.ikas-editor-v1 ul li{list-style-type:disc;margin:8px 0 8px 16px}.ikas-editor-v1 ol li{list-style-type:decimal;margin:8px 0 8px 16px}.ikas-editor-v1 li{margin:8px 0 8px 16px}.ikas-editor-v1 code{display:block;white-space:pre-wrap}.ikas-editor-v1 blockquote{margin-inline-start:0;border-left:3px solid rgb(41 41 41);padding-left:23px}.ikas-editor-v1 figure{margin-inline:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0;width:100%}.ikas-editor-v1 img{max-width:800px;object-fit:cover;object-position:center}.ikas-editor-v1 img.img-bg{padding:1.5em!important;background:#cdd1e0!important}.ikas-editor-v1 img.img-fullwidth{width:100%!important;max-width:100%!important;margin:0 auto!important}.ikas-editor-v1 figcaption{text-align:center;padding-top:6px;word-break:break-word;font-size:12px;background:0 0;z-index:{};}.ikas-editor-v1 .embed-youtube{width:100%;height:400px}.ikas-editor-v1 a{color:#0070f3;text-decoration:underline;cursor:pointer}.ikas-editor-v1 a:hover{opacity:.8}.products-container{display:flex;flex-direction:column;gap:10px}.product-block-container{margin:0 auto;cursor:pointer;flex:1;display:flex;gap:20px;padding:10px 0}.product-image{width:120px;height:120px;object-fit:cover;border-radius:4px;flex-shrink:0}.product-name{font-size:15px;font-weight:500;width:100%;margin:0 0 4px}.product-brand{font-size:13px;font-weight:400;color:#adb5bd;margin:0 0 4px}.product-discount-price,.product-price{width:fit-content;font-size:16px;font-weight:500;color:#000}.product-price{margin:6px 0 0}.product-discount-price{margin:6px 8px 0 0;text-decoration:line-through}.ikas-editor-v1 table b{font-weight:bold}.ikas-editor-v1 table i{font-style:italic}</style>\n          <div class=\"ikas-editor-v1\">\n          <p class=\"editor-paragraph\"> Rafta onlarca yağ bidonu var ve hepsinin üzerinde 10W-40, JASO MA2, API SN gibi kodlar yazıyor. Yanlış seçim çoğu zaman hemen belli olmaz. Debriyaj kayması, artan motor sesi ve erken aşınma zamanla ortaya çıkar. Bu rehberde viskozite kodunu, <b>JASO MA ve MB</b> farkını ve kendi motosikletiniz için doğru yağı nasıl seçeceğinizi sade bir dille anlatıyoruz. </p><h2>10W-40 Ne Anlama Geliyor?</h2><p class=\"editor-paragraph\"> SAE viskozite kodu yağın akışkanlığını gösterir. <b>10W</b>, soğuk havada (W = winter) yağın akışkanlığını belirtir. Sayı küçüldükçe soğuk motorda yağ daha hızlı dolaşır. <b>40</b> ise çalışma sıcaklığındaki koyuluk sınıfıdır. Sayı büyüdükçe sıcakta film tabakası kalınlaşır. </p><p class=\"editor-paragraph\"> 10W-40 yağlar, Türkiye iklimi ve çoğu 125–400 cc motosiklet için yaygın bir tercihtir. Yine de üreticiler bazı modellerde 10W-30, 10W-50 veya 15W-50 gibi farklı değerler önerir. Doğru viskozite her zaman <b>kullanım kılavuzundaki</b> değerdir. <i>Kesin değer için aracınızın kullanım kılavuzunu esas alın.</i> </p><h2>JASO MA, MA1, MA2 ve MB Farkı</h2><p class=\"editor-paragraph\"> Otomobil yağlarında API ve ACEA standartları öne çıkar. Motosikletlerde ise Japonya kökenli <b>JASO T903</b> standardı önemlidir. Çünkü çoğu vitesli motosiklette motor, şanzıman ve ıslak debriyaj aynı yağı paylaşır. Yağın sürtünme karakteri bu yüzden kritiktir. </p><table><tbody><tr><td><b>Standart</b></td><td><b>Sürtünme Karakteri</b></td><td><b>Tipik Kullanım</b></td></tr><tr><td>JASO MA / MA1 / MA2</td><td>Yüksek sürtünme, debriyaj tutunur</td><td>Vitesli motosikletler, ıslak debriyajlı motorlar</td></tr><tr><td>JASO MB</td><td>Düşük sürtünme, yakıt ekonomisi odaklı</td><td>Kuru debriyajlı ve CVT'li scooterlar</td></tr></tbody></table><p class=\"editor-paragraph\"> MA2, MA'nın daha yüksek performans gerektiren alt sınıfıdır. Pratikte MA, MA1 ve MA2 yağlar ıslak debriyaj için uygundur. MB yağlar ise sürtünmeyi azaltan katkılar içerir. Vitesli bir motosiklette MB yağ kullanırsanız debriyaj kayabilir. Özellikle yüksek devirde hızlı gaz açınca bu fark hissedilir. </p><h2>Hangi Motosiklete Hangi Yağ?</h2><h3>Vitesli motosikletler</h3><p class=\"editor-paragraph\"> Pulsar, CBR, MT veya R25 gibi vitesli modellerde ıslak debriyaj kullanılır. Bu motorlarda <b>JASO MA veya MA2</b> yağ arayın. Otomobil için üretilmiş, \"enerji tasarruflu\" ibaresi taşıyan yağlardan uzak durun. Bu yağlardaki sürtünme düşürücüler debriyajı kaydırabilir. </p><h3>Scooterlar</h3><p class=\"editor-paragraph\"> CVT'li scooterların çoğunda kuru santrifüj debriyaj bulunur ve üreticiler genellikle MB yağ önerir. Ancak bazı maxi scooterlar MA yağ ister. Honda PCX veya Yamaha NMAX için önce kılavuza bakın. Bu modellerin bakım ayrıntılarını diğer rehberlerimizde de bulabilirsiniz. </p><ul><li>Vitesli ve ıslak debriyajlı: genellikle JASO MA / MA2</li><li>CVT'li scooter: kılavuz aksini söylemiyorsa genellikle JASO MB</li><li>Kılavuzda belirtilen API sınıfını (SL, SM, SN gibi) altına düşürmeyin</li><li>Viskoziteyi kılavuzdaki sıcaklık tablosuna göre seçin</li></ul><h2>Mineral, Yarı Sentetik ve Tam Sentetik</h2><p class=\"editor-paragraph\"> Aynı 10W-40 koduna sahip yağlar baz yağ kalitesine göre değişir. <b>Mineral</b> yağlar ekonomiktir ve düşük yüklü, eski tasarım motorlarda yeterli olur. <b>Yarı sentetik</b> yağlar günlük kullanım ve şehir içi trafikte dengeli bir seçimdir. <b>Tam sentetik</b> yağlar yüksek ısıya ve sert kullanıma daha dayanıklıdır. Bu yağlarda değişim aralığı üretici verisine göre daha uzun olabilir. </p><p class=\"editor-paragraph\"> Sık dur-kalk yapıyorsanız veya motor sıcak çalışıyorsa daha kaliteli bir baz yağ mantıklıdır. Değişim aralığını yağın etiketine değil, motosikletin servis tablosuna göre belirleyin. </p><figure class=\"editor-fig-img\"><img class=\"editor-img   \" src=\"__IMG_collage__\" alt=\"10W-40 motosiklet yağı örnekleri – Soydaş Motosiklet\" width=\"1080\" height=\"360\" style=\"max-width: 100%; aspect-ratio: 1080 / 360;\"><figcaption class=\"editor-fig-cap\">10W-40 motosiklet yağı örnekleri – Soydaş Motosiklet</figcaption></figure><h2>Ürün Örnekleri</h2><p class=\"editor-paragraph\"> Tüm seçenekleri <a href=\"/yaglar\">motosiklet yağları</a> kategorisinde görebilirsiniz. <a href=\"/motul\">Motul</a>, <a href=\"/castrol\">Castrol</a>, <a href=\"/putoline\">Putoline</a> ve <a href=\"/repsol\">Repsol</a> sayfalarında marka bazlı arama da yapabilirsiniz. Scooter kullanıyorsanız <a href=\"/motul-scooter-expert-mb-4t-10w-40-motosiklet-yagi-1-lt\">Motul Scooter Expert MB 10W-40</a> MB sınıfı bir örnektir. Aynı serinin <a href=\"/motul-scooter-expert-ma-4t-10w-40-motosiklet-yagi-1-lt\">MA versiyonu</a> ise MA yağ isteyen scooterlar içindir. Vitesli motorlar için <a href=\"/castrol-power-1-4t-10w-40-motosiklet-yagi-1-lt\">Castrol Power 1 4T 10W-40</a> veya tam sentetik tercih edenler için <a href=\"/motul-7100-4t-10w-40-motosiklet-yagi-1-lt\">Motul 7100 10W-40</a> değerlendirilebilir. Ürün sayfasındaki JASO bilgisini mutlaka kılavuzunuzla karşılaştırın. </p><h2>Yağ Değişiminde Dikkat Edilecekler</h2><ol><li>Motoru kısa süre çalıştırıp ısıtın, sıcak yağ daha iyi boşalır.</li><li>Boşaltma tapasının contasını ve sızdırmazlığını kontrol edin.</li><li>Her yağ değişiminde ya da kılavuzdaki aralıkta <a href=\"/yag-filtresi\">yağ filtresini</a> yenileyin. Modelinize uygun parçayı <a href=\"/filtre-grubu\">filtre grubu</a> sayfasından bulabilirsiniz.</li><li>Yağı kılavuzdaki miktarda doldurun, seviye çubuğu veya gözetleme camından kontrol edin.</li><li>Aşırı doldurmayın, fazla yağ köpürme ve basınç sorununa yol açabilir.</li></ol><p class=\"editor-paragraph\"> Yağ değişimiyle birlikte zincir bakımına da göz atın. Konuyla ilgili zincir dişli seti seçimi rehberimiz yardımcı olacaktır. Bakım sarf malzemeleri için <a href=\"/bakim-urunleri\">bakım ürünleri</a> ve <a href=\"/motosiklet-yedek-parca\">yedek parça</a> kategorilerini de inceleyebilirsiniz. </p><h2>Sık Sorulan Sorular</h2><h3>Otomobil yağı motosiklette kullanılır mı?</h3><p class=\"editor-paragraph\"> Önerilmez. Otomobil yağları genellikle sürtünme düşürücü katkılar içerir ve ıslak debriyajlı motosikletlerde kaymaya yol açabilir. Ayrıca motosiklet motorları yüksek devirde çalıştığı için yağın kesme dayanımı da önemlidir. JASO sertifikalı motosiklet yağı tercih edin. </p><h3>MA yağı scooterda kullanabilir miyim?</h3><p class=\"editor-paragraph\"> Kılavuz izin veriyorsa kullanılabilir. Ancak kuru debriyajlı scooterlarda MB yağ genellikle önerilir. Aksini söyleyen bir üretici notu yoksa kılavuzdaki sınıfı esas alın. <i>Kesin değer için aracınızın kullanım kılavuzunu esas alın.</i> </p><h3>Yağ ne sıklıkla değişmeli?</h3><p class=\"editor-paragraph\"> Aralık modele ve yağ tipine göre değişir. Birçok üretici kilometre veya süre sınırı verir. Şehir içi yoğun kullanımda daha kısa aralık mantıklıdır. Daha fazla soru için sık sorulan sorular sayfamıza da göz atabilirsiniz. </p><p class=\"editor-paragraph\"> Özetle önce kılavuzdaki viskoziteye, ardından debriyaj tipinize uygun JASO sınıfına bakın. Doğru yağ seçimi motor ömrünü ve sürüş konforunu doğrudan etkiler. Hangi yağın modelinize uygun olduğundan emin değilseniz bizimle iletişime geçin, birlikte bakalım. </p>\n          </div>\n          </html>\n  ",
-  "contentData": "{\"time\":1792019781310,\"blocks\":[{\"id\":\"qb4qk00001\",\"type\":\"paragraph\",\"data\":{\"text\":\"Rafta onlarca yağ bidonu var ve hepsinin üzerinde 10W-40, JASO MA2, API SN gibi kodlar yazıyor. Yanlış seçim çoğu zaman hemen belli olmaz. Debriyaj kayması, artan motor sesi ve erken aşınma zamanla ortaya çıkar. Bu rehberde viskozite kodunu, <b>JASO MA ve MB</b> farkını ve kendi motosikletiniz için doğru yağı nasıl seçeceğinizi sade bir dille anlatıyoruz.\"}},{\"id\":\"qb4qk00002\",\"type\":\"header\",\"data\":{\"text\":\"10W-40 Ne Anlama Geliyor?\",\"level\":2}},{\"id\":\"qb4qk00003\",\"type\":\"paragraph\",\"data\":{\"text\":\"SAE viskozite kodu yağın akışkanlığını gösterir. <b>10W</b>, soğuk havada (W = winter) yağın akışkanlığını belirtir. Sayı küçüldükçe soğuk motorda yağ daha hızlı dolaşır. <b>40</b> ise çalışma sıcaklığındaki koyuluk sınıfıdır. Sayı büyüdükçe sıcakta film tabakası kalınlaşır.\"}},{\"id\":\"qb4qk00004\",\"type\":\"paragraph\",\"data\":{\"text\":\"10W-40 yağlar, Türkiye iklimi ve çoğu 125–400 cc motosiklet için yaygın bir tercihtir. Yine de üreticiler bazı modellerde 10W-30, 10W-50 veya 15W-50 gibi farklı değerler önerir. Doğru viskozite her zaman <b>kullanım kılavuzundaki</b> değerdir. <i>Kesin değer için aracınızın kullanım kılavuzunu esas alın.</i>\"}},{\"id\":\"qb4qk00005\",\"type\":\"header\",\"data\":{\"text\":\"JASO MA, MA1, MA2 ve MB Farkı\",\"level\":2}},{\"id\":\"qb4qk00006\",\"type\":\"paragraph\",\"data\":{\"text\":\"Otomobil yağlarında API ve ACEA standartları öne çıkar. Motosikletlerde ise Japonya kökenli <b>JASO T903</b> standardı önemlidir. Çünkü çoğu vitesli motosiklette motor, şanzıman ve ıslak debriyaj aynı yağı paylaşır. Yağın sürtünme karakteri bu yüzden kritiktir.\"}},{\"id\":\"qb4qk00007\",\"type\":\"table\",\"data\":{\"withHeadings\":true,\"content\":[[\"<b>Standart</b>\",\"<b>Sürtünme Karakteri</b>\",\"<b>Tipik Kullanım</b>\"],[\"JASO MA / MA1 / MA2\",\"Yüksek sürtünme, debriyaj tutunur\",\"Vitesli motosikletler, ıslak debriyajlı motorlar\"],[\"JASO MB\",\"Düşük sürtünme, yakıt ekonomisi odaklı\",\"Kuru debriyajlı ve CVT'li scooterlar\"]]}},{\"id\":\"qb4qk00008\",\"type\":\"paragraph\",\"data\":{\"text\":\"MA2, MA'nın daha yüksek performans gerektiren alt sınıfıdır. Pratikte MA, MA1 ve MA2 yağlar ıslak debriyaj için uygundur. MB yağlar ise sürtünmeyi azaltan katkılar içerir. Vitesli bir motosiklette MB yağ kullanırsanız debriyaj kayabilir. Özellikle yüksek devirde hızlı gaz açınca bu fark hissedilir.\"}},{\"id\":\"qb4qk00009\",\"type\":\"header\",\"data\":{\"text\":\"Hangi Motosiklete Hangi Yağ?\",\"level\":2}},{\"id\":\"qb4ql0000a\",\"type\":\"header\",\"data\":{\"text\":\"Vitesli motosikletler\",\"level\":3}},{\"id\":\"qb4ql0000b\",\"type\":\"paragraph\",\"data\":{\"text\":\"Pulsar, CBR, MT veya R25 gibi vitesli modellerde ıslak debriyaj kullanılır. Bu motorlarda <b>JASO MA veya MA2</b> yağ arayın. Otomobil için üretilmiş, \\\"enerji tasarruflu\\\" ibaresi taşıyan yağlardan uzak durun. Bu yağlardaki sürtünme düşürücüler debriyajı kaydırabilir.\"}},{\"id\":\"qb4ql0000c\",\"type\":\"header\",\"data\":{\"text\":\"Scooterlar\",\"level\":3}},{\"id\":\"qb4ql0000d\",\"type\":\"paragraph\",\"data\":{\"text\":\"CVT'li scooterların çoğunda kuru santrifüj debriyaj bulunur ve üreticiler genellikle MB yağ önerir. Ancak bazı maxi scooterlar MA yağ ister. Honda PCX veya Yamaha NMAX için önce kılavuza bakın. Bu modellerin bakım ayrıntılarını diğer rehberlerimizde de bulabilirsiniz.\"}},{\"id\":\"qb4ql0000e\",\"type\":\"list\",\"data\":{\"style\":\"unordered\",\"items\":[\"Vitesli ve ıslak debriyajlı: genellikle JASO MA / MA2\",\"CVT'li scooter: kılavuz aksini söylemiyorsa genellikle JASO MB\",\"Kılavuzda belirtilen API sınıfını (SL, SM, SN gibi) altına düşürmeyin\",\"Viskoziteyi kılavuzdaki sıcaklık tablosuna göre seçin\"]}},{\"id\":\"qb4ql0000f\",\"type\":\"header\",\"data\":{\"text\":\"Mineral, Yarı Sentetik ve Tam Sentetik\",\"level\":2}},{\"id\":\"qb4ql0000g\",\"type\":\"paragraph\",\"data\":{\"text\":\"Aynı 10W-40 koduna sahip yağlar baz yağ kalitesine göre değişir. <b>Mineral</b> yağlar ekonomiktir ve düşük yüklü, eski tasarım motorlarda yeterli olur. <b>Yarı sentetik</b> yağlar günlük kullanım ve şehir içi trafikte dengeli bir seçimdir. <b>Tam sentetik</b> yağlar yüksek ısıya ve sert kullanıma daha dayanıklıdır. Bu yağlarda değişim aralığı üretici verisine göre daha uzun olabilir.\"}},{\"id\":\"qb4ql0000h\",\"type\":\"paragraph\",\"data\":{\"text\":\"Sık dur-kalk yapıyorsanız veya motor sıcak çalışıyorsa daha kaliteli bir baz yağ mantıklıdır. Değişim aralığını yağın etiketine değil, motosikletin servis tablosuna göre belirleyin.\"}},{\"id\":\"qb4ql0000i\",\"type\":\"image\",\"data\":{\"file\":{\"url\":\"__IMG_collage__\"},\"caption\":\"10W-40 motosiklet yağı örnekleri – Soydaş Motosiklet\",\"withBorder\":false,\"stretched\":false,\"withBackground\":false}},{\"id\":\"qb4ql0000j\",\"type\":\"header\",\"data\":{\"text\":\"Ürün Örnekleri\",\"level\":2}},{\"id\":\"qb4ql0000k\",\"type\":\"paragraph\",\"data\":{\"text\":\"Tüm seçenekleri <a href=\\\"/yaglar\\\">motosiklet yağları</a> kategorisinde görebilirsiniz. <a href=\\\"/motul\\\">Motul</a>, <a href=\\\"/castrol\\\">Castrol</a>, <a href=\\\"/putoline\\\">Putoline</a> ve <a href=\\\"/repsol\\\">Repsol</a> sayfalarında marka bazlı arama da yapabilirsiniz. Scooter kullanıyorsanız <a href=\\\"/motul-scooter-expert-mb-4t-10w-40-motosiklet-yagi-1-lt\\\">Motul Scooter Expert MB 10W-40</a> MB sınıfı bir örnektir. Aynı serinin <a href=\\\"/motul-scooter-expert-ma-4t-10w-40-motosiklet-yagi-1-lt\\\">MA versiyonu</a> ise MA yağ isteyen scooterlar içindir. Vitesli motorlar için <a href=\\\"/castrol-power-1-4t-10w-40-motosiklet-yagi-1-lt\\\">Castrol Power 1 4T 10W-40</a> veya tam sentetik tercih edenler için <a href=\\\"/motul-7100-4t-10w-40-motosiklet-yagi-1-lt\\\">Motul 7100 10W-40</a> değerlendirilebilir. Ürün sayfasındaki JASO bilgisini mutlaka kılavuzunuzla karşılaştırın.\"}},{\"id\":\"qb4ql0000l\",\"type\":\"header\",\"data\":{\"text\":\"Yağ Değişiminde Dikkat Edilecekler\",\"level\":2}},{\"id\":\"qb4ql0000m\",\"type\":\"list\",\"data\":{\"style\":\"ordered\",\"items\":[\"Motoru kısa süre çalıştırıp ısıtın, sıcak yağ daha iyi boşalır.\",\"Boşaltma tapasının contasını ve sızdırmazlığını kontrol edin.\",\"Her yağ değişiminde ya da kılavuzdaki aralıkta <a href=\\\"/yag-filtresi\\\">yağ filtresini</a> yenileyin. Modelinize uygun parçayı <a href=\\\"/filtre-grubu\\\">filtre grubu</a> sayfasından bulabilirsiniz.\",\"Yağı kılavuzdaki miktarda doldurun, seviye çubuğu veya gözetleme camından kontrol edin.\",\"Aşırı doldurmayın, fazla yağ köpürme ve basınç sorununa yol açabilir.\"]}},{\"id\":\"qb4ql0000n\",\"type\":\"paragraph\",\"data\":{\"text\":\"Yağ değişimiyle birlikte zincir bakımına da göz atın. Konuyla ilgili zincir dişli seti seçimi rehberimiz yardımcı olacaktır. Bakım sarf malzemeleri için <a href=\\\"/bakim-urunleri\\\">bakım ürünleri</a> ve <a href=\\\"/motosiklet-yedek-parca\\\">yedek parça</a> kategorilerini de inceleyebilirsiniz.\"}},{\"id\":\"qb4ql0000o\",\"type\":\"header\",\"data\":{\"text\":\"Sık Sorulan Sorular\",\"level\":2}},{\"id\":\"qb4ql0000p\",\"type\":\"header\",\"data\":{\"text\":\"Otomobil yağı motosiklette kullanılır mı?\",\"level\":3}},{\"id\":\"qb4ql0000q\",\"type\":\"paragraph\",\"data\":{\"text\":\"Önerilmez. Otomobil yağları genellikle sürtünme düşürücü katkılar içerir ve ıslak debriyajlı motosikletlerde kaymaya yol açabilir. Ayrıca motosiklet motorları yüksek devirde çalıştığı için yağın kesme dayanımı da önemlidir. JASO sertifikalı motosiklet yağı tercih edin.\"}},{\"id\":\"qb4ql0000r\",\"type\":\"header\",\"data\":{\"text\":\"MA yağı scooterda kullanabilir miyim?\",\"level\":3}},{\"id\":\"qb4ql0000s\",\"type\":\"paragraph\",\"data\":{\"text\":\"Kılavuz izin veriyorsa kullanılabilir. Ancak kuru debriyajlı scooterlarda MB yağ genellikle önerilir. Aksini söyleyen bir üretici notu yoksa kılavuzdaki sınıfı esas alın. <i>Kesin değer için aracınızın kullanım kılavuzunu esas alın.</i>\"}},{\"id\":\"qb4ql0000t\",\"type\":\"header\",\"data\":{\"text\":\"Yağ ne sıklıkla değişmeli?\",\"level\":3}},{\"id\":\"qb4ql0000u\",\"type\":\"paragraph\",\"data\":{\"text\":\"Aralık modele ve yağ tipine göre değişir. Birçok üretici kilometre veya süre sınırı verir. Şehir içi yoğun kullanımda daha kısa aralık mantıklıdır. Daha fazla soru için sık sorulan sorular sayfamıza da göz atabilirsiniz.\"}},{\"id\":\"qb4ql0000v\",\"type\":\"paragraph\",\"data\":{\"text\":\"Özetle önce kılavuzdaki viskoziteye, ardından debriyaj tipinize uygun JASO sınıfına bakın. Doğru yağ seçimi motor ömrünü ve sürüş konforunu doğrudan etkiler. Hangi yağın modelinize uygun olduğundan emin değilseniz bizimle iletişime geçin, birlikte bakalım.\"}}],\"version\":\"2.28.2\"}",
-  "removedLinks": [
-    "/pages/sss",
-    "/pages/iletisim"
-  ]
+  "contentHtml": "<html lang=\"en\">\n          <style>.ikas-editor-v1>table,td,th{border:1px solid #e8e8eb;border-collapse:collapse;font-size:14px}.ikas-editor-v1>th,td{padding:6px 12px}.ikas-editor-v1 ul,.ikas-editor-v1 ol{padding-left:20px}.ikas-editor-v1 ul li{list-style-type:disc;margin:8px 0 8px 16px}.ikas-editor-v1 ol li{list-style-type:decimal;margin:8px 0 8px 16px}.ikas-editor-v1 li{margin:8px 0 8px 16px}.ikas-editor-v1 code{display:block;white-space:pre-wrap}.ikas-editor-v1 blockquote{margin-inline-start:0;border-left:3px solid rgb(41 41 41);padding-left:23px}.ikas-editor-v1 figure{margin-inline:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0;width:100%}.ikas-editor-v1 img{max-width:800px;object-fit:cover;object-position:center}.ikas-editor-v1 img.img-bg{padding:1.5em!important;background:#cdd1e0!important}.ikas-editor-v1 img.img-fullwidth{width:100%!important;max-width:100%!important;margin:0 auto!important}.ikas-editor-v1 figcaption{text-align:center;padding-top:6px;word-break:break-word;font-size:12px;background:0 0;z-index:{};}.ikas-editor-v1 .embed-youtube{width:100%;height:400px}.ikas-editor-v1 a{color:#0070f3;text-decoration:underline;cursor:pointer}.ikas-editor-v1 a:hover{opacity:.8}.products-container{display:flex;flex-direction:column;gap:10px}.product-block-container{margin:0 auto;cursor:pointer;flex:1;display:flex;gap:20px;padding:10px 0}.product-image{width:120px;height:120px;object-fit:cover;border-radius:4px;flex-shrink:0}.product-name{font-size:15px;font-weight:500;width:100%;margin:0 0 4px}.product-brand{font-size:13px;font-weight:400;color:#adb5bd;margin:0 0 4px}.product-discount-price,.product-price{width:fit-content;font-size:16px;font-weight:500;color:#000}.product-price{margin:6px 0 0}.product-discount-price{margin:6px 8px 0 0;text-decoration:line-through}.ikas-editor-v1 table b{font-weight:bold}.ikas-editor-v1 table i{font-style:italic}</style>\n          <div class=\"ikas-editor-v1\">\n          <p class=\"editor-paragraph\"> Motosiklet yağı kutusunun üzerinde \"10W-40\", \"JASO MA2\" ya da \"MB\" gibi ifadeler görürsünüz. Çoğu kullanıcı yalnızca viskoziteye bakıp yağı seçiyor; oysa motosikletlerde yağ aynı zamanda debriyajı ve şanzımanı da yağlıyor. Yanlış yağ debriyajın kaymasına, vites geçişlerinde sertliğe ve erken aşınmaya yol açabilir. Bu rehberde 10W-40'ın ne anlama geldiğini, <b>JASO MA ile MB arasındaki farkı</b> ve motosikletinize uygun yağı nasıl seçeceğinizi anlatıyoruz. </p><h2>10W-40 Ne Anlama Geliyor?</h2><p class=\"editor-paragraph\"> Bu ifade SAE viskozite sınıfıdır ve yağın akışkanlığını gösterir. İki bölümden oluşur: </p><ul><li><b>10W:</b> Soğukta akışkanlık değeridir. \"W\" kış (winter) anlamına gelir. Sayı küçüldükçe yağ soğukta daha rahat akar ve ilk çalıştırmada motor daha hızlı yağlanır.</li><li><b>40:</b> Motor çalışma sıcaklığındaki (yaklaşık 100 °C) viskozite sınıfıdır. Sayı büyüdükçe yağ sıcakta daha kalın bir film tabakası oluşturur.</li></ul><p class=\"editor-paragraph\"> 10W-40, Türkiye iklimi ve çoğu 125–400 cc motosiklet için yaygın kullanılan bir sınıftır. Yine de üretici 10W-30, 10W-50 ya da 15W-50 gibi farklı bir değer belirtmiş olabilir. <i>Kesin viskozite için aracınızın kullanım kılavuzunu esas alın.</i> </p><h2>JASO MA ve MB Farkı Nedir?</h2><p class=\"editor-paragraph\"> JASO, Japonya'da geliştirilen ve özellikle 4 zamanlı motosiklet yağları için kullanılan bir standarttır. Yağın debriyaj sürtünme karakterini ölçer. Otomobil yağlarında genellikle sürtünmeyi azaltan katkılar bulunur; bu katkılar motosikletin yağlı (ıslak) debriyajında kaymaya sebep olabilir. JASO bu yüzden önemlidir. </p><table><tbody><tr><td><b>Özellik</b></td><td><b>JASO MA / MA1 / MA2</b></td><td><b>JASO MB</b></td></tr><tr><td>Debriyaj türü</td><td>Islak, çok diskli debriyaj</td><td>Genellikle kuru debriyaj veya CVT varyatör</td></tr><tr><td>Sürtünme karakteri</td><td>Yüksek sürtünme, debriyaj tutuşu net</td><td>Düşük sürtünme</td></tr><tr><td>Tipik kullanım</td><td>Vitesli motosikletler, bazı maxi scooterlar</td><td>Çoğu otomatik scooter</td></tr><tr><td>Dikkat</td><td>MA2 daha yüksek sürtünme aralığındadır</td><td>Vitesli motosiklette debriyaj kaymasına neden olabilir</td></tr></tbody></table><p class=\"editor-paragraph\"> Kısaca: motor, şanzıman ve debriyaj aynı yağı paylaşıyorsa <b>MA</b>, motor yağı ayrı ve debriyaj kuru çalışıyorsa genellikle <b>MB</b> aranır. Ancak bazı scooter üreticileri MA yağ da önerebilir. Bu yüzden kutudaki etiketten çok kılavuzdaki özelliğe bakın. </p><h2>Hangi Motosiklete Hangi Yağ?</h2><h3>Vitesli motosikletler</h3><p class=\"editor-paragraph\"> Pulsar, CBF, R25, MT-25 gibi vitesli modellerde motor, debriyaj ve şanzıman ortak yağlanır. Burada JASO MA veya MA2 onaylı bir 4T yağ gerekir. Spor kullanımda ya da sıcak havada daha yüksek sınıf (ör. 10W-50) gündeme gelebilir, ancak bu karar üretici önerisine göre verilmelidir. </p><h3>Scooterlar</h3><p class=\"editor-paragraph\"> PCX, NMAX gibi otomatik scooterlarda genellikle kuru debriyaj ve varyatör sistemi bulunur; bu modellerde MB sınıfı yağ öne çıkar. Modelinize özel bakım detayları için <a href=\"/blog/honda-pcx-125-yedek-parca-rehberi\">Honda PCX 125 rehberimize</a> ve <a href=\"/blog/yamaha-nmax-125-bakim-ve-yedek-parca-rehberi\">Yamaha NMAX 125 bakım rehberimize</a> göz atabilirsiniz. </p><h2>Mineral, Yarı Sentetik ve Tam Sentetik Yağ</h2><p class=\"editor-paragraph\"> Baz yağ tipi, yağın ısıya dayanımını ve değişim aralığını etkiler. Mineral yağlar günlük ve düşük yükteki kullanım için yeterlidir. Yarı sentetikler daha kararlı bir film sağlar. Tam sentetikler yüksek devir, sıcak hava ve yoğun şehir içi kullanımda ısıl dayanıklılıkta öne çıkar. Hangisini seçerseniz seçin, JASO ve viskozite uyumu önceliklidir. </p><figure class=\"editor-fig-img\"><img class=\"editor-img   \" src=\"__IMG_collage__\" alt=\"10W-40 motosiklet yağı seçenekleri – Soydaş Motosiklet\" width=\"1080\" height=\"360\" style=\"max-width: 100%; aspect-ratio: 1080 / 360;\"><figcaption class=\"editor-fig-cap\">10W-40 motosiklet yağı seçenekleri – Soydaş Motosiklet</figcaption></figure><p class=\"editor-paragraph\"> Mağazamızdaki <a href=\"/yaglar\">yağ kategorisinde</a> farklı ihtiyaçlara yönelik seçenekler var: </p><ul><li>Scooter kullanıcıları için <a href=\"/motul-scooter-expert-mb-4t-10w-40-motosiklet-yagi-1-lt\">Motul Scooter Expert MB 10W-40</a> MB sınıfında bir seçenektir; MA gerektiren scooterlar için <a href=\"/motul-scooter-expert-ma-4t-10w-40-motosiklet-yagi-1-lt\">Scooter Expert MA</a> de mevcuttur.</li><li>Vitesli modellerde günlük kullanım için <a href=\"/castrol-power-1-4t-10w-40-motosiklet-yagi-1-lt\">Castrol Power 1 4T 10W-40</a> veya <a href=\"/motul-5100-4t-10w-40-motosiklet-yagi-1-lt\">Motul 5100 10W-40</a> değerlendirilebilir.</li><li>Daha sıcak ve yüksek performanslı kullanımda <a href=\"/motul-7100-4t-10w-40-motosiklet-yagi-1-lt\">Motul 7100</a> veya <a href=\"/putoline-n-tech-pro-r-10w-40-tam-sentetik-motosiklet-yagi-1-lt\">Putoline N-Tech Pro R 10W-40</a> gibi tam sentetik yağlara bakabilirsiniz.</li></ul><p class=\"editor-paragraph\"> Marka sayfalarından <a href=\"/motul\">Motul</a>, <a href=\"/castrol\">Castrol</a> ve <a href=\"/putoline\">Putoline</a> ürünlerini de inceleyebilirsiniz. Ürün seçiminden önce JASO onayını ürün açıklamasından kontrol edin. </p><h2>Yağ Değişiminde Dikkat Edilecekler</h2><ol><li>Motor ılıkken yağı boşaltın; yağ daha rahat akar ve atıkla birlikte kirlilik de tahliye olur.</li><li>Her değişimde <a href=\"/yag-filtresi\">yağ filtresini</a> de yenileyin. Modelinize uygun filtreyi <a href=\"/yag-filtresi\">filtre kategorisinde</a> bulabilirsiniz.</li><li>Boşaltma tapasının contasını ve sıkma torkunu kontrol edin; fazla sıkmak diş yuvasına zarar verir.</li><li>Kılavuzdaki yağ miktarını kullanın, seviye çubuğu veya gözetleme camıyla motor düz konumdayken kontrol edin.</li><li>Yağı karıştırmak yerine aynı özellikte yağla tamamlamaya çalışın.</li></ol><p class=\"editor-paragraph\"> Değişim aralığı kullanıma göre değişir. Birçok üretici yaklaşık 3.000–6.000 km veya yılda bir değişim önerir; şehir içi, kısa mesafe ve yoğun trafik koşullarında süre kısalabilir. <i>Kesin aralık için aracınızın kullanım kılavuzunu esas alın.</i> Bakım sırasında zincir durumunu da kontrol etmek isterseniz <a href=\"/blog/motosiklet-zincir-disli-seti-secimi-ve-degisim-rehberi\">zincir dişli seti rehberimiz</a> işinize yarar. Diğer ürünler için <a href=\"/bakim-urunleri\">bakım ürünleri</a> sayfasına bakabilirsiniz. </p><h2>Sık Sorulan Sorular</h2><h3>Otomobil motor yağını motosiklette kullanabilir miyim?</h3><p class=\"editor-paragraph\"> Önerilmez. Otomobil yağlarındaki sürtünme azaltıcı katkılar ıslak debriyajda kaymaya yol açabilir. Ayrıca motosiklet motorları yüksek devirde çalıştığı için yağdan daha fazla kayma ve ısı dayanımı beklenir. JASO onaylı motosiklet yağı kullanın. </p><h3>Scooterda MA yağ kullanırsam ne olur?</h3><p class=\"editor-paragraph\"> Üretici MB öneriyorsa MA kullanmak genellikle hemen arıza yapmaz ama sürtünme karakteri farklı olduğundan önerilen sınıf tercih edilmelidir. Aksine, ıslak debriyajlı bir motosiklete MB yağ koymak ise kayma riski taşıdığı için kaçınılmalıdır. </p><h3>Yağ markasını değiştirebilir miyim?</h3><p class=\"editor-paragraph\"> Evet, viskozite ve JASO sınıfı uyumluysa marka değiştirmek sorun yaratmaz. Daha fazla soru için <a href=\"/pages/sss\">sıkça sorulan sorular</a> sayfamıza da göz atabilirsiniz. </p><p class=\"editor-paragraph\"> Doğru yağ seçimi, 10W-40 gibi viskozite değerini ve JASO MA ya da MB sınıfını birlikte değerlendirmekten geçer. Emin olmadığınızda kılavuzu kontrol etmek en güvenli yoldur. Modelinize uygun yağ ve filtre konusunda yardım isterseniz <a href=\"/pages/iletisim\">bizimle iletişime geçin</a>; daha fazla bakım içeriği için <a href=\"/blog/motosiklet-rehberleri\">motosiklet rehberlerimizi</a> inceleyebilirsiniz. </p>\n          </div>\n          </html>\n  ",
+  "contentData": "{\"time\":1792020075040,\"blocks\":[{\"id\":\"qhfdr00001\",\"type\":\"paragraph\",\"data\":{\"text\":\"Motosiklet yağı kutusunun üzerinde \\\"10W-40\\\", \\\"JASO MA2\\\" ya da \\\"MB\\\" gibi ifadeler görürsünüz. Çoğu kullanıcı yalnızca viskoziteye bakıp yağı seçiyor; oysa motosikletlerde yağ aynı zamanda debriyajı ve şanzımanı da yağlıyor. Yanlış yağ debriyajın kaymasına, vites geçişlerinde sertliğe ve erken aşınmaya yol açabilir. Bu rehberde 10W-40'ın ne anlama geldiğini, <b>JASO MA ile MB arasındaki farkı</b> ve motosikletinize uygun yağı nasıl seçeceğinizi anlatıyoruz.\"}},{\"id\":\"qhfdr00002\",\"type\":\"header\",\"data\":{\"text\":\"10W-40 Ne Anlama Geliyor?\",\"level\":2}},{\"id\":\"qhfdr00003\",\"type\":\"paragraph\",\"data\":{\"text\":\"Bu ifade SAE viskozite sınıfıdır ve yağın akışkanlığını gösterir. İki bölümden oluşur:\"}},{\"id\":\"qhfdr00004\",\"type\":\"list\",\"data\":{\"style\":\"unordered\",\"items\":[\"<b>10W:</b> Soğukta akışkanlık değeridir. \\\"W\\\" kış (winter) anlamına gelir. Sayı küçüldükçe yağ soğukta daha rahat akar ve ilk çalıştırmada motor daha hızlı yağlanır.\",\"<b>40:</b> Motor çalışma sıcaklığındaki (yaklaşık 100 °C) viskozite sınıfıdır. Sayı büyüdükçe yağ sıcakta daha kalın bir film tabakası oluşturur.\"]}},{\"id\":\"qhfdr00005\",\"type\":\"paragraph\",\"data\":{\"text\":\"10W-40, Türkiye iklimi ve çoğu 125–400 cc motosiklet için yaygın kullanılan bir sınıftır. Yine de üretici 10W-30, 10W-50 ya da 15W-50 gibi farklı bir değer belirtmiş olabilir. <i>Kesin viskozite için aracınızın kullanım kılavuzunu esas alın.</i>\"}},{\"id\":\"qhfdr00006\",\"type\":\"header\",\"data\":{\"text\":\"JASO MA ve MB Farkı Nedir?\",\"level\":2}},{\"id\":\"qhfdr00007\",\"type\":\"paragraph\",\"data\":{\"text\":\"JASO, Japonya'da geliştirilen ve özellikle 4 zamanlı motosiklet yağları için kullanılan bir standarttır. Yağın debriyaj sürtünme karakterini ölçer. Otomobil yağlarında genellikle sürtünmeyi azaltan katkılar bulunur; bu katkılar motosikletin yağlı (ıslak) debriyajında kaymaya sebep olabilir. JASO bu yüzden önemlidir.\"}},{\"id\":\"qhfdr00008\",\"type\":\"table\",\"data\":{\"withHeadings\":true,\"content\":[[\"<b>Özellik</b>\",\"<b>JASO MA / MA1 / MA2</b>\",\"<b>JASO MB</b>\"],[\"Debriyaj türü\",\"Islak, çok diskli debriyaj\",\"Genellikle kuru debriyaj veya CVT varyatör\"],[\"Sürtünme karakteri\",\"Yüksek sürtünme, debriyaj tutuşu net\",\"Düşük sürtünme\"],[\"Tipik kullanım\",\"Vitesli motosikletler, bazı maxi scooterlar\",\"Çoğu otomatik scooter\"],[\"Dikkat\",\"MA2 daha yüksek sürtünme aralığındadır\",\"Vitesli motosiklette debriyaj kaymasına neden olabilir\"]]}},{\"id\":\"qhfdr00009\",\"type\":\"paragraph\",\"data\":{\"text\":\"Kısaca: motor, şanzıman ve debriyaj aynı yağı paylaşıyorsa <b>MA</b>, motor yağı ayrı ve debriyaj kuru çalışıyorsa genellikle <b>MB</b> aranır. Ancak bazı scooter üreticileri MA yağ da önerebilir. Bu yüzden kutudaki etiketten çok kılavuzdaki özelliğe bakın.\"}},{\"id\":\"qhfdr0000a\",\"type\":\"header\",\"data\":{\"text\":\"Hangi Motosiklete Hangi Yağ?\",\"level\":2}},{\"id\":\"qhfdr0000b\",\"type\":\"header\",\"data\":{\"text\":\"Vitesli motosikletler\",\"level\":3}},{\"id\":\"qhfdr0000c\",\"type\":\"paragraph\",\"data\":{\"text\":\"Pulsar, CBF, R25, MT-25 gibi vitesli modellerde motor, debriyaj ve şanzıman ortak yağlanır. Burada JASO MA veya MA2 onaylı bir 4T yağ gerekir. Spor kullanımda ya da sıcak havada daha yüksek sınıf (ör. 10W-50) gündeme gelebilir, ancak bu karar üretici önerisine göre verilmelidir.\"}},{\"id\":\"qhfdr0000d\",\"type\":\"header\",\"data\":{\"text\":\"Scooterlar\",\"level\":3}},{\"id\":\"qhfdr0000e\",\"type\":\"paragraph\",\"data\":{\"text\":\"PCX, NMAX gibi otomatik scooterlarda genellikle kuru debriyaj ve varyatör sistemi bulunur; bu modellerde MB sınıfı yağ öne çıkar. Modelinize özel bakım detayları için <a href=\\\"/blog/honda-pcx-125-yedek-parca-rehberi\\\">Honda PCX 125 rehberimize</a> ve <a href=\\\"/blog/yamaha-nmax-125-bakim-ve-yedek-parca-rehberi\\\">Yamaha NMAX 125 bakım rehberimize</a> göz atabilirsiniz.\"}},{\"id\":\"qhfdr0000f\",\"type\":\"header\",\"data\":{\"text\":\"Mineral, Yarı Sentetik ve Tam Sentetik Yağ\",\"level\":2}},{\"id\":\"qhfdr0000g\",\"type\":\"paragraph\",\"data\":{\"text\":\"Baz yağ tipi, yağın ısıya dayanımını ve değişim aralığını etkiler. Mineral yağlar günlük ve düşük yükteki kullanım için yeterlidir. Yarı sentetikler daha kararlı bir film sağlar. Tam sentetikler yüksek devir, sıcak hava ve yoğun şehir içi kullanımda ısıl dayanıklılıkta öne çıkar. Hangisini seçerseniz seçin, JASO ve viskozite uyumu önceliklidir.\"}},{\"id\":\"qhfdr0000h\",\"type\":\"image\",\"data\":{\"file\":{\"url\":\"__IMG_collage__\"},\"caption\":\"10W-40 motosiklet yağı seçenekleri – Soydaş Motosiklet\",\"withBorder\":false,\"stretched\":false,\"withBackground\":false}},{\"id\":\"qhfdr0000i\",\"type\":\"paragraph\",\"data\":{\"text\":\"Mağazamızdaki <a href=\\\"/yaglar\\\">yağ kategorisinde</a> farklı ihtiyaçlara yönelik seçenekler var:\"}},{\"id\":\"qhfdr0000j\",\"type\":\"list\",\"data\":{\"style\":\"unordered\",\"items\":[\"Scooter kullanıcıları için <a href=\\\"/motul-scooter-expert-mb-4t-10w-40-motosiklet-yagi-1-lt\\\">Motul Scooter Expert MB 10W-40</a> MB sınıfında bir seçenektir; MA gerektiren scooterlar için <a href=\\\"/motul-scooter-expert-ma-4t-10w-40-motosiklet-yagi-1-lt\\\">Scooter Expert MA</a> de mevcuttur.\",\"Vitesli modellerde günlük kullanım için <a href=\\\"/castrol-power-1-4t-10w-40-motosiklet-yagi-1-lt\\\">Castrol Power 1 4T 10W-40</a> veya <a href=\\\"/motul-5100-4t-10w-40-motosiklet-yagi-1-lt\\\">Motul 5100 10W-40</a> değerlendirilebilir.\",\"Daha sıcak ve yüksek performanslı kullanımda <a href=\\\"/motul-7100-4t-10w-40-motosiklet-yagi-1-lt\\\">Motul 7100</a> veya <a href=\\\"/putoline-n-tech-pro-r-10w-40-tam-sentetik-motosiklet-yagi-1-lt\\\">Putoline N-Tech Pro R 10W-40</a> gibi tam sentetik yağlara bakabilirsiniz.\"]}},{\"id\":\"qhfdr0000k\",\"type\":\"paragraph\",\"data\":{\"text\":\"Marka sayfalarından <a href=\\\"/motul\\\">Motul</a>, <a href=\\\"/castrol\\\">Castrol</a> ve <a href=\\\"/putoline\\\">Putoline</a> ürünlerini de inceleyebilirsiniz. Ürün seçiminden önce JASO onayını ürün açıklamasından kontrol edin.\"}},{\"id\":\"qhfdr0000l\",\"type\":\"header\",\"data\":{\"text\":\"Yağ Değişiminde Dikkat Edilecekler\",\"level\":2}},{\"id\":\"qhfdr0000m\",\"type\":\"list\",\"data\":{\"style\":\"ordered\",\"items\":[\"Motor ılıkken yağı boşaltın; yağ daha rahat akar ve atıkla birlikte kirlilik de tahliye olur.\",\"Her değişimde <a href=\\\"/yag-filtresi\\\">yağ filtresini</a> de yenileyin. Modelinize uygun filtreyi <a href=\\\"/yag-filtresi\\\">filtre kategorisinde</a> bulabilirsiniz.\",\"Boşaltma tapasının contasını ve sıkma torkunu kontrol edin; fazla sıkmak diş yuvasına zarar verir.\",\"Kılavuzdaki yağ miktarını kullanın, seviye çubuğu veya gözetleme camıyla motor düz konumdayken kontrol edin.\",\"Yağı karıştırmak yerine aynı özellikte yağla tamamlamaya çalışın.\"]}},{\"id\":\"qhfdr0000n\",\"type\":\"paragraph\",\"data\":{\"text\":\"Değişim aralığı kullanıma göre değişir. Birçok üretici yaklaşık 3.000–6.000 km veya yılda bir değişim önerir; şehir içi, kısa mesafe ve yoğun trafik koşullarında süre kısalabilir. <i>Kesin aralık için aracınızın kullanım kılavuzunu esas alın.</i> Bakım sırasında zincir durumunu da kontrol etmek isterseniz <a href=\\\"/blog/motosiklet-zincir-disli-seti-secimi-ve-degisim-rehberi\\\">zincir dişli seti rehberimiz</a> işinize yarar. Diğer ürünler için <a href=\\\"/bakim-urunleri\\\">bakım ürünleri</a> sayfasına bakabilirsiniz.\"}},{\"id\":\"qhfdr0000o\",\"type\":\"header\",\"data\":{\"text\":\"Sık Sorulan Sorular\",\"level\":2}},{\"id\":\"qhfdr0000p\",\"type\":\"header\",\"data\":{\"text\":\"Otomobil motor yağını motosiklette kullanabilir miyim?\",\"level\":3}},{\"id\":\"qhfdr0000q\",\"type\":\"paragraph\",\"data\":{\"text\":\"Önerilmez. Otomobil yağlarındaki sürtünme azaltıcı katkılar ıslak debriyajda kaymaya yol açabilir. Ayrıca motosiklet motorları yüksek devirde çalıştığı için yağdan daha fazla kayma ve ısı dayanımı beklenir. JASO onaylı motosiklet yağı kullanın.\"}},{\"id\":\"qhfdr0000r\",\"type\":\"header\",\"data\":{\"text\":\"Scooterda MA yağ kullanırsam ne olur?\",\"level\":3}},{\"id\":\"qhfdr0000s\",\"type\":\"paragraph\",\"data\":{\"text\":\"Üretici MB öneriyorsa MA kullanmak genellikle hemen arıza yapmaz ama sürtünme karakteri farklı olduğundan önerilen sınıf tercih edilmelidir. Aksine, ıslak debriyajlı bir motosiklete MB yağ koymak ise kayma riski taşıdığı için kaçınılmalıdır.\"}},{\"id\":\"qhfdr0000t\",\"type\":\"header\",\"data\":{\"text\":\"Yağ markasını değiştirebilir miyim?\",\"level\":3}},{\"id\":\"qhfdr0000u\",\"type\":\"paragraph\",\"data\":{\"text\":\"Evet, viskozite ve JASO sınıfı uyumluysa marka değiştirmek sorun yaratmaz. Daha fazla soru için <a href=\\\"/pages/sss\\\">sıkça sorulan sorular</a> sayfamıza da göz atabilirsiniz.\"}},{\"id\":\"qhfdr0000v\",\"type\":\"paragraph\",\"data\":{\"text\":\"Doğru yağ seçimi, 10W-40 gibi viskozite değerini ve JASO MA ya da MB sınıfını birlikte değerlendirmekten geçer. Emin olmadığınızda kılavuzu kontrol etmek en güvenli yoldur. Modelinize uygun yağ ve filtre konusunda yardım isterseniz <a href=\\\"/pages/iletisim\\\">bizimle iletişime geçin</a>; daha fazla bakım içeriği için <a href=\\\"/blog/motosiklet-rehberleri\\\">motosiklet rehberlerimizi</a> inceleyebilirsiniz.\"}}],\"version\":\"2.28.2\"}",
+  "removedLinks": []
 }
