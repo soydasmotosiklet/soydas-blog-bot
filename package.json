@@ -1,0 +1,18 @@
+{
+  "name": "soydas-blog-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "soydasmotosiklet.com için günlük blog taslağı hazırlayıp onayla ikas'ta yayınlayan bot",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test-ikas": "node src/cli.js test-ikas",
+    "draft": "node src/cli.js draft",
+    "publish": "node src/cli.js publish",
+    "test": "node --test test/*.test.js",
+    "test:e2e": "node test/e2e-mock.mjs"
+  },
+  "dependencies": {
+    "sharp": "0.33.5"
+  }
+}
