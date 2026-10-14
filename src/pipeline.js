@@ -1,9 +1,15 @@
-// Taslak oluşturma ve yayınlama akışı.
+// Taslak oluşturma, onay ve yayın takibi.
+//
+// ikas'ın resmi API'si blog işlemlerine izin vermediği için akış şöyle:
+//   1) Bulut (GitHub Actions): yazı + görseller hazırlanır → drafts/<slug>/ klasörüne kaydedilir → onay issue'su açılır.
+//   2) Siz issue'ya /yayinla yazarsınız → taslak "onaylı" işaretlenir.
+//   3) ikas panelinde "Blog Yayınla" yer imine tıklarsınız (ya da Claude'a söylersiniz) →
+//      browser/ikas-yayinla.js onaylı taslakları sizin oturumunuzla ikas'a ekler.
+//   4) Saatlik senkron: yayına giren taslaklar temizlenir, issue kapatılır.
 import fs from 'node:fs';
 import path from 'node:path';
 import { config } from './config.js';
-import * as ikas from './ikas.js';
-import { loadSiteIndex, relevantProducts, productImageUrl, urlOk, fold } from './site.js';
+import { loadSiteIndex, relevantProducts, productImageUrl, urlOk, fold, publishedBlogSlugs } from './site.js';
 import { generatePost, pickModel } from './content.js';
 import { searchPhotos, downloadPhoto, makeCover, makeProductCover, makeInline, makeCollage, credit, servedSize } from './images.js';
 import { renderBlocksHtml, wrapContent, toContentData, blocksToMarkdown, blockId } from './render.js';
@@ -11,21 +17,31 @@ import { renderBlocksHtml, wrapContent, toContentData, blocksToMarkdown, blockId
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const DRAFTS = path.join(ROOT, 'drafts');
 const STATE = path.join(ROOT, 'state', 'published.json');
+const REPO = process.env.GITHUB_REPOSITORY || 'soydasmotosiklet/soydas-blog-bot';
+const RAW = `https://raw.githubusercontent.com/${REPO}/main`;
+
+export const IMG = (key) => `__IMG_${key}__`; // tarayıcıda ikas CDN adresiyle değiştirilir
 
 const readJson = (f, d) => (fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : d);
 const writeJson = (f, v) => { fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, JSON.stringify(v, null, 2) + '\n'); };
 const log = (...a) => console.error('•', ...a);
 
-export function pickTopic(existingTitles) {
+export function listDrafts() {
+  if (!fs.existsSync(DRAFTS)) return [];
+  return fs.readdirSync(DRAFTS)
+    .filter((d) => fs.existsSync(path.join(DRAFTS, d, 'draft.json')))
+    .map((d) => readJson(path.join(DRAFTS, d, 'draft.json')));
+}
+
+export function pickTopic(takenKeys) {
   const topics = readJson(path.join(ROOT, 'topics.json'), []);
   const published = readJson(STATE, []).map((p) => fold(p.title));
-  const pending = fs.existsSync(DRAFTS) ? fs.readdirSync(DRAFTS).filter((f) => f.endsWith('.json')).map((f) => readJson(path.join(DRAFTS, f), {}).topic).filter(Boolean).map(fold) : [];
-  const taken = new Set([...existingTitles.map(fold), ...published, ...pending]);
+  const pending = listDrafts().map((d) => fold(d.topic));
+  const taken = new Set([...takenKeys, ...published, ...pending]);
   return topics.find((t) => !taken.has(fold(t))) || null;
 }
 
-async function chooseTopicWithClaude(existingTitles, collections) {
-  // Liste bittiğinde: Claude'a mevcut yazılara ve kategorilere göre yeni konu seçtir.
+async function chooseTopicWithClaude(existing, collections) {
   const res = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
     headers: { 'x-api-key': config.claude.apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
@@ -34,7 +50,7 @@ async function chooseTopicWithClaude(existingTitles, collections) {
       max_tokens: 200,
       messages: [{
         role: 'user',
-        content: `Motosiklet yedek parça/ekipman mağazası blogu için, mevcut yazılarla çakışmayan, Türkiye'de aranan, mağaza kategorileriyle ilgili TEK bir blog başlığı öner. Sadece başlığı yaz.\nMevcut yazılar: ${existingTitles.join(' | ')}\nKategoriler: ${collections.slice(0, 250).join(' ')}`,
+        content: `Motosiklet yedek parça/ekipman mağazası blogu için, mevcut yazılarla çakışmayan, Türkiye'de aranan, mağaza kategorileriyle ilgili TEK bir blog başlığı öner. Sadece başlığı yaz.\nMevcut yazılar: ${existing.join(' | ')}\nKategoriler: ${collections.slice(0, 250).join(' ')}`,
       }],
     }),
   });
@@ -45,7 +61,7 @@ async function chooseTopicWithClaude(existingTitles, collections) {
 function sanitizeLinks(html, allowed, broken) {
   return String(html).replace(/<a href="([^"]*)">(.*?)<\/a>/g, (m, href, text) => {
     if (/^https:\/\/(www\.)?(unsplash|pexels|pixabay)\.com(\/|$)/.test(href)) return m;
-    let p = href.replace(/^https?:\/\/(www\.)?soydasmotosiklet\.com/, '');
+    const p = href.replace(/^https?:\/\/(www\.)?soydasmotosiklet\.com/, '');
     if (!p.startsWith('/') || !allowed.has(p) || broken.has(p)) return text;
     return `<a href="${p}">${text}</a>`;
   });
@@ -58,24 +74,19 @@ const collectLinks = (blocks) => {
   return s;
 };
 
-export async function createDraft({ topic: forcedTopic, feedback, skipIkas = false } = {}) {
+export async function createDraft({ topic: forcedTopic, feedback } = {}) {
   log('Site haritası okunuyor…');
   const site = await loadSiteIndex();
+  const liveSlugs = site.blogs.filter((p) => p.startsWith('/blog/')).map((p) => p.slice(6));
+  const existingLabels = liveSlugs.map((s) => s.replace(/-/g, ' '));
 
-  let existing = [];
-  if (!skipIkas) {
-    try { existing = await ikas.listBlogs(); } catch (e) { log('Uyarı: ikas blog listesi alınamadı:', e.message); }
-  }
-  const existingTitles = existing.map((b) => b.title);
-  const existingSlugs = new Set(existing.map((b) => b.metadata?.slug));
-
-  let topic = forcedTopic || pickTopic(existingTitles);
-  if (!topic) topic = await chooseTopicWithClaude(existingTitles, site.collections);
+  let topic = forcedTopic || pickTopic(liveSlugs);
+  if (!topic) topic = await chooseTopicWithClaude(existingLabels, site.collections);
   log('Konu:', topic);
 
   const products = relevantProducts(site.products, topic);
   log(`Claude ile yazı üretiliyor (${products.length} ilgili ürün)…`);
-  const post = await generatePost({ topic, existingTitles, collections: site.collections, products, feedback });
+  const post = await generatePost({ topic, existingTitles: existingLabels, collections: site.collections, products, feedback });
 
   // Linkleri doğrula
   const linkSet = collectLinks(post.blocks);
@@ -86,11 +97,8 @@ export async function createDraft({ topic: forcedTopic, feedback, skipIkas = fal
 
   // Görseller
   log('Görseller hazırlanıyor…');
-  const usedPhotoIds = [];
-  // Ürün fotoğrafları (kolaj ve gerekirse kapak için)
   const productBufs = [];
-  const collagePaths = (post.collageProducts || []).filter((p) => site.all.has(p)).slice(0, 4);
-  for (const p of collagePaths) {
+  for (const p of (post.collageProducts || []).filter((x) => site.all.has(x)).slice(0, 4)) {
     const u = await productImageUrl(p);
     if (!u) continue;
     const r = await fetch(u);
@@ -103,25 +111,16 @@ export async function createDraft({ topic: forcedTopic, feedback, skipIkas = fal
   if (!coverPhoto) coverPhoto = (await searchPhotos('motorcycle'))[0];
   let coverBuf;
   if (coverPhoto) {
-    usedPhotoIds.push(coverPhoto.id);
     coverBuf = await makeCover(await downloadPhoto(coverPhoto, { w: '2400', q: '85', fm: 'jpg' }));
   } else {
     log('Fotoğraf sağlayıcısı yok/sonuç yok: kapak ürün fotoğraflarından üretiliyor.');
     coverBuf = await makeProductCover(productBufs);
   }
-
-  let inlinePhoto = (await searchPhotos(post.inlineQuery, { exclude: usedPhotoIds }))[0];
-  if (!inlinePhoto && coverPhoto) inlinePhoto = (await searchPhotos(post.coverQueryAlt || 'motorcycle maintenance', { exclude: usedPhotoIds }))[0];
+  let inlinePhoto = (await searchPhotos(post.inlineQuery, { exclude: coverPhoto ? [coverPhoto.id] : [] }))[0];
+  if (!inlinePhoto && coverPhoto) inlinePhoto = (await searchPhotos(post.coverQueryAlt || 'motorcycle maintenance', { exclude: [coverPhoto.id] }))[0];
   const inlineBuf = inlinePhoto ? await makeInline(await downloadPhoto(inlinePhoto, { w: '1600', q: '85', fm: 'jpg' })) : null;
 
-  // ikas'a yükle (yüklemek yayınlamak değildir; görseller sadece CDN'de durur)
-  const upload = async (buf) => (skipIkas ? null : ikas.uploadImage(buf));
-  const coverImageId = await upload(coverBuf);
-  const inlineId = inlineBuf ? await upload(inlineBuf) : null;
-  const collageId = collageBuf ? await upload(collageBuf) : null;
-  const urlOf = (id, localName) => (id ? ikas.cdnUrl(id) : `local:${localName}`);
-
-  // Blokları Editor.js formatına çevir
+  // Blokları Editor.js formatına çevir (görsel adresleri yer tutucu)
   const imageSizes = {};
   const blocks = [];
   for (const b of post.blocks) {
@@ -132,56 +131,59 @@ export async function createDraft({ topic: forcedTopic, feedback, skipIkas = fal
       const rows = b.rows.map((r, i) => r.map((c) => (i === 0 ? `<b>${clean(c).replace(/<\/?b>/g, '')}</b>` : clean(c))));
       blocks.push({ id: blockId(), type: 'table', data: { withHeadings: true, content: rows } });
     } else if (b.type === 'image_slot') {
-      if (b.slot === 'collage' && collageBuf) {
-        const url = urlOf(collageId, 'collage.jpg');
-        imageSizes[url] = servedSize(1200, 400);
-        blocks.push({ id: blockId(), type: 'image', data: { file: { url }, caption: b.caption || '', withBorder: false, stretched: false, withBackground: false } });
-      } else if (b.slot === 'photo' && inlineBuf) {
-        const url = urlOf(inlineId, 'inline.jpg');
-        imageSizes[url] = servedSize(1200, 750);
+      if (b.slot === 'collage' && collageBuf && !imageSizes[IMG('collage')]) {
+        imageSizes[IMG('collage')] = servedSize(1200, 400);
+        blocks.push({ id: blockId(), type: 'image', data: { file: { url: IMG('collage') }, caption: b.caption || '', withBorder: false, stretched: false, withBackground: false } });
+      } else if (b.slot === 'photo' && inlineBuf && !imageSizes[IMG('inline')]) {
+        imageSizes[IMG('inline')] = servedSize(1200, 750);
         const cap = `${b.caption ? b.caption + ' ' : ''}(${credit(inlinePhoto)})`;
-        blocks.push({ id: blockId(), type: 'image', data: { file: { url }, caption: cap, withBorder: false, stretched: false, withBackground: false } });
+        blocks.push({ id: blockId(), type: 'image', data: { file: { url: IMG('inline') }, caption: cap, withBorder: false, stretched: false, withBackground: false } });
       }
     }
   }
   if (coverPhoto) blocks.push({ id: blockId(), type: 'paragraph', data: { text: `<i>${credit(coverPhoto, 'Kapak fotoğrafı')}</i>` } });
 
   let slug = fold(post.slug || topic);
-  if (existingSlugs.has(slug) || (!skipIkas && (await ikas.checkSlug(slug)))) slug = `${slug}-${new Date().getFullYear()}`;
+  if (liveSlugs.includes(slug) || listDrafts().some((d) => d.slug === slug)) slug = `${slug}-${new Date().getFullYear()}`;
+
+  const dir = path.join(DRAFTS, slug);
+  fs.mkdirSync(dir, { recursive: true });
+  const images = { cover: 'cover.jpg' };
+  fs.writeFileSync(path.join(dir, 'cover.jpg'), coverBuf);
+  if (inlineBuf && imageSizes[IMG('inline')]) { fs.writeFileSync(path.join(dir, 'inline.jpg'), inlineBuf); images.inline = 'inline.jpg'; }
+  if (collageBuf && imageSizes[IMG('collage')]) { fs.writeFileSync(path.join(dir, 'collage.jpg'), collageBuf); images.collage = 'collage.jpg'; }
 
   const draft = {
     topic,
+    approved: false,
     createdAt: new Date().toISOString(),
     model: post.model,
     title: topic,
     slug,
     shortDescription: post.shortDescription,
     seoTitle: post.seoTitle,
-    seoDescription: post.seoDescription.slice(0, 160),
-    coverImageId,
+    seoDescription: String(post.seoDescription).slice(0, 160),
+    images,
     coverPhoto: coverPhoto ? { provider: coverPhoto.provider, id: coverPhoto.id, user: coverPhoto.user.name, link: coverPhoto.links.html } : null,
-    inlinePhoto: inlinePhoto ? { id: inlinePhoto.id, user: inlinePhoto.user.name, link: inlinePhoto.links.html } : null,
     blocks,
     contentHtml: wrapContent(renderBlocksHtml(blocks, imageSizes)),
     contentData: toContentData(blocks),
     removedLinks: [...broken],
   };
-  writeJson(path.join(DRAFTS, `${slug}.json`), draft);
-  if (skipIkas) {
-    fs.mkdirSync(path.join(ROOT, 'out'), { recursive: true });
-    fs.writeFileSync(path.join(ROOT, 'out', 'cover.jpg'), coverBuf);
-    if (inlineBuf) fs.writeFileSync(path.join(ROOT, 'out', 'inline.jpg'), inlineBuf);
-    if (collageBuf) fs.writeFileSync(path.join(ROOT, 'out', 'collage.jpg'), collageBuf);
-  }
+  writeJson(path.join(dir, 'draft.json'), draft);
   return draft;
 }
 
 export function draftIssueBody(draft) {
   const c = (v) => String(v ?? '').replace(/\|/g, '\\|');
   const words = draft.blocks.map((b) => JSON.stringify(b.data)).join(' ').replace(/<[^>]+>/g, ' ').split(/\s+/).length;
-  const cover = draft.coverImageId ? `![Kapak](${ikas.cdnUrl(draft.coverImageId)})` : '_(kapak yerelde üretildi)_';
+  const base = `${RAW}/drafts/${draft.slug}`;
+  const md = blocksToMarkdown(draft.blocks).replace(/__IMG_(\w+)__/g, (m, k) => `${base}/${draft.images[k]}`);
+  const src = draft.coverPhoto
+    ? `[${draft.coverPhoto.user} / ${{ pexels: 'Pexels', pixabay: 'Pixabay', unsplash: 'Unsplash' }[draft.coverPhoto.provider]}](${draft.coverPhoto.link})`
+    : 'Mağaza ürün fotoğraflarından üretildi';
   return `<!-- draft:${draft.slug} -->
-${cover}
+![Kapak](${base}/cover.jpg)
 
 | Alan | Değer |
 | --- | --- |
@@ -191,38 +193,50 @@ ${cover}
 | SEO başlığı | ${c(draft.seoTitle)} |
 | SEO açıklaması | ${c(draft.seoDescription)} |
 | Yaklaşık kelime | ${words} |
-| Kapak fotoğrafı | ${draft.coverPhoto ? `[${draft.coverPhoto.user} / ${{ pexels: 'Pexels', pixabay: 'Pixabay', unsplash: 'Unsplash' }[draft.coverPhoto.provider]}](${draft.coverPhoto.link})` : 'Mağaza ürün fotoğraflarından üretildi'} |
+| Kapak görseli | ${src} |
 ${draft.removedLinks.length ? `| Kaldırılan geçersiz linkler | ${draft.removedLinks.join(', ')} |\n` : ''}
-**Yayınlamak için** bu sayfaya \`/yayinla\` yazın.
-**Yeniden yazdırmak için** \`/yeniden\` ve isteğinizi yazın (ör. \`/yeniden daha kısa olsun, tabloya fiyat aralığı ekleme\`).
+**Onaylamak için** bu sayfaya \`/yayinla\` yazın. Ardından ikas panelinde **Blog Yayınla** yer imine tıklayın (veya Claude'a "onaylı blogları yayınla" deyin).
+**Yeniden yazdırmak için** \`/yeniden\` ve isteğinizi yazın (ör. \`/yeniden daha kısa olsun\`).
 **Vazgeçmek için** \`/iptal\` yazın.
 
 ---
 
 # ${draft.title}
 
-${blocksToMarkdown(draft.blocks)}
+${md}
 `;
 }
 
-export async function publishDraft(slug) {
-  const file = path.join(DRAFTS, `${slug}.json`);
-  if (!fs.existsSync(file)) throw new Error(`Taslak bulunamadı: ${slug}`);
-  const draft = readJson(file);
-  if (!draft.coverImageId) throw new Error('Taslakta kapak görseli yok (ikas\'a yüklenmemiş).');
-  const id = await ikas.saveBlog(ikas.buildBlogInput(draft));
-  const state = readJson(STATE, []);
-  state.push({ id, title: draft.title, slug: draft.slug, publishedAt: new Date().toISOString() });
-  writeJson(STATE, state);
-  fs.unlinkSync(file);
-  return { id, url: `${config.store.siteUrl}/blog/${draft.slug}` };
+export function approveDraft(slug) {
+  const f = path.join(DRAFTS, slug, 'draft.json');
+  if (!fs.existsSync(f)) throw new Error(`Taslak bulunamadı: ${slug}`);
+  const d = readJson(f);
+  d.approved = true;
+  d.approvedAt = new Date().toISOString();
+  writeJson(f, d);
+  return d;
 }
 
 export function discardDraft(slug) {
-  const file = path.join(DRAFTS, `${slug}.json`);
-  if (fs.existsSync(file)) fs.unlinkSync(file);
+  fs.rmSync(path.join(DRAFTS, slug), { recursive: true, force: true });
 }
 
 export function getDraft(slug) {
-  return readJson(path.join(DRAFTS, `${slug}.json`), null);
+  return readJson(path.join(DRAFTS, slug, 'draft.json'), null);
+}
+
+// Sitede yayına girmiş taslakları bul, kayda geçir ve klasörlerini sil.
+export async function syncPublished() {
+  const live = await publishedBlogSlugs();
+  const done = [];
+  for (const d of listDrafts()) {
+    if (live.has(d.slug)) {
+      const state = readJson(STATE, []);
+      state.push({ title: d.title, slug: d.slug, publishedAt: new Date().toISOString() });
+      writeJson(STATE, state);
+      discardDraft(d.slug);
+      done.push({ slug: d.slug, title: d.title, url: `${config.store.siteUrl}/blog/${d.slug}` });
+    }
+  }
+  return done;
 }

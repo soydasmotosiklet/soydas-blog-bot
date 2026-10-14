@@ -1,12 +1,14 @@
 #!/usr/bin/env node
 // Kullanım:
-//   node src/cli.js test-ikas                 → ikas API bağlantısını ve blog yetkisini test eder
-//   node src/cli.js draft [--topic "..."] [--feedback "..."] [--dry]
-//   node src/cli.js publish <slug>
+//   node src/cli.js draft [--topic "..."] [--feedback "..."]
+//   node src/cli.js approve <slug>
 //   node src/cli.js discard <slug>
+//   node src/cli.js topic-of <slug>
+//   node src/cli.js sync            → sitede yayına girenleri temizler (out/synced.json)
+//   node src/cli.js test-ikas       → ikas resmi API kontrolü (bilgi amaçlı)
 import fs from 'node:fs';
 import * as ikas from './ikas.js';
-import { createDraft, draftIssueBody, publishDraft, discardDraft, getDraft } from './pipeline.js';
+import { createDraft, draftIssueBody, approveDraft, discardDraft, getDraft, syncPublished } from './pipeline.js';
 
 const [, , cmd, ...rest] = process.argv;
 const arg = (name) => {
@@ -17,72 +19,15 @@ const setOutput = (k, v) => {
   if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, `${k}<<__EOF__\n${v}\n__EOF__\n`);
 };
 
-async function testEndpoints() {
-  // Resmi API'de blog yoksa: aynı token'la ikas panelinin kullandığı uç noktaları dene.
-  const { config } = await import('./config.js');
-  const urls = ['https://api.myikas.com/api/admin/graphql', 'https://api.myikas.com/api/v1/admin/graphql'];
-  for (const u of urls) {
-    config.ikas.graphqlUrl = u;
-    try {
-      const blogs = await ikas.listBlogs();
-      console.log(`   ✓ ${u} → ${blogs.length} blog:`, blogs.map((b) => b.title).join(' | '));
-      try {
-        const d = await ikas.gql(`query getImageUploadUrl($imageDir: String, $imageId: String!) { getImageUploadUrl(imageDir: $imageDir, imageId: $imageId) }`, { imageId: crypto.randomUUID() }, 'getImageUploadUrl');
-        console.log('     ✓ görsel yükleme:', d.getImageUploadUrl ? 'destekleniyor' : 'boş');
-      } catch (e) { console.log('     ✗ görsel yükleme:', e.message.slice(0, 200)); }
-      return u;
-    } catch (e) {
-      console.log(`   ✗ ${u} →`, e.message.slice(0, 250));
-    }
-  }
-  return null;
-}
-
 async function testIkas() {
   console.log('1) Token alınıyor…');
   await ikas.getToken();
   console.log('   ✓ Token alındı.');
   console.log('2) API şeması inceleniyor…');
-  let schema;
-  try {
-    schema = await ikas.introspect();
-  } catch (e) {
-    console.log('   ! Şema okunamadı:', e.message);
-  }
-  if (schema) {
-    const pick = (l) => l.filter((n) => /blog|image|upload|storefront/i.test(n));
-    console.log('   Blog/görsel sorguları :', pick(schema.queries).join(', ') || '(yok)');
-    console.log('   Blog/görsel işlemleri :', pick(schema.mutations).join(', ') || '(yok)');
-    for (const t of ['BlogInput', 'Blog']) {
-      try {
-        const d = await ikas.describeType(t);
-        if (d) console.log(`   ${t} alanları:`, (d.inputFields || d.fields || []).map((f) => f.name).join(', '));
-      } catch {}
-    }
-  }
-  console.log('3) Blog listesi okunuyor…');
-  try {
-    const blogs = await ikas.listBlogs();
-    console.log(`   ✓ ${blogs.length} blog bulundu:`, blogs.map((b) => b.title).join(' | '));
-  } catch (e) {
-    console.log('   ✗ Blog listesi okunamadı:', e.message);
-  }
-  console.log('3b) Alternatif uç noktalar deneniyor…');
-  const alt = await testEndpoints();
-  if (alt) console.log('   → Çalışan uç nokta:', alt, '(IKAS_GRAPHQL_URL olarak kullanılabilir)');
-  const { config: cfg } = await import('./config.js');
-  cfg.ikas.graphqlUrl = process.env.IKAS_GRAPHQL_URL || 'https://api.myikas.com/api/v2/admin/graphql';
-  console.log('4) Görsel yükleme adresi isteniyor (dosya yüklenmez)…');
-  try {
-    const d = await ikas.gql(
-      `query getImageUploadUrl($imageDir: String, $imageId: String!) { getImageUploadUrl(imageDir: $imageDir, imageId: $imageId) }`,
-      { imageId: crypto.randomUUID() },
-      'getImageUploadUrl',
-    );
-    console.log(d.getImageUploadUrl ? '   ✓ Görsel yükleme destekleniyor.' : '   ✗ Boş yanıt.');
-  } catch (e) {
-    console.log('   ✗ Görsel yükleme adresi alınamadı:', e.message);
-  }
+  const schema = await ikas.introspect();
+  const pick = (l) => l.filter((n) => /blog|image|upload/i.test(n));
+  console.log('   Blog/görsel sorguları :', pick(schema.queries).join(', ') || '(yok)');
+  console.log('   Blog/görsel işlemleri :', pick(schema.mutations).join(', ') || '(yok)');
 }
 
 async function main() {
@@ -90,20 +35,17 @@ async function main() {
     case 'test-ikas':
       return testIkas();
     case 'draft': {
-      const draft = await createDraft({ topic: arg('topic'), feedback: arg('feedback'), skipIkas: rest.includes('--dry') });
-      const body = draftIssueBody(draft);
+      const draft = await createDraft({ topic: arg('topic'), feedback: arg('feedback') });
       fs.mkdirSync('out', { recursive: true });
-      fs.writeFileSync('out/issue.md', body);
+      fs.writeFileSync('out/issue.md', draftIssueBody(draft));
       setOutput('slug', draft.slug);
       setOutput('title', draft.title);
       console.log(`Taslak hazır: ${draft.title} (${draft.slug})`);
       return;
     }
-    case 'publish': {
-      const slug = rest[0];
-      const r = await publishDraft(slug);
-      setOutput('url', r.url);
-      console.log(`Yayınlandı: ${r.url}`);
+    case 'approve': {
+      const d = approveDraft(rest[0]);
+      console.log('Onaylandı:', d.title);
       return;
     }
     case 'discard':
@@ -112,12 +54,18 @@ async function main() {
       return;
     case 'topic-of': {
       const d = getDraft(rest[0]);
-      setOutput('topic', d?.topic || '');
       console.log(d?.topic || '');
       return;
     }
+    case 'sync': {
+      const done = await syncPublished();
+      fs.mkdirSync('out', { recursive: true });
+      fs.writeFileSync('out/synced.json', JSON.stringify(done));
+      console.log(done.length ? `Yayına girenler: ${done.map((d) => d.slug).join(', ')}` : 'Yeni yayın yok.');
+      return;
+    }
     default:
-      console.log('Komutlar: test-ikas | draft [--topic] [--feedback] [--dry] | publish <slug> | discard <slug>');
+      console.log('Komutlar: draft | approve <slug> | discard <slug> | topic-of <slug> | sync | test-ikas');
       process.exitCode = 1;
   }
 }

@@ -11,12 +11,19 @@ async function sitemapPaths(file) {
 }
 
 export async function loadSiteIndex() {
-  const [collections, products, pages] = await Promise.all([
+  const [collections, products, pages, blogs] = await Promise.all([
     sitemapPaths('collections.xml'),
     sitemapPaths('products.xml'),
     sitemapPaths('pages.xml').catch(() => ['/pages/iletisim']),
+    sitemapPaths('blogs.xml').catch(() => []),
   ]);
-  return { collections, products, pages, all: new Set([...collections, ...products, ...pages]) };
+  return { collections, products, pages, blogs, all: new Set([...collections, ...products, ...pages]) };
+}
+
+// Sitede yayında olan blog slug'ları (sitemap gerçek zamanlı güncelleniyor)
+export async function publishedBlogSlugs() {
+  const paths = await sitemapPaths('blogs.xml');
+  return new Set(paths.filter((p) => p.startsWith('/blog/')).map((p) => p.slice(6)));
 }
 
 export const fold = (s) =>
