@@ -1,0 +1,303 @@
+{
+  "topic": "Motosiklet Fren Balatası Ne Zaman Değişir?",
+  "approved": false,
+  "createdAt": "2026-10-15T06:14:46.325Z",
+  "model": "claude-sonnet-5-5",
+  "title": "Motosiklet Fren Balatası Ne Zaman Değişir?",
+  "slug": "motosiklet-fren-balatasi-ne-zaman-degisir",
+  "shortDescription": "Fren balatasının değişim zamanını gösteren belirtiler, kalınlık kontrolü, balata türleri ve değişim sonrası dikkat edilecekler bu rehberde.",
+  "seoTitle": "Motosiklet Fren Balatası Ne Zaman Değişir? | Soydaş Motosiklet",
+  "seoDescription": "Motosiklet fren balatası ne zaman değişir? Aşınma belirtileri, kalınlık kontrolü, balata türleri ve değişim sonrası ipuçlarını teknisyen gözüyle anlattık.",
+  "images": {
+    "cover": "cover.jpg",
+    "collage": "collage.jpg"
+  },
+  "coverPhoto": null,
+  "blocks": [
+    {
+      "id": "597w300001",
+      "type": "paragraph",
+      "data": {
+        "text": "Fren sistemi, motosikletinizdeki en kritik güvenlik donanımıdır ve balata bu sistemin en hızlı aşınan parçasıdır. Aşınmış bir balata sadece frenleme mesafenizi uzatmaz; zamanla fren diskine de zarar verip masrafı katlar. Peki balata tam olarak ne zaman değişmeli? Bu yazıda belirtileri, kalınlık kontrolünü, ömrü etkileyen faktörleri ve doğru balata seçimini sade bir dille anlatıyoruz."
+      }
+    },
+    {
+      "id": "597w300002",
+      "type": "header",
+      "data": {
+        "text": "Balata Değişim Zamanını Gösteren Belirtiler",
+        "level": 2
+      }
+    },
+    {
+      "id": "597w300003",
+      "type": "paragraph",
+      "data": {
+        "text": "Balata için tek bir kilometre değeri vermek doğru olmaz; sürüş tarzı ve yol koşulları ömrü ciddi biçimde değiştirir. Bu yüzden kilometreden çok belirtilere ve fiziksel ölçüme bakmak gerekir. Aşağıdaki işaretlerden biri varsa balatayı kontrol ettirin:"
+      }
+    },
+    {
+      "id": "597w300004",
+      "type": "list",
+      "data": {
+        "style": "unordered",
+        "items": [
+          "<b>Metalik cızırtı veya gıcırtı:</b> Balata malzemesi bitmiş, metal taşıyıcı plaka diske temas ediyor olabilir.",
+          "<b>Frenin geç tepki vermesi:</b> Manete veya pedala eskisinden daha fazla basmanız gerekiyor.",
+          "<b>Manetin gidona yaklaşması:</b> Balata inceldikçe piston daha fazla ilerler ve manet boşluğu artar.",
+          "<b>Titreşim ve çekme:</b> Düzensiz aşınmış balata veya yüzeyi bozulmuş disk, frenlemede titreme yapar.",
+          "<b>Aşınma çentiği veya indikatörün kaybolması:</b> Birçok balatada bulunan çentik silindiyse değişim zamanı gelmiştir.",
+          "<b>Fren tozu ve parlak (sırlanmış) yüzey:</b> Isınma sonucu sertleşen balata tutuşunu kaybeder."
+        ]
+      }
+    },
+    {
+      "id": "597w300005",
+      "type": "header",
+      "data": {
+        "text": "Balata Kalınlığı Nasıl Kontrol Edilir?",
+        "level": 2
+      }
+    },
+    {
+      "id": "597w300006",
+      "type": "paragraph",
+      "data": {
+        "text": "En güvenilir yöntem, kaliperin içine bakarak balata malzemesinin kalınlığını gözle veya küçük bir el feneriyle kontrol etmektir. Yeni bir balatada sürtünme malzemesi modele göre kabaca 4–8 mm arasındadır. Malzeme yaklaşık 1,5–2 mm'ye düştüğünde beklemeden değiştirmek gerekir. <i>Kesin değer için aracınızın kullanım kılavuzunu esas alın.</i>"
+      }
+    },
+    {
+      "id": "597w300007",
+      "type": "table",
+      "data": {
+        "withHeadings": true,
+        "content": [
+          [
+            "<b>Kalan sürtünme malzemesi</b>",
+            "<b>Durum</b>",
+            "<b>Ne yapmalı?</b>"
+          ],
+          [
+            "4 mm ve üzeri",
+            "İyi",
+            "Rutin kontrole devam edin"
+          ],
+          [
+            "3–4 mm",
+            "Orta",
+            "Yakın zamanda değişim planlayın"
+          ],
+          [
+            "2–3 mm",
+            "Sınırda",
+            "Değişimi geciktirmeyin"
+          ],
+          [
+            "2 mm ve altı",
+            "Kritik",
+            "Hemen değiştirin, sürüşe ara verin"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "597w300008",
+      "type": "paragraph",
+      "data": {
+        "text": "Kontrol sırasında diskin yüzeyine de bakın. Derin çizikler, belirgin basamaklanma veya mavimsi ısı lekeleri varsa disk de gözden geçirilmeli. Gerekirse <a href=\"/fren-diskleri\">fren diski</a> seçeneklerimize göz atabilirsiniz."
+      }
+    },
+    {
+      "id": "597w400009",
+      "type": "header",
+      "data": {
+        "text": "Balata Ömrünü Neler Belirler?",
+        "level": 2
+      }
+    },
+    {
+      "id": "597w40000a",
+      "type": "paragraph",
+      "data": {
+        "text": "Aynı motosiklette bile ön ve arka balata farklı hızda aşınır; ön fren frenleme kuvvetinin büyük kısmını üstlendiği için genellikle daha çabuk biter. Uygulamada ömür, koşullara bağlı olarak birkaç bin kilometreden on binlerce kilometreye kadar değişebilir."
+      }
+    },
+    {
+      "id": "597w40000b",
+      "type": "list",
+      "data": {
+        "style": "unordered",
+        "items": [
+          "<b>Şehir içi dur-kalk trafik:</b> Sık frenleme balatayı hızlı eritir.",
+          "<b>Ağır yük ve yolcu:</b> Fren yükünü artırır.",
+          "<b>Agresif sürüş:</b> Sert ve geç frenleme ısıyı yükseltir.",
+          "<b>Balata türü:</b> Organik, yarı sinterli ve sinterli balatalar farklı aşınır.",
+          "<b>Bakım düzeni:</b> Kirli kaliper ve sıkışan piston düzensiz aşınmaya yol açar."
+        ]
+      }
+    },
+    {
+      "id": "597w40000c",
+      "type": "paragraph",
+      "data": {
+        "text": "Scooter kullanıcıları için model bazlı bakım rehberlerimiz de faydalı olabilir: <a href=\"/blog/honda-pcx-125-yedek-parca-rehberi\">Honda PCX 125 yedek parça rehberi</a> ve <a href=\"/blog/yamaha-nmax-125-bakim-ve-yedek-parca-rehberi\">Yamaha NMAX 125 bakım rehberi</a>."
+      }
+    },
+    {
+      "id": "597w40000d",
+      "type": "header",
+      "data": {
+        "text": "Doğru Balatayı Seçmek",
+        "level": 2
+      }
+    },
+    {
+      "id": "597w40000e",
+      "type": "image",
+      "data": {
+        "file": {
+          "url": "__IMG_collage__"
+        },
+        "caption": "Disk balata, balata spreyi ve fren hidrolik sıvısı – Soydaş Motosiklet",
+        "withBorder": false,
+        "stretched": false,
+        "withBackground": false
+      }
+    },
+    {
+      "id": "597w40000f",
+      "type": "paragraph",
+      "data": {
+        "text": "Balata seçerken önce motosikletinizin marka, model ve yılına uygun ölçüyü bulmalısınız. Ardından kullanım amacınıza uygun malzemeyi seçin. Geniş bir yelpazeyi <a href=\"/disk-balata\">disk balata</a> ve <a href=\"/fren-balata\">fren balata</a> kategorilerimizde, tüm seçenekleri ise <a href=\"/balata-grubu\">balata grubu</a> sayfasında bulabilirsiniz."
+      }
+    },
+    {
+      "id": "597w40000g",
+      "type": "table",
+      "data": {
+        "withHeadings": true,
+        "content": [
+          [
+            "<b>Balata türü</b>",
+            "<b>Öne çıkan yanı</b>",
+            "<b>Dikkat edilecek nokta</b>"
+          ],
+          [
+            "Organik",
+            "Sessiz, disk dostu, yumuşak his",
+            "Yoğun ve ağır kullanımda daha hızlı aşınabilir"
+          ],
+          [
+            "Yarı sinterli",
+            "Fiyat-performans dengesi, günlük kullanıma uygun",
+            "Orta düzeyde fren tozu"
+          ],
+          [
+            "Sinterli",
+            "Yüksek ısıda güçlü tutuş",
+            "Diski daha fazla yorabilir"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "597w40000h",
+      "type": "paragraph",
+      "data": {
+        "text": "Örneğin Honda PCX kullanıyorsanız <a href=\"/brenta-organik-on-disk-balata-ft3162-honda-pcx-2021-2024-2025\">Brenta organik ön disk balata</a>, arka tarafta ise kampanalı sistemlerde <a href=\"/monero-arka-fren-balatasi-honda-spacy-activa-s-alpha-dio-pcx-cbf-fizy-rks-spontini\">Monero arka fren balatası</a> gibi uyumlu seçeneklere bakabilirsiniz. Montajdan önce parça uyumunu mutlaka kontrol edin."
+      }
+    },
+    {
+      "id": "597w40000i",
+      "type": "header",
+      "data": {
+        "text": "Değişim Sonrası Dikkat Edilecekler",
+        "level": 2
+      }
+    },
+    {
+      "id": "597w40000j",
+      "type": "list",
+      "data": {
+        "style": "ordered",
+        "items": [
+          "Kaliperi ve pistonları fren temizleme ürünüyle temizleyin; bunun için <a href=\"/balata-spreyi\">balata spreyi</a> ya da <a href=\"/motul-p2-fren-balata-sprey-400-ml\">Motul P2 fren balata spreyi</a> kullanabilirsiniz.",
+          "Diskin yağ ve kirden arındırıldığından emin olun; yağlı yüzey tutuşu bozar.",
+          "Fren hidrolik sıvısı seviyesini ve rengini kontrol edin; gerekiyorsa <a href=\"/castrol-dot-4-fren-hidrolik-sivisi-500-ml\">Castrol DOT 4 fren hidrolik sıvısı</a> ile yenileyin.",
+          "Manete birkaç kez basarak pistonları balataya oturtun; sürüşe geçmeden manetin sertleştiğini doğrulayın.",
+          "İlk yüzlerce kilometrede ani ve sert frenlemeden kaçının, balatayı yumuşakça yatırın."
+        ]
+      }
+    },
+    {
+      "id": "597w40000k",
+      "type": "paragraph",
+      "data": {
+        "text": "Bakım sırasında motosikletin diğer yıpranan parçalarını da kontrol etmek isterseniz <a href=\"/blog/motosiklet-zincir-disli-seti-secimi-ve-degisim-rehberi\">zincir dişli seti rehberimize</a> göz atabilirsiniz."
+      }
+    },
+    {
+      "id": "597w40000l",
+      "type": "header",
+      "data": {
+        "text": "Sık Sorulan Sorular",
+        "level": 2
+      }
+    },
+    {
+      "id": "597w40000m",
+      "type": "header",
+      "data": {
+        "text": "Ön ve arka balatayı birlikte mi değiştirmeliyim?",
+        "level": 3
+      }
+    },
+    {
+      "id": "597w40000n",
+      "type": "paragraph",
+      "data": {
+        "text": "Zorunlu değil. Ön ve arka fren bağımsız aşındığı için her biri kendi durumuna göre değiştirilir. Ancak aynı eksendeki sağ ve sol balatalar, yani çift diskli sistemlerde iki kaliper, mutlaka birlikte yenilenmelidir."
+      }
+    },
+    {
+      "id": "597w40000o",
+      "type": "header",
+      "data": {
+        "text": "Balata değişince disk de değişmeli mi?",
+        "level": 3
+      }
+    },
+    {
+      "id": "597w40000p",
+      "type": "paragraph",
+      "data": {
+        "text": "Her zaman gerekmez. Disk kalınlığı üreticinin belirttiği alt sınırın üzerindeyse ve yüzeyi düzgünse aynı diskle devam edilebilir. Çizik, eğrilik veya minimum kalınlık altı varsa değişim şarttır. Detaylı bilgi için <a href=\"/pages/sss\">sık sorulan sorular</a> sayfamıza da bakabilirsiniz."
+      }
+    },
+    {
+      "id": "597w40000q",
+      "type": "header",
+      "data": {
+        "text": "Fren balatası kaç kilometrede değişir?",
+        "level": 3
+      }
+    },
+    {
+      "id": "597w40000r",
+      "type": "paragraph",
+      "data": {
+        "text": "Sabit bir değer yoktur; sürüş tarzına ve balata türüne göre birkaç bin ile otuz bin kilometre arasında değişebilir. En doğru yöntem, düzenli aralıklarla kalınlığı gözle kontrol etmektir."
+      }
+    },
+    {
+      "id": "597w40000s",
+      "type": "paragraph",
+      "data": {
+        "text": "Özetle balata, belirtileri dinlediğiniz ve kalınlığını düzenli kontrol ettiğiniz sürece sizi sürpriz bir masraftan korur. Modeliniz için doğru parçayı seçmekte tereddüt ediyorsanız <a href=\"/pages/iletisim\">bizimle iletişime geçin</a>, ekibimiz uyumluluk konusunda yardımcı olsun."
+      }
+    }
+  ],
+  "contentHtml": "<html lang=\"en\">\n          <style>.ikas-editor-v1>table,td,th{border:1px solid #e8e8eb;border-collapse:collapse;font-size:14px}.ikas-editor-v1>th,td{padding:6px 12px}.ikas-editor-v1 ul,.ikas-editor-v1 ol{padding-left:20px}.ikas-editor-v1 ul li{list-style-type:disc;margin:8px 0 8px 16px}.ikas-editor-v1 ol li{list-style-type:decimal;margin:8px 0 8px 16px}.ikas-editor-v1 li{margin:8px 0 8px 16px}.ikas-editor-v1 code{display:block;white-space:pre-wrap}.ikas-editor-v1 blockquote{margin-inline-start:0;border-left:3px solid rgb(41 41 41);padding-left:23px}.ikas-editor-v1 figure{margin-inline:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0;width:100%}.ikas-editor-v1 img{max-width:800px;object-fit:cover;object-position:center}.ikas-editor-v1 img.img-bg{padding:1.5em!important;background:#cdd1e0!important}.ikas-editor-v1 img.img-fullwidth{width:100%!important;max-width:100%!important;margin:0 auto!important}.ikas-editor-v1 figcaption{text-align:center;padding-top:6px;word-break:break-word;font-size:12px;background:0 0;z-index:{};}.ikas-editor-v1 .embed-youtube{width:100%;height:400px}.ikas-editor-v1 a{color:#0070f3;text-decoration:underline;cursor:pointer}.ikas-editor-v1 a:hover{opacity:.8}.products-container{display:flex;flex-direction:column;gap:10px}.product-block-container{margin:0 auto;cursor:pointer;flex:1;display:flex;gap:20px;padding:10px 0}.product-image{width:120px;height:120px;object-fit:cover;border-radius:4px;flex-shrink:0}.product-name{font-size:15px;font-weight:500;width:100%;margin:0 0 4px}.product-brand{font-size:13px;font-weight:400;color:#adb5bd;margin:0 0 4px}.product-discount-price,.product-price{width:fit-content;font-size:16px;font-weight:500;color:#000}.product-price{margin:6px 0 0}.product-discount-price{margin:6px 8px 0 0;text-decoration:line-through}.ikas-editor-v1 table b{font-weight:bold}.ikas-editor-v1 table i{font-style:italic}</style>\n          <div class=\"ikas-editor-v1\">\n          <p class=\"editor-paragraph\"> Fren sistemi, motosikletinizdeki en kritik güvenlik donanımıdır ve balata bu sistemin en hızlı aşınan parçasıdır. Aşınmış bir balata sadece frenleme mesafenizi uzatmaz; zamanla fren diskine de zarar verip masrafı katlar. Peki balata tam olarak ne zaman değişmeli? Bu yazıda belirtileri, kalınlık kontrolünü, ömrü etkileyen faktörleri ve doğru balata seçimini sade bir dille anlatıyoruz. </p><h2>Balata Değişim Zamanını Gösteren Belirtiler</h2><p class=\"editor-paragraph\"> Balata için tek bir kilometre değeri vermek doğru olmaz; sürüş tarzı ve yol koşulları ömrü ciddi biçimde değiştirir. Bu yüzden kilometreden çok belirtilere ve fiziksel ölçüme bakmak gerekir. Aşağıdaki işaretlerden biri varsa balatayı kontrol ettirin: </p><ul><li><b>Metalik cızırtı veya gıcırtı:</b> Balata malzemesi bitmiş, metal taşıyıcı plaka diske temas ediyor olabilir.</li><li><b>Frenin geç tepki vermesi:</b> Manete veya pedala eskisinden daha fazla basmanız gerekiyor.</li><li><b>Manetin gidona yaklaşması:</b> Balata inceldikçe piston daha fazla ilerler ve manet boşluğu artar.</li><li><b>Titreşim ve çekme:</b> Düzensiz aşınmış balata veya yüzeyi bozulmuş disk, frenlemede titreme yapar.</li><li><b>Aşınma çentiği veya indikatörün kaybolması:</b> Birçok balatada bulunan çentik silindiyse değişim zamanı gelmiştir.</li><li><b>Fren tozu ve parlak (sırlanmış) yüzey:</b> Isınma sonucu sertleşen balata tutuşunu kaybeder.</li></ul><h2>Balata Kalınlığı Nasıl Kontrol Edilir?</h2><p class=\"editor-paragraph\"> En güvenilir yöntem, kaliperin içine bakarak balata malzemesinin kalınlığını gözle veya küçük bir el feneriyle kontrol etmektir. Yeni bir balatada sürtünme malzemesi modele göre kabaca 4–8 mm arasındadır. Malzeme yaklaşık 1,5–2 mm'ye düştüğünde beklemeden değiştirmek gerekir. <i>Kesin değer için aracınızın kullanım kılavuzunu esas alın.</i> </p><table><tbody><tr><td><b>Kalan sürtünme malzemesi</b></td><td><b>Durum</b></td><td><b>Ne yapmalı?</b></td></tr><tr><td>4 mm ve üzeri</td><td>İyi</td><td>Rutin kontrole devam edin</td></tr><tr><td>3–4 mm</td><td>Orta</td><td>Yakın zamanda değişim planlayın</td></tr><tr><td>2–3 mm</td><td>Sınırda</td><td>Değişimi geciktirmeyin</td></tr><tr><td>2 mm ve altı</td><td>Kritik</td><td>Hemen değiştirin, sürüşe ara verin</td></tr></tbody></table><p class=\"editor-paragraph\"> Kontrol sırasında diskin yüzeyine de bakın. Derin çizikler, belirgin basamaklanma veya mavimsi ısı lekeleri varsa disk de gözden geçirilmeli. Gerekirse <a href=\"/fren-diskleri\">fren diski</a> seçeneklerimize göz atabilirsiniz. </p><h2>Balata Ömrünü Neler Belirler?</h2><p class=\"editor-paragraph\"> Aynı motosiklette bile ön ve arka balata farklı hızda aşınır; ön fren frenleme kuvvetinin büyük kısmını üstlendiği için genellikle daha çabuk biter. Uygulamada ömür, koşullara bağlı olarak birkaç bin kilometreden on binlerce kilometreye kadar değişebilir. </p><ul><li><b>Şehir içi dur-kalk trafik:</b> Sık frenleme balatayı hızlı eritir.</li><li><b>Ağır yük ve yolcu:</b> Fren yükünü artırır.</li><li><b>Agresif sürüş:</b> Sert ve geç frenleme ısıyı yükseltir.</li><li><b>Balata türü:</b> Organik, yarı sinterli ve sinterli balatalar farklı aşınır.</li><li><b>Bakım düzeni:</b> Kirli kaliper ve sıkışan piston düzensiz aşınmaya yol açar.</li></ul><p class=\"editor-paragraph\"> Scooter kullanıcıları için model bazlı bakım rehberlerimiz de faydalı olabilir: <a href=\"/blog/honda-pcx-125-yedek-parca-rehberi\">Honda PCX 125 yedek parça rehberi</a> ve <a href=\"/blog/yamaha-nmax-125-bakim-ve-yedek-parca-rehberi\">Yamaha NMAX 125 bakım rehberi</a>. </p><h2>Doğru Balatayı Seçmek</h2><figure class=\"editor-fig-img\"><img class=\"editor-img   \" src=\"__IMG_collage__\" alt=\"Disk balata, balata spreyi ve fren hidrolik sıvısı – Soydaş Motosiklet\" width=\"1080\" height=\"360\" style=\"max-width: 100%; aspect-ratio: 1080 / 360;\"><figcaption class=\"editor-fig-cap\">Disk balata, balata spreyi ve fren hidrolik sıvısı – Soydaş Motosiklet</figcaption></figure><p class=\"editor-paragraph\"> Balata seçerken önce motosikletinizin marka, model ve yılına uygun ölçüyü bulmalısınız. Ardından kullanım amacınıza uygun malzemeyi seçin. Geniş bir yelpazeyi <a href=\"/disk-balata\">disk balata</a> ve <a href=\"/fren-balata\">fren balata</a> kategorilerimizde, tüm seçenekleri ise <a href=\"/balata-grubu\">balata grubu</a> sayfasında bulabilirsiniz. </p><table><tbody><tr><td><b>Balata türü</b></td><td><b>Öne çıkan yanı</b></td><td><b>Dikkat edilecek nokta</b></td></tr><tr><td>Organik</td><td>Sessiz, disk dostu, yumuşak his</td><td>Yoğun ve ağır kullanımda daha hızlı aşınabilir</td></tr><tr><td>Yarı sinterli</td><td>Fiyat-performans dengesi, günlük kullanıma uygun</td><td>Orta düzeyde fren tozu</td></tr><tr><td>Sinterli</td><td>Yüksek ısıda güçlü tutuş</td><td>Diski daha fazla yorabilir</td></tr></tbody></table><p class=\"editor-paragraph\"> Örneğin Honda PCX kullanıyorsanız <a href=\"/brenta-organik-on-disk-balata-ft3162-honda-pcx-2021-2024-2025\">Brenta organik ön disk balata</a>, arka tarafta ise kampanalı sistemlerde <a href=\"/monero-arka-fren-balatasi-honda-spacy-activa-s-alpha-dio-pcx-cbf-fizy-rks-spontini\">Monero arka fren balatası</a> gibi uyumlu seçeneklere bakabilirsiniz. Montajdan önce parça uyumunu mutlaka kontrol edin. </p><h2>Değişim Sonrası Dikkat Edilecekler</h2><ol><li>Kaliperi ve pistonları fren temizleme ürünüyle temizleyin; bunun için <a href=\"/balata-spreyi\">balata spreyi</a> ya da <a href=\"/motul-p2-fren-balata-sprey-400-ml\">Motul P2 fren balata spreyi</a> kullanabilirsiniz.</li><li>Diskin yağ ve kirden arındırıldığından emin olun; yağlı yüzey tutuşu bozar.</li><li>Fren hidrolik sıvısı seviyesini ve rengini kontrol edin; gerekiyorsa <a href=\"/castrol-dot-4-fren-hidrolik-sivisi-500-ml\">Castrol DOT 4 fren hidrolik sıvısı</a> ile yenileyin.</li><li>Manete birkaç kez basarak pistonları balataya oturtun; sürüşe geçmeden manetin sertleştiğini doğrulayın.</li><li>İlk yüzlerce kilometrede ani ve sert frenlemeden kaçının, balatayı yumuşakça yatırın.</li></ol><p class=\"editor-paragraph\"> Bakım sırasında motosikletin diğer yıpranan parçalarını da kontrol etmek isterseniz <a href=\"/blog/motosiklet-zincir-disli-seti-secimi-ve-degisim-rehberi\">zincir dişli seti rehberimize</a> göz atabilirsiniz. </p><h2>Sık Sorulan Sorular</h2><h3>Ön ve arka balatayı birlikte mi değiştirmeliyim?</h3><p class=\"editor-paragraph\"> Zorunlu değil. Ön ve arka fren bağımsız aşındığı için her biri kendi durumuna göre değiştirilir. Ancak aynı eksendeki sağ ve sol balatalar, yani çift diskli sistemlerde iki kaliper, mutlaka birlikte yenilenmelidir. </p><h3>Balata değişince disk de değişmeli mi?</h3><p class=\"editor-paragraph\"> Her zaman gerekmez. Disk kalınlığı üreticinin belirttiği alt sınırın üzerindeyse ve yüzeyi düzgünse aynı diskle devam edilebilir. Çizik, eğrilik veya minimum kalınlık altı varsa değişim şarttır. Detaylı bilgi için <a href=\"/pages/sss\">sık sorulan sorular</a> sayfamıza da bakabilirsiniz. </p><h3>Fren balatası kaç kilometrede değişir?</h3><p class=\"editor-paragraph\"> Sabit bir değer yoktur; sürüş tarzına ve balata türüne göre birkaç bin ile otuz bin kilometre arasında değişebilir. En doğru yöntem, düzenli aralıklarla kalınlığı gözle kontrol etmektir. </p><p class=\"editor-paragraph\"> Özetle balata, belirtileri dinlediğiniz ve kalınlığını düzenli kontrol ettiğiniz sürece sizi sürpriz bir masraftan korur. Modeliniz için doğru parçayı seçmekte tereddüt ediyorsanız <a href=\"/pages/iletisim\">bizimle iletişime geçin</a>, ekibimiz uyumluluk konusunda yardımcı olsun. </p>\n          </div>\n          </html>\n  ",
+  "contentData": "{\"time\":1792044886325,\"blocks\":[{\"id\":\"597w300001\",\"type\":\"paragraph\",\"data\":{\"text\":\"Fren sistemi, motosikletinizdeki en kritik güvenlik donanımıdır ve balata bu sistemin en hızlı aşınan parçasıdır. Aşınmış bir balata sadece frenleme mesafenizi uzatmaz; zamanla fren diskine de zarar verip masrafı katlar. Peki balata tam olarak ne zaman değişmeli? Bu yazıda belirtileri, kalınlık kontrolünü, ömrü etkileyen faktörleri ve doğru balata seçimini sade bir dille anlatıyoruz.\"}},{\"id\":\"597w300002\",\"type\":\"header\",\"data\":{\"text\":\"Balata Değişim Zamanını Gösteren Belirtiler\",\"level\":2}},{\"id\":\"597w300003\",\"type\":\"paragraph\",\"data\":{\"text\":\"Balata için tek bir kilometre değeri vermek doğru olmaz; sürüş tarzı ve yol koşulları ömrü ciddi biçimde değiştirir. Bu yüzden kilometreden çok belirtilere ve fiziksel ölçüme bakmak gerekir. Aşağıdaki işaretlerden biri varsa balatayı kontrol ettirin:\"}},{\"id\":\"597w300004\",\"type\":\"list\",\"data\":{\"style\":\"unordered\",\"items\":[\"<b>Metalik cızırtı veya gıcırtı:</b> Balata malzemesi bitmiş, metal taşıyıcı plaka diske temas ediyor olabilir.\",\"<b>Frenin geç tepki vermesi:</b> Manete veya pedala eskisinden daha fazla basmanız gerekiyor.\",\"<b>Manetin gidona yaklaşması:</b> Balata inceldikçe piston daha fazla ilerler ve manet boşluğu artar.\",\"<b>Titreşim ve çekme:</b> Düzensiz aşınmış balata veya yüzeyi bozulmuş disk, frenlemede titreme yapar.\",\"<b>Aşınma çentiği veya indikatörün kaybolması:</b> Birçok balatada bulunan çentik silindiyse değişim zamanı gelmiştir.\",\"<b>Fren tozu ve parlak (sırlanmış) yüzey:</b> Isınma sonucu sertleşen balata tutuşunu kaybeder.\"]}},{\"id\":\"597w300005\",\"type\":\"header\",\"data\":{\"text\":\"Balata Kalınlığı Nasıl Kontrol Edilir?\",\"level\":2}},{\"id\":\"597w300006\",\"type\":\"paragraph\",\"data\":{\"text\":\"En güvenilir yöntem, kaliperin içine bakarak balata malzemesinin kalınlığını gözle veya küçük bir el feneriyle kontrol etmektir. Yeni bir balatada sürtünme malzemesi modele göre kabaca 4–8 mm arasındadır. Malzeme yaklaşık 1,5–2 mm'ye düştüğünde beklemeden değiştirmek gerekir. <i>Kesin değer için aracınızın kullanım kılavuzunu esas alın.</i>\"}},{\"id\":\"597w300007\",\"type\":\"table\",\"data\":{\"withHeadings\":true,\"content\":[[\"<b>Kalan sürtünme malzemesi</b>\",\"<b>Durum</b>\",\"<b>Ne yapmalı?</b>\"],[\"4 mm ve üzeri\",\"İyi\",\"Rutin kontrole devam edin\"],[\"3–4 mm\",\"Orta\",\"Yakın zamanda değişim planlayın\"],[\"2–3 mm\",\"Sınırda\",\"Değişimi geciktirmeyin\"],[\"2 mm ve altı\",\"Kritik\",\"Hemen değiştirin, sürüşe ara verin\"]]}},{\"id\":\"597w300008\",\"type\":\"paragraph\",\"data\":{\"text\":\"Kontrol sırasında diskin yüzeyine de bakın. Derin çizikler, belirgin basamaklanma veya mavimsi ısı lekeleri varsa disk de gözden geçirilmeli. Gerekirse <a href=\\\"/fren-diskleri\\\">fren diski</a> seçeneklerimize göz atabilirsiniz.\"}},{\"id\":\"597w400009\",\"type\":\"header\",\"data\":{\"text\":\"Balata Ömrünü Neler Belirler?\",\"level\":2}},{\"id\":\"597w40000a\",\"type\":\"paragraph\",\"data\":{\"text\":\"Aynı motosiklette bile ön ve arka balata farklı hızda aşınır; ön fren frenleme kuvvetinin büyük kısmını üstlendiği için genellikle daha çabuk biter. Uygulamada ömür, koşullara bağlı olarak birkaç bin kilometreden on binlerce kilometreye kadar değişebilir.\"}},{\"id\":\"597w40000b\",\"type\":\"list\",\"data\":{\"style\":\"unordered\",\"items\":[\"<b>Şehir içi dur-kalk trafik:</b> Sık frenleme balatayı hızlı eritir.\",\"<b>Ağır yük ve yolcu:</b> Fren yükünü artırır.\",\"<b>Agresif sürüş:</b> Sert ve geç frenleme ısıyı yükseltir.\",\"<b>Balata türü:</b> Organik, yarı sinterli ve sinterli balatalar farklı aşınır.\",\"<b>Bakım düzeni:</b> Kirli kaliper ve sıkışan piston düzensiz aşınmaya yol açar.\"]}},{\"id\":\"597w40000c\",\"type\":\"paragraph\",\"data\":{\"text\":\"Scooter kullanıcıları için model bazlı bakım rehberlerimiz de faydalı olabilir: <a href=\\\"/blog/honda-pcx-125-yedek-parca-rehberi\\\">Honda PCX 125 yedek parça rehberi</a> ve <a href=\\\"/blog/yamaha-nmax-125-bakim-ve-yedek-parca-rehberi\\\">Yamaha NMAX 125 bakım rehberi</a>.\"}},{\"id\":\"597w40000d\",\"type\":\"header\",\"data\":{\"text\":\"Doğru Balatayı Seçmek\",\"level\":2}},{\"id\":\"597w40000e\",\"type\":\"image\",\"data\":{\"file\":{\"url\":\"__IMG_collage__\"},\"caption\":\"Disk balata, balata spreyi ve fren hidrolik sıvısı – Soydaş Motosiklet\",\"withBorder\":false,\"stretched\":false,\"withBackground\":false}},{\"id\":\"597w40000f\",\"type\":\"paragraph\",\"data\":{\"text\":\"Balata seçerken önce motosikletinizin marka, model ve yılına uygun ölçüyü bulmalısınız. Ardından kullanım amacınıza uygun malzemeyi seçin. Geniş bir yelpazeyi <a href=\\\"/disk-balata\\\">disk balata</a> ve <a href=\\\"/fren-balata\\\">fren balata</a> kategorilerimizde, tüm seçenekleri ise <a href=\\\"/balata-grubu\\\">balata grubu</a> sayfasında bulabilirsiniz.\"}},{\"id\":\"597w40000g\",\"type\":\"table\",\"data\":{\"withHeadings\":true,\"content\":[[\"<b>Balata türü</b>\",\"<b>Öne çıkan yanı</b>\",\"<b>Dikkat edilecek nokta</b>\"],[\"Organik\",\"Sessiz, disk dostu, yumuşak his\",\"Yoğun ve ağır kullanımda daha hızlı aşınabilir\"],[\"Yarı sinterli\",\"Fiyat-performans dengesi, günlük kullanıma uygun\",\"Orta düzeyde fren tozu\"],[\"Sinterli\",\"Yüksek ısıda güçlü tutuş\",\"Diski daha fazla yorabilir\"]]}},{\"id\":\"597w40000h\",\"type\":\"paragraph\",\"data\":{\"text\":\"Örneğin Honda PCX kullanıyorsanız <a href=\\\"/brenta-organik-on-disk-balata-ft3162-honda-pcx-2021-2024-2025\\\">Brenta organik ön disk balata</a>, arka tarafta ise kampanalı sistemlerde <a href=\\\"/monero-arka-fren-balatasi-honda-spacy-activa-s-alpha-dio-pcx-cbf-fizy-rks-spontini\\\">Monero arka fren balatası</a> gibi uyumlu seçeneklere bakabilirsiniz. Montajdan önce parça uyumunu mutlaka kontrol edin.\"}},{\"id\":\"597w40000i\",\"type\":\"header\",\"data\":{\"text\":\"Değişim Sonrası Dikkat Edilecekler\",\"level\":2}},{\"id\":\"597w40000j\",\"type\":\"list\",\"data\":{\"style\":\"ordered\",\"items\":[\"Kaliperi ve pistonları fren temizleme ürünüyle temizleyin; bunun için <a href=\\\"/balata-spreyi\\\">balata spreyi</a> ya da <a href=\\\"/motul-p2-fren-balata-sprey-400-ml\\\">Motul P2 fren balata spreyi</a> kullanabilirsiniz.\",\"Diskin yağ ve kirden arındırıldığından emin olun; yağlı yüzey tutuşu bozar.\",\"Fren hidrolik sıvısı seviyesini ve rengini kontrol edin; gerekiyorsa <a href=\\\"/castrol-dot-4-fren-hidrolik-sivisi-500-ml\\\">Castrol DOT 4 fren hidrolik sıvısı</a> ile yenileyin.\",\"Manete birkaç kez basarak pistonları balataya oturtun; sürüşe geçmeden manetin sertleştiğini doğrulayın.\",\"İlk yüzlerce kilometrede ani ve sert frenlemeden kaçının, balatayı yumuşakça yatırın.\"]}},{\"id\":\"597w40000k\",\"type\":\"paragraph\",\"data\":{\"text\":\"Bakım sırasında motosikletin diğer yıpranan parçalarını da kontrol etmek isterseniz <a href=\\\"/blog/motosiklet-zincir-disli-seti-secimi-ve-degisim-rehberi\\\">zincir dişli seti rehberimize</a> göz atabilirsiniz.\"}},{\"id\":\"597w40000l\",\"type\":\"header\",\"data\":{\"text\":\"Sık Sorulan Sorular\",\"level\":2}},{\"id\":\"597w40000m\",\"type\":\"header\",\"data\":{\"text\":\"Ön ve arka balatayı birlikte mi değiştirmeliyim?\",\"level\":3}},{\"id\":\"597w40000n\",\"type\":\"paragraph\",\"data\":{\"text\":\"Zorunlu değil. Ön ve arka fren bağımsız aşındığı için her biri kendi durumuna göre değiştirilir. Ancak aynı eksendeki sağ ve sol balatalar, yani çift diskli sistemlerde iki kaliper, mutlaka birlikte yenilenmelidir.\"}},{\"id\":\"597w40000o\",\"type\":\"header\",\"data\":{\"text\":\"Balata değişince disk de değişmeli mi?\",\"level\":3}},{\"id\":\"597w40000p\",\"type\":\"paragraph\",\"data\":{\"text\":\"Her zaman gerekmez. Disk kalınlığı üreticinin belirttiği alt sınırın üzerindeyse ve yüzeyi düzgünse aynı diskle devam edilebilir. Çizik, eğrilik veya minimum kalınlık altı varsa değişim şarttır. Detaylı bilgi için <a href=\\\"/pages/sss\\\">sık sorulan sorular</a> sayfamıza da bakabilirsiniz.\"}},{\"id\":\"597w40000q\",\"type\":\"header\",\"data\":{\"text\":\"Fren balatası kaç kilometrede değişir?\",\"level\":3}},{\"id\":\"597w40000r\",\"type\":\"paragraph\",\"data\":{\"text\":\"Sabit bir değer yoktur; sürüş tarzına ve balata türüne göre birkaç bin ile otuz bin kilometre arasında değişebilir. En doğru yöntem, düzenli aralıklarla kalınlığı gözle kontrol etmektir.\"}},{\"id\":\"597w40000s\",\"type\":\"paragraph\",\"data\":{\"text\":\"Özetle balata, belirtileri dinlediğiniz ve kalınlığını düzenli kontrol ettiğiniz sürece sizi sürpriz bir masraftan korur. Modeliniz için doğru parçayı seçmekte tereddüt ediyorsanız <a href=\\\"/pages/iletisim\\\">bizimle iletişime geçin</a>, ekibimiz uyumluluk konusunda yardımcı olsun.\"}}],\"version\":\"2.28.2\"}",
+  "removedLinks": []
+}
