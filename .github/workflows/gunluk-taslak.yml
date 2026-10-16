@@ -2,7 +2,7 @@ name: Günlük blog taslağı
 
 on:
   schedule:
-    - cron: '51 5 * * *'   # Her gün 08:51 (Türkiye saati, UTC+3)
+    - cron: '17 5 * * *'   # Her gün 08:17 (Türkiye saati, UTC+3) — 09:00 yayınından önce hazır olsun
   workflow_dispatch:
     inputs:
       topic:
@@ -57,4 +57,4 @@ jobs:
           gh label create taslak --color FBCA04 --description "Onay bekleyen blog taslağı" 2>/dev/null || true
           gh label create onaylandi --color 0E8A16 --description "Onaylandı, ikas'a eklenmeyi bekliyor" 2>/dev/null || true
           sleep 5   # görsellerin raw adreste hazır olması için
-          gh issue create --title "📝 Blog taslağı: $TITLE" --body-file out/issue.md --label taslak --assignee "${{ github.repository_owner }}"
+          gh issue create --title "📰 Bugünün yazısı: $TITLE" --body-file out/issue.md --label taslak --assignee "${{ github.repository_owner }}"

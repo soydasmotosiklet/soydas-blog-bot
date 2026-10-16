@@ -34,6 +34,11 @@ jobs:
           git config user.email "bot@users.noreply.github.com"
           git add -A drafts state
           git commit -m "Yayına girenler senkronlandı" && git push || echo "değişiklik yok"
+          for SLUG in $(jq -r '.[].slug' out/overdue.json); do
+            for N in $(gh issue list --state open --label taslak --json number,body --jq ".[] | select(.body | contains(\"draft:$SLUG \")) | .number"); do
+              gh issue comment "$N" --body "⚠️ Bu yazı 09:00'da ikas'a eklenemedi. Büyük ihtimalle ikas oturumu kapandı: bulut bilgisayara bağlanıp ikas'a (Google ile) giriş yapın, eklenti yazıyı bir saat içinde otomatik ekler."
+            done
+          done
           for row in $(jq -c '.[] | {slug, url}' out/synced.json); do
             SLUG=$(echo "$row" | jq -r .slug); URL=$(echo "$row" | jq -r .url)
             for N in $(gh issue list --state open --label taslak --json number,body --jq ".[] | select(.body | contains(\"draft:$SLUG \")) | .number"); do
