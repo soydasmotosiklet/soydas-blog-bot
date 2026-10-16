@@ -27,7 +27,7 @@
   try {
     if (!/myikas\.com$/.test(location.hostname)) throw new Error('Bu yer imini ikas yönetim panelindeyken açın.');
     const token = localStorage.getItem('token');
-    if (!token) throw new Error('ikas oturumu bulunamadı. Panele giriş yapıp tekrar deneyin.');
+    if (!token) { result.loginRequired = true; throw new Error('ikas oturumu bulunamadı. Panele giriş yapıp tekrar deneyin.'); }
 
     const gql = async (op, query, variables) => {
       const r = await fetch(`https://api.myikas.com/api/admin/graphql?op=${op}`, {
@@ -36,7 +36,10 @@
         body: JSON.stringify({ query, variables }),
       });
       const j = await r.json();
-      if (j.errors) throw new Error(`${op}: ${JSON.stringify(j.errors).slice(0, 300)}`);
+      if (j.errors) {
+        if (JSON.stringify(j.errors).includes('LOGIN_REQUIRED')) result.loginRequired = true;
+        throw new Error(`${op}: ${JSON.stringify(j.errors).slice(0, 300)}`);
+      }
       return j.data;
     };
     const gh = (p, accept = 'application/vnd.github.raw') =>
@@ -121,5 +124,7 @@
   } catch (e) {
     result.errors.push(e.message);
     say('✗ ' + e.message);
+  } finally {
+    result.done = true;
   }
 })();
