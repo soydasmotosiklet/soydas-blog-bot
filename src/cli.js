@@ -8,7 +8,7 @@
 //   node src/cli.js test-ikas       → ikas resmi API kontrolü (bilgi amaçlı)
 import fs from 'node:fs';
 import * as ikas from './ikas.js';
-import { createDraft, draftIssueBody, approveDraft, discardDraft, getDraft, syncPublished } from './pipeline.js';
+import { createDraft, draftIssueBody, approveDraft, discardDraft, getDraft, syncPublished, overdueDrafts, markAlerted } from './pipeline.js';
 
 const [, , cmd, ...rest] = process.argv;
 const arg = (name) => {
@@ -61,6 +61,10 @@ async function main() {
       const done = await syncPublished();
       fs.mkdirSync('out', { recursive: true });
       fs.writeFileSync('out/synced.json', JSON.stringify(done));
+      const late = overdueDrafts();
+      late.forEach((d) => markAlerted(d.slug));
+      fs.writeFileSync('out/overdue.json', JSON.stringify(late.map((d) => ({ slug: d.slug }))));
+      if (late.length) console.log('Gecikenler:', late.map((d) => d.slug).join(', '));
       console.log(done.length ? `Yayına girenler: ${done.map((d) => d.slug).join(', ')}` : 'Yeni yayın yok.');
       return;
     }

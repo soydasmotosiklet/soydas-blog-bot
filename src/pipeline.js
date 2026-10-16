@@ -155,7 +155,7 @@ export async function createDraft({ topic: forcedTopic, feedback } = {}) {
 
   const draft = {
     topic,
-    approved: false,
+    approved: process.env.AUTO_APPROVE !== 'false', // otomatik modda doğrudan yayına hazır
     createdAt: new Date().toISOString(),
     model: post.model,
     title: topic,
@@ -195,9 +195,9 @@ export function draftIssueBody(draft) {
 | Yaklaşık kelime | ${words} |
 | Kapak görseli | ${src} |
 ${draft.removedLinks.length ? `| Kaldırılan geçersiz linkler | ${draft.removedLinks.join(', ')} |\n` : ''}
-**Onaylamak için** bu sayfaya \`/yayinla\` yazın. Ardından ikas panelinde **Blog Yayınla** yer imine tıklayın (veya Claude'a "onaylı blogları yayınla" deyin).
-**Yeniden yazdırmak için** \`/yeniden\` ve isteğinizi yazın (ör. \`/yeniden daha kısa olsun\`).
-**Vazgeçmek için** \`/iptal\` yazın.
+${draft.approved
+  ? '⏰ **Bu yazı saat 09:00\'da otomatik olarak ikas\'a eklenecek** (bilgisayarınızda Chrome açıkken Soydaş Blog eklentisi yapar).\n**Yayınlanmasın istiyorsanız** 09:00\'dan önce \`/iptal\` yazın. **Değiştirmek için** \`/yeniden\` ve isteğinizi yazın.'
+  : '**Onaylamak için** bu sayfaya \`/yayinla\` yazın. **Yeniden yazdırmak için** \`/yeniden\` ve isteğinizi yazın. **Vazgeçmek için** \`/iptal\` yazın.'}
 
 ---
 
@@ -223,6 +223,21 @@ export function discardDraft(slug) {
 
 export function getDraft(slug) {
   return readJson(path.join(DRAFTS, slug, 'draft.json'), null);
+}
+
+// Saat 10:00'u (TR) geçmesine rağmen yayına girmemiş onaylı taslaklar (uyarı için)
+export function overdueDrafts(now = new Date()) {
+  const trHour = (now.getUTCHours() + 3) % 24;
+  if (trHour < 10) return [];
+  const todayTR = new Date(now.getTime() + 3 * 3600e3).toISOString().slice(0, 10);
+  return listDrafts().filter((d) => d.approved && !d.alerted && new Date(new Date(d.createdAt).getTime() + 3 * 3600e3).toISOString().slice(0, 10) <= todayTR);
+}
+
+export function markAlerted(slug) {
+  const f = path.join(DRAFTS, slug, 'draft.json');
+  const d = readJson(f);
+  d.alerted = true;
+  writeJson(f, d);
 }
 
 // Sitede yayına girmiş taslakları bul, kayda geçir ve klasörlerini sil.
