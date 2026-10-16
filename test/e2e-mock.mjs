@@ -5,6 +5,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 const MP = process.env.MOCK_PROVIDER || 'pixabay';
 process.env.ANTHROPIC_API_KEY = 'k';
+process.env.AUTO_APPROVE = 'false'; // test onay akışını da doğrular
 process.env.PEXELS_API_KEY = MP === 'pexels' ? 'p' : '';
 process.env.PIXABAY_API_KEY = MP === 'pixabay' ? 'x' : '';
 process.env.UNSPLASH_ACCESS_KEY = MP === 'unsplash' ? 'u' : '';
