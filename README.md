@@ -2,28 +2,26 @@
 
 ## Nasıl çalışır?
 
-1. **Her sabah 08:51** (Türkiye saati) GitHub'ın sunucularında otomatik çalışır; bilgisayarınızın açık olması gerekmez.
-   - `topics.json` listesinden sıradaki konuyu seçer (liste bitince konuyu kendisi belirler).
-   - Claude ile 700–900 kelimelik, başlıklı, tablolu, SSS bölümlü bir yazı hazırlar; mağazada **gerçekten var olan** kategori ve ürünlere link verir, geçersiz linkleri siler.
-   - Kapak ve içerik görsellerini hazırlar (Pixabay/Pexels anahtarı varsa gerçek fotoğraf, yoksa mağazanın ürün fotoğrafları).
-2. Taslak bu depoda bir **issue** olarak açılır, telefonunuza bildirim gelir. Yorum yazarak karar verirsiniz:
+1. **Her sabah ~08:17** GitHub'ın sunucularında yazı ve görseller hazırlanır (`topics.json`'dan sıradaki konu), bu depoda "📰 Bugünün yazısı" başlıklı bir issue açılır ve telefonunuza bildirim gelir.
+2. **09:00'da** (Türkiye saati) 7/24 açık bulut sunucudaki (AWS Lightsail `soydas-blog`, Frankfurt) Chrome'da kurulu **Soydaş Blog Otomatik Yayın** eklentisi ikas panelini arka planda açar ve yazıyı sizin oturumunuzla ikas'a ekler. Sizden onay/tıklama beklemez.
+   - Yazı henüz hazır değilse gün içinde saatlik tekrar dener.
+   - ikas oturumu kapanırsa (veya sunucu yeniden başlarsa) yazı eklenemez; saat 10:00'u geçince bu depodaki issue'ya "⚠️" yorumu düşer ve GitHub size e-posta atar. Lightsail → soydas-blog → **RDP kullanarak bağlan** ile sunucuya girip ikas'a tekrar giriş yapmanız yeterli; yazı sonraki saatlik denemede eklenir.
+   - Sunucuya girip çıkarken pencereyi sadece kapatın, Windows'ta **oturumu kapatmayın** (Sign out yapılırsa Chrome da kapanır).
+   - Ücret: Lightsail Windows 2 GB planı ≈ 22 $/ay, AWS kredisinden düşülür. Kredi bitince (veya istemezseniz) Lightsail'den sunucuyu silin.
+3. Yazı sitede yayına girince issue saat başı otomatik kapanır.
 
-| Yorum | Ne olur |
-| --- | --- |
-| `/yayinla` | Taslak **onaylanır** |
-| `/yeniden daha kısa olsun` | Aynı konu isteğinize göre yeniden yazılır |
-| `/iptal` | Taslak silinir |
+İstemediğiniz bir yazıyı **09:00'dan önce** issue'ya `/iptal` yazarak durdurabilir, `/yeniden <isteğiniz>` ile yeniden yazdırabilirsiniz.
+Onaylı (elle) moda dönmek için: Settings → Secrets and variables → Actions → *Variables* → `AUTO_APPROVE` = `false` (bu durumda `/yayinla` ile onay verilir).
 
-3. Onaylı taslakları ikas'a eklemek için ikas panelindeyken **Blog Yayınla** yer imine tıklayın (ya da bilgisayarınızda Claude'a "onaylı blogları yayınla" deyin). Birden fazla onaylı taslak varsa hepsi birlikte eklenir.
-4. Yazı sitede yayına girince issue saat başı otomatik kapanır.
+> **Neden eklenti?** ikas'ın resmi API'si (Özel Uygulama) blog ve görsel işlemlerine izin vermiyor; bunlar yalnızca panele giriş yapmış bir tarayıcıdan yapılabiliyor. Eklenti şifre ya da anahtar saklamaz, sadece sizin Chrome'unuzdaki açık ikas oturumunu kullanır. ikas blog API'sini açarsa bilgisayar gerekmeden tamamen bulutta çalıştırılabilir.
 
-> **Neden son adım tarayıcıda?** ikas'ın resmi API'si (Özel Uygulama) blog ve görsel işlemlerine izin vermiyor; bunlar yalnızca panele giriş yapmış kullanıcı ile yapılabiliyor. Yer imi sizin açık oturumunuzu kullanır, hiçbir şifre saklamaz. ikas blog iznini açarsa son adım da tamamen otomatik hale getirilebilir.
+## Chrome eklentisini kurma (bir kerelik)
+1. `chrome-extension` klasörünü bilgisayarınıza indirin (zip'i açın).
+2. Chrome'da adres çubuğuna `chrome://extensions` yazın → sağ üstten **Geliştirici modu**nu açın.
+3. **Paketlenmemiş öğe yükle** → `chrome-extension` klasörünü seçin.
+4. Araç çubuğundaki **S** simgesine tıklayıp "Şimdi yayınla" ile deneyebilirsiniz.
 
-## Blog Yayınla yer imini kurma (bir kerelik)
-1. Chrome'da yer imleri çubuğunu açın (`Ctrl+Shift+B`).
-2. Çubuğa sağ tıklayın → **Sayfa ekle**. Ad: `Blog Yayınla`.
-3. URL alanına `browser/yer-imi.txt` dosyasındaki satırın tamamını yapıştırın → Kaydet.
-4. Kullanım: ikas yönetim paneli açıkken yer imine tıklayın; sağ altta ilerleme kutusu çıkar.
+Elle yayınlamak için yer imi de kullanılabilir: `browser/yer-imi.txt` satırını yeni bir yer iminin URL'sine yapıştırın.
 
 ## Ayarlar (GitHub → Settings → Secrets and variables → Actions)
 
