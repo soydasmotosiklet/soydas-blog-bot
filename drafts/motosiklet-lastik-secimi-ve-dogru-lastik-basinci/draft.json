@@ -1,0 +1,325 @@
+{
+  "topic": "Motosiklet Lastik Seçimi ve Doğru Lastik Basıncı",
+  "approved": true,
+  "createdAt": "2026-10-17T05:46:51.032Z",
+  "model": "claude-sonnet-5-5",
+  "title": "Motosiklet Lastik Seçimi ve Doğru Lastik Basıncı",
+  "slug": "motosiklet-lastik-secimi-ve-dogru-lastik-basinci",
+  "shortDescription": "Lastik ölçüsünü okumayı, kullanımınıza uygun lastiği seçmeyi, doğru basıncı ayarlamayı ve değişim zamanını anlamanız için pratik bir rehber.",
+  "seoTitle": "Motosiklet Lastik Seçimi ve Doğru Lastik Basıncı | Soydaş Motosiklet",
+  "seoDescription": "Motosiklet lastiği nasıl seçilir, lastik ölçüsü nasıl okunur, doğru basınç kaç bar olmalı ve lastik ne zaman değişir? Teknisyen gözüyle rehber.",
+  "images": {
+    "cover": "cover.jpg",
+    "collage": "collage.jpg"
+  },
+  "coverPhoto": null,
+  "blocks": [
+    {
+      "id": "z50k700001",
+      "type": "paragraph",
+      "data": {
+        "text": "Motosikletin yolla tek temas noktası, avuç içi kadar iki küçük alandır. Fren, ivmelenme ve yatış sırasındaki tüm kuvvet bu alanlardan geçer. Buna rağmen lastik, bakımda en çok ihmal edilen parçalardan biridir. Bu rehberde lastik ölçüsünü nasıl okuyacağınızı, kullanımınıza uygun lastiği nasıl seçeceğinizi ve basıncı nasıl doğru ayarlayacağınızı atölye tecrübesiyle anlatıyoruz."
+      }
+    },
+    {
+      "id": "z50k700002",
+      "type": "header",
+      "data": {
+        "text": "Lastik Üzerindeki Yazıları Okumak",
+        "level": 2
+      }
+    },
+    {
+      "id": "z50k700003",
+      "type": "paragraph",
+      "data": {
+        "text": "Yanak üzerindeki kod ilk bakışta karmaşık görünür ama mantığı basittir. Örneğin <b>120/70-14 61S</b> yazan bir scooter lastiğinde 120, milimetre cinsinden genişliği; 70, yanak yüksekliğinin genişliğe oranını (%70); 14 ise jant çapını inç olarak gösterir. 61 yük endeksidir ve lastik başına yaklaşık 250 kg taşıma kapasitesine karşılık gelir. S harfi hız endeksidir ve yaklaşık 180 km/s anlamına gelir."
+      }
+    },
+    {
+      "id": "z50k700004",
+      "type": "paragraph",
+      "data": {
+        "text": "Aracınıza uygun ölçü, çoğunlukla sele altındaki etikette, şasi üzerindeki plakada veya kullanım kılavuzunda yer alır. Farklı ölçü takmadan önce mutlaka bu değerlere bakın. Örneğin <a href=\"/anlas-120-70-14-tournee-2-61s-scooter-on-lastik\">120/70-14 scooter ön lastik</a> ile <a href=\"/anlas-110-70-14-tournee-2-61s-scooter-lastik\">110/70-14 scooter lastik</a> aynı jantta çalışır ama aracın dengesini ve ön-arka oranını farklı etkiler."
+      }
+    },
+    {
+      "id": "z50k700005",
+      "type": "paragraph",
+      "data": {
+        "text": "Lastik yanağında ayrıca şu bilgileri bulursunuz:"
+      }
+    },
+    {
+      "id": "z50k700006",
+      "type": "list",
+      "data": {
+        "style": "unordered",
+        "items": [
+          "<b>DOT kodu:</b> Sonundaki dört hane üretim haftasını ve yılını verir (ör. 2824: 2024'ün 28. haftası).",
+          "<b>TL / TT:</b> TL (tubeless) iç lastiksiz, TT ise iç lastikli kullanım içindir.",
+          "<b>TWI okları:</b> Diş aşınma göstergesinin yerini işaret eder.",
+          "<b>Dönüş yönü oku:</b> Varsa lastik bu yöne göre monte edilmelidir."
+        ]
+      }
+    },
+    {
+      "id": "z50k700007",
+      "type": "header",
+      "data": {
+        "text": "Kullanım Amacına Göre Lastik Seçimi",
+        "level": 2
+      }
+    },
+    {
+      "id": "z50k700008",
+      "type": "paragraph",
+      "data": {
+        "text": "Tek bir \"en iyi lastik\" yoktur; doğru lastik nasıl sürdüğünüze bağlıdır. Günlük şehir içi kullanımda dayanıklılık ve ıslak zemin tutuşu öne çıkar. Hafta sonu viraj keyfinde ısınma hızı ve yan tutuş önem kazanır. Çok yolcu ve yük taşıyorsanız yük endeksi belirleyici olur."
+      }
+    },
+    {
+      "id": "z50k700009",
+      "type": "table",
+      "data": {
+        "withHeadings": true,
+        "content": [
+          [
+            "<b>Kullanım tipi</b>",
+            "<b>Öncelik</b>",
+            "<b>Dikkat edilecek nokta</b>"
+          ],
+          [
+            "Şehir içi scooter",
+            "Dayanıklılık, ıslak zemin tutuşu",
+            "Küçük jantlar çukura hassastır; yanak yapısı önemlidir"
+          ],
+          [
+            "Naked / sokak motoru",
+            "Dengeli tutuş ve ömür",
+            "Önerilen ölçü ve hız endeksinden sapmayın"
+          ],
+          [
+            "Uzun yol / touring",
+            "Yük taşıma, kilometre ömrü",
+            "Yük endeksi ve yüklü basınç değerleri"
+          ],
+          [
+            "Enduro / çift amaçlı",
+            "Asfalt ve toprakta denge",
+            "Dişli desen asfaltta daha hızlı aşınır"
+          ],
+          [
+            "Küçük hacim / 18 jant",
+            "Ekonomik, sağlam yapı",
+            "Ölçü kodu ve jant genişliği uyumu"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "z50k70000a",
+      "type": "paragraph",
+      "data": {
+        "text": "Seçim yaparken <a href=\"/lastik\">lastik kategorimizi</a> inceleyebilir, <a href=\"/anlas\">Anlas</a>, <a href=\"/michelin\">Michelin</a> ve <a href=\"/metzeler\">Metzeler</a> gibi marka sayfalarına göz atabilirsiniz. 18 inç jantlı küçük hacimli motorlar için <a href=\"/anlas-90-90-18-capra-57p-lastik\">90/90-18 Capra lastik</a> gibi ölçüye özel seçenekler de mevcuttur."
+      }
+    },
+    {
+      "id": "z50k70000b",
+      "type": "header",
+      "data": {
+        "text": "Doğru Lastik Basıncı Nasıl Ayarlanır?",
+        "level": 2
+      }
+    },
+    {
+      "id": "z50k70000c",
+      "type": "paragraph",
+      "data": {
+        "text": "Basınç, lastiğin yola temas alanını, ısınmasını, frenleme mesafesini ve ömrünü doğrudan etkiler. Düşük basınç lastiği aşırı ısıtır, direksiyonu ağırlaştırır ve yanakta yorulma yapar. Yüksek basınç ise temas alanını daralttığı için tutuşu azaltır ve çukurlarda sertlik hissi verir."
+      }
+    },
+    {
+      "id": "z50k70000d",
+      "type": "list",
+      "data": {
+        "style": "unordered",
+        "items": [
+          "Ölçümü <b>lastikler soğukken</b> yapın; kısa mesafe bile basıncı yükseltir.",
+          "Haftada bir ve uzun yola çıkmadan önce kontrol edin.",
+          "Yolcu veya yük aldığınızda, kılavuzun yüklü kullanım değerlerine göre özellikle arka basıncı ayarlayın.",
+          "Dijital veya güvenilir bir manometre kullanın; benzinlik pompalarının göstergeleri her zaman hassas olmayabilir.",
+          "Sibop kapaklarını takmayı unutmayın; kir ve nem sibop içine kaçmasın."
+        ]
+      }
+    },
+    {
+      "id": "z50k70000e",
+      "type": "paragraph",
+      "data": {
+        "text": "Aşağıdaki değerler yalnızca genel bir fikir vermek içindir; her model ve lastik markası için öneri değişir."
+      }
+    },
+    {
+      "id": "z50k70000f",
+      "type": "table",
+      "data": {
+        "withHeadings": true,
+        "content": [
+          [
+            "<b>Araç tipi</b>",
+            "<b>Ön (bar)</b>",
+            "<b>Arka (bar)</b>"
+          ],
+          [
+            "Scooter (50–150 cc)",
+            "1,6 – 2,2",
+            "1,8 – 2,5"
+          ],
+          [
+            "Scooter (250 cc ve üzeri)",
+            "2,2 – 2,5",
+            "2,4 – 2,8"
+          ],
+          [
+            "Sokak / naked motor",
+            "2,2 – 2,5",
+            "2,4 – 2,9"
+          ],
+          [
+            "Küçük hacim 17–18 jant",
+            "1,8 – 2,2",
+            "2,0 – 2,5"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "z50k70000g",
+      "type": "paragraph",
+      "data": {
+        "text": "<i>Bu değerler genel aralıklardır; kesin değer için aracınızın kullanım kılavuzunu ve üzerindeki basınç etiketini esas alın.</i>"
+      }
+    },
+    {
+      "id": "z50k70000h",
+      "type": "header",
+      "data": {
+        "text": "Lastik Ne Zaman Değişir?",
+        "level": 2
+      }
+    },
+    {
+      "id": "z50k70000i",
+      "type": "paragraph",
+      "data": {
+        "text": "Diş derinliği, aşınma göstergesine (TWI) ulaştığında lastik artık yasal ve güvenli sınırdadır; ıslak zeminde yol tutuşu belirgin biçimde düşer. Dişi bitmemiş olsa bile şu durumlarda değişim gerekir: yanakta çatlaklar, kabarmalar veya kesikler; düzensiz ve kademeli aşınma; sürüş sırasında titreşim. Lastik yaşı da önemlidir. Kauçuk zamanla sertleşir; birçok üretici lastiğin beş yıldan sonra yılda bir kez uzman kontrolünden geçirilmesini, çok eski lastiklerin de değiştirilmesini önerir."
+      }
+    },
+    {
+      "id": "z50k70000j",
+      "type": "paragraph",
+      "data": {
+        "text": "Lastik değiştirirken jant, rulman ve sibop gibi komşu parçalara da bakmak mantıklıdır. <a href=\"/on---arka-teker-grubu\">Ön ve arka teker grubu</a> ürünleri, <a href=\"/siboplar\">siboplar</a> ve <a href=\"/jant-seridi\">jant şeritleri</a> bu aşamada yenilenebilir. Fren sistemini de kontrol etmek için <a href=\"/blog/motosiklet-fren-balatasi-ne-zaman-degisir\">fren balatası değişim rehberimize</a>, arka tekerin tahrik tarafı için <a href=\"/blog/motosiklet-zincir-disli-seti-secimi-ve-degisim-rehberi\">zincir dişli seti rehberimize</a> göz atabilirsiniz."
+      }
+    },
+    {
+      "id": "z50k70000k",
+      "type": "header",
+      "data": {
+        "text": "Lastik Bakımı ve Acil Durum Ekipmanı",
+        "level": 2
+      }
+    },
+    {
+      "id": "z50k70000l",
+      "type": "image",
+      "data": {
+        "file": {
+          "url": "__IMG_collage__"
+        },
+        "caption": "Lastik, sibop ve tamir ürünlerinden seçmeler – Soydaş Motosiklet",
+        "withBorder": false,
+        "stretched": false,
+        "withBackground": false
+      }
+    },
+    {
+      "id": "z50k70000m",
+      "type": "paragraph",
+      "data": {
+        "text": "Doğru lastik ve basınç kadar, yolda kalmamak için hazırlıklı olmak da önemlidir. <a href=\"/lastik-tamir-grubu\">Lastik tamir grubunda</a> yer alan <a href=\"/gear5-lastik-tamir-kiti\">lastik tamir kiti</a> gibi ürünler, tubeless lastiklerde küçük delikler için geçici çözüm sunar. Bu tür tamirler yalnızca <b>servise ulaşana kadar</b> kullanılmalıdır; yanak hasarı veya büyük kesiklerde kalıcı çözüm lastik değişimidir."
+      }
+    },
+    {
+      "id": "z50k70000n",
+      "type": "paragraph",
+      "data": {
+        "text": "Sibop sızdırıyorsa lastiği suçlamadan önce sibobu kontrol edin; <a href=\"/gear5-motosiklet-lastik-duz-sibop-e-1\">düz sibop</a> gibi küçük parçalar çoğu zaman sorunun kaynağıdır. Görsel amaçlı <a href=\"/gogo-michelin-3d-lastik-yanak-yazisi-beyaz\">lastik yanak yazıları</a> ise sürüş davranışını etkilemez; yalnızca estetiktir."
+      }
+    },
+    {
+      "id": "z50k70000o",
+      "type": "header",
+      "data": {
+        "text": "Sık Sorulan Sorular",
+        "level": 2
+      }
+    },
+    {
+      "id": "z50k70000p",
+      "type": "header",
+      "data": {
+        "text": "Ön ve arka lastiği aynı anda mı değiştirmeliyim?",
+        "level": 3
+      }
+    },
+    {
+      "id": "z50k70000q",
+      "type": "paragraph",
+      "data": {
+        "text": "Zorunlu değildir; her lastik kendi aşınmasına göre değiştirilir. Ancak ön ve arka lastik aynı yaşta ve benzer aşınmadaysa birlikte değiştirmek dengeli bir sürüş sağlar. Yeni lastikte ilk yüz kilometrede yumuşak sürün; yüzeydeki üretim kaplamasının temizlenmesi gerekir."
+      }
+    },
+    {
+      "id": "z50k70000r",
+      "type": "header",
+      "data": {
+        "text": "Lastik basıncı yazın ve kışın değişir mi?",
+        "level": 3
+      }
+    },
+    {
+      "id": "z50k70000s",
+      "type": "paragraph",
+      "data": {
+        "text": "Evet. Sıcaklık değiştikçe lastikteki hava basıncı da değişir; soğuk havada basınç düşer. Bu yüzden mevsim geçişlerinde ve sabah soğuk ölçümlerinde basıncı daha sık kontrol etmenizi öneririz."
+      }
+    },
+    {
+      "id": "z50k70000t",
+      "type": "header",
+      "data": {
+        "text": "Tamir sütü veya spreyi lastiği kalıcı olarak onarır mı?",
+        "level": 3
+      }
+    },
+    {
+      "id": "z50k70000u",
+      "type": "paragraph",
+      "data": {
+        "text": "Hayır. Bu ürünler acil durum içindir ve küçük, diş bölgesindeki deliklerde geçici çözüm sağlar. Sonrasında lastiğin bir lastikçi tarafından kontrol edilmesi gerekir."
+      }
+    },
+    {
+      "id": "z50k70000v",
+      "type": "paragraph",
+      "data": {
+        "text": "Lastik seçimi ve basınç kontrolü, motosiklet güvenliğinin en düşük maliyetli ama en etkili parçasıdır. Bakım için başka rehberlere ihtiyaç duyarsanız <a href=\"/blog/motosiklet-rehberleri\">motosiklet rehberleri</a> sayfamıza, yağ seçimi için <a href=\"/blog/motosiklet-yagi-secimi-10w-40-jaso-ma-ve-mb-farki\">yağ seçimi yazımıza</a> bakabilirsiniz. Modelinize uygun ürün konusunda sorularınız için <a href=\"/pages/iletisim\">bizimle iletişime geçin</a>; <a href=\"/pages/sss\">sık sorulan sorular</a> sayfamız da yardımcı olabilir."
+      }
+    }
+  ],
+  "contentHtml": "<html lang=\"en\">\n          <style>.ikas-editor-v1>table,td,th{border:1px solid #e8e8eb;border-collapse:collapse;font-size:14px}.ikas-editor-v1>th,td{padding:6px 12px}.ikas-editor-v1 ul,.ikas-editor-v1 ol{padding-left:20px}.ikas-editor-v1 ul li{list-style-type:disc;margin:8px 0 8px 16px}.ikas-editor-v1 ol li{list-style-type:decimal;margin:8px 0 8px 16px}.ikas-editor-v1 li{margin:8px 0 8px 16px}.ikas-editor-v1 code{display:block;white-space:pre-wrap}.ikas-editor-v1 blockquote{margin-inline-start:0;border-left:3px solid rgb(41 41 41);padding-left:23px}.ikas-editor-v1 figure{margin-inline:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0;width:100%}.ikas-editor-v1 img{max-width:800px;object-fit:cover;object-position:center}.ikas-editor-v1 img.img-bg{padding:1.5em!important;background:#cdd1e0!important}.ikas-editor-v1 img.img-fullwidth{width:100%!important;max-width:100%!important;margin:0 auto!important}.ikas-editor-v1 figcaption{text-align:center;padding-top:6px;word-break:break-word;font-size:12px;background:0 0;z-index:{};}.ikas-editor-v1 .embed-youtube{width:100%;height:400px}.ikas-editor-v1 a{color:#0070f3;text-decoration:underline;cursor:pointer}.ikas-editor-v1 a:hover{opacity:.8}.products-container{display:flex;flex-direction:column;gap:10px}.product-block-container{margin:0 auto;cursor:pointer;flex:1;display:flex;gap:20px;padding:10px 0}.product-image{width:120px;height:120px;object-fit:cover;border-radius:4px;flex-shrink:0}.product-name{font-size:15px;font-weight:500;width:100%;margin:0 0 4px}.product-brand{font-size:13px;font-weight:400;color:#adb5bd;margin:0 0 4px}.product-discount-price,.product-price{width:fit-content;font-size:16px;font-weight:500;color:#000}.product-price{margin:6px 0 0}.product-discount-price{margin:6px 8px 0 0;text-decoration:line-through}.ikas-editor-v1 table b{font-weight:bold}.ikas-editor-v1 table i{font-style:italic}</style>\n          <div class=\"ikas-editor-v1\">\n          <p class=\"editor-paragraph\"> Motosikletin yolla tek temas noktası, avuç içi kadar iki küçük alandır. Fren, ivmelenme ve yatış sırasındaki tüm kuvvet bu alanlardan geçer. Buna rağmen lastik, bakımda en çok ihmal edilen parçalardan biridir. Bu rehberde lastik ölçüsünü nasıl okuyacağınızı, kullanımınıza uygun lastiği nasıl seçeceğinizi ve basıncı nasıl doğru ayarlayacağınızı atölye tecrübesiyle anlatıyoruz. </p><h2>Lastik Üzerindeki Yazıları Okumak</h2><p class=\"editor-paragraph\"> Yanak üzerindeki kod ilk bakışta karmaşık görünür ama mantığı basittir. Örneğin <b>120/70-14 61S</b> yazan bir scooter lastiğinde 120, milimetre cinsinden genişliği; 70, yanak yüksekliğinin genişliğe oranını (%70); 14 ise jant çapını inç olarak gösterir. 61 yük endeksidir ve lastik başına yaklaşık 250 kg taşıma kapasitesine karşılık gelir. S harfi hız endeksidir ve yaklaşık 180 km/s anlamına gelir. </p><p class=\"editor-paragraph\"> Aracınıza uygun ölçü, çoğunlukla sele altındaki etikette, şasi üzerindeki plakada veya kullanım kılavuzunda yer alır. Farklı ölçü takmadan önce mutlaka bu değerlere bakın. Örneğin <a href=\"/anlas-120-70-14-tournee-2-61s-scooter-on-lastik\">120/70-14 scooter ön lastik</a> ile <a href=\"/anlas-110-70-14-tournee-2-61s-scooter-lastik\">110/70-14 scooter lastik</a> aynı jantta çalışır ama aracın dengesini ve ön-arka oranını farklı etkiler. </p><p class=\"editor-paragraph\"> Lastik yanağında ayrıca şu bilgileri bulursunuz: </p><ul><li><b>DOT kodu:</b> Sonundaki dört hane üretim haftasını ve yılını verir (ör. 2824: 2024'ün 28. haftası).</li><li><b>TL / TT:</b> TL (tubeless) iç lastiksiz, TT ise iç lastikli kullanım içindir.</li><li><b>TWI okları:</b> Diş aşınma göstergesinin yerini işaret eder.</li><li><b>Dönüş yönü oku:</b> Varsa lastik bu yöne göre monte edilmelidir.</li></ul><h2>Kullanım Amacına Göre Lastik Seçimi</h2><p class=\"editor-paragraph\"> Tek bir \"en iyi lastik\" yoktur; doğru lastik nasıl sürdüğünüze bağlıdır. Günlük şehir içi kullanımda dayanıklılık ve ıslak zemin tutuşu öne çıkar. Hafta sonu viraj keyfinde ısınma hızı ve yan tutuş önem kazanır. Çok yolcu ve yük taşıyorsanız yük endeksi belirleyici olur. </p><table><tbody><tr><td><b>Kullanım tipi</b></td><td><b>Öncelik</b></td><td><b>Dikkat edilecek nokta</b></td></tr><tr><td>Şehir içi scooter</td><td>Dayanıklılık, ıslak zemin tutuşu</td><td>Küçük jantlar çukura hassastır; yanak yapısı önemlidir</td></tr><tr><td>Naked / sokak motoru</td><td>Dengeli tutuş ve ömür</td><td>Önerilen ölçü ve hız endeksinden sapmayın</td></tr><tr><td>Uzun yol / touring</td><td>Yük taşıma, kilometre ömrü</td><td>Yük endeksi ve yüklü basınç değerleri</td></tr><tr><td>Enduro / çift amaçlı</td><td>Asfalt ve toprakta denge</td><td>Dişli desen asfaltta daha hızlı aşınır</td></tr><tr><td>Küçük hacim / 18 jant</td><td>Ekonomik, sağlam yapı</td><td>Ölçü kodu ve jant genişliği uyumu</td></tr></tbody></table><p class=\"editor-paragraph\"> Seçim yaparken <a href=\"/lastik\">lastik kategorimizi</a> inceleyebilir, <a href=\"/anlas\">Anlas</a>, <a href=\"/michelin\">Michelin</a> ve <a href=\"/metzeler\">Metzeler</a> gibi marka sayfalarına göz atabilirsiniz. 18 inç jantlı küçük hacimli motorlar için <a href=\"/anlas-90-90-18-capra-57p-lastik\">90/90-18 Capra lastik</a> gibi ölçüye özel seçenekler de mevcuttur. </p><h2>Doğru Lastik Basıncı Nasıl Ayarlanır?</h2><p class=\"editor-paragraph\"> Basınç, lastiğin yola temas alanını, ısınmasını, frenleme mesafesini ve ömrünü doğrudan etkiler. Düşük basınç lastiği aşırı ısıtır, direksiyonu ağırlaştırır ve yanakta yorulma yapar. Yüksek basınç ise temas alanını daralttığı için tutuşu azaltır ve çukurlarda sertlik hissi verir. </p><ul><li>Ölçümü <b>lastikler soğukken</b> yapın; kısa mesafe bile basıncı yükseltir.</li><li>Haftada bir ve uzun yola çıkmadan önce kontrol edin.</li><li>Yolcu veya yük aldığınızda, kılavuzun yüklü kullanım değerlerine göre özellikle arka basıncı ayarlayın.</li><li>Dijital veya güvenilir bir manometre kullanın; benzinlik pompalarının göstergeleri her zaman hassas olmayabilir.</li><li>Sibop kapaklarını takmayı unutmayın; kir ve nem sibop içine kaçmasın.</li></ul><p class=\"editor-paragraph\"> Aşağıdaki değerler yalnızca genel bir fikir vermek içindir; her model ve lastik markası için öneri değişir. </p><table><tbody><tr><td><b>Araç tipi</b></td><td><b>Ön (bar)</b></td><td><b>Arka (bar)</b></td></tr><tr><td>Scooter (50–150 cc)</td><td>1,6 – 2,2</td><td>1,8 – 2,5</td></tr><tr><td>Scooter (250 cc ve üzeri)</td><td>2,2 – 2,5</td><td>2,4 – 2,8</td></tr><tr><td>Sokak / naked motor</td><td>2,2 – 2,5</td><td>2,4 – 2,9</td></tr><tr><td>Küçük hacim 17–18 jant</td><td>1,8 – 2,2</td><td>2,0 – 2,5</td></tr></tbody></table><p class=\"editor-paragraph\"> <i>Bu değerler genel aralıklardır; kesin değer için aracınızın kullanım kılavuzunu ve üzerindeki basınç etiketini esas alın.</i> </p><h2>Lastik Ne Zaman Değişir?</h2><p class=\"editor-paragraph\"> Diş derinliği, aşınma göstergesine (TWI) ulaştığında lastik artık yasal ve güvenli sınırdadır; ıslak zeminde yol tutuşu belirgin biçimde düşer. Dişi bitmemiş olsa bile şu durumlarda değişim gerekir: yanakta çatlaklar, kabarmalar veya kesikler; düzensiz ve kademeli aşınma; sürüş sırasında titreşim. Lastik yaşı da önemlidir. Kauçuk zamanla sertleşir; birçok üretici lastiğin beş yıldan sonra yılda bir kez uzman kontrolünden geçirilmesini, çok eski lastiklerin de değiştirilmesini önerir. </p><p class=\"editor-paragraph\"> Lastik değiştirirken jant, rulman ve sibop gibi komşu parçalara da bakmak mantıklıdır. <a href=\"/on---arka-teker-grubu\">Ön ve arka teker grubu</a> ürünleri, <a href=\"/siboplar\">siboplar</a> ve <a href=\"/jant-seridi\">jant şeritleri</a> bu aşamada yenilenebilir. Fren sistemini de kontrol etmek için <a href=\"/blog/motosiklet-fren-balatasi-ne-zaman-degisir\">fren balatası değişim rehberimize</a>, arka tekerin tahrik tarafı için <a href=\"/blog/motosiklet-zincir-disli-seti-secimi-ve-degisim-rehberi\">zincir dişli seti rehberimize</a> göz atabilirsiniz. </p><h2>Lastik Bakımı ve Acil Durum Ekipmanı</h2><figure class=\"editor-fig-img\"><img class=\"editor-img   \" src=\"__IMG_collage__\" alt=\"Lastik, sibop ve tamir ürünlerinden seçmeler – Soydaş Motosiklet\" width=\"1080\" height=\"360\" style=\"max-width: 100%; aspect-ratio: 1080 / 360;\"><figcaption class=\"editor-fig-cap\">Lastik, sibop ve tamir ürünlerinden seçmeler – Soydaş Motosiklet</figcaption></figure><p class=\"editor-paragraph\"> Doğru lastik ve basınç kadar, yolda kalmamak için hazırlıklı olmak da önemlidir. <a href=\"/lastik-tamir-grubu\">Lastik tamir grubunda</a> yer alan <a href=\"/gear5-lastik-tamir-kiti\">lastik tamir kiti</a> gibi ürünler, tubeless lastiklerde küçük delikler için geçici çözüm sunar. Bu tür tamirler yalnızca <b>servise ulaşana kadar</b> kullanılmalıdır; yanak hasarı veya büyük kesiklerde kalıcı çözüm lastik değişimidir. </p><p class=\"editor-paragraph\"> Sibop sızdırıyorsa lastiği suçlamadan önce sibobu kontrol edin; <a href=\"/gear5-motosiklet-lastik-duz-sibop-e-1\">düz sibop</a> gibi küçük parçalar çoğu zaman sorunun kaynağıdır. Görsel amaçlı <a href=\"/gogo-michelin-3d-lastik-yanak-yazisi-beyaz\">lastik yanak yazıları</a> ise sürüş davranışını etkilemez; yalnızca estetiktir. </p><h2>Sık Sorulan Sorular</h2><h3>Ön ve arka lastiği aynı anda mı değiştirmeliyim?</h3><p class=\"editor-paragraph\"> Zorunlu değildir; her lastik kendi aşınmasına göre değiştirilir. Ancak ön ve arka lastik aynı yaşta ve benzer aşınmadaysa birlikte değiştirmek dengeli bir sürüş sağlar. Yeni lastikte ilk yüz kilometrede yumuşak sürün; yüzeydeki üretim kaplamasının temizlenmesi gerekir. </p><h3>Lastik basıncı yazın ve kışın değişir mi?</h3><p class=\"editor-paragraph\"> Evet. Sıcaklık değiştikçe lastikteki hava basıncı da değişir; soğuk havada basınç düşer. Bu yüzden mevsim geçişlerinde ve sabah soğuk ölçümlerinde basıncı daha sık kontrol etmenizi öneririz. </p><h3>Tamir sütü veya spreyi lastiği kalıcı olarak onarır mı?</h3><p class=\"editor-paragraph\"> Hayır. Bu ürünler acil durum içindir ve küçük, diş bölgesindeki deliklerde geçici çözüm sağlar. Sonrasında lastiğin bir lastikçi tarafından kontrol edilmesi gerekir. </p><p class=\"editor-paragraph\"> Lastik seçimi ve basınç kontrolü, motosiklet güvenliğinin en düşük maliyetli ama en etkili parçasıdır. Bakım için başka rehberlere ihtiyaç duyarsanız <a href=\"/blog/motosiklet-rehberleri\">motosiklet rehberleri</a> sayfamıza, yağ seçimi için <a href=\"/blog/motosiklet-yagi-secimi-10w-40-jaso-ma-ve-mb-farki\">yağ seçimi yazımıza</a> bakabilirsiniz. Modelinize uygun ürün konusunda sorularınız için <a href=\"/pages/iletisim\">bizimle iletişime geçin</a>; <a href=\"/pages/sss\">sık sorulan sorular</a> sayfamız da yardımcı olabilir. </p>\n          </div>\n          </html>\n  ",
+  "contentData": "{\"time\":1792216011033,\"blocks\":[{\"id\":\"z50k700001\",\"type\":\"paragraph\",\"data\":{\"text\":\"Motosikletin yolla tek temas noktası, avuç içi kadar iki küçük alandır. Fren, ivmelenme ve yatış sırasındaki tüm kuvvet bu alanlardan geçer. Buna rağmen lastik, bakımda en çok ihmal edilen parçalardan biridir. Bu rehberde lastik ölçüsünü nasıl okuyacağınızı, kullanımınıza uygun lastiği nasıl seçeceğinizi ve basıncı nasıl doğru ayarlayacağınızı atölye tecrübesiyle anlatıyoruz.\"}},{\"id\":\"z50k700002\",\"type\":\"header\",\"data\":{\"text\":\"Lastik Üzerindeki Yazıları Okumak\",\"level\":2}},{\"id\":\"z50k700003\",\"type\":\"paragraph\",\"data\":{\"text\":\"Yanak üzerindeki kod ilk bakışta karmaşık görünür ama mantığı basittir. Örneğin <b>120/70-14 61S</b> yazan bir scooter lastiğinde 120, milimetre cinsinden genişliği; 70, yanak yüksekliğinin genişliğe oranını (%70); 14 ise jant çapını inç olarak gösterir. 61 yük endeksidir ve lastik başına yaklaşık 250 kg taşıma kapasitesine karşılık gelir. S harfi hız endeksidir ve yaklaşık 180 km/s anlamına gelir.\"}},{\"id\":\"z50k700004\",\"type\":\"paragraph\",\"data\":{\"text\":\"Aracınıza uygun ölçü, çoğunlukla sele altındaki etikette, şasi üzerindeki plakada veya kullanım kılavuzunda yer alır. Farklı ölçü takmadan önce mutlaka bu değerlere bakın. Örneğin <a href=\\\"/anlas-120-70-14-tournee-2-61s-scooter-on-lastik\\\">120/70-14 scooter ön lastik</a> ile <a href=\\\"/anlas-110-70-14-tournee-2-61s-scooter-lastik\\\">110/70-14 scooter lastik</a> aynı jantta çalışır ama aracın dengesini ve ön-arka oranını farklı etkiler.\"}},{\"id\":\"z50k700005\",\"type\":\"paragraph\",\"data\":{\"text\":\"Lastik yanağında ayrıca şu bilgileri bulursunuz:\"}},{\"id\":\"z50k700006\",\"type\":\"list\",\"data\":{\"style\":\"unordered\",\"items\":[\"<b>DOT kodu:</b> Sonundaki dört hane üretim haftasını ve yılını verir (ör. 2824: 2024'ün 28. haftası).\",\"<b>TL / TT:</b> TL (tubeless) iç lastiksiz, TT ise iç lastikli kullanım içindir.\",\"<b>TWI okları:</b> Diş aşınma göstergesinin yerini işaret eder.\",\"<b>Dönüş yönü oku:</b> Varsa lastik bu yöne göre monte edilmelidir.\"]}},{\"id\":\"z50k700007\",\"type\":\"header\",\"data\":{\"text\":\"Kullanım Amacına Göre Lastik Seçimi\",\"level\":2}},{\"id\":\"z50k700008\",\"type\":\"paragraph\",\"data\":{\"text\":\"Tek bir \\\"en iyi lastik\\\" yoktur; doğru lastik nasıl sürdüğünüze bağlıdır. Günlük şehir içi kullanımda dayanıklılık ve ıslak zemin tutuşu öne çıkar. Hafta sonu viraj keyfinde ısınma hızı ve yan tutuş önem kazanır. Çok yolcu ve yük taşıyorsanız yük endeksi belirleyici olur.\"}},{\"id\":\"z50k700009\",\"type\":\"table\",\"data\":{\"withHeadings\":true,\"content\":[[\"<b>Kullanım tipi</b>\",\"<b>Öncelik</b>\",\"<b>Dikkat edilecek nokta</b>\"],[\"Şehir içi scooter\",\"Dayanıklılık, ıslak zemin tutuşu\",\"Küçük jantlar çukura hassastır; yanak yapısı önemlidir\"],[\"Naked / sokak motoru\",\"Dengeli tutuş ve ömür\",\"Önerilen ölçü ve hız endeksinden sapmayın\"],[\"Uzun yol / touring\",\"Yük taşıma, kilometre ömrü\",\"Yük endeksi ve yüklü basınç değerleri\"],[\"Enduro / çift amaçlı\",\"Asfalt ve toprakta denge\",\"Dişli desen asfaltta daha hızlı aşınır\"],[\"Küçük hacim / 18 jant\",\"Ekonomik, sağlam yapı\",\"Ölçü kodu ve jant genişliği uyumu\"]]}},{\"id\":\"z50k70000a\",\"type\":\"paragraph\",\"data\":{\"text\":\"Seçim yaparken <a href=\\\"/lastik\\\">lastik kategorimizi</a> inceleyebilir, <a href=\\\"/anlas\\\">Anlas</a>, <a href=\\\"/michelin\\\">Michelin</a> ve <a href=\\\"/metzeler\\\">Metzeler</a> gibi marka sayfalarına göz atabilirsiniz. 18 inç jantlı küçük hacimli motorlar için <a href=\\\"/anlas-90-90-18-capra-57p-lastik\\\">90/90-18 Capra lastik</a> gibi ölçüye özel seçenekler de mevcuttur.\"}},{\"id\":\"z50k70000b\",\"type\":\"header\",\"data\":{\"text\":\"Doğru Lastik Basıncı Nasıl Ayarlanır?\",\"level\":2}},{\"id\":\"z50k70000c\",\"type\":\"paragraph\",\"data\":{\"text\":\"Basınç, lastiğin yola temas alanını, ısınmasını, frenleme mesafesini ve ömrünü doğrudan etkiler. Düşük basınç lastiği aşırı ısıtır, direksiyonu ağırlaştırır ve yanakta yorulma yapar. Yüksek basınç ise temas alanını daralttığı için tutuşu azaltır ve çukurlarda sertlik hissi verir.\"}},{\"id\":\"z50k70000d\",\"type\":\"list\",\"data\":{\"style\":\"unordered\",\"items\":[\"Ölçümü <b>lastikler soğukken</b> yapın; kısa mesafe bile basıncı yükseltir.\",\"Haftada bir ve uzun yola çıkmadan önce kontrol edin.\",\"Yolcu veya yük aldığınızda, kılavuzun yüklü kullanım değerlerine göre özellikle arka basıncı ayarlayın.\",\"Dijital veya güvenilir bir manometre kullanın; benzinlik pompalarının göstergeleri her zaman hassas olmayabilir.\",\"Sibop kapaklarını takmayı unutmayın; kir ve nem sibop içine kaçmasın.\"]}},{\"id\":\"z50k70000e\",\"type\":\"paragraph\",\"data\":{\"text\":\"Aşağıdaki değerler yalnızca genel bir fikir vermek içindir; her model ve lastik markası için öneri değişir.\"}},{\"id\":\"z50k70000f\",\"type\":\"table\",\"data\":{\"withHeadings\":true,\"content\":[[\"<b>Araç tipi</b>\",\"<b>Ön (bar)</b>\",\"<b>Arka (bar)</b>\"],[\"Scooter (50–150 cc)\",\"1,6 – 2,2\",\"1,8 – 2,5\"],[\"Scooter (250 cc ve üzeri)\",\"2,2 – 2,5\",\"2,4 – 2,8\"],[\"Sokak / naked motor\",\"2,2 – 2,5\",\"2,4 – 2,9\"],[\"Küçük hacim 17–18 jant\",\"1,8 – 2,2\",\"2,0 – 2,5\"]]}},{\"id\":\"z50k70000g\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>Bu değerler genel aralıklardır; kesin değer için aracınızın kullanım kılavuzunu ve üzerindeki basınç etiketini esas alın.</i>\"}},{\"id\":\"z50k70000h\",\"type\":\"header\",\"data\":{\"text\":\"Lastik Ne Zaman Değişir?\",\"level\":2}},{\"id\":\"z50k70000i\",\"type\":\"paragraph\",\"data\":{\"text\":\"Diş derinliği, aşınma göstergesine (TWI) ulaştığında lastik artık yasal ve güvenli sınırdadır; ıslak zeminde yol tutuşu belirgin biçimde düşer. Dişi bitmemiş olsa bile şu durumlarda değişim gerekir: yanakta çatlaklar, kabarmalar veya kesikler; düzensiz ve kademeli aşınma; sürüş sırasında titreşim. Lastik yaşı da önemlidir. Kauçuk zamanla sertleşir; birçok üretici lastiğin beş yıldan sonra yılda bir kez uzman kontrolünden geçirilmesini, çok eski lastiklerin de değiştirilmesini önerir.\"}},{\"id\":\"z50k70000j\",\"type\":\"paragraph\",\"data\":{\"text\":\"Lastik değiştirirken jant, rulman ve sibop gibi komşu parçalara da bakmak mantıklıdır. <a href=\\\"/on---arka-teker-grubu\\\">Ön ve arka teker grubu</a> ürünleri, <a href=\\\"/siboplar\\\">siboplar</a> ve <a href=\\\"/jant-seridi\\\">jant şeritleri</a> bu aşamada yenilenebilir. Fren sistemini de kontrol etmek için <a href=\\\"/blog/motosiklet-fren-balatasi-ne-zaman-degisir\\\">fren balatası değişim rehberimize</a>, arka tekerin tahrik tarafı için <a href=\\\"/blog/motosiklet-zincir-disli-seti-secimi-ve-degisim-rehberi\\\">zincir dişli seti rehberimize</a> göz atabilirsiniz.\"}},{\"id\":\"z50k70000k\",\"type\":\"header\",\"data\":{\"text\":\"Lastik Bakımı ve Acil Durum Ekipmanı\",\"level\":2}},{\"id\":\"z50k70000l\",\"type\":\"image\",\"data\":{\"file\":{\"url\":\"__IMG_collage__\"},\"caption\":\"Lastik, sibop ve tamir ürünlerinden seçmeler – Soydaş Motosiklet\",\"withBorder\":false,\"stretched\":false,\"withBackground\":false}},{\"id\":\"z50k70000m\",\"type\":\"paragraph\",\"data\":{\"text\":\"Doğru lastik ve basınç kadar, yolda kalmamak için hazırlıklı olmak da önemlidir. <a href=\\\"/lastik-tamir-grubu\\\">Lastik tamir grubunda</a> yer alan <a href=\\\"/gear5-lastik-tamir-kiti\\\">lastik tamir kiti</a> gibi ürünler, tubeless lastiklerde küçük delikler için geçici çözüm sunar. Bu tür tamirler yalnızca <b>servise ulaşana kadar</b> kullanılmalıdır; yanak hasarı veya büyük kesiklerde kalıcı çözüm lastik değişimidir.\"}},{\"id\":\"z50k70000n\",\"type\":\"paragraph\",\"data\":{\"text\":\"Sibop sızdırıyorsa lastiği suçlamadan önce sibobu kontrol edin; <a href=\\\"/gear5-motosiklet-lastik-duz-sibop-e-1\\\">düz sibop</a> gibi küçük parçalar çoğu zaman sorunun kaynağıdır. Görsel amaçlı <a href=\\\"/gogo-michelin-3d-lastik-yanak-yazisi-beyaz\\\">lastik yanak yazıları</a> ise sürüş davranışını etkilemez; yalnızca estetiktir.\"}},{\"id\":\"z50k70000o\",\"type\":\"header\",\"data\":{\"text\":\"Sık Sorulan Sorular\",\"level\":2}},{\"id\":\"z50k70000p\",\"type\":\"header\",\"data\":{\"text\":\"Ön ve arka lastiği aynı anda mı değiştirmeliyim?\",\"level\":3}},{\"id\":\"z50k70000q\",\"type\":\"paragraph\",\"data\":{\"text\":\"Zorunlu değildir; her lastik kendi aşınmasına göre değiştirilir. Ancak ön ve arka lastik aynı yaşta ve benzer aşınmadaysa birlikte değiştirmek dengeli bir sürüş sağlar. Yeni lastikte ilk yüz kilometrede yumuşak sürün; yüzeydeki üretim kaplamasının temizlenmesi gerekir.\"}},{\"id\":\"z50k70000r\",\"type\":\"header\",\"data\":{\"text\":\"Lastik basıncı yazın ve kışın değişir mi?\",\"level\":3}},{\"id\":\"z50k70000s\",\"type\":\"paragraph\",\"data\":{\"text\":\"Evet. Sıcaklık değiştikçe lastikteki hava basıncı da değişir; soğuk havada basınç düşer. Bu yüzden mevsim geçişlerinde ve sabah soğuk ölçümlerinde basıncı daha sık kontrol etmenizi öneririz.\"}},{\"id\":\"z50k70000t\",\"type\":\"header\",\"data\":{\"text\":\"Tamir sütü veya spreyi lastiği kalıcı olarak onarır mı?\",\"level\":3}},{\"id\":\"z50k70000u\",\"type\":\"paragraph\",\"data\":{\"text\":\"Hayır. Bu ürünler acil durum içindir ve küçük, diş bölgesindeki deliklerde geçici çözüm sağlar. Sonrasında lastiğin bir lastikçi tarafından kontrol edilmesi gerekir.\"}},{\"id\":\"z50k70000v\",\"type\":\"paragraph\",\"data\":{\"text\":\"Lastik seçimi ve basınç kontrolü, motosiklet güvenliğinin en düşük maliyetli ama en etkili parçasıdır. Bakım için başka rehberlere ihtiyaç duyarsanız <a href=\\\"/blog/motosiklet-rehberleri\\\">motosiklet rehberleri</a> sayfamıza, yağ seçimi için <a href=\\\"/blog/motosiklet-yagi-secimi-10w-40-jaso-ma-ve-mb-farki\\\">yağ seçimi yazımıza</a> bakabilirsiniz. Modelinize uygun ürün konusunda sorularınız için <a href=\\\"/pages/iletisim\\\">bizimle iletişime geçin</a>; <a href=\\\"/pages/sss\\\">sık sorulan sorular</a> sayfamız da yardımcı olabilir.\"}}],\"version\":\"2.28.2\"}",
+  "removedLinks": []
+}
