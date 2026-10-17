@@ -54,4 +54,4 @@ jobs:
           git config user.email "bot@users.noreply.github.com"
           git add -A fixes
           git commit -m "Görsel yenileme: $SLUG" || echo "değişiklik yok"
-          git push
+          git pull --rebase origin main && git push
