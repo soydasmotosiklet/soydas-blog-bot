@@ -75,7 +75,7 @@ async function main() {
     case 'refresh-images': {
       const slug = rest[0];
       if (!slug || !arg('title') || !arg('cover')) throw new Error('Kullanım: refresh-images <slug> --title "..." --cover "query" [--inline "query"]');
-      const post = { title: arg('title'), coverQuery: arg('cover'), coverQueryAlt: arg('cover-alt'), inlineQuery: arg('inline') || arg('cover') };
+      const post = { title: arg('title'), coverQuery: arg('cover'), coverQueryAlt: arg('cover-alt') || arg('inline'), inlineQuery: arg('inline') || arg('cover') };
       const { coverPhoto, coverBuf, inlinePhoto, inlineBuf } = await makePhotos(post);
       if (!coverPhoto) throw new Error('Uygun fotoğraf bulunamadı (PIXABAY_API_KEY tanımlı mı?)');
       const dir = path.join('fixes', slug);

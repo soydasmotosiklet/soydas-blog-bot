@@ -85,7 +85,20 @@ export async function makePhotos(post, productBufs = [], log = console.log) {
     return out;
   };
   const topic = post.title;
-  const coverPhoto = await pickBestPhoto(await gather([post.coverQuery, post.coverQueryAlt, 'motorcycle workshop', 'motorcycle']), { topic, purpose: 'kapak (geniş, yatay)' });
+  // Önce en spesifik arama; Claude hiçbirini beğenmezse giderek genelleşen aramalar.
+  const pickRound = async (rounds, opts, exclude = []) => {
+    for (const qs of rounds) {
+      const cands = await gather(qs, exclude);
+      if (!cands.length) continue;
+      const p = await pickBestPhoto(cands, opts);
+      if (p) return p;
+    }
+    return null;
+  };
+  const coverPhoto = await pickRound(
+    [[post.coverQuery], [post.coverQueryAlt], ['motorcycle mechanic', 'motorcycle workshop', 'motorcycle garage'], ['motorcycle', 'motorbike']],
+    { topic, purpose: 'kapak (geniş, yatay)' },
+  );
   let coverBuf;
   if (coverPhoto) {
     coverBuf = await makeCover(await downloadPhoto(coverPhoto, { w: '2400', q: '85', fm: 'jpg' }));
@@ -94,7 +107,7 @@ export async function makePhotos(post, productBufs = [], log = console.log) {
     coverBuf = await makeProductCover(productBufs);
   }
   const inlinePhoto = coverPhoto
-    ? await pickBestPhoto(await gather([post.inlineQuery, post.coverQueryAlt, 'motorcycle maintenance'], [coverPhoto.id]), { topic, purpose: 'yazı içi' })
+    ? await pickRound([[post.inlineQuery], [post.coverQueryAlt], ['motorcycle maintenance', 'motorcycle mechanic']], { topic, purpose: 'yazı içi' }, [coverPhoto.id])
     : null;
   const inlineBuf = inlinePhoto ? await makeInline(await downloadPhoto(inlinePhoto, { w: '1600', q: '85', fm: 'jpg' })) : null;
   return { coverPhoto, coverBuf, inlinePhoto, inlineBuf };
