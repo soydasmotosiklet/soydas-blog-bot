@@ -12,21 +12,28 @@ export const provider = () =>
 export async function searchPhotos(query, { orientation = 'landscape', exclude = [] } = {}) {
   if (provider() === 'none') return [];
   if (provider() === 'pixabay') {
-    const u = new URL('https://pixabay.com/api/');
-    u.search = new URLSearchParams({ key: config.pixabay.apiKey, q: query.slice(0, 100), image_type: 'photo', orientation: orientation === 'landscape' ? 'horizontal' : 'all', min_width: '1600', safesearch: 'true', per_page: '20' });
-    const res = await fetch(u);
-    if (!res.ok) throw new Error(`Pixabay araması başarısız (HTTP ${res.status})`);
-    const json = await res.json();
-    return (json.hits || [])
+    // Önce editörlerin seçtiği (profesyonel) fotoğraflar, yetmezse tümü; popülerliğe göre.
+    const run = async (extra) => {
+      const u = new URL('https://pixabay.com/api/');
+      u.search = new URLSearchParams({ key: config.pixabay.apiKey, q: query.slice(0, 100), image_type: 'photo', orientation: orientation === 'landscape' ? 'horizontal' : 'all', min_width: '1920', safesearch: 'true', order: 'popular', per_page: '30', ...extra });
+      const res = await fetch(u);
+      if (!res.ok) throw new Error(`Pixabay araması başarısız (HTTP ${res.status})`);
+      return (await res.json()).hits || [];
+    };
+    const seen = new Set();
+    const hits = [...(await run({ editors_choice: 'true' })), ...(await run({}))].filter((p) => !seen.has(p.id) && seen.add(p.id));
+    return hits
       .filter((p) => !exclude.includes(String(p.id)))
       .map((p) => ({
         provider: 'pixabay',
         id: String(p.id),
         width: p.imageWidth,
         height: p.imageHeight,
+        tags: p.tags,
+        editorsChoice: false,
         user: { name: p.user, links: { html: `https://pixabay.com/users/${p.user}-${p.user_id}/` } },
         links: { html: p.pageURL },
-        urls: { raw: p.largeImageURL },
+        urls: { raw: p.largeImageURL, preview: p.webformatURL },
       }));
   }
   if (provider() === 'pexels') {
@@ -44,7 +51,7 @@ export async function searchPhotos(query, { orientation = 'landscape', exclude =
         height: p.height,
         user: { name: p.photographer, links: { html: p.photographer_url } },
         links: { html: p.url },
-        urls: { raw: `${p.src.original}?auto=compress&cs=tinysrgb` },
+        urls: { raw: `${p.src.original}?auto=compress&cs=tinysrgb`, preview: p.src.medium },
       }));
   }
   const key = config.unsplash.accessKey;
@@ -57,6 +64,51 @@ export async function searchPhotos(query, { orientation = 'landscape', exclude =
   return (json.results || [])
     .filter((p) => p.width >= 1600 && !exclude.includes(p.id))
     .map((p) => ({ ...p, provider: 'unsplash' }));
+}
+
+/**
+ * Aday fotoğraflar arasından en uygun ve en profesyonel görüneni Claude'a (görsel olarak) seçtirir.
+ * Uygun aday yoksa null döner (konu dışı / amatör / yazı-logo içeren fotoğraflar elenir).
+ */
+export async function pickBestPhoto(candidates, { topic, purpose = 'kapak', max = 8 } = {}) {
+  const list = candidates.filter((c) => c.urls?.preview).slice(0, max);
+  if (!list.length || !config.claude.apiKey) return candidates[0] || null;
+  const imgs = [];
+  for (const c of list) {
+    try {
+      const r = await fetch(c.urls.preview);
+      if (!r.ok) continue;
+      const b = await sharp(Buffer.from(await r.arrayBuffer())).resize(640, 400, { fit: 'inside' }).jpeg({ quality: 75 }).toBuffer();
+      imgs.push({ c, b64: b.toString('base64') });
+    } catch {}
+  }
+  if (!imgs.length) return candidates[0] || null;
+  const content = [];
+  imgs.forEach((x, i) => {
+    content.push({ type: 'text', text: `Fotoğraf ${i + 1}:` });
+    content.push({ type: 'image', source: { type: 'base64', media_type: 'image/jpeg', data: x.b64 } });
+  });
+  content.push({
+    type: 'text',
+    text: `Bir motosiklet yedek parça mağazasının "${topic}" başlıklı blog yazısı için ${purpose} fotoğrafı seçiyoruz.
+Ölçütler: (1) konuyla doğrudan ilgili olmalı (motosiklet/scooter ve konudaki parça; otomobil, bisiklet, alakasız nesne olmamalı),
+(2) profesyonel, net, iyi ışıklı, dergi kalitesinde olmalı, (3) üzerinde yazı, logo, filigran, kolaj veya çizim olmamalı,
+(4) kapak ise yatay kırpıldığında ana obje ortada kalmalı.
+En iyi fotoğrafın numarasını ver; hiçbiri ölçütleri karşılamıyorsa 0 yaz. Sadece sayı yaz.`,
+  });
+  try {
+    const { pickModel } = await import('./content.js');
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: { 'x-api-key': config.claude.apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
+      body: JSON.stringify({ model: await pickModel(), max_tokens: 10, messages: [{ role: 'user', content }] }),
+    });
+    const j = await res.json();
+    const n = parseInt(String(j.content?.[0]?.text || '').match(/\d+/)?.[0] ?? '-1', 10);
+    if (n === 0) return null;
+    if (n >= 1 && n <= imgs.length) return imgs[n - 1].c;
+  } catch {}
+  return imgs[0].c;
 }
 
 export async function downloadPhoto(photo, params) {
@@ -90,7 +142,16 @@ const escapeHtml = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
  */
 export async function makeCover(buffer, style = config.coverStyle) {
   if (style === 'full') {
-    return sharp(buffer).resize(COVER_W, COVER_H, { fit: 'cover', position: sharp.strategy.attention }).jpeg({ quality: 88 }).toBuffer();
+    // Fotoğraf tam kaplar; sitede başlık ortada beyaz yazıyla çıktığı için hafif, sinematik bir karartma.
+    const shade = Buffer.from(
+      `<svg width="${COVER_W}" height="${COVER_H}" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="v" cx="50%" cy="50%" r="75%"><stop offset="0" stop-color="#000" stop-opacity="0.28"/><stop offset="1" stop-color="#000" stop-opacity="0.55"/></radialGradient></defs><rect width="100%" height="100%" fill="url(#v)"/></svg>`,
+    );
+    return sharp(buffer)
+      .resize(COVER_W, COVER_H, { fit: 'cover', position: sharp.strategy.attention })
+      .modulate({ saturation: 1.05 })
+      .composite([{ input: shade }])
+      .jpeg({ quality: 88, mozjpeg: true })
+      .toBuffer();
   }
   const FW = 1000, FH = 540, FE = 90; // fotoğraf alanı ve yumuşatma
   const photo = await sharp(buffer).resize(FW, FH, { fit: 'cover', position: sharp.strategy.attention }).toBuffer();

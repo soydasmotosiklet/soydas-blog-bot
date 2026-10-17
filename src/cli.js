@@ -5,10 +5,14 @@
 //   node src/cli.js discard <slug>
 //   node src/cli.js topic-of <slug>
 //   node src/cli.js sync            → sitede yayına girenleri temizler (out/synced.json)
+//   node src/cli.js refresh-images <slug> --title "..." --cover "eng query" [--inline "eng query"]
+//                                   → fixes/<slug>/ (yayındaki yazının görsellerini yenilemek için)
 //   node src/cli.js test-ikas       → ikas resmi API kontrolü (bilgi amaçlı)
 import fs from 'node:fs';
 import * as ikas from './ikas.js';
-import { createDraft, draftIssueBody, approveDraft, discardDraft, getDraft, syncPublished, overdueDrafts, markAlerted } from './pipeline.js';
+import path from 'node:path';
+import { createDraft, draftIssueBody, approveDraft, discardDraft, getDraft, syncPublished, overdueDrafts, markAlerted, makePhotos } from './pipeline.js';
+import { credit } from './images.js';
 
 const [, , cmd, ...rest] = process.argv;
 const arg = (name) => {
@@ -68,8 +72,28 @@ async function main() {
       console.log(done.length ? `Yayına girenler: ${done.map((d) => d.slug).join(', ')}` : 'Yeni yayın yok.');
       return;
     }
+    case 'refresh-images': {
+      const slug = rest[0];
+      if (!slug || !arg('title') || !arg('cover')) throw new Error('Kullanım: refresh-images <slug> --title "..." --cover "query" [--inline "query"]');
+      const post = { title: arg('title'), coverQuery: arg('cover'), coverQueryAlt: arg('cover-alt'), inlineQuery: arg('inline') || arg('cover') };
+      const { coverPhoto, coverBuf, inlinePhoto, inlineBuf } = await makePhotos(post);
+      if (!coverPhoto) throw new Error('Uygun fotoğraf bulunamadı (PIXABAY_API_KEY tanımlı mı?)');
+      const dir = path.join('fixes', slug);
+      fs.mkdirSync(dir, { recursive: true });
+      fs.writeFileSync(path.join(dir, 'cover.jpg'), coverBuf);
+      const fix = { slug, coverCredit: credit(coverPhoto, 'Kapak fotoğrafı'), images: { cover: 'cover.jpg' } };
+      if (inlinePhoto) {
+        fs.writeFileSync(path.join(dir, 'inline.jpg'), inlineBuf);
+        fix.images.inline = 'inline.jpg';
+        fix.inlineCredit = credit(inlinePhoto);
+        fix.inlineSize = { width: 1080, height: 675 };
+      }
+      fs.writeFileSync(path.join(dir, 'fix.json'), JSON.stringify(fix, null, 2));
+      console.log('Görseller hazır:', dir, coverPhoto.links.html, inlinePhoto?.links.html || '');
+      return;
+    }
     default:
-      console.log('Komutlar: draft | approve <slug> | discard <slug> | topic-of <slug> | sync | test-ikas');
+      console.log('Komutlar: draft | approve <slug> | discard <slug> | topic-of <slug> | sync | refresh-images <slug> | test-ikas');
       process.exitCode = 1;
   }
 }

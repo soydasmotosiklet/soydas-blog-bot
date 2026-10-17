@@ -11,7 +11,7 @@ import path from 'node:path';
 import { config } from './config.js';
 import { loadSiteIndex, relevantProducts, productImageUrl, urlOk, fold, publishedBlogSlugs } from './site.js';
 import { generatePost, pickModel } from './content.js';
-import { searchPhotos, downloadPhoto, makeCover, makeProductCover, makeInline, makeCollage, credit, servedSize } from './images.js';
+import { searchPhotos, downloadPhoto, pickBestPhoto, makeCover, makeProductCover, makeInline, makeCollage, credit, servedSize } from './images.js';
 import { renderBlocksHtml, wrapContent, toContentData, blocksToMarkdown, blockId } from './render.js';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
@@ -74,6 +74,32 @@ const collectLinks = (blocks) => {
   return s;
 };
 
+// Kapak + içerik fotoğrafı: birkaç aramadan aday toplar, en iyisini görsel olarak seçtirir.
+export async function makePhotos(post, productBufs = [], log = console.log) {
+  const gather = async (queries, exclude = []) => {
+    const out = [];
+    for (const q of queries.filter(Boolean)) {
+      for (const p of await searchPhotos(q, { exclude })) if (!out.some((x) => x.id === p.id)) out.push(p);
+      if (out.length >= 12) break;
+    }
+    return out;
+  };
+  const topic = post.title;
+  const coverPhoto = await pickBestPhoto(await gather([post.coverQuery, post.coverQueryAlt, 'motorcycle workshop', 'motorcycle']), { topic, purpose: 'kapak (geniş, yatay)' });
+  let coverBuf;
+  if (coverPhoto) {
+    coverBuf = await makeCover(await downloadPhoto(coverPhoto, { w: '2400', q: '85', fm: 'jpg' }));
+  } else {
+    log('Uygun fotoğraf bulunamadı (sağlayıcı anahtarı yok olabilir): kapak ürün fotoğraflarından üretiliyor.');
+    coverBuf = await makeProductCover(productBufs);
+  }
+  const inlinePhoto = coverPhoto
+    ? await pickBestPhoto(await gather([post.inlineQuery, post.coverQueryAlt, 'motorcycle maintenance'], [coverPhoto.id]), { topic, purpose: 'yazı içi' })
+    : null;
+  const inlineBuf = inlinePhoto ? await makeInline(await downloadPhoto(inlinePhoto, { w: '1600', q: '85', fm: 'jpg' })) : null;
+  return { coverPhoto, coverBuf, inlinePhoto, inlineBuf };
+}
+
 export async function createDraft({ topic: forcedTopic, feedback } = {}) {
   log('Site haritası okunuyor…');
   const site = await loadSiteIndex();
@@ -106,19 +132,7 @@ export async function createDraft({ topic: forcedTopic, feedback } = {}) {
   }
   const collageBuf = productBufs.length >= 2 ? await makeCollage(productBufs) : null;
 
-  let coverPhoto = (await searchPhotos(post.coverQuery))[0];
-  if (!coverPhoto && post.coverQueryAlt) coverPhoto = (await searchPhotos(post.coverQueryAlt))[0];
-  if (!coverPhoto) coverPhoto = (await searchPhotos('motorcycle'))[0];
-  let coverBuf;
-  if (coverPhoto) {
-    coverBuf = await makeCover(await downloadPhoto(coverPhoto, { w: '2400', q: '85', fm: 'jpg' }));
-  } else {
-    log('Fotoğraf sağlayıcısı yok/sonuç yok: kapak ürün fotoğraflarından üretiliyor.');
-    coverBuf = await makeProductCover(productBufs);
-  }
-  let inlinePhoto = (await searchPhotos(post.inlineQuery, { exclude: coverPhoto ? [coverPhoto.id] : [] }))[0];
-  if (!inlinePhoto && coverPhoto) inlinePhoto = (await searchPhotos(post.coverQueryAlt || 'motorcycle maintenance', { exclude: [coverPhoto.id] }))[0];
-  const inlineBuf = inlinePhoto ? await makeInline(await downloadPhoto(inlinePhoto, { w: '1600', q: '85', fm: 'jpg' })) : null;
+  const { coverPhoto, coverBuf, inlinePhoto, inlineBuf } = await makePhotos(post, productBufs, log);
 
   // Blokları Editor.js formatına çevir (görsel adresleri yer tutucu)
   const imageSizes = {};

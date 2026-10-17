@@ -32,5 +32,5 @@ export const config = {
     accessKey: env.UNSPLASH_ACCESS_KEY,
     appName: env.UNSPLASH_APP_NAME || 'soydas_blog_bot',
   },
-  coverStyle: env.COVER_STYLE || 'framed', // 'framed' (koyu zemin + ortalanmış foto) | 'full'
+  coverStyle: env.COVER_STYLE || 'full', // 'full' (tam kaplayan fotoğraf) | 'framed' (koyu zemin + ortalanmış foto)
 };
