@@ -115,7 +115,7 @@ En iyi fotoğrafın numarasını ver; hiçbiri ölçütleri karşılamıyorsa 0 
     const res = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: { 'x-api-key': config.claude.apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
-      body: JSON.stringify({ model: await pickModel(), max_tokens: 50, messages: [{ role: 'user', content }] }),
+      body: JSON.stringify({ model: await pickModel(), max_tokens: 2000, messages: [{ role: 'user', content }] }),
     });
     const j = await res.json();
     const txt = String(j.content?.find?.((x) => x.type === 'text')?.text || '');
