@@ -41,8 +41,9 @@ globalThis.fetch = async (input, init = {}) => {
   if (u.startsWith('https://soydasmotosiklet.com/')) return R('ok');
   if (u.includes('cdn.myikas.com/images/m/')) return R(new Uint8Array(await img(800, 800, '#fff')));
   if (u.includes('/v1/models')) return R({ data: [{ id: 'claude-sonnet-test' }] });
+  if (u.includes('/v1/messages') && String(init.body || '').includes('"type":"image"')) { globalThis.__picked = (globalThis.__picked || 0) + 1; return R({ content: [{ type: 'text', text: '2' }] }); }
   if (u.includes('/v1/messages')) return R({ stop_reason: 'tool_use', content: [{ type: 'tool_use', name: 'kaydet_yazi', input: post }] });
-  if (u.startsWith('https://pixabay.com/api/')) return R({ hits: [1, 2].map((id) => ({ id, imageWidth: 4000, imageHeight: 2600, user: 'pixuser', user_id: 9, pageURL: `https://pixabay.com/photos/x-${id}/`, largeImageURL: `https://pixabay.com/get/${id}_1280.jpg` })) });
+  if (u.startsWith('https://pixabay.com/api/')) return R({ hits: [1, 2].map((id) => ({ id, imageWidth: 4000, imageHeight: 2600, user: 'pixuser', user_id: 9, pageURL: `https://pixabay.com/photos/x-${id}/`, largeImageURL: `https://pixabay.com/get/${id}_1280.jpg`, webformatURL: `https://pixabay.com/get/${id}_640.jpg` })) });
   if (u.startsWith('https://pixabay.com/get/')) return R(new Uint8Array(await img(1280, 832, '#264')));
   if (u.includes('api.pexels.com/v1/search')) return R({ photos: ['111', '222'].map((id) => ({ id: +id, width: 4000, height: 2600, url: `https://www.pexels.com/photo/${id}/`, photographer: 'Pex Foto', photographer_url: 'https://www.pexels.com/@pex', src: { original: `https://images.pexels.com/photos/${id}/x.jpeg` } })) });
   if (u.startsWith('https://images.pexels.com/')) return R(new Uint8Array(await img(2400, 1560, '#543')));
@@ -111,5 +112,6 @@ const synced = await syncPublished();
 ok(synced.length === 1 && !fs.existsSync(dir), 'senkron: yayına giren taslak temizlendi');
 const state = JSON.parse(fs.readFileSync('state/published.json', 'utf8'));
 ok(state.some((s) => s.slug === draft.slug), 'yayın kaydı tutuldu');
+if (MP === 'pixabay') ok(globalThis.__picked >= 1 && draft.coverPhoto?.id === '2', 'kapak fotoğrafı görsel olarak seçildi (2. aday)');
 fs.writeFileSync('state/published.json', '[]\n');
 console.log('Tümü başarılı (' + MP + ').');
