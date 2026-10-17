@@ -21,16 +21,27 @@ export async function searchPhotos(query, { orientation = 'landscape', exclude =
       return (await res.json()).hits || [];
     };
     const seen = new Set();
-    const hits = [...(await run({ editors_choice: 'true' })), ...(await run({}))].filter((p) => !seen.has(p.id) && seen.add(p.id));
+    const ec = await run({ editors_choice: 'true' });
+    ec.forEach((p) => (p.__ec = true));
+    const hits = [...ec, ...(await run({}))].filter((p) => !seen.has(p.id) && seen.add(p.id));
+    // Alaka: arama kelimelerinin fotoğraf etiketlerinde geçmesi (editör seçimi sadece artı puan).
+    const words = query.toLowerCase().split(/\s+/).filter((w) => w.length > 2);
+    const score = (p) => {
+      const tags = String(p.tags || '').toLowerCase();
+      const hit = words.filter((w) => tags.includes(w)).length / (words.length || 1);
+      return hit * 10 + (p.__ec ? 2 : 0) + Math.min(p.likes || 0, 500) / 500;
+    };
     return hits
       .filter((p) => !exclude.includes(String(p.id)))
-      .map((p) => ({
+      .map((p) => ({ p, s: score(p) }))
+      .filter((x) => x.s >= 5) // en az yarı yarıya alakalı olsun
+      .sort((a, b) => b.s - a.s)
+      .map(({ p }) => ({
         provider: 'pixabay',
         id: String(p.id),
         width: p.imageWidth,
         height: p.imageHeight,
         tags: p.tags,
-        editorsChoice: false,
         user: { name: p.user, links: { html: `https://pixabay.com/users/${p.user}-${p.user_id}/` } },
         links: { html: p.pageURL },
         urls: { raw: p.largeImageURL, preview: p.webformatURL },
@@ -80,8 +91,11 @@ export async function pickBestPhoto(candidates, { topic, purpose = 'kapak', max 
       if (!r.ok) continue;
       const b = await sharp(Buffer.from(await r.arrayBuffer())).resize(640, 400, { fit: 'inside' }).jpeg({ quality: 75 }).toBuffer();
       imgs.push({ c, b64: b.toString('base64') });
-    } catch {}
+    } catch (e) {
+      console.log('  önizleme alınamadı:', c.id, e.message);
+    }
   }
+  console.log(`  ${purpose}: ${list.length} aday, ${imgs.length} önizleme`);
   if (!imgs.length) return candidates[0] || null;
   const content = [];
   imgs.forEach((x, i) => {
@@ -101,14 +115,21 @@ En iyi fotoğrafın numarasını ver; hiçbiri ölçütleri karşılamıyorsa 0 
     const res = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: { 'x-api-key': config.claude.apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
-      body: JSON.stringify({ model: await pickModel(), max_tokens: 10, messages: [{ role: 'user', content }] }),
+      body: JSON.stringify({ model: await pickModel(), max_tokens: 50, messages: [{ role: 'user', content }] }),
     });
     const j = await res.json();
-    const n = parseInt(String(j.content?.[0]?.text || '').match(/\d+/)?.[0] ?? '-1', 10);
+    const txt = String(j.content?.find?.((x) => x.type === 'text')?.text || '');
+    console.log(`  Claude seçimi (${purpose}):`, txt || JSON.stringify(j).slice(0, 300));
+    const n = parseInt(txt.match(/\d+/)?.[0] ?? '-1', 10);
     if (n === 0) return null;
-    if (n >= 1 && n <= imgs.length) return imgs[n - 1].c;
-  } catch {}
-  return imgs[0].c;
+    if (n >= 1 && n <= imgs.length) {
+      console.log('  seçilen:', imgs[n - 1].c.links?.html, '|', imgs[n - 1].c.tags || '');
+      return imgs[n - 1].c;
+    }
+  } catch (e) {
+    console.log('  Claude seçimi başarısız:', e.message);
+  }
+  return imgs[0].c; // alaka sırasına göre en iyi aday
 }
 
 export async function downloadPhoto(photo, params) {
@@ -144,7 +165,7 @@ export async function makeCover(buffer, style = config.coverStyle) {
   if (style === 'full') {
     // Fotoğraf tam kaplar; sitede başlık ortada beyaz yazıyla çıktığı için hafif, sinematik bir karartma.
     const shade = Buffer.from(
-      `<svg width="${COVER_W}" height="${COVER_H}" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="v" cx="50%" cy="50%" r="75%"><stop offset="0" stop-color="#000" stop-opacity="0.28"/><stop offset="1" stop-color="#000" stop-opacity="0.55"/></radialGradient></defs><rect width="100%" height="100%" fill="url(#v)"/></svg>`,
+      `<svg width="${COVER_W}" height="${COVER_H}" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="v" cx="50%" cy="50%" r="75%"><stop offset="0" stop-color="#000" stop-opacity="0.15"/><stop offset="1" stop-color="#000" stop-opacity="0.42"/></radialGradient></defs><rect width="100%" height="100%" fill="url(#v)"/></svg>`,
     );
     return sharp(buffer)
       .resize(COVER_W, COVER_H, { fit: 'cover', position: sharp.strategy.attention })
