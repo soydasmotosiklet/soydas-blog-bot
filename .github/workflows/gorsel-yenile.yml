@@ -1,0 +1,57 @@
+name: Yayındaki yazının görsellerini yenile
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Yazının adresi (slug), ör. motosiklet-lastik-secimi-ve-dogru-lastik-basinci'
+        required: true
+      title:
+        description: 'Yazı başlığı'
+        required: true
+      cover:
+        description: 'Kapak için İngilizce arama (ör. motorcycle tire close up)'
+        required: true
+      inline:
+        description: 'İçerik fotoğrafı için İngilizce arama (boşsa kapak araması)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blog-bot
+  cancel-in-progress: false
+
+jobs:
+  images:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Görselleri üret
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL }}
+          SLUG: ${{ github.event.inputs.slug }}
+          TITLE: ${{ github.event.inputs.title }}
+          COVER: ${{ github.event.inputs.cover }}
+          INLINE: ${{ github.event.inputs.inline }}
+        run: node src/cli.js refresh-images "$SLUG" --title "$TITLE" --cover "$COVER" --inline "${INLINE:-$COVER}"
+      - name: Kaydet
+        env:
+          SLUG: ${{ github.event.inputs.slug }}
+        run: |
+          git config user.name "soydas-blog-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A fixes
+          git commit -m "Görsel yenileme: $SLUG" || echo "değişiklik yok"
+          git push
