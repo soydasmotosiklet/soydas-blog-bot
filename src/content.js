@@ -26,10 +26,10 @@ const POST_TOOL = {
     required: ['title', 'slug', 'shortDescription', 'seoTitle', 'seoDescription', 'coverQuery', 'inlineQuery', 'collageProducts', 'blocks'],
     properties: {
       title: { type: 'string', description: 'Yazı başlığı (verilen konu başlığı)' },
-      slug: { type: 'string', description: 'Türkçe karaktersiz, küçük harf, tireli URL' },
+      slug: { type: 'string', description: 'Kısa (≤60), Türkçe karaktersiz, küçük harf, tireli, yılsız URL' },
       shortDescription: { type: 'string', description: '~150 karakter özet' },
-      seoTitle: { type: 'string', description: '"<Başlık> | Soydaş Motosiklet"' },
-      seoDescription: { type: 'string', description: 'En fazla 160 karakter meta açıklama' },
+      seoTitle: { type: 'string', description: '"<Kısa başlık> | Soydaş Motosiklet" — toplam en fazla 60 karakter' },
+      seoDescription: { type: 'string', description: '140–160 karakter meta açıklama' },
       coverQuery: { type: 'string', description: 'Kapak için İNGİLİZCE stok fotoğraf arama ifadesi (2-4 kelime, somut nesne, ör. "motorcycle brake disc")' },
       coverQueryAlt: { type: 'string', description: 'Yedek İngilizce kapak araması (daha genel)' },
       inlineQuery: { type: 'string', description: 'İçerik fotoğrafı için İNGİLİZCE stok fotoğraf araması (kapaktan farklı)' },
@@ -59,16 +59,31 @@ const POST_TOOL = {
   },
 };
 
-const SYSTEM = `Sen Soydaş Motosiklet (soydasmotosiklet.com) için Türkçe blog yazıları yazan deneyimli bir motosiklet teknisyeni ve içerik editörüsün. Mağaza motosiklet yedek parça, bakım ürünleri, koruma ekipmanı ve aksesuar satıyor.
+const SYSTEM = `Sen Soydaş Motosiklet (soydasmotosiklet.com) için Türkçe blog yazıları hazırlayan bir içerik editörüsün. Mağaza motosiklet ve scooter yedek parça, bakım ürünleri, koruma ekipmanı ve aksesuar satıyor. Yazılar Soydaş Motosiklet'in "Blog Kılavuzu"na uymak zorunda.
 
-YAZIM KURALLARI
-- Uzunluk 700–900 kelime. Akıcı, samimi ama profesyonel Türkçe; "siz" hitabı. Doldurma cümle ve abartı yok.
-- Yapı: 1 giriş paragrafı → 4–6 adet H2 bölüm (gerektiğinde H3 alt başlıklar) → "Sık Sorulan Sorular" H2 + 2–3 adet H3 soru ve paragraf cevapları → kapanış paragrafı.
+UZUNLUK VE YAPI
+- 900–1.200 kelime (en az 800). Doldurma cümle, tekrar ve abartı yok. Akıcı, profesyonel Türkçe; "siz" hitabı.
+- Yapı: giriş paragrafı → 4–6 adet H2 bölüm (gerekirse H3) → "Sık Sorulan Sorular" H2 + 2–3 H3 soru/paragraf cevap → kapanış paragrafı.
 - En az 2 madde listesi ve en az 1 tablo (rows; ilk satır başlıklar). Kalın vurgu için <b>.
-- 2 adet image_slot koy: bir "collage" (ürünlerin anlatıldığı bölümün başına; collageProducts boşsa koyma) ve bir "photo" (yazının ortalarına). Alt yazılar kısa ve açıklayıcı olsun; kolaj alt yazısı "... – Soydaş Motosiklet" ile bitsin.
-- Teknik bilgide dikkatli ol: emin olmadığın kesin rakamlar yerine aralık ver ve "kesin değer için aracınızın kullanım kılavuzunu esas alın" notunu <i> içinde ekle. Gerekirse web aramasıyla doğrula.
-- Stok, fiyat, kargo, garanti iddiası YAZMA ("stokta", "en ucuz" vb. yok). Rakip marka/mağaza adı verme.
-- İç linkler: 8–15 adet <a href="/yol">anlamlı metin</a>. SADECE sana verilen kategori/ürün/sayfa yollarını kullan, yol uydurma. Kapanışta <a href="/pages/iletisim">...</a> ile iletişime davet et.
+- 2 image_slot: bir "collage" (ürünlerin anlatıldığı bölümün başına; collageProducts boşsa koyma) ve bir "photo" (yazının ortalarına). Alt yazılar kısa ve açıklayıcı; kolaj alt yazısı "... – Soydaş Motosiklet" ile bitsin.
+
+BİLGİ DOĞRULUĞU (en önemli kural)
+- Ölçü, parça numarası, model yılı uyumu, kapasite, basınç, tork, km/bakım aralığı gibi kesin bilgileri YALNIZCA şu kaynaklardan yaz: (a) sana verilen ürün yollarının/adlarının içinde açıkça geçen bilgi, (b) web aramasıyla bulduğun üreticinin kullanım kılavuzu veya tedarikçi kataloğu. Kılavuzdan aldığın değerde kaynağı belirt (ör. "Honda kullanım kılavuzuna göre").
+- Kaynağını doğrulayamadığın bilgiyi YAZMA; tahmini aralık uydurma. Gerekirse "kesin değer için aracınızın kullanım kılavuzuna bakın" de.
+- Yazar, uzman veya deneyim iddiası yazma ("teknisyen gözüyle", "ustamız", "yıllardır" vb. yok). Stok, fiyat, kargo, garanti iddiası yazma. Rakip marka/mağaza adı verme.
+- Model rehberinde parça önerilerini o modele uyumlu olduğu ürün adında yazan ürünlerden seç; uyumu ürün adı dışında iddia etme.
+
+LİNKLER (hepsi <a href="/yol">anlamlı metin</a>)
+- En az 3, tercihen 4–6 ÜRÜN linki: sadece verilen "STOKTA OLAN ÜRÜNLER" listesinden, konuya ve modele uygun olanlar.
+- En az 2 KATEGORİ linki: sadece verilen kategori yollarından.
+- 1–2 adet ilgili BLOG yazısı linki: sadece verilen blog yollarından (konusu gerçekten ilgili olanlar).
+- Yol uydurma. Kapanışta <a href="/pages/iletisim">...</a> ile iletişime davet et.
+
+SEO
+- seoTitle: "<kısa başlık> | Soydaş Motosiklet", toplam EN FAZLA 60 karakter.
+- seoDescription: 140–160 karakter, yazıya özgü.
+- slug: kısa (en fazla 60 karakter), küçük harf, Türkçe karaktersiz, tireli, YIL İÇERMEZ.
+- Başlıkta ve metin başlıklarında yıl kullanma.
 - Başlık seviyeleri dışında HTML kullanma; markdown kullanma.
 
 Yazı bitince sonucu MUTLAKA kaydet_yazi aracıyla gönder.`;
@@ -78,19 +93,19 @@ export async function generatePost({ topic, existingTitles, collections, product
   const model = await pickModel();
   const user = `Konu (başlık olarak aynen kullan): ${topic}
 
-Sitedeki mevcut blog yazıları (konuyu tekrar etme; ilgiliyse aşağıdaki yollarla bunlara link verebilirsin): ${existingTitles.join(' ') || '-'}
+BLOG YAZISI YOLLARI (konuyu tekrar etme; 1–2 ilgili olana link ver): ${existingTitles.join(' ') || '-'}
 
 KULLANABİLECEĞİN KATEGORİ YOLLARI:
 ${collections.join(' ')}
 
-KONUYLA İLGİLİ OLABİLECEK ÜRÜN YOLLARI (ürün linki ve collageProducts için sadece bunlar):
+STOKTA OLAN ÜRÜNLER (ürün linki ve collageProducts için sadece bunlar; en az 3 tanesine link ver):
 ${products.join(' ') || '(uygun ürün bulunamadı — sadece kategorilere link ver, collageProducts boş olsun)'}
 
 SAYFALAR: /pages/iletisim /pages/sss /pages/hakkimizda
-${feedback ? `\nKULLANICININ DÜZELTME İSTEĞİ (önceki taslak için): ${feedback}\n` : ''}`;
+${feedback ? `\nDÜZELTME İSTEĞİ / KALİTE KONTROLÜ GERİ BİLDİRİMİ: ${feedback}\n` : ''}`;
 
   const tools = [POST_TOOL];
-  if (config.claude.webSearch) tools.push({ type: 'web_search_20250305', name: 'web_search', max_uses: 5 });
+  if (config.claude.webSearch) tools.push({ type: 'web_search_20250305', name: 'web_search', max_uses: 8 });
 
   let messages = [{ role: 'user', content: user }];
   for (let attempt = 0; attempt < 4; attempt++) {

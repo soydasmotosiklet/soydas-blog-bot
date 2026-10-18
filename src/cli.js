@@ -41,6 +41,11 @@ async function main() {
     case 'draft': {
       const draft = await createDraft({ topic: arg('topic'), feedback: arg('feedback') });
       fs.mkdirSync('out', { recursive: true });
+      if (draft.skipped) {
+        setOutput('skipped', 'true');
+        console.log('Yeni yazı üretilmedi:', draft.reason);
+        return;
+      }
       fs.writeFileSync('out/issue.md', draftIssueBody(draft));
       setOutput('slug', draft.slug);
       setOutput('title', draft.title);

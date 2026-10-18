@@ -9,8 +9,9 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { config } from './config.js';
-import { loadSiteIndex, relevantProducts, productImageUrl, urlOk, fold, publishedBlogSlugs } from './site.js';
-import { generatePost, pickModel } from './content.js';
+import { loadSiteIndex, relevantProducts, productImageUrl, urlOk, fold, publishedBlogSlugs, filterInStock } from './site.js';
+import { checkPost, wordCount } from './quality.js';
+import { generatePost } from './content.js';
 import { searchPhotos, downloadPhoto, pickBestPhoto, makeCover, makeProductCover, makeInline, makeCollage, credit, servedSize } from './images.js';
 import { renderBlocksHtml, wrapContent, toContentData, blocksToMarkdown, blockId } from './render.js';
 
@@ -39,23 +40,6 @@ export function pickTopic(takenKeys) {
   const pending = listDrafts().map((d) => fold(d.topic));
   const taken = new Set([...takenKeys, ...published, ...pending]);
   return topics.find((t) => !taken.has(fold(t))) || null;
-}
-
-async function chooseTopicWithClaude(existing, collections) {
-  const res = await fetch('https://api.anthropic.com/v1/messages', {
-    method: 'POST',
-    headers: { 'x-api-key': config.claude.apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
-    body: JSON.stringify({
-      model: await pickModel(),
-      max_tokens: 200,
-      messages: [{
-        role: 'user',
-        content: `Motosiklet yedek parça/ekipman mağazası blogu için, mevcut yazılarla çakışmayan, Türkiye'de aranan, mağaza kategorileriyle ilgili TEK bir blog başlığı öner. Sadece başlığı yaz.\nMevcut yazılar: ${existing.join(' | ')}\nKategoriler: ${collections.slice(0, 250).join(' ')}`,
-      }],
-    }),
-  });
-  const json = await res.json();
-  return (json.content?.[0]?.text || '').trim().replace(/^["']|["']$/g, '');
 }
 
 function sanitizeLinks(html, allowed, broken) {
@@ -122,13 +106,31 @@ export async function createDraft({ topic: forcedTopic, feedback } = {}) {
   const liveSlugs = site.blogs.filter((p) => p.startsWith('/blog/')).map((p) => p.slice(6));
   const existingLabels = liveSlugs.map((s) => `/blog/${s}`);
 
-  let topic = forcedTopic || pickTopic(liveSlugs);
-  if (!topic) topic = await chooseTopicWithClaude(existingLabels, site.collections);
+  // Kılavuz: sadece topics.json'daki onaylı konular yazılır; liste bitince yeni konu uydurulmaz.
+  const topic = forcedTopic || pickTopic(liveSlugs);
+  if (!topic) {
+    log('Konu listesi bitti (topics.json). Yeni yazı üretilmedi.');
+    return { skipped: true, reason: 'topics.json içindeki tüm konular yazıldı' };
+  }
   log('Konu:', topic);
 
-  const products = relevantProducts(site.products, topic);
-  log(`Claude ile yazı üretiliyor (${products.length} ilgili ürün)…`);
-  const post = await generatePost({ topic, existingTitles: existingLabels, collections: site.collections, products, feedback });
+  // Ürün linkleri yalnızca stokta olan ürünlerden
+  const candidates = relevantProducts(site.products, topic, [], 150);
+  const products = await filterInStock(candidates, 60);
+  log(`Stokta olan ilgili ürün: ${products.length} / ${candidates.length}`);
+  const blogPosts = site.blogPosts.filter((p) => p !== `/blog/${fold(topic)}`);
+  const ctx = { inStock: new Set(products), allProducts: new Set(site.products), collections: new Set(site.collections), blogPosts: new Set(blogPosts), topic };
+
+  // Kalite eşiği: geçmezse sorunları Claude'a geri verip en fazla 3 deneme
+  let post, issues = [], fb = feedback || '';
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    log(`Claude ile yazı üretiliyor (deneme ${attempt})…`);
+    post = await generatePost({ topic, existingTitles: blogPosts, collections: site.collections, products, feedback: fb });
+    issues = checkPost(post, ctx);
+    if (!issues.length) break;
+    log('Kalite eşiği geçilemedi:', issues.join(' | '));
+    fb = `${feedback ? feedback + '\n' : ''}Önceki taslak kalite kontrolünden geçmedi. Şunları düzelt ve yazının tamamını yeniden gönder:\n- ${issues.join('\n- ')}`;
+  }
 
   // Linkleri doğrula
   const linkSet = collectLinks(post.blocks);
@@ -176,7 +178,7 @@ export async function createDraft({ topic: forcedTopic, feedback } = {}) {
   if (coverPhoto) blocks.push({ id: blockId(), type: 'paragraph', data: { text: `<i>${credit(coverPhoto, 'Kapak fotoğrafı')}</i>` } });
 
   let slug = fold(post.slug || topic);
-  if (liveSlugs.includes(slug) || listDrafts().some((d) => d.slug === slug)) slug = `${slug}-${new Date().getFullYear()}`;
+  if (liveSlugs.includes(slug) || listDrafts().some((d) => d.slug === slug)) slug = `${slug}-2`; // kılavuz: adreste yıl olmaz
 
   const dir = path.join(DRAFTS, slug);
   fs.mkdirSync(dir, { recursive: true });
@@ -187,7 +189,10 @@ export async function createDraft({ topic: forcedTopic, feedback } = {}) {
 
   const draft = {
     topic,
-    approved: process.env.AUTO_APPROVE !== 'false', // otomatik modda doğrudan yayına hazır
+    // otomatik modda doğrudan yayına hazır; kalite eşiğini geçemeyen taslak yayınlanmaz
+    approved: process.env.AUTO_APPROVE !== 'false' && !issues.length,
+    qualityIssues: issues,
+    words: wordCount(post.blocks),
     createdAt: new Date().toISOString(),
     model: post.model,
     title: topic,
@@ -224,11 +229,12 @@ export function draftIssueBody(draft) {
 | Kısa açıklama | ${c(draft.shortDescription)} |
 | SEO başlığı | ${c(draft.seoTitle)} |
 | SEO açıklaması | ${c(draft.seoDescription)} |
-| Yaklaşık kelime | ${words} |
+| Kelime | ${draft.words || words} |
+| Kalite eşiği (Blog Kılavuzu) | ${draft.qualityIssues?.length ? '❌ geçmedi' : '✅ geçti'} |
 | Kapak görseli | ${src} |
 ${draft.removedLinks.length ? `| Kaldırılan geçersiz linkler | ${draft.removedLinks.join(', ')} |\n` : ''}
-${draft.approved
-  ? '⏰ **Bu yazı saat 09:00\'da otomatik olarak ikas\'a eklenecek** (bilgisayarınızda Chrome açıkken Soydaş Blog eklentisi yapar).\n**Yayınlanmasın istiyorsanız** 09:00\'dan önce \`/iptal\` yazın. **Değiştirmek için** \`/yeniden\` ve isteğinizi yazın.'
+${draft.qualityIssues?.length ? `> ⚠️ **Kalite eşiği geçilmedi, bu yazı otomatik yayınlanmayacak.**\n> ${draft.qualityIssues.map((i) => '• ' + c(i)).join('\n> ')}\n> Düzeltip yeniden yazdırmak için \`/yeniden\`, yine de yayınlamak için \`/yayinla\` yazın.\n\n` : ''}${draft.approved
+  ? '⏰ **Bu yazı saat 09:00\'da otomatik olarak ikas\'a eklenecek** (bulut sunucudaki Soydaş Blog eklentisi yapar).\n**Yayınlanmasın istiyorsanız** 09:00\'dan önce \`/iptal\` yazın. **Değiştirmek için** \`/yeniden\` ve isteğinizi yazın.'
   : '**Onaylamak için** bu sayfaya \`/yayinla\` yazın. **Yeniden yazdırmak için** \`/yeniden\` ve isteğinizi yazın. **Vazgeçmek için** \`/iptal\` yazın.'}
 
 ---

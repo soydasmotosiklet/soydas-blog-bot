@@ -10,6 +10,34 @@ async function sitemapPaths(file) {
   return [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => new URL(m[1]).pathname);
 }
 
+// Blog kategori sayfaları (yazı değil)
+export const BLOG_CATEGORY_PATHS = ['/blog/motosiklet-rehberleri', '/blog/deneme'];
+
+// Ürün sayfasındaki yapılandırılmış veriden stok durumu (true/false; okunamazsa null)
+export async function productInStock(path) {
+  try {
+    const res = await fetch(`${config.store.siteUrl}${path}`, { headers: UA });
+    if (!res.ok) return false;
+    const html = await res.text();
+    const m = [...html.matchAll(/"availability"\s*:\s*"([^"]+)"/g)].map((x) => x[1].split('/').pop());
+    if (!m.length) return null;
+    return m.includes('InStock');
+  } catch {
+    return null;
+  }
+}
+
+// Sırayla (en fazla `limit` tanesi) stokta olanları döndürür; aynı anda 8 istek.
+export async function filterInStock(paths, limit = 60) {
+  const out = [];
+  for (let i = 0; i < paths.length && out.length < limit; i += 8) {
+    const chunk = paths.slice(i, i + 8);
+    const res = await Promise.all(chunk.map((p) => productInStock(p)));
+    chunk.forEach((p, k) => { if (res[k] === true) out.push(p); });
+  }
+  return out.slice(0, limit);
+}
+
 export async function loadSiteIndex() {
   const [collections, products, pages, blogs] = await Promise.all([
     sitemapPaths('collections.xml'),
@@ -20,7 +48,9 @@ export async function loadSiteIndex() {
   const knownPages = ['/pages/iletisim', '/pages/sss', '/pages/hakkimizda', '/pages/brands'];
   const allPages = [...new Set([...pages.filter((p) => p.startsWith('/pages/')), ...knownPages])];
   const blogPaths = blogs.filter((p) => p.startsWith('/blog/') && p !== '/blog');
-  return { collections, products, pages: allPages, blogs, all: new Set([...collections, ...products, ...allPages, ...blogPaths]) };
+  // Blog yazıları (kategori sayfaları hariç) – iç link için
+  const blogPosts = blogPaths.filter((p) => !BLOG_CATEGORY_PATHS.includes(p));
+  return { collections, products, pages: allPages, blogs, blogPosts, all: new Set([...collections, ...products, ...allPages, ...blogPaths]) };
 }
 
 // Sitede yayında olan blog slug'ları (sitemap gerçek zamanlı güncelleniyor)
