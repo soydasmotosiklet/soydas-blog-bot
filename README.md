@@ -2,7 +2,7 @@
 
 ## Nasıl çalışır?
 
-1. **Her sabah ~08:17** GitHub'ın sunucularında yazı ve görseller hazırlanır (`topics.json`'dan sıradaki konu), bu depoda "📰 Bugünün yazısı" başlıklı bir issue açılır ve telefonunuza bildirim gelir.
+1. **Pazartesi ve Perşembe sabahları ~08:17** GitHub'ın sunucularında yazı ve görseller hazırlanır (`topics.json`'dan sıradaki konu), bu depoda "📰 Bugünün yazısı" başlıklı bir issue açılır ve telefonunuza bildirim gelir.
 2. **09:00'da** (Türkiye saati) 7/24 açık bulut sunucudaki (AWS Lightsail `soydas-blog`, Frankfurt) Chrome'da kurulu **Soydaş Blog Otomatik Yayın** eklentisi ikas panelini arka planda açar ve yazıyı sizin oturumunuzla ikas'a ekler. Sizden onay/tıklama beklemez.
    - Yazı henüz hazır değilse gün içinde saatlik tekrar dener.
    - ikas oturumu kapanırsa (veya sunucu yeniden başlarsa) yazı eklenemez; saat 10:00'u geçince bu depodaki issue'ya "⚠️" yorumu düşer ve GitHub size e-posta atar. Lightsail → soydas-blog → **RDP kullanarak bağlan** ile sunucuya girip ikas'a tekrar giriş yapmanız yeterli; yazı sonraki saatlik denemede eklenir.
@@ -37,7 +37,7 @@ Depo **herkese açık (public)** olmalı: yer imi taslakları ve görselleri Git
 ## Sık yapılacaklar
 - **Konu eklemek/sırasını değiştirmek:** `topics.json` dosyasını GitHub'da kalem simgesiyle düzenleyin.
 - **Belirli bir konuyu hemen yazdırmak:** Actions → Günlük blog taslağı → Run workflow → *topic* alanına başlığı yazın.
-- **Saati değiştirmek:** `.github/workflows/gunluk-taslak.yml` içindeki `cron` satırı (UTC; Türkiye = UTC+3).
+- **Günleri/saati değiştirmek:** `.github/workflows/gunluk-taslak.yml` içindeki `cron` satırı (UTC; Türkiye = UTC+3).
 - **Modeli sabitlemek:** Settings → Secrets and variables → Actions → *Variables* → `CLAUDE_MODEL` (boşsa en yeni Claude Sonnet).
 
 ## Dosyalar
