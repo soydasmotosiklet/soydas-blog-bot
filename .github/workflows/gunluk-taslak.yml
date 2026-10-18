@@ -2,7 +2,7 @@ name: Günlük blog taslağı
 
 on:
   schedule:
-    - cron: '17 5 * * *'   # Her gün 08:17 (Türkiye saati, UTC+3) — 09:00 yayınından önce hazır olsun
+    - cron: '17 5 * * 1,4'   # Haftada 2: Pazartesi ve Perşembe 08:17 (Türkiye saati, UTC+3) — 09:00 yayınından önce hazır olsun
   workflow_dispatch:
     inputs:
       topic:
