@@ -15,6 +15,17 @@ Onaylı (elle) moda dönmek için: Settings → Secrets and variables → Action
 
 > **Neden eklenti?** ikas'ın resmi API'si (Özel Uygulama) blog ve görsel işlemlerine izin vermiyor; bunlar yalnızca panele giriş yapmış bir tarayıcıdan yapılabiliyor. Eklenti şifre ya da anahtar saklamaz, sadece sizin Chrome'unuzdaki açık ikas oturumunu kullanır. ikas blog API'sini açarsa bilgisayar gerekmeden tamamen bulutta çalıştırılabilir.
 
+## Blog Kılavuzu kuralları (18 Ekim 2026)
+Bot her taslağı yayından önce otomatik kontrol eder (`src/quality.js`); geçemeyen taslak **yayınlanmaz**, issue'da sorunlar listelenir:
+- En az 800 kelime · en az 3 **stokta olan** ürün linki · en az 2 kategori linki · 1–2 ilgili blog linki
+- SEO başlığı "| Soydaş Motosiklet" dahil en fazla 60 karakter · meta açıklama 140–160 karakter
+- Adres kısa, Türkçe karaktersiz, **yılsız**; başlıkta yıl yok
+- Ölçü, parça no, model yılı, km aralığı yalnızca ürün adı veya üretici kılavuzu/tedarikçi kataloğundan; kaynağı olmayan bilgi yazılmaz
+- "Teknisyen gözüyle" gibi yazar/uzmanlık iddiası, stok/fiyat iddiası yok
+- Konular yalnızca `topics.json`'dan (model rehberleri). Liste bitince bot yeni konu uydurmaz, "Konu listesi bitti" issue'su açar.
+
+Otomatik kontrol edilemeyenler (kılavuzdaki "kendi fotoğrafımız", "mağazadan bir ipucu", "Hamit bir kez okudu") için yayından sonra yazıyı ikas panelinden düzenleyebilirsiniz.
+
 ## Chrome eklentisini kurma (bir kerelik)
 1. `chrome-extension` klasörünü bilgisayarınıza indirin (zip'i açın).
 2. Chrome'da adres çubuğuna `chrome://extensions` yazın → sağ üstten **Geliştirici modu**nu açın.
