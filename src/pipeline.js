@@ -75,6 +75,9 @@ const collectLinks = (blocks) => {
 };
 
 // Kapak + içerik fotoğrafı: birkaç aramadan aday toplar, en iyisini görsel olarak seçtirir.
+export const trDate = (d = new Date()) =>
+  d.toLocaleDateString('tr-TR', { timeZone: 'Europe/Istanbul', day: 'numeric', month: 'long', year: 'numeric' });
+
 export async function makePhotos(post, productBufs = [], log = console.log) {
   const gather = async (queries, exclude = []) => {
     const out = [];
@@ -150,6 +153,8 @@ export async function createDraft({ topic: forcedTopic, feedback } = {}) {
   // Blokları Editor.js formatına çevir (görsel adresleri yer tutucu)
   const imageSizes = {};
   const blocks = [];
+  // Yazının başında yayın tarihi (taslak 08:17'de hazırlanıp aynı sabah 09:00'da yayınlanır).
+  blocks.push({ id: blockId(), type: 'paragraph', data: { text: `<i>Yayın tarihi: ${trDate()}</i>` } });
   for (const b of post.blocks) {
     if (b.type === 'paragraph' && b.text) blocks.push({ id: blockId(), type: 'paragraph', data: { text: clean(b.text) } });
     else if (b.type === 'header' && b.text) blocks.push({ id: blockId(), type: 'header', data: { text: clean(b.text), level: b.level === 3 ? 3 : 2 } });
