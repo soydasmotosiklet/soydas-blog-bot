@@ -41,7 +41,20 @@ jobs:
         run: |
           if [ -n "$TOPIC" ]; then node src/cli.js draft --topic "$TOPIC"; else node src/cli.js draft; fi
 
+      - name: Konu listesi bitti uyarısı
+        if: steps.draft.outputs.skipped == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create konu-listesi --color D93F0B --description "Yeni yazı konusu gerekiyor" 2>/dev/null || true
+          if [ -z "$(gh issue list --label konu-listesi --state open --json number --jq '.[].number')" ]; then
+            gh issue create --label konu-listesi --assignee "${{ github.repository_owner }}" \
+              --title "📝 Konu listesi bitti: yeni model rehberi konusu ekleyin" \
+              --body "topics.json içindeki tüm konular yazıldı. Blog Kılavuzu gereği bot kendi başına yeni konu uydurmaz. Arama verisi olan bir model rehberi (ör. yeni bir model) ya da tedarikçi verisi gelen bir uyum/beden rehberi başlığını topics.json dosyasına ekleyin; bir sonraki Pazartesi/Perşembe yazılır."
+          fi
+
       - name: Taslağı kaydet
+        if: steps.draft.outputs.skipped != 'true'
         run: |
           git config user.name "soydas-blog-bot"
           git config user.email "bot@users.noreply.github.com"
@@ -50,6 +63,7 @@ jobs:
           git push
 
       - name: Onay için issue aç
+        if: steps.draft.outputs.skipped != 'true'
         env:
           GH_TOKEN: ${{ github.token }}
           TITLE: ${{ steps.draft.outputs.title }}
