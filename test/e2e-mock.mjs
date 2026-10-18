@@ -13,20 +13,30 @@ process.env.UNSPLASH_ACCESS_KEY = MP === 'unsplash' ? 'u' : '';
 const img = (w, h, c) => sharp({ create: { width: w, height: h, channels: 3, background: c } })
   .composite([{ input: Buffer.from(`<svg width="${w}" height="${h}"><circle cx="${w / 2}" cy="${h / 2}" r="${Math.min(w, h) / 3}" fill="#c33"/></svg>`) }]).jpeg().toBuffer();
 const photo = (id) => ({ id, width: 4000, height: 2600, urls: { raw: `https://images.unsplash.com/${id}?ixid=1` }, links: { download_location: `https://api.unsplash.com/photos/${id}/download?ixid=1`, html: `https://unsplash.com/photos/${id}` }, user: { name: 'Test Foto', links: { html: 'https://unsplash.com/@test' } } });
+const badPost = {
+  title: 'Motosiklet Yağı Seçimi', slug: 'motosiklet-yagi-secimi-2026', shortDescription: 'Kısa', seoTitle: 'Yağ | Soydaş Motosiklet', seoDescription: 'Açıklama',
+  coverQuery: 'motorcycle oil', inlineQuery: 'engine oil', collageProducts: ['/motul-yag-a', '/motul-yag-b'],
+  blocks: [{ type: 'paragraph', text: 'Kısa yazı <a href="/yag-filtresi-x">stokta olmayan</a>' }],
+};
+const filler = Array.from({ length: 60 }, (_, i) => `Yağ seçimi konusunda ${i + 1}. pratik bilgi cümlesi burada yer alıyor ve okuyucuya yol gösteriyor.`).join(' ');
 const post = {
-  title: 'Motosiklet Yağı Seçimi', slug: 'motosiklet-yagi-secimi', shortDescription: 'Kısa', seoTitle: 'Yağ | Soydaş Motosiklet', seoDescription: 'Açıklama',
-  coverQuery: 'motorcycle oil', inlineQuery: 'engine oil', collageProducts: ['/motul-a', '/motul-b', '/uydurma-urun'],
+  title: 'Motosiklet Yağı Seçimi', slug: 'motosiklet-yagi-secimi', shortDescription: 'Kısa',
+  seoTitle: 'Motosiklet Yağı Seçimi | Soydaş Motosiklet',
+  seoDescription: 'Motosiklet yağı seçimi rehberi: viskozite, JASO standartları ve scooter ile vitesli motosikletler için doğru yağı seçmenin pratik yolları burada.'.padEnd(145, '.'),
+  coverQuery: 'motorcycle oil', inlineQuery: 'engine oil', collageProducts: ['/motul-yag-a', '/motul-yag-b', '/uydurma-urun'],
   blocks: [
-    { type: 'paragraph', text: 'Giriş <a href="/yaglar">yağlar</a> & <a href="/olmayan">uydurma</a> <a href="https://rakip.com/x">rakip</a>' },
+    { type: 'paragraph', text: 'Giriş <a href="/yaglar">yağlar</a> & <a href="/olmayan">uydurma</a> <a href="https://rakip.com/x">rakip</a> ' + filler },
     { type: 'header', text: 'Bölüm', level: 2 },
     { type: 'image_slot', slot: 'collage', caption: 'Ürünler – Soydaş Motosiklet' },
-    { type: 'list', style: 'unordered', items: ['bir <b>iki</b>', '<a href="/motul-a">Motul A</a>'] },
+    { type: 'list', style: 'unordered', items: ['bir <b>iki</b>', '<a href="/motul-yag-a">Motul A</a>', '<a href="/motul-yag-b">Motul B</a>', '<a href="/motul-yag-c">Motul C</a>'] },
     { type: 'table', rows: [['Tip', 'Kullanım'], ['MA', 'Islak debriyaj']] },
     { type: 'image_slot', slot: 'photo', caption: 'Yağ değişimi' },
+    { type: 'paragraph', text: 'Bakım ürünleri için <a href="/bakim-urunleri">bakım ürünleri</a>; ayrıca <a href="/blog/motosiklet-kask-secimi-rehberi">kask rehberi</a>.' },
     { type: 'header', text: 'SSS', level: 2 }, { type: 'header', text: 'Soru?', level: 3 }, { type: 'paragraph', text: 'Cevap. <a href="/pages/iletisim">bize ulaşın</a>' },
   ],
 };
-let liveBlogs = ['motosiklet-kask-secimi-rehberi-2026'];
+let gen = 0;
+let liveBlogs = ['motosiklet-kask-secimi-rehberi', 'motosiklet-rehberleri'];
 const saved = [];
 const R = (body, status = 200) => new Response(typeof body === 'string' || body instanceof Uint8Array ? body : JSON.stringify(body), { status });
 const repoFile = (p) => path.join(process.cwd(), p);
@@ -34,15 +44,16 @@ globalThis.fetch = async (input, init = {}) => {
   const u = String(input);
   const body = init.body && typeof init.body === 'string' ? init.body : '';
   if (u.endsWith('/collections.xml')) return R('<loc>https://soydasmotosiklet.com/yaglar</loc><loc>https://soydasmotosiklet.com/bakim-urunleri</loc>');
-  if (u.endsWith('/products.xml')) return R('<loc>https://soydasmotosiklet.com/motul-a</loc><loc>https://soydasmotosiklet.com/motul-b</loc><loc>https://soydasmotosiklet.com/yag-filtresi-x</loc>');
+  if (u.endsWith('/products.xml')) return R(['motul-yag-a', 'motul-yag-b', 'motul-yag-c', 'yag-filtresi-x'].map((p) => `<loc>https://soydasmotosiklet.com/${p}</loc>`).join(''));
   if (u.endsWith('/pages.xml')) return R('<loc>https://soydasmotosiklet.com/pages/iletisim</loc>');
   if (u.endsWith('/blogs.xml')) return R(liveBlogs.map((s) => `<loc>https://soydasmotosiklet.com/blog/${s}</loc>`).join(''));
-  if (/soydasmotosiklet\.com\/(motul-a|motul-b)$/.test(u)) return R(`<meta property="og:image" content="https://cdn.myikas.com/images/m/${u.split('/').pop()}/image_1080.jpg">`);
+  if (/soydasmotosiklet\.com\/motul-yag-[abc]$/.test(u)) return R(`<meta property="og:image" content="https://cdn.myikas.com/images/m/${u.split('/').pop()}/image_1080.jpg"><script type="application/ld+json">{"offers":{"availability":"https://schema.org/InStock"}}</script>`);
+  if (/soydasmotosiklet\.com\/yag-filtresi-x$/.test(u)) return R('{"availability":"https://schema.org/OutOfStock"}');
   if (u.startsWith('https://soydasmotosiklet.com/')) return R('ok');
   if (u.includes('cdn.myikas.com/images/m/')) return R(new Uint8Array(await img(800, 800, '#fff')));
   if (u.includes('/v1/models')) return R({ data: [{ id: 'claude-sonnet-test' }] });
   if (u.includes('/v1/messages') && String(init.body || '').includes('"type":"image"')) { globalThis.__picked = (globalThis.__picked || 0) + 1; return R({ content: [{ type: 'text', text: '2' }] }); }
-  if (u.includes('/v1/messages')) return R({ stop_reason: 'tool_use', content: [{ type: 'tool_use', name: 'kaydet_yazi', input: post }] });
+  if (u.includes('/v1/messages')) { gen++; return R({ stop_reason: 'tool_use', content: [{ type: 'tool_use', name: 'kaydet_yazi', input: gen === 1 ? badPost : post }] }); }
   if (u.startsWith('https://pixabay.com/api/')) return R({ hits: [1, 2].map((id) => ({ id, tags: new URL(u).searchParams.get('q'), imageWidth: 4000, imageHeight: 2600, user: 'pixuser', user_id: 9, pageURL: `https://pixabay.com/photos/x-${id}/`, largeImageURL: `https://pixabay.com/get/${id}_1280.jpg`, webformatURL: `https://pixabay.com/get/${id}_640.jpg` })) });
   if (u.startsWith('https://pixabay.com/get/')) return R(new Uint8Array(await img(1280, 832, '#264')));
   if (u.includes('api.pexels.com/v1/search')) return R({ photos: ['111', '222'].map((id) => ({ id: +id, width: 4000, height: 2600, url: `https://www.pexels.com/photo/${id}/`, photographer: 'Pex Foto', photographer_url: 'https://www.pexels.com/@pex', src: { original: `https://images.pexels.com/photos/${id}/x.jpeg` } })) });
@@ -75,7 +86,9 @@ for (const d of fs.readdirSync('drafts')) if (d.startsWith('motosiklet-yagi')) f
 const ok = (c, m) => { if (!c) { console.error('✗', m); process.exit(1); } console.log('✓', m); };
 const { createDraft, draftIssueBody, approveDraft, syncPublished, getDraft } = await import('../src/pipeline.js');
 
-const draft = await createDraft({});
+const draft = await createDraft({ topic: 'Motosiklet Yağı Seçimi' });
+ok(gen === 2 && draft.qualityIssues.length === 0 && draft.words >= 800, 'kalite eşiği: ilk taslak reddedildi, düzeltilmiş taslak geçti');
+ok(/Yayın tarihi: /.test(draft.contentHtml), 'yayın tarihi satırı var');
 const dir = `drafts/${draft.slug}`;
 ok(fs.existsSync(`${dir}/draft.json`) && fs.existsSync(`${dir}/cover.jpg`), 'taslak klasörü ve kapak oluştu');
 ok(draft.contentHtml.includes('__IMG_collage__') && (MP === 'none' || draft.contentHtml.includes('__IMG_inline__')), 'içerikte görsel yer tutucuları var');
