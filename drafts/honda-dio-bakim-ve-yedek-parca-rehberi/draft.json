@@ -1,0 +1,341 @@
+{
+  "topic": "Honda Dio Bakım ve Yedek Parça Rehberi",
+  "approved": false,
+  "qualityIssues": [
+    "İlgili blog yazısı linki 5; 1–2 olmalı (sadece verilen blog yollarından)."
+  ],
+  "words": 836,
+  "createdAt": "2026-10-19T05:52:45.040Z",
+  "model": "claude-sonnet-5-5",
+  "title": "Honda Dio Bakım ve Yedek Parça Rehberi",
+  "slug": "honda-dio-bakim-ve-yedek-parca-rehberi",
+  "shortDescription": "Honda Dio için düzenli bakım kontrolleri, varyatör, fren, motor ve yakıt sistemi parçaları ile koruma aksesuarlarını bir arada anlatan pratik rehber.",
+  "seoTitle": "Honda Dio Bakım ve Yedek Parça Rehberi | Soydaş Motosiklet",
+  "seoDescription": "Honda Dio bakımında nelere bakılır? Varyatör, fren, buji, yakıt sistemi ve koruma ekipmanlarını; doğru yedek parça seçimi ipuçlarıyla birlikte inceleyin.",
+  "images": {
+    "cover": "cover.jpg",
+    "inline": "inline.jpg",
+    "collage": "collage.jpg"
+  },
+  "coverPhoto": {
+    "provider": "pixabay",
+    "id": "5433115",
+    "user": "12222786",
+    "link": "https://pixabay.com/photos/motorcycle-traffic-vehicle-bikes-5433115/"
+  },
+  "blocks": [
+    {
+      "id": "u8b1c00001",
+      "type": "paragraph",
+      "data": {
+        "text": "<i>Yayın tarihi: 19 Ekim 2026</i>"
+      }
+    },
+    {
+      "id": "u8b1p00002",
+      "type": "paragraph",
+      "data": {
+        "text": "Honda Dio, şehir içi kullanımda pratikliğiyle tercih edilen otomatik vitesli bir scooter. Her gün kısa mesafelerde, dur-kalk trafiğinde çalışan bir araç olduğu için bazı parçalar zamanla doğal olarak yıpranır. Bakımı aksatmadığınızda hem sürüş keyfi korunur hem de küçük bir aşınma büyük bir arızaya dönüşmeden fark edilir. Bu rehberde Dio'da hangi noktalara bakmanız gerektiğini, hangi yedek parçaların öne çıktığını ve parça seçerken nelere dikkat etmeniz gerektiğini sade bir dille bulacaksınız."
+      }
+    },
+    {
+      "id": "u8b1q00003",
+      "type": "header",
+      "data": {
+        "text": "Honda Dio'da Düzenli Bakım Neden Önemli?",
+        "level": 2
+      }
+    },
+    {
+      "id": "u8b1q00004",
+      "type": "paragraph",
+      "data": {
+        "text": "Scooter motorları genellikle sık çalıştırılıp kısa süre kullanılır. Bu kullanım biçimi yağ, buji, varyatör ve fren gibi parçaların durumunu doğrudan etkiler. Bakım aralıkları ve değişim kriterleri modele göre farklılık gösterebileceği için <b>kesin değerler için aracınızın Honda kullanım kılavuzuna bakmanız</b> gerekir. Aşağıdaki başlıklar ise kontrol etmeniz gereken genel noktaları özetler."
+      }
+    },
+    {
+      "id": "u8b1q00005",
+      "type": "list",
+      "data": {
+        "style": "unordered",
+        "items": [
+          "Motor yağı seviyesini ve yağın durumunu düzenli olarak kontrol edin.",
+          "Fren balatalarının kalınlığına ve fren hissine dikkat edin.",
+          "Lastiklerin diş derinliğini, yan yüzey çatlaklarını ve basıncını kontrol edin.",
+          "Aküyü, ışıkları, sinyalleri ve kornayı periyodik olarak deneyin.",
+          "Gaz teli, fren kolu ve ayak basma bölgesindeki gevşeklikleri gözden geçirin."
+        ]
+      }
+    },
+    {
+      "id": "u8b1q00006",
+      "type": "paragraph",
+      "data": {
+        "text": "Yağ konusunda hangi viskozite ve standardın uygun olduğunu merak ediyorsanız <a href=\"/blog/motosiklet-yagi-secimi-10w-40-jaso-ma-ve-mb-farki\">motosiklet yağı seçimi rehberimizi</a> inceleyebilir, <a href=\"/yaglar\">yağlar kategorisine</a> göz atabilirsiniz. Scooter tipi araçlarda yağ özelliklerinin kullanım kılavuzundaki gereksinimle uyumlu olması önemlidir."
+      }
+    },
+    {
+      "id": "u8b1q00007",
+      "type": "header",
+      "data": {
+        "text": "Bakım Kontrol Listesi",
+        "level": 2
+      }
+    },
+    {
+      "id": "u8b1q00008",
+      "type": "paragraph",
+      "data": {
+        "text": "Aşağıdaki tablo, Dio'da sık kontrol edilen bölümleri ve nelere bakılacağını özetler. Değişim aralıkları için üreticinin kılavuzu esas alınmalıdır."
+      }
+    },
+    {
+      "id": "u8b1q00009",
+      "type": "table",
+      "data": {
+        "withHeadings": true,
+        "content": [
+          [
+            "<b>Bölüm</b>",
+            "<b>Neye Bakılır</b>",
+            "<b>Aşınma Belirtisi</b>"
+          ],
+          [
+            "Varyatör ve ağırlıklar",
+            "Ağırlık yüzeyleri, kayış, ön debriyaj",
+            "Hızlanmada isteksizlik, titreme, ses"
+          ],
+          [
+            "Fren sistemi",
+            "Balata kalınlığı, disk yüzeyi, hortum",
+            "Gıcırtı, uzayan fren mesafesi"
+          ],
+          [
+            "Buji",
+            "Elektrot durumu, renk, kurum",
+            "Zor çalışma, düzensiz rölanti"
+          ],
+          [
+            "Yakıt sistemi",
+            "Samandıra, hortum, sensörler",
+            "Rölantide dalgalanma, çalışmama"
+          ],
+          [
+            "Süspansiyon",
+            "Amortisör sızıntısı, yay yumuşaması",
+            "Zıplama, yol tutuşunda azalma"
+          ],
+          [
+            "Aydınlatma",
+            "Far, stop, sinyal, grenajlar",
+            "Yanmayan ampul, çatlak kapak"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "u8b1q0000a",
+      "type": "header",
+      "data": {
+        "text": "Varyatör ve Aktarma Grubu Parçaları",
+        "level": 2
+      }
+    },
+    {
+      "id": "u8b1q0000b",
+      "type": "image",
+      "data": {
+        "file": {
+          "url": "__IMG_collage__"
+        },
+        "caption": "Honda Dio bakımında sık ihtiyaç duyulan varyatör, fren ve ateşleme parçaları – Soydaş Motosiklet",
+        "withBorder": false,
+        "stretched": false,
+        "withBackground": false
+      }
+    },
+    {
+      "id": "u8b1q0000c",
+      "type": "paragraph",
+      "data": {
+        "text": "Dio'nun hızlanma karakterini belirleyen bölüm varyatör grubudur. Ağırlıklar, kayış ve ön debriyaj birlikte çalışır; biri yıprandığında diğerlerinin performansı da etkilenir. Varyatör sistemini ayrıntılı öğrenmek için <a href=\"/blog/scooter-varyator-bakimi-kayis-makara-ve-debriyaj\">scooter varyatör bakımı yazımıza</a> göz atabilirsiniz."
+      }
+    },
+    {
+      "id": "u8b1q0000d",
+      "type": "list",
+      "data": {
+        "style": "unordered",
+        "items": [
+          "<b>Ağırlık seti:</b> <a href=\"/monero-agirlik-seti-6-li-15gr-20x15-honda-dio-activa-s\">Monero 6'lı ağırlık seti (15 gr, 20x15)</a>, ürün adında belirtilen ölçüleriyle Dio için sunulur. Ağırlık değerinin motorun karakterini değiştirdiğini unutmayın; orijinal değerden sapmadan önce kılavuza bakın.",
+          "<b>Ön debriyaj:</b> <a href=\"/on-debriyaj-komple-honda-dio-activa-125\">Honda Dio ön debriyaj komple</a> ürünü, debriyaj balatalarının aşındığı ve araç kalkışta tepki vermediği durumlarda gündeme gelir.",
+          "<b>Debriyaj kapak rulmanı:</b> <a href=\"/ntn-debriyaj-kapak-ozel-rulmani-honda-dio-110\">NTN debriyaj kapak özel rulmanı</a> Dio 110 için ayrı bir parça olarak bulunur."
+        ]
+      }
+    },
+    {
+      "id": "u8b1q0000e",
+      "type": "header",
+      "data": {
+        "text": "Fren ve Süspansiyon Bakımı",
+        "level": 2
+      }
+    },
+    {
+      "id": "u8b1q0000f",
+      "type": "paragraph",
+      "data": {
+        "text": "Fren balatası yıpranınca önce ses, ardından fren gücünde düşüş görülür. Ön tarafta <a href=\"/swan-disk-balata-on-honda-dio-activa-125\">Swan ön disk balata</a>, arka tarafta ise <a href=\"/monero-arka-fren-balatasi-honda-spacy-activa-s-alpha-dio-pcx-cbf-fizy-rks-spontini\">Monero arka fren balatası</a> kullanılabilir. Balata değişim zamanını daha ayrıntılı öğrenmek isterseniz <a href=\"/blog/motosiklet-fren-balatasi-ne-zaman-degisir\">fren balatası yazımız</a> faydalı olacaktır."
+      }
+    },
+    {
+      "id": "u8b1q0000g",
+      "type": "paragraph",
+      "data": {
+        "text": "Arka amortisörlerde yağ sızıntısı, zıplama veya yol tutuşunda azalma görürseniz değişim düşünülebilir. Ürün adında Dio geçen seçenekler arasında <a href=\"/monero-arka-amortisor-oem-honda-dio\">Monero arka amortisör (OEM)</a> yer alır. Fren hattında hortumda çatlak ya da şişme varsa <a href=\"/hidrolik-hortumu-honda-dio\">hidrolik hortumu</a> da kontrol listenize girmelidir."
+      }
+    },
+    {
+      "id": "u8b1q0000h",
+      "type": "image",
+      "data": {
+        "file": {
+          "url": "__IMG_inline__"
+        },
+        "caption": "Scooter motor ve aktarma bölümünde bakım çalışması (Fotoğraf: <a href=\"https://pixabay.com/users/RitaE-19628/\">RitaE</a> / <a href=\"https://pixabay.com/\">Pixabay</a>)",
+        "withBorder": false,
+        "stretched": false,
+        "withBackground": false
+      }
+    },
+    {
+      "id": "u8b1q0000i",
+      "type": "header",
+      "data": {
+        "text": "Motor ve Yakıt Sistemi",
+        "level": 2
+      }
+    },
+    {
+      "id": "u8b1q0000j",
+      "type": "paragraph",
+      "data": {
+        "text": "Çalışma sorunlarında ilk bakılacak yerler genellikle buji, yakıt sistemi ve sensörlerdir. Buji için <a href=\"/marshal-buji-b8-tc-9-cpr8ea-9-honda-dio-cbf-150-cb-125e-spacy-alpha-activa-s\">Marshal B8 TC-9 (CPR8EA-9) buji</a> ürün adında belirtilen modeller arasında Dio'yu da içerir. Buji başlığında sorun varsa <a href=\"/jantel-buji-basligi-honda-spacy-dio\">Jantel buji başlığı</a> da incelenebilir."
+      }
+    },
+    {
+      "id": "u8b1q0000k",
+      "type": "paragraph",
+      "data": {
+        "text": "Yakıt tarafında <a href=\"/monero-benzin-samandirasi-honda-dio\">benzin samandırası</a>, enjeksiyonlu modellerde <a href=\"/monero-gaz-kelebek-sensoru-oem-honda-pcx-2021-2024-dio\">gaz kelebek sensörü</a> ve <a href=\"/monero-egzoz-sensoru-honda-dio-pcx-2021-2024\">egzoz sensörü</a> gibi parçalar çalışma düzenini etkiler. Motor üstünde ise <a href=\"/monero-silindir-alt-ust-conta-takimi-honda-dio-activa-125\">silindir alt-üst conta takımı</a> ve <a href=\"/honda-yag-pompasi-orjinal-honda-dio\">orijinal Honda yağ pompası</a> gibi ürünler bulunur. Bu parçaların aracınızın versiyonuyla uyumunu mutlaka ürün sayfasından ve kılavuzdan teyit edin. Daha geniş bir seçki için <a href=\"/dio-110\">Dio 110 kategorisi</a> ve <a href=\"/motosiklet-yedek-parca\">motosiklet yedek parça</a> sayfaları kullanılabilir."
+      }
+    },
+    {
+      "id": "u8b1q0000l",
+      "type": "header",
+      "data": {
+        "text": "Koruma ve Aksesuar Seçenekleri",
+        "level": 2
+      }
+    },
+    {
+      "id": "u8b1q0000m",
+      "type": "paragraph",
+      "data": {
+        "text": "Dio'yu günlük kullanımda çizilme, düşme ve hava şartlarından korumak için çeşitli ürünler mevcuttur. Düşmelerde gövdeyi korumaya yardımcı olan <a href=\"/gear5-koruma-demiri-takimi-honda-dio\">Gear5 koruma demiri takımı</a>, jantlara görsel katkı yapan <a href=\"/gogo-jant-seridi-reflektorlu-kirmizi-honda-dio\">reflektörlü jant şeridi</a> ve gösterge ekranını çiziklerden saklayan <a href=\"/gogo-kilometre-ekran-koruyucu-honda-dio\">kilometre ekran koruyucu</a> bu gruptadır. Sürücü tarafında ise <a href=\"/trz-el-koruma-delux-honda-dio-activa-125\">TRZ el koruma</a> soğuk havada ellerin korunmasına yardımcı olur. Daha fazla seçenek için <a href=\"/motosiklet-aksesuar\">motosiklet aksesuar</a> ve <a href=\"/motosiklet-koruma-ekipmanlari\">koruma ekipmanları</a> kategorilerine bakabilirsiniz."
+      }
+    },
+    {
+      "id": "u8b1q0000n",
+      "type": "header",
+      "data": {
+        "text": "Doğru Yedek Parçayı Seçerken",
+        "level": 2
+      }
+    },
+    {
+      "id": "u8b1q0000o",
+      "type": "list",
+      "data": {
+        "style": "unordered",
+        "items": [
+          "Ürün adında aracınızın modelinin açıkça geçtiğinden emin olun.",
+          "Dio 110 ile enjeksiyonlu yeni model arasında parça farkı olabileceğini göz önünde bulundurun.",
+          "Parçanın OEM ya da orijinal olarak belirtilip belirtilmediğine bakın.",
+          "Değiştireceğiniz parçanın eski halini fotoğraflayıp karşılaştırın.",
+          "Emin olmadığınız durumda kullanım kılavuzuna veya bize danışın."
+        ]
+      }
+    },
+    {
+      "id": "u8b1q0000p",
+      "type": "header",
+      "data": {
+        "text": "Sık Sorulan Sorular",
+        "level": 2
+      }
+    },
+    {
+      "id": "u8b1q0000q",
+      "type": "header",
+      "data": {
+        "text": "Honda Dio'da bakım ne sıklıkla yapılmalı?",
+        "level": 3
+      }
+    },
+    {
+      "id": "u8b1q0000r",
+      "type": "paragraph",
+      "data": {
+        "text": "Bakım aralıkları üreticinin kullanım kılavuzunda belirtilir ve model ile kullanım koşuluna göre değişebilir. Yoğun şehir içi kullanımda yağ, fren ve varyatör kontrollerini kılavuzdaki takvimden daha sık gözden geçirmek mantıklı olabilir; ancak kesin değer için kılavuza başvurmalısınız."
+      }
+    },
+    {
+      "id": "u8b1q0000s",
+      "type": "header",
+      "data": {
+        "text": "Hızlanmada isteksizlik ve titreme neyin işareti olabilir?",
+        "level": 3
+      }
+    },
+    {
+      "id": "u8b1q0000t",
+      "type": "paragraph",
+      "data": {
+        "text": "Bu belirtiler çoğunlukla varyatör ağırlıklarının, kayışın veya ön debriyajın aşınmasıyla ilişkilidir. Buji ve yakıt sistemi de benzer şikayetlere yol açabileceği için sırayla kontrol etmek en doğru yaklaşımdır."
+      }
+    },
+    {
+      "id": "u8b1q0000u",
+      "type": "header",
+      "data": {
+        "text": "Lastik ve akü bakımını nasıl takip etmeliyim?",
+        "level": 3
+      }
+    },
+    {
+      "id": "u8b1q0000v",
+      "type": "paragraph",
+      "data": {
+        "text": "Lastik basıncı ve seçimi için <a href=\"/blog/motosiklet-lastik-secimi-ve-dogru-lastik-basinci\">lastik rehberimize</a>, akü için ise <a href=\"/blog/motosiklet-aku-bakimi-ve-kisin-aku-koruma-rehberi\">akü bakım yazımıza</a> göz atabilirsiniz. Basınç gibi kesin değerler için aracınızın kılavuzu esas alınmalıdır."
+      }
+    },
+    {
+      "id": "u8b1q0000w",
+      "type": "paragraph",
+      "data": {
+        "text": "Honda Dio'da düzenli kontrol, doğru parça seçimi ve uygun koruma ekipmanları aracınızın uzun süre sorunsuz çalışmasına yardımcı olur. Aradığınız parçanın modelinize uygun olup olmadığından emin değilseniz <a href=\"/pages/iletisim\">bizimle iletişime geçin</a>, birlikte doğru ürünü bulalım."
+      }
+    },
+    {
+      "id": "u8b1q0000x",
+      "type": "paragraph",
+      "data": {
+        "text": "<i>Kapak fotoğrafı: <a href=\"https://pixabay.com/users/12222786-12222786/\">12222786</a> / <a href=\"https://pixabay.com/\">Pixabay</a></i>"
+      }
+    }
+  ],
+  "contentHtml": "<html lang=\"en\">\n          <style>.ikas-editor-v1>table,td,th{border:1px solid #e8e8eb;border-collapse:collapse;font-size:14px}.ikas-editor-v1>th,td{padding:6px 12px}.ikas-editor-v1 ul,.ikas-editor-v1 ol{padding-left:20px}.ikas-editor-v1 ul li{list-style-type:disc;margin:8px 0 8px 16px}.ikas-editor-v1 ol li{list-style-type:decimal;margin:8px 0 8px 16px}.ikas-editor-v1 li{margin:8px 0 8px 16px}.ikas-editor-v1 code{display:block;white-space:pre-wrap}.ikas-editor-v1 blockquote{margin-inline-start:0;border-left:3px solid rgb(41 41 41);padding-left:23px}.ikas-editor-v1 figure{margin-inline:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0;width:100%}.ikas-editor-v1 img{max-width:800px;object-fit:cover;object-position:center}.ikas-editor-v1 img.img-bg{padding:1.5em!important;background:#cdd1e0!important}.ikas-editor-v1 img.img-fullwidth{width:100%!important;max-width:100%!important;margin:0 auto!important}.ikas-editor-v1 figcaption{text-align:center;padding-top:6px;word-break:break-word;font-size:12px;background:0 0;z-index:{};}.ikas-editor-v1 .embed-youtube{width:100%;height:400px}.ikas-editor-v1 a{color:#0070f3;text-decoration:underline;cursor:pointer}.ikas-editor-v1 a:hover{opacity:.8}.products-container{display:flex;flex-direction:column;gap:10px}.product-block-container{margin:0 auto;cursor:pointer;flex:1;display:flex;gap:20px;padding:10px 0}.product-image{width:120px;height:120px;object-fit:cover;border-radius:4px;flex-shrink:0}.product-name{font-size:15px;font-weight:500;width:100%;margin:0 0 4px}.product-brand{font-size:13px;font-weight:400;color:#adb5bd;margin:0 0 4px}.product-discount-price,.product-price{width:fit-content;font-size:16px;font-weight:500;color:#000}.product-price{margin:6px 0 0}.product-discount-price{margin:6px 8px 0 0;text-decoration:line-through}.ikas-editor-v1 table b{font-weight:bold}.ikas-editor-v1 table i{font-style:italic}</style>\n          <div class=\"ikas-editor-v1\">\n          <p class=\"editor-paragraph\"> <i>Yayın tarihi: 19 Ekim 2026</i> </p><p class=\"editor-paragraph\"> Honda Dio, şehir içi kullanımda pratikliğiyle tercih edilen otomatik vitesli bir scooter. Her gün kısa mesafelerde, dur-kalk trafiğinde çalışan bir araç olduğu için bazı parçalar zamanla doğal olarak yıpranır. Bakımı aksatmadığınızda hem sürüş keyfi korunur hem de küçük bir aşınma büyük bir arızaya dönüşmeden fark edilir. Bu rehberde Dio'da hangi noktalara bakmanız gerektiğini, hangi yedek parçaların öne çıktığını ve parça seçerken nelere dikkat etmeniz gerektiğini sade bir dille bulacaksınız. </p><h2>Honda Dio'da Düzenli Bakım Neden Önemli?</h2><p class=\"editor-paragraph\"> Scooter motorları genellikle sık çalıştırılıp kısa süre kullanılır. Bu kullanım biçimi yağ, buji, varyatör ve fren gibi parçaların durumunu doğrudan etkiler. Bakım aralıkları ve değişim kriterleri modele göre farklılık gösterebileceği için <b>kesin değerler için aracınızın Honda kullanım kılavuzuna bakmanız</b> gerekir. Aşağıdaki başlıklar ise kontrol etmeniz gereken genel noktaları özetler. </p><ul><li>Motor yağı seviyesini ve yağın durumunu düzenli olarak kontrol edin.</li><li>Fren balatalarının kalınlığına ve fren hissine dikkat edin.</li><li>Lastiklerin diş derinliğini, yan yüzey çatlaklarını ve basıncını kontrol edin.</li><li>Aküyü, ışıkları, sinyalleri ve kornayı periyodik olarak deneyin.</li><li>Gaz teli, fren kolu ve ayak basma bölgesindeki gevşeklikleri gözden geçirin.</li></ul><p class=\"editor-paragraph\"> Yağ konusunda hangi viskozite ve standardın uygun olduğunu merak ediyorsanız <a href=\"/blog/motosiklet-yagi-secimi-10w-40-jaso-ma-ve-mb-farki\">motosiklet yağı seçimi rehberimizi</a> inceleyebilir, <a href=\"/yaglar\">yağlar kategorisine</a> göz atabilirsiniz. Scooter tipi araçlarda yağ özelliklerinin kullanım kılavuzundaki gereksinimle uyumlu olması önemlidir. </p><h2>Bakım Kontrol Listesi</h2><p class=\"editor-paragraph\"> Aşağıdaki tablo, Dio'da sık kontrol edilen bölümleri ve nelere bakılacağını özetler. Değişim aralıkları için üreticinin kılavuzu esas alınmalıdır. </p><table><tbody><tr><td><b>Bölüm</b></td><td><b>Neye Bakılır</b></td><td><b>Aşınma Belirtisi</b></td></tr><tr><td>Varyatör ve ağırlıklar</td><td>Ağırlık yüzeyleri, kayış, ön debriyaj</td><td>Hızlanmada isteksizlik, titreme, ses</td></tr><tr><td>Fren sistemi</td><td>Balata kalınlığı, disk yüzeyi, hortum</td><td>Gıcırtı, uzayan fren mesafesi</td></tr><tr><td>Buji</td><td>Elektrot durumu, renk, kurum</td><td>Zor çalışma, düzensiz rölanti</td></tr><tr><td>Yakıt sistemi</td><td>Samandıra, hortum, sensörler</td><td>Rölantide dalgalanma, çalışmama</td></tr><tr><td>Süspansiyon</td><td>Amortisör sızıntısı, yay yumuşaması</td><td>Zıplama, yol tutuşunda azalma</td></tr><tr><td>Aydınlatma</td><td>Far, stop, sinyal, grenajlar</td><td>Yanmayan ampul, çatlak kapak</td></tr></tbody></table><h2>Varyatör ve Aktarma Grubu Parçaları</h2><figure class=\"editor-fig-img\"><img class=\"editor-img   \" src=\"__IMG_collage__\" alt=\"Honda Dio bakımında sık ihtiyaç duyulan varyatör, fren ve ateşleme parçaları – Soydaş Motosiklet\" width=\"1080\" height=\"360\" style=\"max-width: 100%; aspect-ratio: 1080 / 360;\"><figcaption class=\"editor-fig-cap\">Honda Dio bakımında sık ihtiyaç duyulan varyatör, fren ve ateşleme parçaları – Soydaş Motosiklet</figcaption></figure><p class=\"editor-paragraph\"> Dio'nun hızlanma karakterini belirleyen bölüm varyatör grubudur. Ağırlıklar, kayış ve ön debriyaj birlikte çalışır; biri yıprandığında diğerlerinin performansı da etkilenir. Varyatör sistemini ayrıntılı öğrenmek için <a href=\"/blog/scooter-varyator-bakimi-kayis-makara-ve-debriyaj\">scooter varyatör bakımı yazımıza</a> göz atabilirsiniz. </p><ul><li><b>Ağırlık seti:</b> <a href=\"/monero-agirlik-seti-6-li-15gr-20x15-honda-dio-activa-s\">Monero 6'lı ağırlık seti (15 gr, 20x15)</a>, ürün adında belirtilen ölçüleriyle Dio için sunulur. Ağırlık değerinin motorun karakterini değiştirdiğini unutmayın; orijinal değerden sapmadan önce kılavuza bakın.</li><li><b>Ön debriyaj:</b> <a href=\"/on-debriyaj-komple-honda-dio-activa-125\">Honda Dio ön debriyaj komple</a> ürünü, debriyaj balatalarının aşındığı ve araç kalkışta tepki vermediği durumlarda gündeme gelir.</li><li><b>Debriyaj kapak rulmanı:</b> <a href=\"/ntn-debriyaj-kapak-ozel-rulmani-honda-dio-110\">NTN debriyaj kapak özel rulmanı</a> Dio 110 için ayrı bir parça olarak bulunur.</li></ul><h2>Fren ve Süspansiyon Bakımı</h2><p class=\"editor-paragraph\"> Fren balatası yıpranınca önce ses, ardından fren gücünde düşüş görülür. Ön tarafta <a href=\"/swan-disk-balata-on-honda-dio-activa-125\">Swan ön disk balata</a>, arka tarafta ise <a href=\"/monero-arka-fren-balatasi-honda-spacy-activa-s-alpha-dio-pcx-cbf-fizy-rks-spontini\">Monero arka fren balatası</a> kullanılabilir. Balata değişim zamanını daha ayrıntılı öğrenmek isterseniz <a href=\"/blog/motosiklet-fren-balatasi-ne-zaman-degisir\">fren balatası yazımız</a> faydalı olacaktır. </p><p class=\"editor-paragraph\"> Arka amortisörlerde yağ sızıntısı, zıplama veya yol tutuşunda azalma görürseniz değişim düşünülebilir. Ürün adında Dio geçen seçenekler arasında <a href=\"/monero-arka-amortisor-oem-honda-dio\">Monero arka amortisör (OEM)</a> yer alır. Fren hattında hortumda çatlak ya da şişme varsa <a href=\"/hidrolik-hortumu-honda-dio\">hidrolik hortumu</a> da kontrol listenize girmelidir. </p><figure class=\"editor-fig-img\"><img class=\"editor-img   \" src=\"__IMG_inline__\" alt=\"Scooter motor ve aktarma bölümünde bakım çalışması (Fotoğraf: RitaE / Pixabay)\" width=\"1080\" height=\"675\" style=\"max-width: 100%; aspect-ratio: 1080 / 675;\"><figcaption class=\"editor-fig-cap\">Scooter motor ve aktarma bölümünde bakım çalışması (Fotoğraf: <a href=\"https://pixabay.com/users/RitaE-19628/\">RitaE</a> / <a href=\"https://pixabay.com/\">Pixabay</a>)</figcaption></figure><h2>Motor ve Yakıt Sistemi</h2><p class=\"editor-paragraph\"> Çalışma sorunlarında ilk bakılacak yerler genellikle buji, yakıt sistemi ve sensörlerdir. Buji için <a href=\"/marshal-buji-b8-tc-9-cpr8ea-9-honda-dio-cbf-150-cb-125e-spacy-alpha-activa-s\">Marshal B8 TC-9 (CPR8EA-9) buji</a> ürün adında belirtilen modeller arasında Dio'yu da içerir. Buji başlığında sorun varsa <a href=\"/jantel-buji-basligi-honda-spacy-dio\">Jantel buji başlığı</a> da incelenebilir. </p><p class=\"editor-paragraph\"> Yakıt tarafında <a href=\"/monero-benzin-samandirasi-honda-dio\">benzin samandırası</a>, enjeksiyonlu modellerde <a href=\"/monero-gaz-kelebek-sensoru-oem-honda-pcx-2021-2024-dio\">gaz kelebek sensörü</a> ve <a href=\"/monero-egzoz-sensoru-honda-dio-pcx-2021-2024\">egzoz sensörü</a> gibi parçalar çalışma düzenini etkiler. Motor üstünde ise <a href=\"/monero-silindir-alt-ust-conta-takimi-honda-dio-activa-125\">silindir alt-üst conta takımı</a> ve <a href=\"/honda-yag-pompasi-orjinal-honda-dio\">orijinal Honda yağ pompası</a> gibi ürünler bulunur. Bu parçaların aracınızın versiyonuyla uyumunu mutlaka ürün sayfasından ve kılavuzdan teyit edin. Daha geniş bir seçki için <a href=\"/dio-110\">Dio 110 kategorisi</a> ve <a href=\"/motosiklet-yedek-parca\">motosiklet yedek parça</a> sayfaları kullanılabilir. </p><h2>Koruma ve Aksesuar Seçenekleri</h2><p class=\"editor-paragraph\"> Dio'yu günlük kullanımda çizilme, düşme ve hava şartlarından korumak için çeşitli ürünler mevcuttur. Düşmelerde gövdeyi korumaya yardımcı olan <a href=\"/gear5-koruma-demiri-takimi-honda-dio\">Gear5 koruma demiri takımı</a>, jantlara görsel katkı yapan <a href=\"/gogo-jant-seridi-reflektorlu-kirmizi-honda-dio\">reflektörlü jant şeridi</a> ve gösterge ekranını çiziklerden saklayan <a href=\"/gogo-kilometre-ekran-koruyucu-honda-dio\">kilometre ekran koruyucu</a> bu gruptadır. Sürücü tarafında ise <a href=\"/trz-el-koruma-delux-honda-dio-activa-125\">TRZ el koruma</a> soğuk havada ellerin korunmasına yardımcı olur. Daha fazla seçenek için <a href=\"/motosiklet-aksesuar\">motosiklet aksesuar</a> ve <a href=\"/motosiklet-koruma-ekipmanlari\">koruma ekipmanları</a> kategorilerine bakabilirsiniz. </p><h2>Doğru Yedek Parçayı Seçerken</h2><ul><li>Ürün adında aracınızın modelinin açıkça geçtiğinden emin olun.</li><li>Dio 110 ile enjeksiyonlu yeni model arasında parça farkı olabileceğini göz önünde bulundurun.</li><li>Parçanın OEM ya da orijinal olarak belirtilip belirtilmediğine bakın.</li><li>Değiştireceğiniz parçanın eski halini fotoğraflayıp karşılaştırın.</li><li>Emin olmadığınız durumda kullanım kılavuzuna veya bize danışın.</li></ul><h2>Sık Sorulan Sorular</h2><h3>Honda Dio'da bakım ne sıklıkla yapılmalı?</h3><p class=\"editor-paragraph\"> Bakım aralıkları üreticinin kullanım kılavuzunda belirtilir ve model ile kullanım koşuluna göre değişebilir. Yoğun şehir içi kullanımda yağ, fren ve varyatör kontrollerini kılavuzdaki takvimden daha sık gözden geçirmek mantıklı olabilir; ancak kesin değer için kılavuza başvurmalısınız. </p><h3>Hızlanmada isteksizlik ve titreme neyin işareti olabilir?</h3><p class=\"editor-paragraph\"> Bu belirtiler çoğunlukla varyatör ağırlıklarının, kayışın veya ön debriyajın aşınmasıyla ilişkilidir. Buji ve yakıt sistemi de benzer şikayetlere yol açabileceği için sırayla kontrol etmek en doğru yaklaşımdır. </p><h3>Lastik ve akü bakımını nasıl takip etmeliyim?</h3><p class=\"editor-paragraph\"> Lastik basıncı ve seçimi için <a href=\"/blog/motosiklet-lastik-secimi-ve-dogru-lastik-basinci\">lastik rehberimize</a>, akü için ise <a href=\"/blog/motosiklet-aku-bakimi-ve-kisin-aku-koruma-rehberi\">akü bakım yazımıza</a> göz atabilirsiniz. Basınç gibi kesin değerler için aracınızın kılavuzu esas alınmalıdır. </p><p class=\"editor-paragraph\"> Honda Dio'da düzenli kontrol, doğru parça seçimi ve uygun koruma ekipmanları aracınızın uzun süre sorunsuz çalışmasına yardımcı olur. Aradığınız parçanın modelinize uygun olup olmadığından emin değilseniz <a href=\"/pages/iletisim\">bizimle iletişime geçin</a>, birlikte doğru ürünü bulalım. </p><p class=\"editor-paragraph\"> <i>Kapak fotoğrafı: <a href=\"https://pixabay.com/users/12222786-12222786/\">12222786</a> / <a href=\"https://pixabay.com/\">Pixabay</a></i> </p>\n          </div>\n          </html>\n  ",
+  "contentData": "{\"time\":1792389165040,\"blocks\":[{\"id\":\"u8b1c00001\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>Yayın tarihi: 19 Ekim 2026</i>\"}},{\"id\":\"u8b1p00002\",\"type\":\"paragraph\",\"data\":{\"text\":\"Honda Dio, şehir içi kullanımda pratikliğiyle tercih edilen otomatik vitesli bir scooter. Her gün kısa mesafelerde, dur-kalk trafiğinde çalışan bir araç olduğu için bazı parçalar zamanla doğal olarak yıpranır. Bakımı aksatmadığınızda hem sürüş keyfi korunur hem de küçük bir aşınma büyük bir arızaya dönüşmeden fark edilir. Bu rehberde Dio'da hangi noktalara bakmanız gerektiğini, hangi yedek parçaların öne çıktığını ve parça seçerken nelere dikkat etmeniz gerektiğini sade bir dille bulacaksınız.\"}},{\"id\":\"u8b1q00003\",\"type\":\"header\",\"data\":{\"text\":\"Honda Dio'da Düzenli Bakım Neden Önemli?\",\"level\":2}},{\"id\":\"u8b1q00004\",\"type\":\"paragraph\",\"data\":{\"text\":\"Scooter motorları genellikle sık çalıştırılıp kısa süre kullanılır. Bu kullanım biçimi yağ, buji, varyatör ve fren gibi parçaların durumunu doğrudan etkiler. Bakım aralıkları ve değişim kriterleri modele göre farklılık gösterebileceği için <b>kesin değerler için aracınızın Honda kullanım kılavuzuna bakmanız</b> gerekir. Aşağıdaki başlıklar ise kontrol etmeniz gereken genel noktaları özetler.\"}},{\"id\":\"u8b1q00005\",\"type\":\"list\",\"data\":{\"style\":\"unordered\",\"items\":[\"Motor yağı seviyesini ve yağın durumunu düzenli olarak kontrol edin.\",\"Fren balatalarının kalınlığına ve fren hissine dikkat edin.\",\"Lastiklerin diş derinliğini, yan yüzey çatlaklarını ve basıncını kontrol edin.\",\"Aküyü, ışıkları, sinyalleri ve kornayı periyodik olarak deneyin.\",\"Gaz teli, fren kolu ve ayak basma bölgesindeki gevşeklikleri gözden geçirin.\"]}},{\"id\":\"u8b1q00006\",\"type\":\"paragraph\",\"data\":{\"text\":\"Yağ konusunda hangi viskozite ve standardın uygun olduğunu merak ediyorsanız <a href=\\\"/blog/motosiklet-yagi-secimi-10w-40-jaso-ma-ve-mb-farki\\\">motosiklet yağı seçimi rehberimizi</a> inceleyebilir, <a href=\\\"/yaglar\\\">yağlar kategorisine</a> göz atabilirsiniz. Scooter tipi araçlarda yağ özelliklerinin kullanım kılavuzundaki gereksinimle uyumlu olması önemlidir.\"}},{\"id\":\"u8b1q00007\",\"type\":\"header\",\"data\":{\"text\":\"Bakım Kontrol Listesi\",\"level\":2}},{\"id\":\"u8b1q00008\",\"type\":\"paragraph\",\"data\":{\"text\":\"Aşağıdaki tablo, Dio'da sık kontrol edilen bölümleri ve nelere bakılacağını özetler. Değişim aralıkları için üreticinin kılavuzu esas alınmalıdır.\"}},{\"id\":\"u8b1q00009\",\"type\":\"table\",\"data\":{\"withHeadings\":true,\"content\":[[\"<b>Bölüm</b>\",\"<b>Neye Bakılır</b>\",\"<b>Aşınma Belirtisi</b>\"],[\"Varyatör ve ağırlıklar\",\"Ağırlık yüzeyleri, kayış, ön debriyaj\",\"Hızlanmada isteksizlik, titreme, ses\"],[\"Fren sistemi\",\"Balata kalınlığı, disk yüzeyi, hortum\",\"Gıcırtı, uzayan fren mesafesi\"],[\"Buji\",\"Elektrot durumu, renk, kurum\",\"Zor çalışma, düzensiz rölanti\"],[\"Yakıt sistemi\",\"Samandıra, hortum, sensörler\",\"Rölantide dalgalanma, çalışmama\"],[\"Süspansiyon\",\"Amortisör sızıntısı, yay yumuşaması\",\"Zıplama, yol tutuşunda azalma\"],[\"Aydınlatma\",\"Far, stop, sinyal, grenajlar\",\"Yanmayan ampul, çatlak kapak\"]]}},{\"id\":\"u8b1q0000a\",\"type\":\"header\",\"data\":{\"text\":\"Varyatör ve Aktarma Grubu Parçaları\",\"level\":2}},{\"id\":\"u8b1q0000b\",\"type\":\"image\",\"data\":{\"file\":{\"url\":\"__IMG_collage__\"},\"caption\":\"Honda Dio bakımında sık ihtiyaç duyulan varyatör, fren ve ateşleme parçaları – Soydaş Motosiklet\",\"withBorder\":false,\"stretched\":false,\"withBackground\":false}},{\"id\":\"u8b1q0000c\",\"type\":\"paragraph\",\"data\":{\"text\":\"Dio'nun hızlanma karakterini belirleyen bölüm varyatör grubudur. Ağırlıklar, kayış ve ön debriyaj birlikte çalışır; biri yıprandığında diğerlerinin performansı da etkilenir. Varyatör sistemini ayrıntılı öğrenmek için <a href=\\\"/blog/scooter-varyator-bakimi-kayis-makara-ve-debriyaj\\\">scooter varyatör bakımı yazımıza</a> göz atabilirsiniz.\"}},{\"id\":\"u8b1q0000d\",\"type\":\"list\",\"data\":{\"style\":\"unordered\",\"items\":[\"<b>Ağırlık seti:</b> <a href=\\\"/monero-agirlik-seti-6-li-15gr-20x15-honda-dio-activa-s\\\">Monero 6'lı ağırlık seti (15 gr, 20x15)</a>, ürün adında belirtilen ölçüleriyle Dio için sunulur. Ağırlık değerinin motorun karakterini değiştirdiğini unutmayın; orijinal değerden sapmadan önce kılavuza bakın.\",\"<b>Ön debriyaj:</b> <a href=\\\"/on-debriyaj-komple-honda-dio-activa-125\\\">Honda Dio ön debriyaj komple</a> ürünü, debriyaj balatalarının aşındığı ve araç kalkışta tepki vermediği durumlarda gündeme gelir.\",\"<b>Debriyaj kapak rulmanı:</b> <a href=\\\"/ntn-debriyaj-kapak-ozel-rulmani-honda-dio-110\\\">NTN debriyaj kapak özel rulmanı</a> Dio 110 için ayrı bir parça olarak bulunur.\"]}},{\"id\":\"u8b1q0000e\",\"type\":\"header\",\"data\":{\"text\":\"Fren ve Süspansiyon Bakımı\",\"level\":2}},{\"id\":\"u8b1q0000f\",\"type\":\"paragraph\",\"data\":{\"text\":\"Fren balatası yıpranınca önce ses, ardından fren gücünde düşüş görülür. Ön tarafta <a href=\\\"/swan-disk-balata-on-honda-dio-activa-125\\\">Swan ön disk balata</a>, arka tarafta ise <a href=\\\"/monero-arka-fren-balatasi-honda-spacy-activa-s-alpha-dio-pcx-cbf-fizy-rks-spontini\\\">Monero arka fren balatası</a> kullanılabilir. Balata değişim zamanını daha ayrıntılı öğrenmek isterseniz <a href=\\\"/blog/motosiklet-fren-balatasi-ne-zaman-degisir\\\">fren balatası yazımız</a> faydalı olacaktır.\"}},{\"id\":\"u8b1q0000g\",\"type\":\"paragraph\",\"data\":{\"text\":\"Arka amortisörlerde yağ sızıntısı, zıplama veya yol tutuşunda azalma görürseniz değişim düşünülebilir. Ürün adında Dio geçen seçenekler arasında <a href=\\\"/monero-arka-amortisor-oem-honda-dio\\\">Monero arka amortisör (OEM)</a> yer alır. Fren hattında hortumda çatlak ya da şişme varsa <a href=\\\"/hidrolik-hortumu-honda-dio\\\">hidrolik hortumu</a> da kontrol listenize girmelidir.\"}},{\"id\":\"u8b1q0000h\",\"type\":\"image\",\"data\":{\"file\":{\"url\":\"__IMG_inline__\"},\"caption\":\"Scooter motor ve aktarma bölümünde bakım çalışması (Fotoğraf: <a href=\\\"https://pixabay.com/users/RitaE-19628/\\\">RitaE</a> / <a href=\\\"https://pixabay.com/\\\">Pixabay</a>)\",\"withBorder\":false,\"stretched\":false,\"withBackground\":false}},{\"id\":\"u8b1q0000i\",\"type\":\"header\",\"data\":{\"text\":\"Motor ve Yakıt Sistemi\",\"level\":2}},{\"id\":\"u8b1q0000j\",\"type\":\"paragraph\",\"data\":{\"text\":\"Çalışma sorunlarında ilk bakılacak yerler genellikle buji, yakıt sistemi ve sensörlerdir. Buji için <a href=\\\"/marshal-buji-b8-tc-9-cpr8ea-9-honda-dio-cbf-150-cb-125e-spacy-alpha-activa-s\\\">Marshal B8 TC-9 (CPR8EA-9) buji</a> ürün adında belirtilen modeller arasında Dio'yu da içerir. Buji başlığında sorun varsa <a href=\\\"/jantel-buji-basligi-honda-spacy-dio\\\">Jantel buji başlığı</a> da incelenebilir.\"}},{\"id\":\"u8b1q0000k\",\"type\":\"paragraph\",\"data\":{\"text\":\"Yakıt tarafında <a href=\\\"/monero-benzin-samandirasi-honda-dio\\\">benzin samandırası</a>, enjeksiyonlu modellerde <a href=\\\"/monero-gaz-kelebek-sensoru-oem-honda-pcx-2021-2024-dio\\\">gaz kelebek sensörü</a> ve <a href=\\\"/monero-egzoz-sensoru-honda-dio-pcx-2021-2024\\\">egzoz sensörü</a> gibi parçalar çalışma düzenini etkiler. Motor üstünde ise <a href=\\\"/monero-silindir-alt-ust-conta-takimi-honda-dio-activa-125\\\">silindir alt-üst conta takımı</a> ve <a href=\\\"/honda-yag-pompasi-orjinal-honda-dio\\\">orijinal Honda yağ pompası</a> gibi ürünler bulunur. Bu parçaların aracınızın versiyonuyla uyumunu mutlaka ürün sayfasından ve kılavuzdan teyit edin. Daha geniş bir seçki için <a href=\\\"/dio-110\\\">Dio 110 kategorisi</a> ve <a href=\\\"/motosiklet-yedek-parca\\\">motosiklet yedek parça</a> sayfaları kullanılabilir.\"}},{\"id\":\"u8b1q0000l\",\"type\":\"header\",\"data\":{\"text\":\"Koruma ve Aksesuar Seçenekleri\",\"level\":2}},{\"id\":\"u8b1q0000m\",\"type\":\"paragraph\",\"data\":{\"text\":\"Dio'yu günlük kullanımda çizilme, düşme ve hava şartlarından korumak için çeşitli ürünler mevcuttur. Düşmelerde gövdeyi korumaya yardımcı olan <a href=\\\"/gear5-koruma-demiri-takimi-honda-dio\\\">Gear5 koruma demiri takımı</a>, jantlara görsel katkı yapan <a href=\\\"/gogo-jant-seridi-reflektorlu-kirmizi-honda-dio\\\">reflektörlü jant şeridi</a> ve gösterge ekranını çiziklerden saklayan <a href=\\\"/gogo-kilometre-ekran-koruyucu-honda-dio\\\">kilometre ekran koruyucu</a> bu gruptadır. Sürücü tarafında ise <a href=\\\"/trz-el-koruma-delux-honda-dio-activa-125\\\">TRZ el koruma</a> soğuk havada ellerin korunmasına yardımcı olur. Daha fazla seçenek için <a href=\\\"/motosiklet-aksesuar\\\">motosiklet aksesuar</a> ve <a href=\\\"/motosiklet-koruma-ekipmanlari\\\">koruma ekipmanları</a> kategorilerine bakabilirsiniz.\"}},{\"id\":\"u8b1q0000n\",\"type\":\"header\",\"data\":{\"text\":\"Doğru Yedek Parçayı Seçerken\",\"level\":2}},{\"id\":\"u8b1q0000o\",\"type\":\"list\",\"data\":{\"style\":\"unordered\",\"items\":[\"Ürün adında aracınızın modelinin açıkça geçtiğinden emin olun.\",\"Dio 110 ile enjeksiyonlu yeni model arasında parça farkı olabileceğini göz önünde bulundurun.\",\"Parçanın OEM ya da orijinal olarak belirtilip belirtilmediğine bakın.\",\"Değiştireceğiniz parçanın eski halini fotoğraflayıp karşılaştırın.\",\"Emin olmadığınız durumda kullanım kılavuzuna veya bize danışın.\"]}},{\"id\":\"u8b1q0000p\",\"type\":\"header\",\"data\":{\"text\":\"Sık Sorulan Sorular\",\"level\":2}},{\"id\":\"u8b1q0000q\",\"type\":\"header\",\"data\":{\"text\":\"Honda Dio'da bakım ne sıklıkla yapılmalı?\",\"level\":3}},{\"id\":\"u8b1q0000r\",\"type\":\"paragraph\",\"data\":{\"text\":\"Bakım aralıkları üreticinin kullanım kılavuzunda belirtilir ve model ile kullanım koşuluna göre değişebilir. Yoğun şehir içi kullanımda yağ, fren ve varyatör kontrollerini kılavuzdaki takvimden daha sık gözden geçirmek mantıklı olabilir; ancak kesin değer için kılavuza başvurmalısınız.\"}},{\"id\":\"u8b1q0000s\",\"type\":\"header\",\"data\":{\"text\":\"Hızlanmada isteksizlik ve titreme neyin işareti olabilir?\",\"level\":3}},{\"id\":\"u8b1q0000t\",\"type\":\"paragraph\",\"data\":{\"text\":\"Bu belirtiler çoğunlukla varyatör ağırlıklarının, kayışın veya ön debriyajın aşınmasıyla ilişkilidir. Buji ve yakıt sistemi de benzer şikayetlere yol açabileceği için sırayla kontrol etmek en doğru yaklaşımdır.\"}},{\"id\":\"u8b1q0000u\",\"type\":\"header\",\"data\":{\"text\":\"Lastik ve akü bakımını nasıl takip etmeliyim?\",\"level\":3}},{\"id\":\"u8b1q0000v\",\"type\":\"paragraph\",\"data\":{\"text\":\"Lastik basıncı ve seçimi için <a href=\\\"/blog/motosiklet-lastik-secimi-ve-dogru-lastik-basinci\\\">lastik rehberimize</a>, akü için ise <a href=\\\"/blog/motosiklet-aku-bakimi-ve-kisin-aku-koruma-rehberi\\\">akü bakım yazımıza</a> göz atabilirsiniz. Basınç gibi kesin değerler için aracınızın kılavuzu esas alınmalıdır.\"}},{\"id\":\"u8b1q0000w\",\"type\":\"paragraph\",\"data\":{\"text\":\"Honda Dio'da düzenli kontrol, doğru parça seçimi ve uygun koruma ekipmanları aracınızın uzun süre sorunsuz çalışmasına yardımcı olur. Aradığınız parçanın modelinize uygun olup olmadığından emin değilseniz <a href=\\\"/pages/iletisim\\\">bizimle iletişime geçin</a>, birlikte doğru ürünü bulalım.\"}},{\"id\":\"u8b1q0000x\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>Kapak fotoğrafı: <a href=\\\"https://pixabay.com/users/12222786-12222786/\\\">12222786</a> / <a href=\\\"https://pixabay.com/\\\">Pixabay</a></i>\"}}],\"version\":\"2.28.2\"}",
+  "removedLinks": []
+}
