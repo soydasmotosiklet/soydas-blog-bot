@@ -2,7 +2,7 @@
 
 ## Nasıl çalışır?
 
-1. **Pazartesi ve Perşembe sabahları ~08:17** GitHub'ın sunucularında yazı ve görseller hazırlanır (`topics.json`'dan sıradaki konu), bu depoda "📰 Bugünün yazısı" başlıklı bir issue açılır ve telefonunuza bildirim gelir.
+1. **Pazartesi ve Perşembe sabahları ~07:17** (o günün yazısı çıkamazsa ertesi gün — Salı/Cuma — aynı konu otomatik yeniden yazılır) GitHub'ın sunucularında yazı ve görseller hazırlanır (`topics.json`'dan sıradaki konu), bu depoda "📰 Bugünün yazısı" başlıklı bir issue açılır ve telefonunuza bildirim gelir.
 2. **09:00'da** (Türkiye saati) 7/24 açık bulut sunucudaki (AWS Lightsail `soydas-blog`, Frankfurt) Chrome'da kurulu **Soydaş Blog Otomatik Yayın** eklentisi ikas panelini arka planda açar ve yazıyı sizin oturumunuzla ikas'a ekler. Sizden onay/tıklama beklemez.
    - Yazı henüz hazır değilse gün içinde saatlik tekrar dener.
    - ikas oturumu kapanırsa (veya sunucu yeniden başlarsa) yazı eklenemez; saat 10:00'u geçince bu depodaki issue'ya "⚠️" yorumu düşer ve GitHub size e-posta atar. Lightsail → soydas-blog → **RDP kullanarak bağlan** ile sunucuya girip ikas'a tekrar giriş yapmanız yeterli; yazı sonraki saatlik denemede eklenir.
@@ -16,7 +16,7 @@ Onaylı (elle) moda dönmek için: Settings → Secrets and variables → Action
 > **Neden eklenti?** ikas'ın resmi API'si (Özel Uygulama) blog ve görsel işlemlerine izin vermiyor; bunlar yalnızca panele giriş yapmış bir tarayıcıdan yapılabiliyor. Eklenti şifre ya da anahtar saklamaz, sadece sizin Chrome'unuzdaki açık ikas oturumunu kullanır. ikas blog API'sini açarsa bilgisayar gerekmeden tamamen bulutta çalıştırılabilir.
 
 ## Blog Kılavuzu kuralları (18 Ekim 2026)
-Bot her taslağı yayından önce otomatik kontrol eder (`src/quality.js`); geçemeyen taslak **yayınlanmaz**, issue'da sorunlar listelenir:
+Bot her taslağı yayından önce otomatik kontrol eder (`src/quality.js`). Küçük sorunları (fazla blog linki, stok dışı ürün linki, uzun başlık/açıklama, adreste yıl) kendisi düzeltir; kelime ve link sayısı gibi esaslı sorunlarda yazıyı 3 kez yeniden yazdırır, yine geçemezse o gün yayınlamaz ve ertesi gün tekrar dener:
 - En az 800 kelime · en az 3 **stokta olan** ürün linki · en az 2 kategori linki · 1–2 ilgili blog linki
 - SEO başlığı "| Soydaş Motosiklet" dahil en fazla 60 karakter · meta açıklama 140–160 karakter
 - Adres kısa, Türkçe karaktersiz, **yılsız**; başlıkta yıl yok
