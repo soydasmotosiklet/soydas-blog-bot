@@ -2,7 +2,7 @@ name: Günlük blog taslağı
 
 on:
   schedule:
-    - cron: '17 5 * * 1,4'   # Haftada 2: Pazartesi ve Perşembe 08:17 (Türkiye saati, UTC+3) — 09:00 yayınından önce hazır olsun
+    - cron: '17 4 * * 1,2,4,5'   # 07:17 TR. Haftada 2 yazı: Pazartesi ve Perşembe; Salı/Cuma sadece önceki günün yazısı çıkmadıysa (telafi)
   workflow_dispatch:
     inputs:
       topic:
@@ -54,7 +54,7 @@ jobs:
           fi
 
       - name: Taslağı kaydet
-        if: steps.draft.outputs.skipped != 'true'
+        if: steps.draft.outputs.skipped == ''
         run: |
           git config user.name "soydas-blog-bot"
           git config user.email "bot@users.noreply.github.com"
@@ -63,7 +63,7 @@ jobs:
           git push
 
       - name: Onay için issue aç
-        if: steps.draft.outputs.skipped != 'true'
+        if: steps.draft.outputs.skipped == ''
         env:
           GH_TOKEN: ${{ github.token }}
           TITLE: ${{ steps.draft.outputs.title }}
