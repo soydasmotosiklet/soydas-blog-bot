@@ -42,7 +42,7 @@ async function main() {
       const draft = await createDraft({ topic: arg('topic'), feedback: arg('feedback') });
       fs.mkdirSync('out', { recursive: true });
       if (draft.skipped) {
-        setOutput('skipped', 'true');
+        setOutput('skipped', draft.quiet ? 'quiet' : 'true');
         console.log('Yeni yazı üretilmedi:', draft.reason);
         return;
       }

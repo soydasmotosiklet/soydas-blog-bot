@@ -77,3 +77,48 @@ export function checkPost(post, ctx) {
   for (const re of FORBIDDEN) if (re.test(all)) issues.push(`Yasak ifade: ${re.source} (yazar/uzmanlık ya da stok/fiyat iddiası yazılmaz).`);
   return issues;
 }
+
+// Fazla blog linkini (ilk `max` farklı yazıdan sonrakileri) düz metne çevirir; kalite kontrolünden önce uygulanır.
+export function trimBlogLinks(post, blogPosts, max = RULES.maxBlogLinks) {
+  const keep = [];
+  const fix = (t) =>
+    String(t).replace(/<a href="([^"]+)">([^<]*)<\/a>/g, (m, href, text) => {
+      if (!blogPosts.has(href)) return m;
+      if (keep.includes(href) || keep.length < max) { if (!keep.includes(href)) keep.push(href); return m; }
+      return text;
+    });
+  for (const b of post.blocks || []) {
+    if (b.text) b.text = fix(b.text);
+    if (b.items) b.items = b.items.map(fix);
+    if (b.rows) b.rows = b.rows.map((r) => r.map(fix));
+  }
+  return post;
+}
+
+// Kalite kontrolünden önce otomatik düzeltilebilen küçük sorunlar (yayın aksamasın diye):
+// stokta olmayan/listede olmayan ürün linkleri düz metne çevrilir, uzun SEO başlığı kısaltılır,
+// uzun meta açıklama kelime sınırında 160 karaktere indirilir.
+export function autoFix(post, ctx) {
+  const fix = (t) =>
+    String(t).replace(/<a href="([^"]+)">([^<]*)<\/a>/g, (m, href, text) =>
+      ctx.allProducts?.has(href) && !ctx.inStock.has(href) ? text : m);
+  for (const b of post.blocks || []) {
+    if (b.text) b.text = fix(b.text);
+    if (b.items) b.items = b.items.map(fix);
+    if (b.rows) b.rows = b.rows.map((r) => r.map(fix));
+  }
+  trimBlogLinks(post, ctx.blogPosts);
+  const suffix = ' ' + RULES.titleSuffix;
+  let st = String(post.seoTitle || post.title || '').replace(/\s*\|\s*Soydaş Motosiklet\s*$/, '').trim();
+  st = st.replace(/\b(19|20)\d\d\b/g, '').replace(/\s{2,}/g, ' ').trim();
+  while (st.length + suffix.length > RULES.maxTitle && st.includes(' ')) st = st.slice(0, st.lastIndexOf(' ')).replace(/[,:;–-]+$/, '').trim();
+  post.seoTitle = st + suffix;
+  let sd = String(post.seoDescription || '').trim();
+  if (sd.length > RULES.descMax) {
+    sd = sd.slice(0, RULES.descMax - 1);
+    sd = sd.slice(0, sd.lastIndexOf(' ')).replace(/[,:;–-]+$/, '') + '.';
+  }
+  post.seoDescription = sd;
+  post.slug = String(post.slug || '').replace(/-?(19|20)\d\d/g, '').replace(/-+/g, '-').replace(/^-|-$/g, '');
+  return post;
+}

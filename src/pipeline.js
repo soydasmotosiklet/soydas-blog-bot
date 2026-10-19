@@ -10,7 +10,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { config } from './config.js';
 import { loadSiteIndex, relevantProducts, productImageUrl, urlOk, fold, publishedBlogSlugs, filterInStock } from './site.js';
-import { checkPost, wordCount } from './quality.js';
+import { checkPost, wordCount, autoFix } from './quality.js';
 import { generatePost } from './content.js';
 import { searchPhotos, downloadPhoto, pickBestPhoto, makeCover, makeProductCover, makeInline, makeCollage, credit, servedSize } from './images.js';
 import { renderBlocksHtml, wrapContent, toContentData, blocksToMarkdown, blockId } from './render.js';
@@ -100,6 +100,18 @@ export async function makePhotos(post, productBufs = [], log = console.log) {
   return { coverPhoto, coverBuf, inlinePhoto, inlineBuf };
 }
 
+// Haftada 2 yazı garantisi: Salı/Cuma çalışması yalnızca bir önceki günün (Pzt/Per) yazısı
+// çıkmadıysa (kalite eşiğini geçemediyse ya da iş çalışmadıysa) yeni taslak üretir.
+export function catchUpNeeded(now = new Date()) {
+  const tr = new Date(now.getTime() + 3 * 3600e3);
+  const dow = tr.getUTCDay(); // 0 Pazar … 6 Cumartesi
+  if (![2, 5].includes(dow)) return true; // Pzt/Per normal gün
+  const since = now.getTime() - 36 * 3600e3;
+  const published = readJson(STATE, []).some((p) => Date.parse(p.publishedAt) >= since);
+  const approved = listDrafts().some((d) => d.approved && Date.parse(d.createdAt) >= since);
+  return !(published || approved);
+}
+
 export async function createDraft({ topic: forcedTopic, feedback } = {}) {
   log('Site haritası okunuyor…');
   const site = await loadSiteIndex();
@@ -107,7 +119,17 @@ export async function createDraft({ topic: forcedTopic, feedback } = {}) {
   const existingLabels = liveSlugs.map((s) => `/blog/${s}`);
 
   // Kılavuz: sadece topics.json'daki onaylı konular yazılır; liste bitince yeni konu uydurulmaz.
-  const topic = forcedTopic || pickTopic(liveSlugs);
+  if (!forcedTopic && !catchUpNeeded()) {
+    log('Bu haftanın yazısı dün çıktı; telafi çalışması gerekmiyor.');
+    return { skipped: true, quiet: true, reason: 'telafi gerekmiyor' };
+  }
+  // Kalite eşiğini geçemeyip bekleyen taslak varsa önce o konu yeniden yazılır (eski taslak silinir)
+  const failed = !forcedTopic && listDrafts().find((d) => !d.approved && d.qualityIssues?.length);
+  if (failed) {
+    log('Kalite eşiğini geçemeyen taslak yeniden yazılıyor:', failed.topic);
+    discardDraft(failed.slug);
+  }
+  const topic = forcedTopic || failed?.topic || pickTopic(liveSlugs);
   if (!topic) {
     log('Konu listesi bitti (topics.json). Yeni yazı üretilmedi.');
     return { skipped: true, reason: 'topics.json içindeki tüm konular yazıldı' };
@@ -126,6 +148,7 @@ export async function createDraft({ topic: forcedTopic, feedback } = {}) {
   for (let attempt = 1; attempt <= 3; attempt++) {
     log(`Claude ile yazı üretiliyor (deneme ${attempt})…`);
     post = await generatePost({ topic, existingTitles: blogPosts, collections: site.collections, products, feedback: fb });
+    autoFix(post, ctx); // küçük sorunlar (fazla blog linki, stok dışı ürün, uzun başlık/açıklama) otomatik düzeltilir
     issues = checkPost(post, ctx);
     if (!issues.length) break;
     log('Kalite eşiği geçilemedi:', issues.join(' | '));
