@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { checkPost, wordCount } from '../src/quality.js';
+import { checkPost, wordCount, trimBlogLinks, autoFix } from '../src/quality.js';
 
 const ctx = {
   inStock: new Set(['/p1', '/p2', '/p3']),
@@ -38,4 +38,22 @@ test('eksikler tek tek yakalanır', () => {
   for (const k of ['kelime', 'ürün linki', 'Kategori linki', 'blog yazısı linki', 'stokta olmayan', 'SEO başlığı', 'Meta açıklama', 'yıl', 'Yasak ifade']) {
     assert.match(issues, new RegExp(k, 'i'), k);
   }
+});
+
+test('fazla blog linki düz metne çevrilir', () => {
+  const p = { blocks: [{ type: 'paragraph', text: '<a href="/blog/b1">1</a> <a href="/blog/b2">2</a> <a href="/blog/b3">3</a> <a href="/blog/b1">1 tekrar</a> <a href="/p1">ürün</a>' }] };
+  trimBlogLinks(p, ctx.blogPosts);
+  assert.equal(p.blocks[0].text, '<a href="/blog/b1">1</a> <a href="/blog/b2">2</a> 3 <a href="/blog/b1">1 tekrar</a> <a href="/p1">ürün</a>');
+});
+
+test('küçük sorunlar otomatik düzeltilir', () => {
+  const p = JSON.parse(JSON.stringify(good));
+  p.slug = 'honda-dio-rehberi-2026';
+  p.seoTitle = 'Honda Dio 2026 Bakım ve Yedek Parça Rehberi Çok Uzun Başlık | Soydaş Motosiklet';
+  p.seoDescription = 'y '.repeat(100).trim();
+  p.blocks.push({ type: 'paragraph', text: '<a href="/tukendi">ürün</a> <a href="/blog/b2">2</a> <a href="/blog/b3">3</a>' });
+  autoFix(p, ctx);
+  assert.deepEqual(checkPost(p, ctx), []);
+  assert.ok(p.seoTitle.length <= 60 && p.seoTitle.endsWith('| Soydaş Motosiklet'));
+  assert.equal(p.slug, 'honda-dio-rehberi');
 });
