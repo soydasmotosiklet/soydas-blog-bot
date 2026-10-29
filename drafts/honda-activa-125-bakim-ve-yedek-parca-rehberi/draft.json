@@ -1,0 +1,343 @@
+{
+  "topic": "Honda Activa 125 Bakım ve Yedek Parça Rehberi",
+  "approved": true,
+  "qualityIssues": [],
+  "words": 842,
+  "createdAt": "2026-10-29T04:57:34.753Z",
+  "model": "claude-sonnet-5-5",
+  "title": "Honda Activa 125 Bakım ve Yedek Parça Rehberi",
+  "slug": "honda-activa-125-bakim-ve-yedek-parca-rehberi",
+  "shortDescription": "Honda Activa 125 için kayış, debriyaj, fren balatası, hava filtresi ve aksesuar seçimi; bakım takibini kolaylaştıran pratik bir rehber.",
+  "seoTitle": "Honda Activa 125 Bakım ve Yedek Parça | Soydaş Motosiklet",
+  "seoDescription": "Honda Activa 125 bakımında nelere bakılmalı? Kayış, debriyaj balatası, fren balatası, hava filtresi ve aksesuar seçimini adım adım anlatan rehber.",
+  "images": {
+    "cover": "cover.jpg",
+    "inline": "inline.jpg",
+    "collage": "collage.jpg"
+  },
+  "coverPhoto": {
+    "provider": "pixabay",
+    "id": "6624573",
+    "user": "Schwarzwaldandi",
+    "link": "https://pixabay.com/photos/scooter-italy-countryside-farm-6624573/"
+  },
+  "blocks": [
+    {
+      "id": "2nvgy00001",
+      "type": "paragraph",
+      "data": {
+        "text": "<i>Yayın tarihi: 29 Ekim 2026</i>"
+      }
+    },
+    {
+      "id": "2nvhb00002",
+      "type": "paragraph",
+      "data": {
+        "text": "Honda Activa 125, şehir içi kullanımda pratikliğiyle öne çıkan bir scooter. Her gün aynı güzergâhta, dur-kalk trafiğinde çalıştığı için bazı parçalar diğerlerinden daha hızlı yıpranır. Bakımı aksatmamak hem sürüş konforunu hem de güvenliği korur. Bu rehberde Activa 125'te en çok dikkat edilmesi gereken sistemleri, belirtilerine göre parça seçimini ve aksesuar tarafında akla gelen başlıkları bir araya getirdik. Kesin bakım aralıkları ve teknik değerler için her zaman aracınızın kullanım kılavuzunu esas alın."
+      }
+    },
+    {
+      "id": "2nvhb00003",
+      "type": "header",
+      "data": {
+        "text": "Düzenli Bakımın Temel Başlıkları",
+        "level": 2
+      }
+    },
+    {
+      "id": "2nvhb00004",
+      "type": "paragraph",
+      "data": {
+        "text": "Scooter bakımı, motosiklete göre daha az parça içerir ama her biri sürüşü doğrudan etkiler. Zincir yerine kayışlı aktarma kullanıldığı için yağlama derdi azdır; buna karşılık kayış, debriyaj ve varyatör gibi parçaların durumunu izlemek gerekir. Bakım sırasında şu başlıkları kontrol listenize ekleyebilirsiniz:"
+      }
+    },
+    {
+      "id": "2nvhb00005",
+      "type": "list",
+      "data": {
+        "style": "unordered",
+        "items": [
+          "<b>Motor yağı:</b> Seviye ve renk kontrolü; yağ türü ve değişim aralığı için kullanım kılavuzu",
+          "<b>Kayış ve debriyaj:</b> Çatlak, aşınma, kayma veya titreme belirtileri",
+          "<b>Fren sistemi:</b> Balata kalınlığı, kol boşluğu ve fren teli durumu",
+          "<b>Hava filtresi:</b> Kirlenme, tıkanma ve performans kaybı",
+          "<b>Lastikler:</b> Diş derinliği ve basınç kontrolü",
+          "<b>Akü ve elektrik:</b> Ampuller, sinyaller, kontak ve tesisat bağlantıları"
+        ]
+      }
+    },
+    {
+      "id": "2nvhb00006",
+      "type": "paragraph",
+      "data": {
+        "text": "Yağ seçiminde standartların farkını merak ediyorsanız <a href=\"/blog/motosiklet-yagi-secimi-10w-40-jaso-ma-ve-mb-farki\">motosiklet yağı seçimi rehberimize</a> göz atabilirsiniz. Scooterlarda kullanılan yağ türü marka ve modele göre değiştiği için nihai kararı kullanım kılavuzuna göre verin. Ürünleri incelemek için <a href=\"/yaglar\">yağlar</a> kategorisine bakabilirsiniz."
+      }
+    },
+    {
+      "id": "2nvhb00007",
+      "type": "header",
+      "data": {
+        "text": "Kayış ve Debriyaj: Aktarma Sisteminin Kalbi",
+        "level": 2
+      }
+    },
+    {
+      "id": "2nvhc00008",
+      "type": "image",
+      "data": {
+        "file": {
+          "url": "__IMG_collage__"
+        },
+        "caption": "Honda Activa 125 için kayış, debriyaj balatası, ön balata ve hava filtresi – Soydaş Motosiklet",
+        "withBorder": false,
+        "stretched": false,
+        "withBackground": false
+      }
+    },
+    {
+      "id": "2nvhc00009",
+      "type": "paragraph",
+      "data": {
+        "text": "Gaza bastığınızda gecikme hissediyor, hızlanırken sarsıntı yaşıyor ya da motordan alışılmadık bir ses duyuyorsanız aktarma sistemi ilk bakılacak yerdir. Kayış zamanla aşınır, kenarlarında çatlaklar oluşabilir. Arka debriyaj balataları ise kalkış anında devreye girdiği için trafikte yoğun yük altındadır."
+      }
+    },
+    {
+      "id": "2nvhc0000a",
+      "type": "paragraph",
+      "data": {
+        "text": "Kayış tarafında Activa 125 için <a href=\"/motto-kayis-honda-activa-125\">Motto Kayış</a> ve <a href=\"/bando-kayis-honda-activa-125-hero-pleasure-s19-088-746\">Bando Kayış</a> seçenekleri bulunuyor. Debriyaj tarafında ise <a href=\"/monero-arka-debriyaj-balatasi-honda-activa-125\">Monero Arka Debriyaj Balatası</a> ve <a href=\"/honda-debriyaj-balatasi-orjinal-honda-activa-125\">orijinal Honda debriyaj balatası</a> ürün adında Activa 125 uyumu belirtilen seçenekler arasında. Kayış, makara ve debriyaj arasındaki ilişkiyi ayrıntılı okumak için <a href=\"/blog/scooter-varyator-bakimi-kayis-makara-ve-debriyaj\">scooter varyatör bakımı yazımızı</a> öneririz. Daha geniş seçenek için <a href=\"/kayislar\">kayışlar</a> kategorisini de inceleyebilirsiniz."
+      }
+    },
+    {
+      "id": "2nvhc0000b",
+      "type": "header",
+      "data": {
+        "text": "Kayış Değişimi Gerektiren Belirtiler",
+        "level": 3
+      }
+    },
+    {
+      "id": "2nvhc0000c",
+      "type": "list",
+      "data": {
+        "style": "unordered",
+        "items": [
+          "Kayış yüzeyinde çatlak, kopma veya aşırı parlaklık",
+          "Kalkışta tutukluk ya da vuruntu hissi",
+          "Hızlanmada motor devri yükselirken aracın yeterince ilerlememesi",
+          "Aktarma bölümünden gelen düzensiz ses"
+        ]
+      }
+    },
+    {
+      "id": "2nvhc0000d",
+      "type": "header",
+      "data": {
+        "text": "Fren Sistemi: Güvenlikte Taviz Verilmeyecek Alan",
+        "level": 2
+      }
+    },
+    {
+      "id": "2nvhc0000e",
+      "type": "paragraph",
+      "data": {
+        "text": "Şehir trafiğinde fren balatası sık kullanılır. Fren sırasında metal sesi, kolun beklenenden fazla boşluk yapması veya durma mesafesinin uzaması, balataların kontrol edilmesi gerektiğini gösterir. Ön balata için <a href=\"/swan-disk-balata-on-honda-dio-activa-125\">Swan Ön Disk Balata</a>, <a href=\"/monero-gold-on-disk-balata-honda-dio-activa-125\">Monero Gold Ön Disk Balata</a> ve <a href=\"/honda-on-disk-balata-orjinal-honda-dio-activa-125\">orijinal Honda ön disk balata</a> ürünleri Dio ve Activa 125 için listelenmiştir."
+      }
+    },
+    {
+      "id": "2nvhc0000f",
+      "type": "paragraph",
+      "data": {
+        "text": "Balata değişim zamanını daha iyi anlamak için fren balatası rehberimize bakabilirsiniz. Balatayla birlikte <a href=\"/on-fren-kolu-honda-activa-125\">ön fren kolunu</a> ve <a href=\"/monero-arka-fren-teli-honda-activa-125\">arka fren telini</a> de kontrol etmek mantıklıdır. Tüm seçenekler için <a href=\"/fren-balata\">fren balata</a> kategorisi yeterli bir başlangıç noktasıdır."
+      }
+    },
+    {
+      "id": "2nvhc0000g",
+      "type": "image",
+      "data": {
+        "file": {
+          "url": "__IMG_inline__"
+        },
+        "caption": "Scooter bakımında düzenli kontrol, parçaların ömrünü korumaya yardımcı olur (Fotoğraf: <a href=\"https://pixabay.com/users/wal_172619-12138562/\">wal_172619</a> / <a href=\"https://pixabay.com/\">Pixabay</a>)",
+        "withBorder": false,
+        "stretched": false,
+        "withBackground": false
+      }
+    },
+    {
+      "id": "2nvhc0000h",
+      "type": "header",
+      "data": {
+        "text": "Motor Üst Grubu: Filtre, Conta ve Subap",
+        "level": 2
+      }
+    },
+    {
+      "id": "2nvhc0000i",
+      "type": "paragraph",
+      "data": {
+        "text": "Hava filtresi, motorun temiz hava almasını sağlar. Kirlenen filtre yakıt-hava dengesini bozabilir; bu da performans kaybı ve düzensiz rölanti olarak hissedilebilir. <a href=\"/monero-hava-filtre-elemani-honda-activa-125\">Monero hava filtre elemanı</a> ve <a href=\"/hava-filtre-elemani-orjinal-honda-activa-125\">orijinal Honda hava filtre elemanı</a> Activa 125 ürün adıyla listelenir."
+      }
+    },
+    {
+      "id": "2nvhc0000j",
+      "type": "paragraph",
+      "data": {
+        "text": "Motor açıldığında ya da yağ sızıntısı fark edildiğinde conta takımları gündeme gelir. <a href=\"/monero-silindir-alt-ust-conta-takimi-honda-dio-activa-125\">Silindir alt-üst conta takımı</a> ve <a href=\"/monero-subap-kapak-contasi-honda-dio-activa-125\">subap kapak contası</a> bu grupta yer alır. Daha geniş parça yelpazesi için <a href=\"/activa-125\">Activa 125</a> kategorisine göz atın."
+      }
+    },
+    {
+      "id": "2nvhc0000k",
+      "type": "header",
+      "data": {
+        "text": "Belirtiye Göre Kontrol Tablosu",
+        "level": 2
+      }
+    },
+    {
+      "id": "2nvhc0000l",
+      "type": "paragraph",
+      "data": {
+        "text": "Aşağıdaki tablo, sık görülen belirtilerde hangi sistemin kontrol edilebileceğini özetler. Kesin teşhis için aracın muayene edilmesi gerekir."
+      }
+    },
+    {
+      "id": "2nvhc0000m",
+      "type": "table",
+      "data": {
+        "withHeadings": true,
+        "content": [
+          [
+            "<b>Belirti</b>",
+            "<b>Kontrol edilecek parça</b>",
+            "<b>Not</b>"
+          ],
+          [
+            "Kalkışta sarsıntı veya tutukluk",
+            "Arka debriyaj balatası, kayış",
+            "Aktarma grubu birlikte değerlendirilmeli"
+          ],
+          [
+            "Fren sırasında ses",
+            "Ön disk balata",
+            "Disk yüzeyi de kontrol edilmeli"
+          ],
+          [
+            "Gaz tepkisinde gecikme",
+            "Gaz teli, hava filtresi",
+            "Tel boşluğu ve filtre kirliliğine bakın"
+          ],
+          [
+            "Yağ sızıntısı",
+            "Conta takımları",
+            "Sızıntı noktası tespit edilmeli"
+          ],
+          [
+            "Fren kolunda aşırı boşluk",
+            "Fren teli, balata",
+            "Ayar ve aşınma birlikte kontrol edilmeli"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "2nvhc0000n",
+      "type": "paragraph",
+      "data": {
+        "text": "Gaz tepkisi sorunlarında <a href=\"/monero-gaz-teli-cekme-honda-activa-125\">gaz teli (çekme)</a> ve <a href=\"/monero-gaz-teli-itme-honda-activa-125\">gaz teli (itme)</a> ürünlerini kontrol edilecek parçalar arasında düşünebilirsiniz."
+      }
+    },
+    {
+      "id": "2nvhc0000o",
+      "type": "header",
+      "data": {
+        "text": "Koruma ve Aksesuar Seçenekleri",
+        "level": 2
+      }
+    },
+    {
+      "id": "2nvhc0000p",
+      "type": "paragraph",
+      "data": {
+        "text": "Bakımın yanında aracı korumak ve günlük kullanımı kolaylaştırmak için aksesuarlar da önemlidir. Düşme anında gövdeyi koruyan <a href=\"/gear5-koruma-demiri-takimi-honda-activa-125-2023-2025\">Gear5 koruma demiri takımı</a>, yük taşımak isteyenler için <a href=\"/gear5-topcase-canta-demiri-honda-activa-125-2023-2025\">topcase çanta demiri</a>, uzun yolda rahatlık için <a href=\"/gear5-konfor-sele-kilifi-honda-activa-125\">konfor sele kılıfı</a> ve araç park halindeyken <a href=\"/sele-brandasi-siyah-honda-activa-125-dio\">sele brandası</a> öne çıkar. Bu ürünlerin model yılı uyumu ürün adında belirtilmiştir; satın almadan önce ürün sayfasındaki açıklamayı kontrol edin. Diğer seçenekler için <a href=\"/motosiklet-aksesuar\">motosiklet aksesuar</a> kategorisine bakabilirsiniz."
+      }
+    },
+    {
+      "id": "2nvhc0000q",
+      "type": "paragraph",
+      "data": {
+        "text": "Aynı platformu paylaşan model için hazırlanan Honda Dio bakım rehberi de bazı ortak başlıklar açısından faydalı olabilir."
+      }
+    },
+    {
+      "id": "2nvhc0000r",
+      "type": "header",
+      "data": {
+        "text": "Sık Sorulan Sorular",
+        "level": 2
+      }
+    },
+    {
+      "id": "2nvhc0000s",
+      "type": "header",
+      "data": {
+        "text": "Activa 125'te hangi parçalar daha sık yıpranır?",
+        "level": 3
+      }
+    },
+    {
+      "id": "2nvhc0000t",
+      "type": "paragraph",
+      "data": {
+        "text": "Şehir içi kullanımda genellikle fren balatası, kayış, debriyaj balatası ve hava filtresi öne çıkar. Yıpranma hızı sürüş tarzına ve yola göre değişir; bu nedenle takvim yerine düzenli gözle kontrol yapmak daha sağlıklıdır."
+      }
+    },
+    {
+      "id": "2nvhc0000u",
+      "type": "header",
+      "data": {
+        "text": "Bakım aralıklarını nereden öğrenebilirim?",
+        "level": 3
+      }
+    },
+    {
+      "id": "2nvhc0000v",
+      "type": "paragraph",
+      "data": {
+        "text": "Yağ değişimi, filtre ve diğer kalemlerin kesin aralıkları aracınızın kullanım kılavuzunda yer alır. Kılavuzdaki periyotları esas almak ve belirti fark ettiğinizde beklemeden kontrol yaptırmak en doğru yöntemdir."
+      }
+    },
+    {
+      "id": "2nvhc0000w",
+      "type": "header",
+      "data": {
+        "text": "Parçanın aracıma uyup uymadığını nasıl anlarım?",
+        "level": 3
+      }
+    },
+    {
+      "id": "2nvhc0000x",
+      "type": "paragraph",
+      "data": {
+        "text": "Ürün adında belirtilen model ve yıl bilgisine bakın. Özellikle 2023-2025 gibi yıl aralığı yazan ürünlerde aracınızın model yılını kontrol edin. Emin olamazsanız bize ulaşabilirsiniz."
+      }
+    },
+    {
+      "id": "2nvhc0000y",
+      "type": "paragraph",
+      "data": {
+        "text": "Honda Activa 125 bakımında temel yaklaşım basittir: belirtileri erken fark etmek, parçaları ürün adındaki uyum bilgisiyle seçmek ve kesin değerler için kullanım kılavuzuna başvurmak. Doğru parçayı seçerken yardım isterseniz <a href=\"/pages/iletisim\">iletişim sayfamızdan</a> bize ulaşabilirsiniz."
+      }
+    },
+    {
+      "id": "2nvhc0000z",
+      "type": "paragraph",
+      "data": {
+        "text": "<i>Kapak fotoğrafı: <a href=\"https://pixabay.com/users/Schwarzwaldandi-16019969/\">Schwarzwaldandi</a> / <a href=\"https://pixabay.com/\">Pixabay</a></i>"
+      }
+    }
+  ],
+  "contentHtml": "<html lang=\"en\">\n          <style>.ikas-editor-v1>table,td,th{border:1px solid #e8e8eb;border-collapse:collapse;font-size:14px}.ikas-editor-v1>th,td{padding:6px 12px}.ikas-editor-v1 ul,.ikas-editor-v1 ol{padding-left:20px}.ikas-editor-v1 ul li{list-style-type:disc;margin:8px 0 8px 16px}.ikas-editor-v1 ol li{list-style-type:decimal;margin:8px 0 8px 16px}.ikas-editor-v1 li{margin:8px 0 8px 16px}.ikas-editor-v1 code{display:block;white-space:pre-wrap}.ikas-editor-v1 blockquote{margin-inline-start:0;border-left:3px solid rgb(41 41 41);padding-left:23px}.ikas-editor-v1 figure{margin-inline:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0;width:100%}.ikas-editor-v1 img{max-width:800px;object-fit:cover;object-position:center}.ikas-editor-v1 img.img-bg{padding:1.5em!important;background:#cdd1e0!important}.ikas-editor-v1 img.img-fullwidth{width:100%!important;max-width:100%!important;margin:0 auto!important}.ikas-editor-v1 figcaption{text-align:center;padding-top:6px;word-break:break-word;font-size:12px;background:0 0;z-index:{};}.ikas-editor-v1 .embed-youtube{width:100%;height:400px}.ikas-editor-v1 a{color:#0070f3;text-decoration:underline;cursor:pointer}.ikas-editor-v1 a:hover{opacity:.8}.products-container{display:flex;flex-direction:column;gap:10px}.product-block-container{margin:0 auto;cursor:pointer;flex:1;display:flex;gap:20px;padding:10px 0}.product-image{width:120px;height:120px;object-fit:cover;border-radius:4px;flex-shrink:0}.product-name{font-size:15px;font-weight:500;width:100%;margin:0 0 4px}.product-brand{font-size:13px;font-weight:400;color:#adb5bd;margin:0 0 4px}.product-discount-price,.product-price{width:fit-content;font-size:16px;font-weight:500;color:#000}.product-price{margin:6px 0 0}.product-discount-price{margin:6px 8px 0 0;text-decoration:line-through}.ikas-editor-v1 table b{font-weight:bold}.ikas-editor-v1 table i{font-style:italic}</style>\n          <div class=\"ikas-editor-v1\">\n          <p class=\"editor-paragraph\"> <i>Yayın tarihi: 29 Ekim 2026</i> </p><p class=\"editor-paragraph\"> Honda Activa 125, şehir içi kullanımda pratikliğiyle öne çıkan bir scooter. Her gün aynı güzergâhta, dur-kalk trafiğinde çalıştığı için bazı parçalar diğerlerinden daha hızlı yıpranır. Bakımı aksatmamak hem sürüş konforunu hem de güvenliği korur. Bu rehberde Activa 125'te en çok dikkat edilmesi gereken sistemleri, belirtilerine göre parça seçimini ve aksesuar tarafında akla gelen başlıkları bir araya getirdik. Kesin bakım aralıkları ve teknik değerler için her zaman aracınızın kullanım kılavuzunu esas alın. </p><h2>Düzenli Bakımın Temel Başlıkları</h2><p class=\"editor-paragraph\"> Scooter bakımı, motosiklete göre daha az parça içerir ama her biri sürüşü doğrudan etkiler. Zincir yerine kayışlı aktarma kullanıldığı için yağlama derdi azdır; buna karşılık kayış, debriyaj ve varyatör gibi parçaların durumunu izlemek gerekir. Bakım sırasında şu başlıkları kontrol listenize ekleyebilirsiniz: </p><ul><li><b>Motor yağı:</b> Seviye ve renk kontrolü; yağ türü ve değişim aralığı için kullanım kılavuzu</li><li><b>Kayış ve debriyaj:</b> Çatlak, aşınma, kayma veya titreme belirtileri</li><li><b>Fren sistemi:</b> Balata kalınlığı, kol boşluğu ve fren teli durumu</li><li><b>Hava filtresi:</b> Kirlenme, tıkanma ve performans kaybı</li><li><b>Lastikler:</b> Diş derinliği ve basınç kontrolü</li><li><b>Akü ve elektrik:</b> Ampuller, sinyaller, kontak ve tesisat bağlantıları</li></ul><p class=\"editor-paragraph\"> Yağ seçiminde standartların farkını merak ediyorsanız <a href=\"/blog/motosiklet-yagi-secimi-10w-40-jaso-ma-ve-mb-farki\">motosiklet yağı seçimi rehberimize</a> göz atabilirsiniz. Scooterlarda kullanılan yağ türü marka ve modele göre değiştiği için nihai kararı kullanım kılavuzuna göre verin. Ürünleri incelemek için <a href=\"/yaglar\">yağlar</a> kategorisine bakabilirsiniz. </p><h2>Kayış ve Debriyaj: Aktarma Sisteminin Kalbi</h2><figure class=\"editor-fig-img\"><img class=\"editor-img   \" src=\"__IMG_collage__\" alt=\"Honda Activa 125 için kayış, debriyaj balatası, ön balata ve hava filtresi – Soydaş Motosiklet\" width=\"1080\" height=\"360\" style=\"max-width: 100%; aspect-ratio: 1080 / 360;\"><figcaption class=\"editor-fig-cap\">Honda Activa 125 için kayış, debriyaj balatası, ön balata ve hava filtresi – Soydaş Motosiklet</figcaption></figure><p class=\"editor-paragraph\"> Gaza bastığınızda gecikme hissediyor, hızlanırken sarsıntı yaşıyor ya da motordan alışılmadık bir ses duyuyorsanız aktarma sistemi ilk bakılacak yerdir. Kayış zamanla aşınır, kenarlarında çatlaklar oluşabilir. Arka debriyaj balataları ise kalkış anında devreye girdiği için trafikte yoğun yük altındadır. </p><p class=\"editor-paragraph\"> Kayış tarafında Activa 125 için <a href=\"/motto-kayis-honda-activa-125\">Motto Kayış</a> ve <a href=\"/bando-kayis-honda-activa-125-hero-pleasure-s19-088-746\">Bando Kayış</a> seçenekleri bulunuyor. Debriyaj tarafında ise <a href=\"/monero-arka-debriyaj-balatasi-honda-activa-125\">Monero Arka Debriyaj Balatası</a> ve <a href=\"/honda-debriyaj-balatasi-orjinal-honda-activa-125\">orijinal Honda debriyaj balatası</a> ürün adında Activa 125 uyumu belirtilen seçenekler arasında. Kayış, makara ve debriyaj arasındaki ilişkiyi ayrıntılı okumak için <a href=\"/blog/scooter-varyator-bakimi-kayis-makara-ve-debriyaj\">scooter varyatör bakımı yazımızı</a> öneririz. Daha geniş seçenek için <a href=\"/kayislar\">kayışlar</a> kategorisini de inceleyebilirsiniz. </p><h3>Kayış Değişimi Gerektiren Belirtiler</h3><ul><li>Kayış yüzeyinde çatlak, kopma veya aşırı parlaklık</li><li>Kalkışta tutukluk ya da vuruntu hissi</li><li>Hızlanmada motor devri yükselirken aracın yeterince ilerlememesi</li><li>Aktarma bölümünden gelen düzensiz ses</li></ul><h2>Fren Sistemi: Güvenlikte Taviz Verilmeyecek Alan</h2><p class=\"editor-paragraph\"> Şehir trafiğinde fren balatası sık kullanılır. Fren sırasında metal sesi, kolun beklenenden fazla boşluk yapması veya durma mesafesinin uzaması, balataların kontrol edilmesi gerektiğini gösterir. Ön balata için <a href=\"/swan-disk-balata-on-honda-dio-activa-125\">Swan Ön Disk Balata</a>, <a href=\"/monero-gold-on-disk-balata-honda-dio-activa-125\">Monero Gold Ön Disk Balata</a> ve <a href=\"/honda-on-disk-balata-orjinal-honda-dio-activa-125\">orijinal Honda ön disk balata</a> ürünleri Dio ve Activa 125 için listelenmiştir. </p><p class=\"editor-paragraph\"> Balata değişim zamanını daha iyi anlamak için fren balatası rehberimize bakabilirsiniz. Balatayla birlikte <a href=\"/on-fren-kolu-honda-activa-125\">ön fren kolunu</a> ve <a href=\"/monero-arka-fren-teli-honda-activa-125\">arka fren telini</a> de kontrol etmek mantıklıdır. Tüm seçenekler için <a href=\"/fren-balata\">fren balata</a> kategorisi yeterli bir başlangıç noktasıdır. </p><figure class=\"editor-fig-img\"><img class=\"editor-img   \" src=\"__IMG_inline__\" alt=\"Scooter bakımında düzenli kontrol, parçaların ömrünü korumaya yardımcı olur (Fotoğraf: wal_172619 / Pixabay)\" width=\"1080\" height=\"675\" style=\"max-width: 100%; aspect-ratio: 1080 / 675;\"><figcaption class=\"editor-fig-cap\">Scooter bakımında düzenli kontrol, parçaların ömrünü korumaya yardımcı olur (Fotoğraf: <a href=\"https://pixabay.com/users/wal_172619-12138562/\">wal_172619</a> / <a href=\"https://pixabay.com/\">Pixabay</a>)</figcaption></figure><h2>Motor Üst Grubu: Filtre, Conta ve Subap</h2><p class=\"editor-paragraph\"> Hava filtresi, motorun temiz hava almasını sağlar. Kirlenen filtre yakıt-hava dengesini bozabilir; bu da performans kaybı ve düzensiz rölanti olarak hissedilebilir. <a href=\"/monero-hava-filtre-elemani-honda-activa-125\">Monero hava filtre elemanı</a> ve <a href=\"/hava-filtre-elemani-orjinal-honda-activa-125\">orijinal Honda hava filtre elemanı</a> Activa 125 ürün adıyla listelenir. </p><p class=\"editor-paragraph\"> Motor açıldığında ya da yağ sızıntısı fark edildiğinde conta takımları gündeme gelir. <a href=\"/monero-silindir-alt-ust-conta-takimi-honda-dio-activa-125\">Silindir alt-üst conta takımı</a> ve <a href=\"/monero-subap-kapak-contasi-honda-dio-activa-125\">subap kapak contası</a> bu grupta yer alır. Daha geniş parça yelpazesi için <a href=\"/activa-125\">Activa 125</a> kategorisine göz atın. </p><h2>Belirtiye Göre Kontrol Tablosu</h2><p class=\"editor-paragraph\"> Aşağıdaki tablo, sık görülen belirtilerde hangi sistemin kontrol edilebileceğini özetler. Kesin teşhis için aracın muayene edilmesi gerekir. </p><table><tbody><tr><td><b>Belirti</b></td><td><b>Kontrol edilecek parça</b></td><td><b>Not</b></td></tr><tr><td>Kalkışta sarsıntı veya tutukluk</td><td>Arka debriyaj balatası, kayış</td><td>Aktarma grubu birlikte değerlendirilmeli</td></tr><tr><td>Fren sırasında ses</td><td>Ön disk balata</td><td>Disk yüzeyi de kontrol edilmeli</td></tr><tr><td>Gaz tepkisinde gecikme</td><td>Gaz teli, hava filtresi</td><td>Tel boşluğu ve filtre kirliliğine bakın</td></tr><tr><td>Yağ sızıntısı</td><td>Conta takımları</td><td>Sızıntı noktası tespit edilmeli</td></tr><tr><td>Fren kolunda aşırı boşluk</td><td>Fren teli, balata</td><td>Ayar ve aşınma birlikte kontrol edilmeli</td></tr></tbody></table><p class=\"editor-paragraph\"> Gaz tepkisi sorunlarında <a href=\"/monero-gaz-teli-cekme-honda-activa-125\">gaz teli (çekme)</a> ve <a href=\"/monero-gaz-teli-itme-honda-activa-125\">gaz teli (itme)</a> ürünlerini kontrol edilecek parçalar arasında düşünebilirsiniz. </p><h2>Koruma ve Aksesuar Seçenekleri</h2><p class=\"editor-paragraph\"> Bakımın yanında aracı korumak ve günlük kullanımı kolaylaştırmak için aksesuarlar da önemlidir. Düşme anında gövdeyi koruyan <a href=\"/gear5-koruma-demiri-takimi-honda-activa-125-2023-2025\">Gear5 koruma demiri takımı</a>, yük taşımak isteyenler için <a href=\"/gear5-topcase-canta-demiri-honda-activa-125-2023-2025\">topcase çanta demiri</a>, uzun yolda rahatlık için <a href=\"/gear5-konfor-sele-kilifi-honda-activa-125\">konfor sele kılıfı</a> ve araç park halindeyken <a href=\"/sele-brandasi-siyah-honda-activa-125-dio\">sele brandası</a> öne çıkar. Bu ürünlerin model yılı uyumu ürün adında belirtilmiştir; satın almadan önce ürün sayfasındaki açıklamayı kontrol edin. Diğer seçenekler için <a href=\"/motosiklet-aksesuar\">motosiklet aksesuar</a> kategorisine bakabilirsiniz. </p><p class=\"editor-paragraph\"> Aynı platformu paylaşan model için hazırlanan Honda Dio bakım rehberi de bazı ortak başlıklar açısından faydalı olabilir. </p><h2>Sık Sorulan Sorular</h2><h3>Activa 125'te hangi parçalar daha sık yıpranır?</h3><p class=\"editor-paragraph\"> Şehir içi kullanımda genellikle fren balatası, kayış, debriyaj balatası ve hava filtresi öne çıkar. Yıpranma hızı sürüş tarzına ve yola göre değişir; bu nedenle takvim yerine düzenli gözle kontrol yapmak daha sağlıklıdır. </p><h3>Bakım aralıklarını nereden öğrenebilirim?</h3><p class=\"editor-paragraph\"> Yağ değişimi, filtre ve diğer kalemlerin kesin aralıkları aracınızın kullanım kılavuzunda yer alır. Kılavuzdaki periyotları esas almak ve belirti fark ettiğinizde beklemeden kontrol yaptırmak en doğru yöntemdir. </p><h3>Parçanın aracıma uyup uymadığını nasıl anlarım?</h3><p class=\"editor-paragraph\"> Ürün adında belirtilen model ve yıl bilgisine bakın. Özellikle 2023-2025 gibi yıl aralığı yazan ürünlerde aracınızın model yılını kontrol edin. Emin olamazsanız bize ulaşabilirsiniz. </p><p class=\"editor-paragraph\"> Honda Activa 125 bakımında temel yaklaşım basittir: belirtileri erken fark etmek, parçaları ürün adındaki uyum bilgisiyle seçmek ve kesin değerler için kullanım kılavuzuna başvurmak. Doğru parçayı seçerken yardım isterseniz <a href=\"/pages/iletisim\">iletişim sayfamızdan</a> bize ulaşabilirsiniz. </p><p class=\"editor-paragraph\"> <i>Kapak fotoğrafı: <a href=\"https://pixabay.com/users/Schwarzwaldandi-16019969/\">Schwarzwaldandi</a> / <a href=\"https://pixabay.com/\">Pixabay</a></i> </p>\n          </div>\n          </html>\n  ",
+  "contentData": "{\"time\":1793249854754,\"blocks\":[{\"id\":\"2nvgy00001\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>Yayın tarihi: 29 Ekim 2026</i>\"}},{\"id\":\"2nvhb00002\",\"type\":\"paragraph\",\"data\":{\"text\":\"Honda Activa 125, şehir içi kullanımda pratikliğiyle öne çıkan bir scooter. Her gün aynı güzergâhta, dur-kalk trafiğinde çalıştığı için bazı parçalar diğerlerinden daha hızlı yıpranır. Bakımı aksatmamak hem sürüş konforunu hem de güvenliği korur. Bu rehberde Activa 125'te en çok dikkat edilmesi gereken sistemleri, belirtilerine göre parça seçimini ve aksesuar tarafında akla gelen başlıkları bir araya getirdik. Kesin bakım aralıkları ve teknik değerler için her zaman aracınızın kullanım kılavuzunu esas alın.\"}},{\"id\":\"2nvhb00003\",\"type\":\"header\",\"data\":{\"text\":\"Düzenli Bakımın Temel Başlıkları\",\"level\":2}},{\"id\":\"2nvhb00004\",\"type\":\"paragraph\",\"data\":{\"text\":\"Scooter bakımı, motosiklete göre daha az parça içerir ama her biri sürüşü doğrudan etkiler. Zincir yerine kayışlı aktarma kullanıldığı için yağlama derdi azdır; buna karşılık kayış, debriyaj ve varyatör gibi parçaların durumunu izlemek gerekir. Bakım sırasında şu başlıkları kontrol listenize ekleyebilirsiniz:\"}},{\"id\":\"2nvhb00005\",\"type\":\"list\",\"data\":{\"style\":\"unordered\",\"items\":[\"<b>Motor yağı:</b> Seviye ve renk kontrolü; yağ türü ve değişim aralığı için kullanım kılavuzu\",\"<b>Kayış ve debriyaj:</b> Çatlak, aşınma, kayma veya titreme belirtileri\",\"<b>Fren sistemi:</b> Balata kalınlığı, kol boşluğu ve fren teli durumu\",\"<b>Hava filtresi:</b> Kirlenme, tıkanma ve performans kaybı\",\"<b>Lastikler:</b> Diş derinliği ve basınç kontrolü\",\"<b>Akü ve elektrik:</b> Ampuller, sinyaller, kontak ve tesisat bağlantıları\"]}},{\"id\":\"2nvhb00006\",\"type\":\"paragraph\",\"data\":{\"text\":\"Yağ seçiminde standartların farkını merak ediyorsanız <a href=\\\"/blog/motosiklet-yagi-secimi-10w-40-jaso-ma-ve-mb-farki\\\">motosiklet yağı seçimi rehberimize</a> göz atabilirsiniz. Scooterlarda kullanılan yağ türü marka ve modele göre değiştiği için nihai kararı kullanım kılavuzuna göre verin. Ürünleri incelemek için <a href=\\\"/yaglar\\\">yağlar</a> kategorisine bakabilirsiniz.\"}},{\"id\":\"2nvhb00007\",\"type\":\"header\",\"data\":{\"text\":\"Kayış ve Debriyaj: Aktarma Sisteminin Kalbi\",\"level\":2}},{\"id\":\"2nvhc00008\",\"type\":\"image\",\"data\":{\"file\":{\"url\":\"__IMG_collage__\"},\"caption\":\"Honda Activa 125 için kayış, debriyaj balatası, ön balata ve hava filtresi – Soydaş Motosiklet\",\"withBorder\":false,\"stretched\":false,\"withBackground\":false}},{\"id\":\"2nvhc00009\",\"type\":\"paragraph\",\"data\":{\"text\":\"Gaza bastığınızda gecikme hissediyor, hızlanırken sarsıntı yaşıyor ya da motordan alışılmadık bir ses duyuyorsanız aktarma sistemi ilk bakılacak yerdir. Kayış zamanla aşınır, kenarlarında çatlaklar oluşabilir. Arka debriyaj balataları ise kalkış anında devreye girdiği için trafikte yoğun yük altındadır.\"}},{\"id\":\"2nvhc0000a\",\"type\":\"paragraph\",\"data\":{\"text\":\"Kayış tarafında Activa 125 için <a href=\\\"/motto-kayis-honda-activa-125\\\">Motto Kayış</a> ve <a href=\\\"/bando-kayis-honda-activa-125-hero-pleasure-s19-088-746\\\">Bando Kayış</a> seçenekleri bulunuyor. Debriyaj tarafında ise <a href=\\\"/monero-arka-debriyaj-balatasi-honda-activa-125\\\">Monero Arka Debriyaj Balatası</a> ve <a href=\\\"/honda-debriyaj-balatasi-orjinal-honda-activa-125\\\">orijinal Honda debriyaj balatası</a> ürün adında Activa 125 uyumu belirtilen seçenekler arasında. Kayış, makara ve debriyaj arasındaki ilişkiyi ayrıntılı okumak için <a href=\\\"/blog/scooter-varyator-bakimi-kayis-makara-ve-debriyaj\\\">scooter varyatör bakımı yazımızı</a> öneririz. Daha geniş seçenek için <a href=\\\"/kayislar\\\">kayışlar</a> kategorisini de inceleyebilirsiniz.\"}},{\"id\":\"2nvhc0000b\",\"type\":\"header\",\"data\":{\"text\":\"Kayış Değişimi Gerektiren Belirtiler\",\"level\":3}},{\"id\":\"2nvhc0000c\",\"type\":\"list\",\"data\":{\"style\":\"unordered\",\"items\":[\"Kayış yüzeyinde çatlak, kopma veya aşırı parlaklık\",\"Kalkışta tutukluk ya da vuruntu hissi\",\"Hızlanmada motor devri yükselirken aracın yeterince ilerlememesi\",\"Aktarma bölümünden gelen düzensiz ses\"]}},{\"id\":\"2nvhc0000d\",\"type\":\"header\",\"data\":{\"text\":\"Fren Sistemi: Güvenlikte Taviz Verilmeyecek Alan\",\"level\":2}},{\"id\":\"2nvhc0000e\",\"type\":\"paragraph\",\"data\":{\"text\":\"Şehir trafiğinde fren balatası sık kullanılır. Fren sırasında metal sesi, kolun beklenenden fazla boşluk yapması veya durma mesafesinin uzaması, balataların kontrol edilmesi gerektiğini gösterir. Ön balata için <a href=\\\"/swan-disk-balata-on-honda-dio-activa-125\\\">Swan Ön Disk Balata</a>, <a href=\\\"/monero-gold-on-disk-balata-honda-dio-activa-125\\\">Monero Gold Ön Disk Balata</a> ve <a href=\\\"/honda-on-disk-balata-orjinal-honda-dio-activa-125\\\">orijinal Honda ön disk balata</a> ürünleri Dio ve Activa 125 için listelenmiştir.\"}},{\"id\":\"2nvhc0000f\",\"type\":\"paragraph\",\"data\":{\"text\":\"Balata değişim zamanını daha iyi anlamak için fren balatası rehberimize bakabilirsiniz. Balatayla birlikte <a href=\\\"/on-fren-kolu-honda-activa-125\\\">ön fren kolunu</a> ve <a href=\\\"/monero-arka-fren-teli-honda-activa-125\\\">arka fren telini</a> de kontrol etmek mantıklıdır. Tüm seçenekler için <a href=\\\"/fren-balata\\\">fren balata</a> kategorisi yeterli bir başlangıç noktasıdır.\"}},{\"id\":\"2nvhc0000g\",\"type\":\"image\",\"data\":{\"file\":{\"url\":\"__IMG_inline__\"},\"caption\":\"Scooter bakımında düzenli kontrol, parçaların ömrünü korumaya yardımcı olur (Fotoğraf: <a href=\\\"https://pixabay.com/users/wal_172619-12138562/\\\">wal_172619</a> / <a href=\\\"https://pixabay.com/\\\">Pixabay</a>)\",\"withBorder\":false,\"stretched\":false,\"withBackground\":false}},{\"id\":\"2nvhc0000h\",\"type\":\"header\",\"data\":{\"text\":\"Motor Üst Grubu: Filtre, Conta ve Subap\",\"level\":2}},{\"id\":\"2nvhc0000i\",\"type\":\"paragraph\",\"data\":{\"text\":\"Hava filtresi, motorun temiz hava almasını sağlar. Kirlenen filtre yakıt-hava dengesini bozabilir; bu da performans kaybı ve düzensiz rölanti olarak hissedilebilir. <a href=\\\"/monero-hava-filtre-elemani-honda-activa-125\\\">Monero hava filtre elemanı</a> ve <a href=\\\"/hava-filtre-elemani-orjinal-honda-activa-125\\\">orijinal Honda hava filtre elemanı</a> Activa 125 ürün adıyla listelenir.\"}},{\"id\":\"2nvhc0000j\",\"type\":\"paragraph\",\"data\":{\"text\":\"Motor açıldığında ya da yağ sızıntısı fark edildiğinde conta takımları gündeme gelir. <a href=\\\"/monero-silindir-alt-ust-conta-takimi-honda-dio-activa-125\\\">Silindir alt-üst conta takımı</a> ve <a href=\\\"/monero-subap-kapak-contasi-honda-dio-activa-125\\\">subap kapak contası</a> bu grupta yer alır. Daha geniş parça yelpazesi için <a href=\\\"/activa-125\\\">Activa 125</a> kategorisine göz atın.\"}},{\"id\":\"2nvhc0000k\",\"type\":\"header\",\"data\":{\"text\":\"Belirtiye Göre Kontrol Tablosu\",\"level\":2}},{\"id\":\"2nvhc0000l\",\"type\":\"paragraph\",\"data\":{\"text\":\"Aşağıdaki tablo, sık görülen belirtilerde hangi sistemin kontrol edilebileceğini özetler. Kesin teşhis için aracın muayene edilmesi gerekir.\"}},{\"id\":\"2nvhc0000m\",\"type\":\"table\",\"data\":{\"withHeadings\":true,\"content\":[[\"<b>Belirti</b>\",\"<b>Kontrol edilecek parça</b>\",\"<b>Not</b>\"],[\"Kalkışta sarsıntı veya tutukluk\",\"Arka debriyaj balatası, kayış\",\"Aktarma grubu birlikte değerlendirilmeli\"],[\"Fren sırasında ses\",\"Ön disk balata\",\"Disk yüzeyi de kontrol edilmeli\"],[\"Gaz tepkisinde gecikme\",\"Gaz teli, hava filtresi\",\"Tel boşluğu ve filtre kirliliğine bakın\"],[\"Yağ sızıntısı\",\"Conta takımları\",\"Sızıntı noktası tespit edilmeli\"],[\"Fren kolunda aşırı boşluk\",\"Fren teli, balata\",\"Ayar ve aşınma birlikte kontrol edilmeli\"]]}},{\"id\":\"2nvhc0000n\",\"type\":\"paragraph\",\"data\":{\"text\":\"Gaz tepkisi sorunlarında <a href=\\\"/monero-gaz-teli-cekme-honda-activa-125\\\">gaz teli (çekme)</a> ve <a href=\\\"/monero-gaz-teli-itme-honda-activa-125\\\">gaz teli (itme)</a> ürünlerini kontrol edilecek parçalar arasında düşünebilirsiniz.\"}},{\"id\":\"2nvhc0000o\",\"type\":\"header\",\"data\":{\"text\":\"Koruma ve Aksesuar Seçenekleri\",\"level\":2}},{\"id\":\"2nvhc0000p\",\"type\":\"paragraph\",\"data\":{\"text\":\"Bakımın yanında aracı korumak ve günlük kullanımı kolaylaştırmak için aksesuarlar da önemlidir. Düşme anında gövdeyi koruyan <a href=\\\"/gear5-koruma-demiri-takimi-honda-activa-125-2023-2025\\\">Gear5 koruma demiri takımı</a>, yük taşımak isteyenler için <a href=\\\"/gear5-topcase-canta-demiri-honda-activa-125-2023-2025\\\">topcase çanta demiri</a>, uzun yolda rahatlık için <a href=\\\"/gear5-konfor-sele-kilifi-honda-activa-125\\\">konfor sele kılıfı</a> ve araç park halindeyken <a href=\\\"/sele-brandasi-siyah-honda-activa-125-dio\\\">sele brandası</a> öne çıkar. Bu ürünlerin model yılı uyumu ürün adında belirtilmiştir; satın almadan önce ürün sayfasındaki açıklamayı kontrol edin. Diğer seçenekler için <a href=\\\"/motosiklet-aksesuar\\\">motosiklet aksesuar</a> kategorisine bakabilirsiniz.\"}},{\"id\":\"2nvhc0000q\",\"type\":\"paragraph\",\"data\":{\"text\":\"Aynı platformu paylaşan model için hazırlanan Honda Dio bakım rehberi de bazı ortak başlıklar açısından faydalı olabilir.\"}},{\"id\":\"2nvhc0000r\",\"type\":\"header\",\"data\":{\"text\":\"Sık Sorulan Sorular\",\"level\":2}},{\"id\":\"2nvhc0000s\",\"type\":\"header\",\"data\":{\"text\":\"Activa 125'te hangi parçalar daha sık yıpranır?\",\"level\":3}},{\"id\":\"2nvhc0000t\",\"type\":\"paragraph\",\"data\":{\"text\":\"Şehir içi kullanımda genellikle fren balatası, kayış, debriyaj balatası ve hava filtresi öne çıkar. Yıpranma hızı sürüş tarzına ve yola göre değişir; bu nedenle takvim yerine düzenli gözle kontrol yapmak daha sağlıklıdır.\"}},{\"id\":\"2nvhc0000u\",\"type\":\"header\",\"data\":{\"text\":\"Bakım aralıklarını nereden öğrenebilirim?\",\"level\":3}},{\"id\":\"2nvhc0000v\",\"type\":\"paragraph\",\"data\":{\"text\":\"Yağ değişimi, filtre ve diğer kalemlerin kesin aralıkları aracınızın kullanım kılavuzunda yer alır. Kılavuzdaki periyotları esas almak ve belirti fark ettiğinizde beklemeden kontrol yaptırmak en doğru yöntemdir.\"}},{\"id\":\"2nvhc0000w\",\"type\":\"header\",\"data\":{\"text\":\"Parçanın aracıma uyup uymadığını nasıl anlarım?\",\"level\":3}},{\"id\":\"2nvhc0000x\",\"type\":\"paragraph\",\"data\":{\"text\":\"Ürün adında belirtilen model ve yıl bilgisine bakın. Özellikle 2023-2025 gibi yıl aralığı yazan ürünlerde aracınızın model yılını kontrol edin. Emin olamazsanız bize ulaşabilirsiniz.\"}},{\"id\":\"2nvhc0000y\",\"type\":\"paragraph\",\"data\":{\"text\":\"Honda Activa 125 bakımında temel yaklaşım basittir: belirtileri erken fark etmek, parçaları ürün adındaki uyum bilgisiyle seçmek ve kesin değerler için kullanım kılavuzuna başvurmak. Doğru parçayı seçerken yardım isterseniz <a href=\\\"/pages/iletisim\\\">iletişim sayfamızdan</a> bize ulaşabilirsiniz.\"}},{\"id\":\"2nvhc0000z\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>Kapak fotoğrafı: <a href=\\\"https://pixabay.com/users/Schwarzwaldandi-16019969/\\\">Schwarzwaldandi</a> / <a href=\\\"https://pixabay.com/\\\">Pixabay</a></i>\"}}],\"version\":\"2.28.2\"}",
+  "removedLinks": []
+}
