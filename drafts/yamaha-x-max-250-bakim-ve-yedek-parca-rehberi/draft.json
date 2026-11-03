@@ -1,17 +1,15 @@
 {
   "topic": "Yamaha X-MAX 250 Bakım ve Yedek Parça Rehberi",
-  "approved": false,
-  "qualityIssues": [
-    "Yazı 741 kelime; en az 800 olmalı (doldurma cümle olmadan)."
-  ],
-  "words": 741,
-  "createdAt": "2026-11-02T05:14:14.208Z",
+  "approved": true,
+  "qualityIssues": [],
+  "words": 819,
+  "createdAt": "2026-11-03T05:04:30.807Z",
   "model": "claude-sonnet-5-5",
   "title": "Yamaha X-MAX 250 Bakım ve Yedek Parça Rehberi",
   "slug": "yamaha-x-max-250-bakim-ve-yedek-parca-rehberi",
-  "shortDescription": "X-MAX 250 için varyatör, fren, filtre ve motor bakımı; doğru yedek parçayı seçerken dikkat edilecek noktalar tek rehberde.",
-  "seoTitle": "X-MAX 250 Bakım ve Yedek Parça Rehberi | Soydaş Motosiklet",
-  "seoDescription": "Yamaha X-MAX 250 için periyodik bakım, varyatör, fren, filtre ve motor parçalarını; doğru parça seçimi ipuçlarıyla Soydaş Motosiklet rehberinde bulun.",
+  "shortDescription": "Yamaha X-MAX 250 için varyatör, fren, filtre ve motor bakımında nelere dikkat edeceğinizi, hangi parça gruplarını kontrol edeceğinizi anlatan rehber.",
+  "seoTitle": "Yamaha X-MAX 250 Bakım ve Yedek Parça | Soydaş Motosiklet",
+  "seoDescription": "Yamaha X-MAX 250 bakımı: varyatör, fren, filtre ve motor parçalarında nelere bakmalı? Parça gruplarını ve doğru kontrol yöntemini adım adım öğrenin.",
   "images": {
     "cover": "cover.jpg",
     "inline": "inline.jpg",
@@ -25,255 +23,238 @@
   },
   "blocks": [
     {
-      "id": "t0pbm00001",
+      "id": "841u000001",
       "type": "paragraph",
       "data": {
-        "text": "<i>Yayın tarihi: 2 Kasım 2026</i>"
+        "text": "<i>Yayın tarihi: 3 Kasım 2026</i>"
       }
     },
     {
-      "id": "t0pbz00002",
+      "id": "841ud00002",
       "type": "paragraph",
       "data": {
-        "text": "Yamaha X-MAX 250, şehir içi kullanımda da uzun yolda da tercih edilen bir maxi scooter. Her scooter gibi düzenli bakım ister: varyatör sistemi, frenler, filtreler ve motorun üst kısmı zamanla aşınır. Bu rehberde X-MAX 250 için bakım kalemlerini, hangi belirtinin hangi parçaya işaret ettiğini ve parça seçerken nelere bakmanız gerektiğini sade bir dille topladık. Kesin bakım aralıkları ve değerler için her zaman aracınızın kullanım kılavuzunu esas alın."
+        "text": "Yamaha X-MAX 250, şehir içi kullanımda da uzun yolda da tercih edilen bir maxi scooter. Ancak her scooter gibi düzenli kontrol ister: varyatör grubu, frenler, filtreler ve motorun yağlama sistemi zamanla aşınır. Bu rehberde X-MAX 250'nin bakımında hangi parça gruplarına dikkat etmeniz gerektiğini, belirtilere göre nasıl karar verebileceğinizi ve <a href=\"/x-max-250\">X-MAX 250 ürün sayfamızda</a> bulabileceğiniz parça seçeneklerini sade bir dille anlatıyoruz."
       }
     },
     {
-      "id": "t0pbz00003",
+      "id": "841ud00003",
       "type": "header",
       "data": {
-        "text": "Periyodik Bakımın Temeli: Yağ ve Filtreler",
+        "text": "Bakıma Nereden Başlamalı?",
         "level": 2
       }
     },
     {
-      "id": "t0pbz00004",
+      "id": "841ud00004",
       "type": "paragraph",
       "data": {
-        "text": "Motor yağı ve yağ filtresi, motorun ömrünü en çok etkileyen kalemlerdir. Yağ cinsi ve değişim aralığı için kullanım kılavuzundaki tabloyu takip edin; yağ viskozite ve standart farkları için <a href=\"/blog/motosiklet-yagi-secimi-10w-40-jaso-ma-ve-mb-farki\">motosiklet yağı seçimi rehberimize</a> göz atabilirsiniz. Yağ değişiminde filtreyi de yenilemek iyi bir alışkanlıktır; X-MAX 250 için <a href=\"/khan-yag-filtresi-kf141-yamaha-x-max-125-2507300-yzf-r25-wr-125-250-400\">Khan KF141 yağ filtresi</a> seçeneği mevcuttur. Yağ ürünlerine tek yerden ulaşmak için <a href=\"/yaglar\">yağlar kategorisini</a> kullanabilirsiniz."
+        "text": "Bakım aralıkları, yağ cinsi ve kapasitesi, sıkma torkları gibi kesin değerler motorun model yılına göre değişebilir. Bu yüzden önce aracınızın kullanım kılavuzundaki bakım tablosunu esas alın. Kılavuza ulaşamıyorsanız yetkili servisten teyit etmeniz en güvenlisidir. Rehberdeki genel kontrol mantığı ise her X-MAX 250 sahibi için işe yarar:"
       }
     },
     {
-      "id": "t0pbz00005",
-      "type": "paragraph",
-      "data": {
-        "text": "Hava filtresi de aynı derecede önemlidir. Tıkanmış bir filtre karışımı bozar, performansı düşürür ve yakıt tüketimini artırabilir. Toz yoğun yollarda kullanıyorsanız kontrolü sıklaştırmak mantıklıdır. <a href=\"/hiflo-hava-filtresi-hfa4301-yamaha-x-max-250-300\">Hiflo HFA4301 hava filtresi</a> bu modele uygun ürünlerden biridir. Ayrıca kayış kutusuna hava taşıyan debriyaj filtresi de unutulmamalıdır."
-      }
-    },
-    {
-      "id": "t0pbz00006",
-      "type": "header",
-      "data": {
-        "text": "Varyatör Sistemi: Kayış, Ağırlıklar ve Debriyaj",
-        "level": 2
-      }
-    },
-    {
-      "id": "t0pbz00007",
-      "type": "paragraph",
-      "data": {
-        "text": "Scooterlarda gücü tekerleğe ileten varyatör sistemi, bakım ihtiyacının en yüksek olduğu bölümdür. Kayış, ağırlık (makara) seti, ön debriyaj ve arka debriyaj balataları birlikte çalışır; birinin aşınması diğerlerinin performansını da etkiler. Ayrıntılı anlatım için <a href=\"/blog/scooter-varyator-bakimi-kayis-makara-ve-debriyaj\">scooter varyatör bakımı yazımızı</a> okuyabilirsiniz."
-      }
-    },
-    {
-      "id": "t0pbz00008",
-      "type": "paragraph",
-      "data": {
-        "text": "Varyatör bölümünü açtığınızda kayışı, ağırlıkları ve debriyaj balatalarını birlikte kontrol etmek, ikinci kez söküm yapma ihtiyacını azaltır."
-      }
-    },
-    {
-      "id": "t0pbz00009",
-      "type": "header",
-      "data": {
-        "text": "Varyatör aşınma belirtileri",
-        "level": 3
-      }
-    },
-    {
-      "id": "t0pbz0000a",
+      "id": "841ud00005",
       "type": "list",
       "data": {
         "style": "unordered",
         "items": [
-          "Kalkışta titreme veya vuruntu hissi",
-          "Gazı açtığınızda devir yükselirken hızın aynı oranda artmaması",
-          "Varyatör bölgesinden gelen sürtünme veya metalik sesler",
-          "Kayışta çatlak, yıpranmış kenar veya yağlanma",
-          "Yüksek hızda güç kaybı"
+          "Motor yağı seviyesini ve rengini düzenli olarak kontrol edin; yağ seçiminde <a href=\"/blog/motosiklet-yagi-secimi-10w-40-jaso-ma-ve-mb-farki\">JASO MA ve MB farkını</a> bilmek işinizi kolaylaştırır.",
+          "Fren balatalarının kalınlığına ve disk yüzeyine bakın.",
+          "Hava filtresi ile debriyaj filtresinin kirlenme durumunu inceleyin.",
+          "Varyatör kapağını açtığınızda kayış, makara ve balataları gözle kontrol edin.",
+          "Lastik basıncını ve diş derinliğini kontrol edin; bu konuda <a href=\"/blog/motosiklet-lastik-secimi-ve-dogru-lastik-basinci\">lastik seçimi ve basınç rehberimiz</a> yardımcı olur."
         ]
       }
     },
     {
-      "id": "t0pbz0000b",
+      "id": "841ud00006",
       "type": "paragraph",
       "data": {
-        "text": "Bu belirtilerden biri varsa kayış kapağını açıp parçaları gözle kontrol etmek en doğru adımdır. Kayış ve debriyaj ölçüleri için kullanım kılavuzundaki limit değerlere bakın."
+        "text": "Yedek parça ararken ürün adında geçen model ve model yılı aralığına dikkat edin. Örneğin bazı parçalar 2018-2022 arası araçlar için, bazıları 2010-2017 arası için listelenir. Emin olamadığınız durumda <a href=\"/pages/iletisim\">bizimle iletişime geçebilirsiniz</a>."
       }
     },
     {
-      "id": "t0pbz0000c",
-      "type": "image",
-      "data": {
-        "file": {
-          "url": "__IMG_inline__"
-        },
-        "caption": "Varyatör ve motor çevresi düzenli kontrol gerektirir (Fotoğraf: <a href=\"https://pixabay.com/users/Schwarzwaldandi-16019969/\">Schwarzwaldandi</a> / <a href=\"https://pixabay.com/\">Pixabay</a>)",
-        "withBorder": false,
-        "stretched": false,
-        "withBackground": false
-      }
-    },
-    {
-      "id": "t0pbz0000d",
+      "id": "841ud00007",
       "type": "header",
       "data": {
-        "text": "X-MAX 250 İçin Öne Çıkan Varyatör Parçaları",
+        "text": "Varyatör ve Aktarma Grubu",
         "level": 2
       }
     },
     {
-      "id": "t0pbz0000e",
+      "id": "841ud00008",
       "type": "image",
       "data": {
         "file": {
           "url": "__IMG_collage__"
         },
-        "caption": "X-MAX 250 için kayış, ağırlık seti, fren balatası ve hava filtresi – Soydaş Motosiklet",
+        "caption": "X-MAX 250 için kayış, debriyaj balatası, arka balata ve hava filtresi seçenekleri – Soydaş Motosiklet",
         "withBorder": false,
         "stretched": false,
         "withBackground": false
       }
     },
     {
-      "id": "t0pbz0000f",
+      "id": "841ud00009",
       "type": "paragraph",
       "data": {
-        "text": "Varyatör tarafında <a href=\"/yamaha-kayis-b5x-e7641-00-orjinal-yamaha-x-max-250\">orijinal Yamaha kayış (B5X-E7641-00)</a>, <a href=\"/yamaha-debriyaj-balatasi-orjinal---yamaha-x-max-250-300-2018-2026-b74-e6620-00\">orijinal Yamaha debriyaj balatası (B74-E6620-00)</a> ve <a href=\"/bando-agirlik-seti-bwr-003-11gr-20x12-yamaha-x-max-250-x-city-250-majesty-250\">Bando 11 gr 20x12 ağırlık seti</a> mağazamızda yer alıyor. Ağırlık seti seçerken gramaj ve ölçüyü ürün adından kontrol edin; farklı gramajlı setler aracın hızlanma karakterini değiştirir. Daha geniş seçim için <a href=\"/kayislar\">kayışlar</a> ve <a href=\"/x-max-250\">X-MAX 250 kategorisine</a> bakabilirsiniz."
+        "text": "Scooterlarda gücü arka tekere ileten varyatör sistemi, bakımda en çok ihmal edilen bölümlerden biridir. Kayış, ağırlıklar (rulolar), mars ve debriyaj balatası birlikte çalıştığı için birinde oluşan aşınma diğerlerini de etkileyebilir. Detaylı bilgi için varyatör bakımı yazımızı okuyabilirsiniz."
       }
     },
     {
-      "id": "t0pbz0000g",
+      "id": "841ud0000a",
+      "type": "paragraph",
+      "data": {
+        "text": "Şu belirtiler varyatör grubuna bakma zamanının geldiğini gösterebilir:"
+      }
+    },
+    {
+      "id": "841ud0000b",
+      "type": "list",
+      "data": {
+        "style": "unordered",
+        "items": [
+          "Kalkışta titreme veya sarsıntı",
+          "Gaza rağmen yetersiz ivmelenme",
+          "Hızlanırken motor devrinin yükselip hızın artmaması",
+          "Varyatör bölgesinden gelen alışılmadık sesler veya koku"
+        ]
+      }
+    },
+    {
+      "id": "841ud0000c",
+      "type": "paragraph",
+      "data": {
+        "text": "Parça tarafında, <a href=\"/yamaha-kayis-b5x-e7641-00-orjinal-yamaha-x-max-250\">orijinal Yamaha kayış</a> ve <a href=\"/yamaha-debriyaj-balatasi-orjinal---yamaha-x-max-250-300-2018-2026-b74-e6620-00\">orijinal Yamaha debriyaj balatası</a> seçenekleri mevcut. Ağırlık setlerinde ise farklı gram değerleri ve ölçüler bulunur; örneğin <a href=\"/bando-agirlik-seti-bwr-003-11gr-20x12-yamaha-x-max-250-x-city-250-majesty-250\">11 gr 20x12 ölçülü Bando ağırlık seti</a> gibi seçenekler ürün adında gram ve ölçü bilgisiyle yer alır. Hangi ağırlığın aracınıza uygun olduğunu kullanım kılavuzu veya servis bilgisiyle teyit edin. Ayrıca kayış, balata ve ağırlıkları takımın bütünü olarak değerlendirmek daha sağlıklıdır."
+      }
+    },
+    {
+      "id": "841ud0000d",
       "type": "header",
       "data": {
-        "text": "Fren Sistemi Bakımı",
+        "text": "Fren Sistemi",
         "level": 2
       }
     },
     {
-      "id": "t0pbz0000h",
+      "id": "841ud0000e",
       "type": "paragraph",
       "data": {
-        "text": "Maxi scooter ağırlığı nedeniyle frenler yoğun yük altında çalışır. Balata kalınlığını düzenli kontrol edin; ince kalan balata hem fren performansını düşürür hem de diske zarar verebilir. Değişim zamanını anlamak için fren balatası ne zaman değişir yazımıza bakabilirsiniz."
+        "text": "X-MAX 250 gibi ağır bir scooterda fren sistemi güvenliğin en kritik parçasıdır. Balata kalınlığı azaldığında metal parça diske temas edebilir, bu da diski aşındırır ve fren performansını düşürür. Fren sesi, çekme sırasında titreme veya kolda sertlik fark ederseniz kontrolü ertelemeyin. Balata değişim zamanını anlamak için fren balatası rehberimize göz atabilirsiniz."
       }
     },
     {
-      "id": "t0pbz0000i",
+      "id": "841ud0000f",
       "type": "paragraph",
       "data": {
-        "text": "Arka fren için <a href=\"/brenta-organik-arka-disk-balata-ft3150-yamaha-x-max-250\">Brenta organik arka disk balata (FT3150)</a>, ön fren için <a href=\"/monero-gold-on-disk-balata-yamaha-x-max-250-honda-cbr-250\">Monero Gold ön disk balata</a> seçeneklerini değerlendirebilirsiniz. Balata değişiminde disk yüzeyini ve fren hidroliğini de kontrol edin."
+        "text": "Ön tarafta <a href=\"/monero-gold-on-disk-balata-yamaha-x-max-250-honda-cbr-250\">Monero ön disk balata</a>, arka tarafta ise <a href=\"/brenta-organik-arka-disk-balata-ft3150-yamaha-x-max-250\">Brenta organik arka disk balata</a> gibi seçenekler bulunuyor. Balata değişirken kaliper yayı, fren kolu ve disk durumunu da birlikte kontrol etmek mantıklıdır. Daha geniş seçim için <a href=\"/fren-balata\">fren balata kategorimizi</a> inceleyebilirsiniz."
       }
     },
     {
-      "id": "t0pbz0000j",
+      "id": "841ue0000g",
+      "type": "image",
+      "data": {
+        "file": {
+          "url": "__IMG_inline__"
+        },
+        "caption": "Düzenli kontrol, scooter parçalarının ömrünü ve sürüş güvenliğini doğrudan etkiler (Fotoğraf: <a href=\"https://pixabay.com/users/lastudios90-8096225/\">lastudios90</a> / <a href=\"https://pixabay.com/\">Pixabay</a>)",
+        "withBorder": false,
+        "stretched": false,
+        "withBackground": false
+      }
+    },
+    {
+      "id": "841ue0000h",
       "type": "header",
       "data": {
-        "text": "Hangi Belirti Hangi Parçaya İşaret Eder?",
+        "text": "Filtreler, Yağlama ve Motor Parçaları",
         "level": 2
       }
     },
     {
-      "id": "t0pbz0000k",
+      "id": "841ue0000i",
+      "type": "paragraph",
+      "data": {
+        "text": "Motorun temiz havayla çalışması ve yağlamanın düzgün olması uzun ömür için temel şarttır. Hava filtresi tıkandığında yakıt tüketimi artabilir ve performans düşebilir. X-MAX 250 için <a href=\"/hiflo-hava-filtresi-hfa4301-yamaha-x-max-250-300\">Hiflo hava filtresi</a> gibi seçenekler yanında MSR ve Monero markalı filtre ürünleri de mevcut. Varyatör bölgesini temiz hava ile besleyen debriyaj filtresi için de ayrı ürünler bulunuyor."
+      }
+    },
+    {
+      "id": "841ue0000j",
+      "type": "paragraph",
+      "data": {
+        "text": "Motor yağı ve yağ filtresi ürünlerine <a href=\"/yaglar\">yağlar kategorimizden</a> ulaşabilirsiniz. Daha kapsamlı onarımlarda ise eksantrik zinciri, subap takımı, conta takımı, yağ pompası ve silindir gibi parçalar gündeme gelir. Bunlarda mutlaka ürün adındaki model yılı aralığını kontrol edin; çünkü 2010-2017 ve 2018 sonrası araçlar için farklı ürünler listelenir. Tüm bu parçalara <a href=\"/yedek-parca\">yedek parça kategorisinden</a> göz atabilirsiniz."
+      }
+    },
+    {
+      "id": "841ue0000k",
+      "type": "header",
+      "data": {
+        "text": "Belirtiye Göre Hızlı Kontrol Tablosu",
+        "level": 2
+      }
+    },
+    {
+      "id": "841ue0000l",
+      "type": "paragraph",
+      "data": {
+        "text": "Aşağıdaki tablo, sık görülen belirtileri ilgili sistemle eşleştirir. Kesin teşhis için aracın fiziksel kontrolü gerekir."
+      }
+    },
+    {
+      "id": "841ue0000m",
       "type": "table",
       "data": {
         "withHeadings": true,
         "content": [
           [
             "<b>Belirti</b>",
-            "<b>Olası neden</b>",
-            "<b>Kontrol edilecek parça</b>"
+            "<b>Kontrol edilecek bölüm</b>",
+            "<b>Akla gelen parça grubu</b>"
           ],
           [
-            "Kalkışta titreme",
-            "Debriyaj balatası veya kayış aşınması",
-            "Debriyaj balataları, kayış"
+            "Kalkışta titreme, ivmelenme düşüklüğü",
+            "Varyatör",
+            "Kayış, ağırlık seti, debriyaj balatası"
           ],
           [
-            "Hızlanmada isteksizlik",
-            "Ağırlıklar veya kayış yıpranması",
-            "Ağırlık seti, kayış"
+            "Fren sırasında ses veya zayıf tepki",
+            "Fren sistemi",
+            "Balata, disk, kaliper yayı"
           ],
           [
-            "Fren çekince gıcırtı",
-            "İnce kalmış balata",
-            "Ön ve arka disk balata"
+            "Güç kaybı, yakıt tüketiminde artış",
+            "Hava ve yakıt girişi",
+            "Hava filtresi, gaz kelebek sensörü"
           ],
           [
-            "Güç kaybı, yüksek tüketim",
-            "Tıkalı hava filtresi",
-            "Hava ve debriyaj filtresi"
+            "Rölantide düzensizlik",
+            "Ateşleme ve gaz sistemi",
+            "Ateşleme bobini, gaz teli"
           ],
           [
-            "Gaz tepkisinde gecikme",
-            "Gaz teli veya gaz kelebeği sorunu",
-            "Gaz teli, gaz kelebek sensörü"
+            "Titreşim veya yatak sesi",
+            "Motor askısı ve şasi bağlantıları",
+            "Motor askısı, askı mili"
           ]
         ]
       }
     },
     {
-      "id": "t0pbz0000l",
-      "type": "paragraph",
-      "data": {
-        "text": "Tablo yalnızca ön teşhis içindir; kesin tespit için parçayı yerinde incelemek gerekir."
-      }
-    },
-    {
-      "id": "t0pbz0000m",
+      "id": "841ue0000n",
       "type": "header",
       "data": {
-        "text": "Motor ve Dış Aksesuar Parçaları",
+        "text": "Koruma ve Konfor Aksesuarları",
         "level": 2
       }
     },
     {
-      "id": "t0pbz0000n",
+      "id": "841ue0000o",
       "type": "paragraph",
       "data": {
-        "text": "Uzun kullanımda üst motor parçaları da gündeme gelir. Subap ayarı ve subap takımı için <a href=\"/vtc-subap-takimi-yamaha-x-max-250-2018-2024\">VTC subap takımı (2018-2024)</a>, gaz tepkisi sorunlarında ise <a href=\"/yamaha-gaz-teli-orjinal-yamaha-x-max-250-300-2018-2022\">orijinal Yamaha gaz teli (2018-2022)</a> seçenekleri vardır. Model yılı uyumunu ürün adından mutlaka kontrol edin; X-MAX 250'nin farklı üretim dönemleri için ayrı parçalar bulunur."
+        "text": "Mekanik bakımın yanında günlük kullanımı kolaylaştıran aksesuarlar da var. Navigasyon kullanıyorsanız model uyumu ürün adında belirtilen <a href=\"/modimot-telefon-tutucu-ve-navigaston-aparati-yamaha-x-max-250-2023-2024\">Modimot telefon tutucu</a> işinizi görebilir. Sürüş sırasında eller için ise <a href=\"/trz-el-koruma-delux-yamaha-x-max-250\">TRZ el koruma</a> seçeneği bulunuyor. Kask seçimi için de kask seçimi rehberimizi inceleyebilirsiniz."
       }
     },
     {
-      "id": "t0pbz0000o",
-      "type": "paragraph",
-      "data": {
-        "text": "Görünüm tarafında ön far camı, tank pad ve jant şeridi gibi ürünler aracı korur. Toplu bakınmak için <a href=\"/yedek-parca\">yedek parça kategorisini</a> kullanabilirsiniz."
-      }
-    },
-    {
-      "id": "t0pbz0000p",
-      "type": "header",
-      "data": {
-        "text": "Parça Seçerken Dikkat Edilecekler",
-        "level": 2
-      }
-    },
-    {
-      "id": "t0pbz0000q",
-      "type": "list",
-      "data": {
-        "style": "ordered",
-        "items": [
-          "Ürün adındaki model ve yıl aralığını aracınızla karşılaştırın.",
-          "Orijinal ve muadil seçeneklerde parça numarasını kontrol edin.",
-          "Varyatör parçalarını mümkünse birlikte değiştirin.",
-          "Ağırlık gramajı ve ölçü gibi değerleri kılavuz ve ürün adıyla doğrulayın.",
-          "Emin olmadığınız durumda bize danışın."
-        ]
-      }
-    },
-    {
-      "id": "t0pbz0000r",
+      "id": "841ue0000p",
       "type": "header",
       "data": {
         "text": "Sık Sorulan Sorular",
@@ -281,66 +262,66 @@
       }
     },
     {
-      "id": "t0pbz0000s",
+      "id": "841ue0000q",
       "type": "header",
       "data": {
-        "text": "X-MAX 250 kayışı ne zaman değişmeli?",
+        "text": "Kayış ve debriyaj balatası birlikte mi değiştirilmeli?",
         "level": 3
       }
     },
     {
-      "id": "t0pbz0000t",
+      "id": "841ue0000r",
       "type": "paragraph",
       "data": {
-        "text": "Değişim aralığı kullanım koşullarına bağlıdır. Kesin değer için aracınızın kullanım kılavuzundaki bakım çizelgesine bakın; çatlak, yıpranma veya performans kaybı görürseniz beklemeden kontrol ettirin."
+        "text": "Zorunlu değildir; ancak varyatör kapağı zaten açıldığında kayış, ağırlıklar, makara ve balatanın hepsinin durumunu kontrol etmek mantıklıdır. Aşınma seviyesi ve değişim aralığı için aracınızın kullanım kılavuzuna bakın."
       }
     },
     {
-      "id": "t0pbz0000u",
+      "id": "841ue0000s",
       "type": "header",
       "data": {
-        "text": "Orijinal ve muadil parça arasında nasıl karar vermeliyim?",
+        "text": "Parçanın aracıma uyup uymadığını nasıl anlarım?",
         "level": 3
       }
     },
     {
-      "id": "t0pbz0000v",
+      "id": "841ue0000t",
       "type": "paragraph",
       "data": {
-        "text": "Önemli olan uyumdur. Her iki grupta da ürün adındaki model ve yıl bilgisinin aracınızla eşleşmesi gerekir. Bütçe ve kullanım şeklinize göre seçim yapabilirsiniz."
+        "text": "Ürün adındaki model ve model yılı aralığını kontrol edin, mümkünse eski parçanın üzerindeki kodla karşılaştırın. Yine emin değilseniz <a href=\"/pages/iletisim\">iletişim sayfamızdan</a> bize yazın."
       }
     },
     {
-      "id": "t0pbz0000w",
+      "id": "841ue0000u",
       "type": "header",
       "data": {
-        "text": "Ağırlık setini tek başına değiştirebilir miyim?",
+        "text": "Balata değişiminde disk de değişmeli mi?",
         "level": 3
       }
     },
     {
-      "id": "t0pbz0000x",
+      "id": "841ue0000v",
       "type": "paragraph",
       "data": {
-        "text": "Teknik olarak mümkündür; ancak kayış ve debriyajın durumu da kontrol edilmeli. Aşınmış bir kayışla yeni ağırlık takmak sonucu iyileştirmeyebilir."
+        "text": "Her balata değişiminde disk değişimi gerekmez. Disk yüzeyinde derin çizik, dalgalanma veya kılavuzdaki sınırın altında kalınlık varsa değişim gündeme gelir. Bu ölçüm için kullanım kılavuzundaki değerlere başvurun."
       }
     },
     {
-      "id": "t0pbz0000y",
+      "id": "841ue0000w",
       "type": "paragraph",
       "data": {
-        "text": "Düzenli bakım ve doğru parça seçimi, X-MAX 250'nizin hem performansını hem güvenliğini korur. Aradığınız parçanın aracınıza uyup uymadığından emin değilseniz <a href=\"/pages/iletisim\">iletişim sayfamızdan</a> bize ulaşabilirsiniz."
+        "text": "Yamaha X-MAX 250'nin bakımı, varyatör, fren ve filtre gruplarını düzenli kontrol etmekle başlar. Doğru parçayı seçmek için ürün adındaki model uyumuna bakmanız yeterli. Parça seçiminde yardım isterseniz <a href=\"/pages/iletisim\">iletişim sayfamızdan</a> Soydaş Motosiklet ekibine ulaşabilirsiniz."
       }
     },
     {
-      "id": "t0pbz0000z",
+      "id": "841ue0000x",
       "type": "paragraph",
       "data": {
         "text": "<i>Kapak fotoğrafı: <a href=\"https://pixabay.com/users/Herrfilm-236802/\">Herrfilm</a> / <a href=\"https://pixabay.com/\">Pixabay</a></i>"
       }
     }
   ],
-  "contentHtml": "<html lang=\"en\">\n          <style>.ikas-editor-v1>table,td,th{border:1px solid #e8e8eb;border-collapse:collapse;font-size:14px}.ikas-editor-v1>th,td{padding:6px 12px}.ikas-editor-v1 ul,.ikas-editor-v1 ol{padding-left:20px}.ikas-editor-v1 ul li{list-style-type:disc;margin:8px 0 8px 16px}.ikas-editor-v1 ol li{list-style-type:decimal;margin:8px 0 8px 16px}.ikas-editor-v1 li{margin:8px 0 8px 16px}.ikas-editor-v1 code{display:block;white-space:pre-wrap}.ikas-editor-v1 blockquote{margin-inline-start:0;border-left:3px solid rgb(41 41 41);padding-left:23px}.ikas-editor-v1 figure{margin-inline:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0;width:100%}.ikas-editor-v1 img{max-width:800px;object-fit:cover;object-position:center}.ikas-editor-v1 img.img-bg{padding:1.5em!important;background:#cdd1e0!important}.ikas-editor-v1 img.img-fullwidth{width:100%!important;max-width:100%!important;margin:0 auto!important}.ikas-editor-v1 figcaption{text-align:center;padding-top:6px;word-break:break-word;font-size:12px;background:0 0;z-index:{};}.ikas-editor-v1 .embed-youtube{width:100%;height:400px}.ikas-editor-v1 a{color:#0070f3;text-decoration:underline;cursor:pointer}.ikas-editor-v1 a:hover{opacity:.8}.products-container{display:flex;flex-direction:column;gap:10px}.product-block-container{margin:0 auto;cursor:pointer;flex:1;display:flex;gap:20px;padding:10px 0}.product-image{width:120px;height:120px;object-fit:cover;border-radius:4px;flex-shrink:0}.product-name{font-size:15px;font-weight:500;width:100%;margin:0 0 4px}.product-brand{font-size:13px;font-weight:400;color:#adb5bd;margin:0 0 4px}.product-discount-price,.product-price{width:fit-content;font-size:16px;font-weight:500;color:#000}.product-price{margin:6px 0 0}.product-discount-price{margin:6px 8px 0 0;text-decoration:line-through}.ikas-editor-v1 table b{font-weight:bold}.ikas-editor-v1 table i{font-style:italic}</style>\n          <div class=\"ikas-editor-v1\">\n          <p class=\"editor-paragraph\"> <i>Yayın tarihi: 2 Kasım 2026</i> </p><p class=\"editor-paragraph\"> Yamaha X-MAX 250, şehir içi kullanımda da uzun yolda da tercih edilen bir maxi scooter. Her scooter gibi düzenli bakım ister: varyatör sistemi, frenler, filtreler ve motorun üst kısmı zamanla aşınır. Bu rehberde X-MAX 250 için bakım kalemlerini, hangi belirtinin hangi parçaya işaret ettiğini ve parça seçerken nelere bakmanız gerektiğini sade bir dille topladık. Kesin bakım aralıkları ve değerler için her zaman aracınızın kullanım kılavuzunu esas alın. </p><h2>Periyodik Bakımın Temeli: Yağ ve Filtreler</h2><p class=\"editor-paragraph\"> Motor yağı ve yağ filtresi, motorun ömrünü en çok etkileyen kalemlerdir. Yağ cinsi ve değişim aralığı için kullanım kılavuzundaki tabloyu takip edin; yağ viskozite ve standart farkları için <a href=\"/blog/motosiklet-yagi-secimi-10w-40-jaso-ma-ve-mb-farki\">motosiklet yağı seçimi rehberimize</a> göz atabilirsiniz. Yağ değişiminde filtreyi de yenilemek iyi bir alışkanlıktır; X-MAX 250 için <a href=\"/khan-yag-filtresi-kf141-yamaha-x-max-125-2507300-yzf-r25-wr-125-250-400\">Khan KF141 yağ filtresi</a> seçeneği mevcuttur. Yağ ürünlerine tek yerden ulaşmak için <a href=\"/yaglar\">yağlar kategorisini</a> kullanabilirsiniz. </p><p class=\"editor-paragraph\"> Hava filtresi de aynı derecede önemlidir. Tıkanmış bir filtre karışımı bozar, performansı düşürür ve yakıt tüketimini artırabilir. Toz yoğun yollarda kullanıyorsanız kontrolü sıklaştırmak mantıklıdır. <a href=\"/hiflo-hava-filtresi-hfa4301-yamaha-x-max-250-300\">Hiflo HFA4301 hava filtresi</a> bu modele uygun ürünlerden biridir. Ayrıca kayış kutusuna hava taşıyan debriyaj filtresi de unutulmamalıdır. </p><h2>Varyatör Sistemi: Kayış, Ağırlıklar ve Debriyaj</h2><p class=\"editor-paragraph\"> Scooterlarda gücü tekerleğe ileten varyatör sistemi, bakım ihtiyacının en yüksek olduğu bölümdür. Kayış, ağırlık (makara) seti, ön debriyaj ve arka debriyaj balataları birlikte çalışır; birinin aşınması diğerlerinin performansını da etkiler. Ayrıntılı anlatım için <a href=\"/blog/scooter-varyator-bakimi-kayis-makara-ve-debriyaj\">scooter varyatör bakımı yazımızı</a> okuyabilirsiniz. </p><p class=\"editor-paragraph\"> Varyatör bölümünü açtığınızda kayışı, ağırlıkları ve debriyaj balatalarını birlikte kontrol etmek, ikinci kez söküm yapma ihtiyacını azaltır. </p><h3>Varyatör aşınma belirtileri</h3><ul><li>Kalkışta titreme veya vuruntu hissi</li><li>Gazı açtığınızda devir yükselirken hızın aynı oranda artmaması</li><li>Varyatör bölgesinden gelen sürtünme veya metalik sesler</li><li>Kayışta çatlak, yıpranmış kenar veya yağlanma</li><li>Yüksek hızda güç kaybı</li></ul><p class=\"editor-paragraph\"> Bu belirtilerden biri varsa kayış kapağını açıp parçaları gözle kontrol etmek en doğru adımdır. Kayış ve debriyaj ölçüleri için kullanım kılavuzundaki limit değerlere bakın. </p><figure class=\"editor-fig-img\"><img class=\"editor-img   \" src=\"__IMG_inline__\" alt=\"Varyatör ve motor çevresi düzenli kontrol gerektirir (Fotoğraf: Schwarzwaldandi / Pixabay)\" width=\"1080\" height=\"675\" style=\"max-width: 100%; aspect-ratio: 1080 / 675;\"><figcaption class=\"editor-fig-cap\">Varyatör ve motor çevresi düzenli kontrol gerektirir (Fotoğraf: <a href=\"https://pixabay.com/users/Schwarzwaldandi-16019969/\">Schwarzwaldandi</a> / <a href=\"https://pixabay.com/\">Pixabay</a>)</figcaption></figure><h2>X-MAX 250 İçin Öne Çıkan Varyatör Parçaları</h2><figure class=\"editor-fig-img\"><img class=\"editor-img   \" src=\"__IMG_collage__\" alt=\"X-MAX 250 için kayış, ağırlık seti, fren balatası ve hava filtresi – Soydaş Motosiklet\" width=\"1080\" height=\"360\" style=\"max-width: 100%; aspect-ratio: 1080 / 360;\"><figcaption class=\"editor-fig-cap\">X-MAX 250 için kayış, ağırlık seti, fren balatası ve hava filtresi – Soydaş Motosiklet</figcaption></figure><p class=\"editor-paragraph\"> Varyatör tarafında <a href=\"/yamaha-kayis-b5x-e7641-00-orjinal-yamaha-x-max-250\">orijinal Yamaha kayış (B5X-E7641-00)</a>, <a href=\"/yamaha-debriyaj-balatasi-orjinal---yamaha-x-max-250-300-2018-2026-b74-e6620-00\">orijinal Yamaha debriyaj balatası (B74-E6620-00)</a> ve <a href=\"/bando-agirlik-seti-bwr-003-11gr-20x12-yamaha-x-max-250-x-city-250-majesty-250\">Bando 11 gr 20x12 ağırlık seti</a> mağazamızda yer alıyor. Ağırlık seti seçerken gramaj ve ölçüyü ürün adından kontrol edin; farklı gramajlı setler aracın hızlanma karakterini değiştirir. Daha geniş seçim için <a href=\"/kayislar\">kayışlar</a> ve <a href=\"/x-max-250\">X-MAX 250 kategorisine</a> bakabilirsiniz. </p><h2>Fren Sistemi Bakımı</h2><p class=\"editor-paragraph\"> Maxi scooter ağırlığı nedeniyle frenler yoğun yük altında çalışır. Balata kalınlığını düzenli kontrol edin; ince kalan balata hem fren performansını düşürür hem de diske zarar verebilir. Değişim zamanını anlamak için fren balatası ne zaman değişir yazımıza bakabilirsiniz. </p><p class=\"editor-paragraph\"> Arka fren için <a href=\"/brenta-organik-arka-disk-balata-ft3150-yamaha-x-max-250\">Brenta organik arka disk balata (FT3150)</a>, ön fren için <a href=\"/monero-gold-on-disk-balata-yamaha-x-max-250-honda-cbr-250\">Monero Gold ön disk balata</a> seçeneklerini değerlendirebilirsiniz. Balata değişiminde disk yüzeyini ve fren hidroliğini de kontrol edin. </p><h2>Hangi Belirti Hangi Parçaya İşaret Eder?</h2><table><tbody><tr><td><b>Belirti</b></td><td><b>Olası neden</b></td><td><b>Kontrol edilecek parça</b></td></tr><tr><td>Kalkışta titreme</td><td>Debriyaj balatası veya kayış aşınması</td><td>Debriyaj balataları, kayış</td></tr><tr><td>Hızlanmada isteksizlik</td><td>Ağırlıklar veya kayış yıpranması</td><td>Ağırlık seti, kayış</td></tr><tr><td>Fren çekince gıcırtı</td><td>İnce kalmış balata</td><td>Ön ve arka disk balata</td></tr><tr><td>Güç kaybı, yüksek tüketim</td><td>Tıkalı hava filtresi</td><td>Hava ve debriyaj filtresi</td></tr><tr><td>Gaz tepkisinde gecikme</td><td>Gaz teli veya gaz kelebeği sorunu</td><td>Gaz teli, gaz kelebek sensörü</td></tr></tbody></table><p class=\"editor-paragraph\"> Tablo yalnızca ön teşhis içindir; kesin tespit için parçayı yerinde incelemek gerekir. </p><h2>Motor ve Dış Aksesuar Parçaları</h2><p class=\"editor-paragraph\"> Uzun kullanımda üst motor parçaları da gündeme gelir. Subap ayarı ve subap takımı için <a href=\"/vtc-subap-takimi-yamaha-x-max-250-2018-2024\">VTC subap takımı (2018-2024)</a>, gaz tepkisi sorunlarında ise <a href=\"/yamaha-gaz-teli-orjinal-yamaha-x-max-250-300-2018-2022\">orijinal Yamaha gaz teli (2018-2022)</a> seçenekleri vardır. Model yılı uyumunu ürün adından mutlaka kontrol edin; X-MAX 250'nin farklı üretim dönemleri için ayrı parçalar bulunur. </p><p class=\"editor-paragraph\"> Görünüm tarafında ön far camı, tank pad ve jant şeridi gibi ürünler aracı korur. Toplu bakınmak için <a href=\"/yedek-parca\">yedek parça kategorisini</a> kullanabilirsiniz. </p><h2>Parça Seçerken Dikkat Edilecekler</h2><ol><li>Ürün adındaki model ve yıl aralığını aracınızla karşılaştırın.</li><li>Orijinal ve muadil seçeneklerde parça numarasını kontrol edin.</li><li>Varyatör parçalarını mümkünse birlikte değiştirin.</li><li>Ağırlık gramajı ve ölçü gibi değerleri kılavuz ve ürün adıyla doğrulayın.</li><li>Emin olmadığınız durumda bize danışın.</li></ol><h2>Sık Sorulan Sorular</h2><h3>X-MAX 250 kayışı ne zaman değişmeli?</h3><p class=\"editor-paragraph\"> Değişim aralığı kullanım koşullarına bağlıdır. Kesin değer için aracınızın kullanım kılavuzundaki bakım çizelgesine bakın; çatlak, yıpranma veya performans kaybı görürseniz beklemeden kontrol ettirin. </p><h3>Orijinal ve muadil parça arasında nasıl karar vermeliyim?</h3><p class=\"editor-paragraph\"> Önemli olan uyumdur. Her iki grupta da ürün adındaki model ve yıl bilgisinin aracınızla eşleşmesi gerekir. Bütçe ve kullanım şeklinize göre seçim yapabilirsiniz. </p><h3>Ağırlık setini tek başına değiştirebilir miyim?</h3><p class=\"editor-paragraph\"> Teknik olarak mümkündür; ancak kayış ve debriyajın durumu da kontrol edilmeli. Aşınmış bir kayışla yeni ağırlık takmak sonucu iyileştirmeyebilir. </p><p class=\"editor-paragraph\"> Düzenli bakım ve doğru parça seçimi, X-MAX 250'nizin hem performansını hem güvenliğini korur. Aradığınız parçanın aracınıza uyup uymadığından emin değilseniz <a href=\"/pages/iletisim\">iletişim sayfamızdan</a> bize ulaşabilirsiniz. </p><p class=\"editor-paragraph\"> <i>Kapak fotoğrafı: <a href=\"https://pixabay.com/users/Herrfilm-236802/\">Herrfilm</a> / <a href=\"https://pixabay.com/\">Pixabay</a></i> </p>\n          </div>\n          </html>\n  ",
-  "contentData": "{\"time\":1793596454209,\"blocks\":[{\"id\":\"t0pbm00001\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>Yayın tarihi: 2 Kasım 2026</i>\"}},{\"id\":\"t0pbz00002\",\"type\":\"paragraph\",\"data\":{\"text\":\"Yamaha X-MAX 250, şehir içi kullanımda da uzun yolda da tercih edilen bir maxi scooter. Her scooter gibi düzenli bakım ister: varyatör sistemi, frenler, filtreler ve motorun üst kısmı zamanla aşınır. Bu rehberde X-MAX 250 için bakım kalemlerini, hangi belirtinin hangi parçaya işaret ettiğini ve parça seçerken nelere bakmanız gerektiğini sade bir dille topladık. Kesin bakım aralıkları ve değerler için her zaman aracınızın kullanım kılavuzunu esas alın.\"}},{\"id\":\"t0pbz00003\",\"type\":\"header\",\"data\":{\"text\":\"Periyodik Bakımın Temeli: Yağ ve Filtreler\",\"level\":2}},{\"id\":\"t0pbz00004\",\"type\":\"paragraph\",\"data\":{\"text\":\"Motor yağı ve yağ filtresi, motorun ömrünü en çok etkileyen kalemlerdir. Yağ cinsi ve değişim aralığı için kullanım kılavuzundaki tabloyu takip edin; yağ viskozite ve standart farkları için <a href=\\\"/blog/motosiklet-yagi-secimi-10w-40-jaso-ma-ve-mb-farki\\\">motosiklet yağı seçimi rehberimize</a> göz atabilirsiniz. Yağ değişiminde filtreyi de yenilemek iyi bir alışkanlıktır; X-MAX 250 için <a href=\\\"/khan-yag-filtresi-kf141-yamaha-x-max-125-2507300-yzf-r25-wr-125-250-400\\\">Khan KF141 yağ filtresi</a> seçeneği mevcuttur. Yağ ürünlerine tek yerden ulaşmak için <a href=\\\"/yaglar\\\">yağlar kategorisini</a> kullanabilirsiniz.\"}},{\"id\":\"t0pbz00005\",\"type\":\"paragraph\",\"data\":{\"text\":\"Hava filtresi de aynı derecede önemlidir. Tıkanmış bir filtre karışımı bozar, performansı düşürür ve yakıt tüketimini artırabilir. Toz yoğun yollarda kullanıyorsanız kontrolü sıklaştırmak mantıklıdır. <a href=\\\"/hiflo-hava-filtresi-hfa4301-yamaha-x-max-250-300\\\">Hiflo HFA4301 hava filtresi</a> bu modele uygun ürünlerden biridir. Ayrıca kayış kutusuna hava taşıyan debriyaj filtresi de unutulmamalıdır.\"}},{\"id\":\"t0pbz00006\",\"type\":\"header\",\"data\":{\"text\":\"Varyatör Sistemi: Kayış, Ağırlıklar ve Debriyaj\",\"level\":2}},{\"id\":\"t0pbz00007\",\"type\":\"paragraph\",\"data\":{\"text\":\"Scooterlarda gücü tekerleğe ileten varyatör sistemi, bakım ihtiyacının en yüksek olduğu bölümdür. Kayış, ağırlık (makara) seti, ön debriyaj ve arka debriyaj balataları birlikte çalışır; birinin aşınması diğerlerinin performansını da etkiler. Ayrıntılı anlatım için <a href=\\\"/blog/scooter-varyator-bakimi-kayis-makara-ve-debriyaj\\\">scooter varyatör bakımı yazımızı</a> okuyabilirsiniz.\"}},{\"id\":\"t0pbz00008\",\"type\":\"paragraph\",\"data\":{\"text\":\"Varyatör bölümünü açtığınızda kayışı, ağırlıkları ve debriyaj balatalarını birlikte kontrol etmek, ikinci kez söküm yapma ihtiyacını azaltır.\"}},{\"id\":\"t0pbz00009\",\"type\":\"header\",\"data\":{\"text\":\"Varyatör aşınma belirtileri\",\"level\":3}},{\"id\":\"t0pbz0000a\",\"type\":\"list\",\"data\":{\"style\":\"unordered\",\"items\":[\"Kalkışta titreme veya vuruntu hissi\",\"Gazı açtığınızda devir yükselirken hızın aynı oranda artmaması\",\"Varyatör bölgesinden gelen sürtünme veya metalik sesler\",\"Kayışta çatlak, yıpranmış kenar veya yağlanma\",\"Yüksek hızda güç kaybı\"]}},{\"id\":\"t0pbz0000b\",\"type\":\"paragraph\",\"data\":{\"text\":\"Bu belirtilerden biri varsa kayış kapağını açıp parçaları gözle kontrol etmek en doğru adımdır. Kayış ve debriyaj ölçüleri için kullanım kılavuzundaki limit değerlere bakın.\"}},{\"id\":\"t0pbz0000c\",\"type\":\"image\",\"data\":{\"file\":{\"url\":\"__IMG_inline__\"},\"caption\":\"Varyatör ve motor çevresi düzenli kontrol gerektirir (Fotoğraf: <a href=\\\"https://pixabay.com/users/Schwarzwaldandi-16019969/\\\">Schwarzwaldandi</a> / <a href=\\\"https://pixabay.com/\\\">Pixabay</a>)\",\"withBorder\":false,\"stretched\":false,\"withBackground\":false}},{\"id\":\"t0pbz0000d\",\"type\":\"header\",\"data\":{\"text\":\"X-MAX 250 İçin Öne Çıkan Varyatör Parçaları\",\"level\":2}},{\"id\":\"t0pbz0000e\",\"type\":\"image\",\"data\":{\"file\":{\"url\":\"__IMG_collage__\"},\"caption\":\"X-MAX 250 için kayış, ağırlık seti, fren balatası ve hava filtresi – Soydaş Motosiklet\",\"withBorder\":false,\"stretched\":false,\"withBackground\":false}},{\"id\":\"t0pbz0000f\",\"type\":\"paragraph\",\"data\":{\"text\":\"Varyatör tarafında <a href=\\\"/yamaha-kayis-b5x-e7641-00-orjinal-yamaha-x-max-250\\\">orijinal Yamaha kayış (B5X-E7641-00)</a>, <a href=\\\"/yamaha-debriyaj-balatasi-orjinal---yamaha-x-max-250-300-2018-2026-b74-e6620-00\\\">orijinal Yamaha debriyaj balatası (B74-E6620-00)</a> ve <a href=\\\"/bando-agirlik-seti-bwr-003-11gr-20x12-yamaha-x-max-250-x-city-250-majesty-250\\\">Bando 11 gr 20x12 ağırlık seti</a> mağazamızda yer alıyor. Ağırlık seti seçerken gramaj ve ölçüyü ürün adından kontrol edin; farklı gramajlı setler aracın hızlanma karakterini değiştirir. Daha geniş seçim için <a href=\\\"/kayislar\\\">kayışlar</a> ve <a href=\\\"/x-max-250\\\">X-MAX 250 kategorisine</a> bakabilirsiniz.\"}},{\"id\":\"t0pbz0000g\",\"type\":\"header\",\"data\":{\"text\":\"Fren Sistemi Bakımı\",\"level\":2}},{\"id\":\"t0pbz0000h\",\"type\":\"paragraph\",\"data\":{\"text\":\"Maxi scooter ağırlığı nedeniyle frenler yoğun yük altında çalışır. Balata kalınlığını düzenli kontrol edin; ince kalan balata hem fren performansını düşürür hem de diske zarar verebilir. Değişim zamanını anlamak için fren balatası ne zaman değişir yazımıza bakabilirsiniz.\"}},{\"id\":\"t0pbz0000i\",\"type\":\"paragraph\",\"data\":{\"text\":\"Arka fren için <a href=\\\"/brenta-organik-arka-disk-balata-ft3150-yamaha-x-max-250\\\">Brenta organik arka disk balata (FT3150)</a>, ön fren için <a href=\\\"/monero-gold-on-disk-balata-yamaha-x-max-250-honda-cbr-250\\\">Monero Gold ön disk balata</a> seçeneklerini değerlendirebilirsiniz. Balata değişiminde disk yüzeyini ve fren hidroliğini de kontrol edin.\"}},{\"id\":\"t0pbz0000j\",\"type\":\"header\",\"data\":{\"text\":\"Hangi Belirti Hangi Parçaya İşaret Eder?\",\"level\":2}},{\"id\":\"t0pbz0000k\",\"type\":\"table\",\"data\":{\"withHeadings\":true,\"content\":[[\"<b>Belirti</b>\",\"<b>Olası neden</b>\",\"<b>Kontrol edilecek parça</b>\"],[\"Kalkışta titreme\",\"Debriyaj balatası veya kayış aşınması\",\"Debriyaj balataları, kayış\"],[\"Hızlanmada isteksizlik\",\"Ağırlıklar veya kayış yıpranması\",\"Ağırlık seti, kayış\"],[\"Fren çekince gıcırtı\",\"İnce kalmış balata\",\"Ön ve arka disk balata\"],[\"Güç kaybı, yüksek tüketim\",\"Tıkalı hava filtresi\",\"Hava ve debriyaj filtresi\"],[\"Gaz tepkisinde gecikme\",\"Gaz teli veya gaz kelebeği sorunu\",\"Gaz teli, gaz kelebek sensörü\"]]}},{\"id\":\"t0pbz0000l\",\"type\":\"paragraph\",\"data\":{\"text\":\"Tablo yalnızca ön teşhis içindir; kesin tespit için parçayı yerinde incelemek gerekir.\"}},{\"id\":\"t0pbz0000m\",\"type\":\"header\",\"data\":{\"text\":\"Motor ve Dış Aksesuar Parçaları\",\"level\":2}},{\"id\":\"t0pbz0000n\",\"type\":\"paragraph\",\"data\":{\"text\":\"Uzun kullanımda üst motor parçaları da gündeme gelir. Subap ayarı ve subap takımı için <a href=\\\"/vtc-subap-takimi-yamaha-x-max-250-2018-2024\\\">VTC subap takımı (2018-2024)</a>, gaz tepkisi sorunlarında ise <a href=\\\"/yamaha-gaz-teli-orjinal-yamaha-x-max-250-300-2018-2022\\\">orijinal Yamaha gaz teli (2018-2022)</a> seçenekleri vardır. Model yılı uyumunu ürün adından mutlaka kontrol edin; X-MAX 250'nin farklı üretim dönemleri için ayrı parçalar bulunur.\"}},{\"id\":\"t0pbz0000o\",\"type\":\"paragraph\",\"data\":{\"text\":\"Görünüm tarafında ön far camı, tank pad ve jant şeridi gibi ürünler aracı korur. Toplu bakınmak için <a href=\\\"/yedek-parca\\\">yedek parça kategorisini</a> kullanabilirsiniz.\"}},{\"id\":\"t0pbz0000p\",\"type\":\"header\",\"data\":{\"text\":\"Parça Seçerken Dikkat Edilecekler\",\"level\":2}},{\"id\":\"t0pbz0000q\",\"type\":\"list\",\"data\":{\"style\":\"ordered\",\"items\":[\"Ürün adındaki model ve yıl aralığını aracınızla karşılaştırın.\",\"Orijinal ve muadil seçeneklerde parça numarasını kontrol edin.\",\"Varyatör parçalarını mümkünse birlikte değiştirin.\",\"Ağırlık gramajı ve ölçü gibi değerleri kılavuz ve ürün adıyla doğrulayın.\",\"Emin olmadığınız durumda bize danışın.\"]}},{\"id\":\"t0pbz0000r\",\"type\":\"header\",\"data\":{\"text\":\"Sık Sorulan Sorular\",\"level\":2}},{\"id\":\"t0pbz0000s\",\"type\":\"header\",\"data\":{\"text\":\"X-MAX 250 kayışı ne zaman değişmeli?\",\"level\":3}},{\"id\":\"t0pbz0000t\",\"type\":\"paragraph\",\"data\":{\"text\":\"Değişim aralığı kullanım koşullarına bağlıdır. Kesin değer için aracınızın kullanım kılavuzundaki bakım çizelgesine bakın; çatlak, yıpranma veya performans kaybı görürseniz beklemeden kontrol ettirin.\"}},{\"id\":\"t0pbz0000u\",\"type\":\"header\",\"data\":{\"text\":\"Orijinal ve muadil parça arasında nasıl karar vermeliyim?\",\"level\":3}},{\"id\":\"t0pbz0000v\",\"type\":\"paragraph\",\"data\":{\"text\":\"Önemli olan uyumdur. Her iki grupta da ürün adındaki model ve yıl bilgisinin aracınızla eşleşmesi gerekir. Bütçe ve kullanım şeklinize göre seçim yapabilirsiniz.\"}},{\"id\":\"t0pbz0000w\",\"type\":\"header\",\"data\":{\"text\":\"Ağırlık setini tek başına değiştirebilir miyim?\",\"level\":3}},{\"id\":\"t0pbz0000x\",\"type\":\"paragraph\",\"data\":{\"text\":\"Teknik olarak mümkündür; ancak kayış ve debriyajın durumu da kontrol edilmeli. Aşınmış bir kayışla yeni ağırlık takmak sonucu iyileştirmeyebilir.\"}},{\"id\":\"t0pbz0000y\",\"type\":\"paragraph\",\"data\":{\"text\":\"Düzenli bakım ve doğru parça seçimi, X-MAX 250'nizin hem performansını hem güvenliğini korur. Aradığınız parçanın aracınıza uyup uymadığından emin değilseniz <a href=\\\"/pages/iletisim\\\">iletişim sayfamızdan</a> bize ulaşabilirsiniz.\"}},{\"id\":\"t0pbz0000z\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>Kapak fotoğrafı: <a href=\\\"https://pixabay.com/users/Herrfilm-236802/\\\">Herrfilm</a> / <a href=\\\"https://pixabay.com/\\\">Pixabay</a></i>\"}}],\"version\":\"2.28.2\"}",
+  "contentHtml": "<html lang=\"en\">\n          <style>.ikas-editor-v1>table,td,th{border:1px solid #e8e8eb;border-collapse:collapse;font-size:14px}.ikas-editor-v1>th,td{padding:6px 12px}.ikas-editor-v1 ul,.ikas-editor-v1 ol{padding-left:20px}.ikas-editor-v1 ul li{list-style-type:disc;margin:8px 0 8px 16px}.ikas-editor-v1 ol li{list-style-type:decimal;margin:8px 0 8px 16px}.ikas-editor-v1 li{margin:8px 0 8px 16px}.ikas-editor-v1 code{display:block;white-space:pre-wrap}.ikas-editor-v1 blockquote{margin-inline-start:0;border-left:3px solid rgb(41 41 41);padding-left:23px}.ikas-editor-v1 figure{margin-inline:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0;width:100%}.ikas-editor-v1 img{max-width:800px;object-fit:cover;object-position:center}.ikas-editor-v1 img.img-bg{padding:1.5em!important;background:#cdd1e0!important}.ikas-editor-v1 img.img-fullwidth{width:100%!important;max-width:100%!important;margin:0 auto!important}.ikas-editor-v1 figcaption{text-align:center;padding-top:6px;word-break:break-word;font-size:12px;background:0 0;z-index:{};}.ikas-editor-v1 .embed-youtube{width:100%;height:400px}.ikas-editor-v1 a{color:#0070f3;text-decoration:underline;cursor:pointer}.ikas-editor-v1 a:hover{opacity:.8}.products-container{display:flex;flex-direction:column;gap:10px}.product-block-container{margin:0 auto;cursor:pointer;flex:1;display:flex;gap:20px;padding:10px 0}.product-image{width:120px;height:120px;object-fit:cover;border-radius:4px;flex-shrink:0}.product-name{font-size:15px;font-weight:500;width:100%;margin:0 0 4px}.product-brand{font-size:13px;font-weight:400;color:#adb5bd;margin:0 0 4px}.product-discount-price,.product-price{width:fit-content;font-size:16px;font-weight:500;color:#000}.product-price{margin:6px 0 0}.product-discount-price{margin:6px 8px 0 0;text-decoration:line-through}.ikas-editor-v1 table b{font-weight:bold}.ikas-editor-v1 table i{font-style:italic}</style>\n          <div class=\"ikas-editor-v1\">\n          <p class=\"editor-paragraph\"> <i>Yayın tarihi: 3 Kasım 2026</i> </p><p class=\"editor-paragraph\"> Yamaha X-MAX 250, şehir içi kullanımda da uzun yolda da tercih edilen bir maxi scooter. Ancak her scooter gibi düzenli kontrol ister: varyatör grubu, frenler, filtreler ve motorun yağlama sistemi zamanla aşınır. Bu rehberde X-MAX 250'nin bakımında hangi parça gruplarına dikkat etmeniz gerektiğini, belirtilere göre nasıl karar verebileceğinizi ve <a href=\"/x-max-250\">X-MAX 250 ürün sayfamızda</a> bulabileceğiniz parça seçeneklerini sade bir dille anlatıyoruz. </p><h2>Bakıma Nereden Başlamalı?</h2><p class=\"editor-paragraph\"> Bakım aralıkları, yağ cinsi ve kapasitesi, sıkma torkları gibi kesin değerler motorun model yılına göre değişebilir. Bu yüzden önce aracınızın kullanım kılavuzundaki bakım tablosunu esas alın. Kılavuza ulaşamıyorsanız yetkili servisten teyit etmeniz en güvenlisidir. Rehberdeki genel kontrol mantığı ise her X-MAX 250 sahibi için işe yarar: </p><ul><li>Motor yağı seviyesini ve rengini düzenli olarak kontrol edin; yağ seçiminde <a href=\"/blog/motosiklet-yagi-secimi-10w-40-jaso-ma-ve-mb-farki\">JASO MA ve MB farkını</a> bilmek işinizi kolaylaştırır.</li><li>Fren balatalarının kalınlığına ve disk yüzeyine bakın.</li><li>Hava filtresi ile debriyaj filtresinin kirlenme durumunu inceleyin.</li><li>Varyatör kapağını açtığınızda kayış, makara ve balataları gözle kontrol edin.</li><li>Lastik basıncını ve diş derinliğini kontrol edin; bu konuda <a href=\"/blog/motosiklet-lastik-secimi-ve-dogru-lastik-basinci\">lastik seçimi ve basınç rehberimiz</a> yardımcı olur.</li></ul><p class=\"editor-paragraph\"> Yedek parça ararken ürün adında geçen model ve model yılı aralığına dikkat edin. Örneğin bazı parçalar 2018-2022 arası araçlar için, bazıları 2010-2017 arası için listelenir. Emin olamadığınız durumda <a href=\"/pages/iletisim\">bizimle iletişime geçebilirsiniz</a>. </p><h2>Varyatör ve Aktarma Grubu</h2><figure class=\"editor-fig-img\"><img class=\"editor-img   \" src=\"__IMG_collage__\" alt=\"X-MAX 250 için kayış, debriyaj balatası, arka balata ve hava filtresi seçenekleri – Soydaş Motosiklet\" width=\"1080\" height=\"360\" style=\"max-width: 100%; aspect-ratio: 1080 / 360;\"><figcaption class=\"editor-fig-cap\">X-MAX 250 için kayış, debriyaj balatası, arka balata ve hava filtresi seçenekleri – Soydaş Motosiklet</figcaption></figure><p class=\"editor-paragraph\"> Scooterlarda gücü arka tekere ileten varyatör sistemi, bakımda en çok ihmal edilen bölümlerden biridir. Kayış, ağırlıklar (rulolar), mars ve debriyaj balatası birlikte çalıştığı için birinde oluşan aşınma diğerlerini de etkileyebilir. Detaylı bilgi için varyatör bakımı yazımızı okuyabilirsiniz. </p><p class=\"editor-paragraph\"> Şu belirtiler varyatör grubuna bakma zamanının geldiğini gösterebilir: </p><ul><li>Kalkışta titreme veya sarsıntı</li><li>Gaza rağmen yetersiz ivmelenme</li><li>Hızlanırken motor devrinin yükselip hızın artmaması</li><li>Varyatör bölgesinden gelen alışılmadık sesler veya koku</li></ul><p class=\"editor-paragraph\"> Parça tarafında, <a href=\"/yamaha-kayis-b5x-e7641-00-orjinal-yamaha-x-max-250\">orijinal Yamaha kayış</a> ve <a href=\"/yamaha-debriyaj-balatasi-orjinal---yamaha-x-max-250-300-2018-2026-b74-e6620-00\">orijinal Yamaha debriyaj balatası</a> seçenekleri mevcut. Ağırlık setlerinde ise farklı gram değerleri ve ölçüler bulunur; örneğin <a href=\"/bando-agirlik-seti-bwr-003-11gr-20x12-yamaha-x-max-250-x-city-250-majesty-250\">11 gr 20x12 ölçülü Bando ağırlık seti</a> gibi seçenekler ürün adında gram ve ölçü bilgisiyle yer alır. Hangi ağırlığın aracınıza uygun olduğunu kullanım kılavuzu veya servis bilgisiyle teyit edin. Ayrıca kayış, balata ve ağırlıkları takımın bütünü olarak değerlendirmek daha sağlıklıdır. </p><h2>Fren Sistemi</h2><p class=\"editor-paragraph\"> X-MAX 250 gibi ağır bir scooterda fren sistemi güvenliğin en kritik parçasıdır. Balata kalınlığı azaldığında metal parça diske temas edebilir, bu da diski aşındırır ve fren performansını düşürür. Fren sesi, çekme sırasında titreme veya kolda sertlik fark ederseniz kontrolü ertelemeyin. Balata değişim zamanını anlamak için fren balatası rehberimize göz atabilirsiniz. </p><p class=\"editor-paragraph\"> Ön tarafta <a href=\"/monero-gold-on-disk-balata-yamaha-x-max-250-honda-cbr-250\">Monero ön disk balata</a>, arka tarafta ise <a href=\"/brenta-organik-arka-disk-balata-ft3150-yamaha-x-max-250\">Brenta organik arka disk balata</a> gibi seçenekler bulunuyor. Balata değişirken kaliper yayı, fren kolu ve disk durumunu da birlikte kontrol etmek mantıklıdır. Daha geniş seçim için <a href=\"/fren-balata\">fren balata kategorimizi</a> inceleyebilirsiniz. </p><figure class=\"editor-fig-img\"><img class=\"editor-img   \" src=\"__IMG_inline__\" alt=\"Düzenli kontrol, scooter parçalarının ömrünü ve sürüş güvenliğini doğrudan etkiler (Fotoğraf: lastudios90 / Pixabay)\" width=\"1080\" height=\"675\" style=\"max-width: 100%; aspect-ratio: 1080 / 675;\"><figcaption class=\"editor-fig-cap\">Düzenli kontrol, scooter parçalarının ömrünü ve sürüş güvenliğini doğrudan etkiler (Fotoğraf: <a href=\"https://pixabay.com/users/lastudios90-8096225/\">lastudios90</a> / <a href=\"https://pixabay.com/\">Pixabay</a>)</figcaption></figure><h2>Filtreler, Yağlama ve Motor Parçaları</h2><p class=\"editor-paragraph\"> Motorun temiz havayla çalışması ve yağlamanın düzgün olması uzun ömür için temel şarttır. Hava filtresi tıkandığında yakıt tüketimi artabilir ve performans düşebilir. X-MAX 250 için <a href=\"/hiflo-hava-filtresi-hfa4301-yamaha-x-max-250-300\">Hiflo hava filtresi</a> gibi seçenekler yanında MSR ve Monero markalı filtre ürünleri de mevcut. Varyatör bölgesini temiz hava ile besleyen debriyaj filtresi için de ayrı ürünler bulunuyor. </p><p class=\"editor-paragraph\"> Motor yağı ve yağ filtresi ürünlerine <a href=\"/yaglar\">yağlar kategorimizden</a> ulaşabilirsiniz. Daha kapsamlı onarımlarda ise eksantrik zinciri, subap takımı, conta takımı, yağ pompası ve silindir gibi parçalar gündeme gelir. Bunlarda mutlaka ürün adındaki model yılı aralığını kontrol edin; çünkü 2010-2017 ve 2018 sonrası araçlar için farklı ürünler listelenir. Tüm bu parçalara <a href=\"/yedek-parca\">yedek parça kategorisinden</a> göz atabilirsiniz. </p><h2>Belirtiye Göre Hızlı Kontrol Tablosu</h2><p class=\"editor-paragraph\"> Aşağıdaki tablo, sık görülen belirtileri ilgili sistemle eşleştirir. Kesin teşhis için aracın fiziksel kontrolü gerekir. </p><table><tbody><tr><td><b>Belirti</b></td><td><b>Kontrol edilecek bölüm</b></td><td><b>Akla gelen parça grubu</b></td></tr><tr><td>Kalkışta titreme, ivmelenme düşüklüğü</td><td>Varyatör</td><td>Kayış, ağırlık seti, debriyaj balatası</td></tr><tr><td>Fren sırasında ses veya zayıf tepki</td><td>Fren sistemi</td><td>Balata, disk, kaliper yayı</td></tr><tr><td>Güç kaybı, yakıt tüketiminde artış</td><td>Hava ve yakıt girişi</td><td>Hava filtresi, gaz kelebek sensörü</td></tr><tr><td>Rölantide düzensizlik</td><td>Ateşleme ve gaz sistemi</td><td>Ateşleme bobini, gaz teli</td></tr><tr><td>Titreşim veya yatak sesi</td><td>Motor askısı ve şasi bağlantıları</td><td>Motor askısı, askı mili</td></tr></tbody></table><h2>Koruma ve Konfor Aksesuarları</h2><p class=\"editor-paragraph\"> Mekanik bakımın yanında günlük kullanımı kolaylaştıran aksesuarlar da var. Navigasyon kullanıyorsanız model uyumu ürün adında belirtilen <a href=\"/modimot-telefon-tutucu-ve-navigaston-aparati-yamaha-x-max-250-2023-2024\">Modimot telefon tutucu</a> işinizi görebilir. Sürüş sırasında eller için ise <a href=\"/trz-el-koruma-delux-yamaha-x-max-250\">TRZ el koruma</a> seçeneği bulunuyor. Kask seçimi için de kask seçimi rehberimizi inceleyebilirsiniz. </p><h2>Sık Sorulan Sorular</h2><h3>Kayış ve debriyaj balatası birlikte mi değiştirilmeli?</h3><p class=\"editor-paragraph\"> Zorunlu değildir; ancak varyatör kapağı zaten açıldığında kayış, ağırlıklar, makara ve balatanın hepsinin durumunu kontrol etmek mantıklıdır. Aşınma seviyesi ve değişim aralığı için aracınızın kullanım kılavuzuna bakın. </p><h3>Parçanın aracıma uyup uymadığını nasıl anlarım?</h3><p class=\"editor-paragraph\"> Ürün adındaki model ve model yılı aralığını kontrol edin, mümkünse eski parçanın üzerindeki kodla karşılaştırın. Yine emin değilseniz <a href=\"/pages/iletisim\">iletişim sayfamızdan</a> bize yazın. </p><h3>Balata değişiminde disk de değişmeli mi?</h3><p class=\"editor-paragraph\"> Her balata değişiminde disk değişimi gerekmez. Disk yüzeyinde derin çizik, dalgalanma veya kılavuzdaki sınırın altında kalınlık varsa değişim gündeme gelir. Bu ölçüm için kullanım kılavuzundaki değerlere başvurun. </p><p class=\"editor-paragraph\"> Yamaha X-MAX 250'nin bakımı, varyatör, fren ve filtre gruplarını düzenli kontrol etmekle başlar. Doğru parçayı seçmek için ürün adındaki model uyumuna bakmanız yeterli. Parça seçiminde yardım isterseniz <a href=\"/pages/iletisim\">iletişim sayfamızdan</a> Soydaş Motosiklet ekibine ulaşabilirsiniz. </p><p class=\"editor-paragraph\"> <i>Kapak fotoğrafı: <a href=\"https://pixabay.com/users/Herrfilm-236802/\">Herrfilm</a> / <a href=\"https://pixabay.com/\">Pixabay</a></i> </p>\n          </div>\n          </html>\n  ",
+  "contentData": "{\"time\":1793682270808,\"blocks\":[{\"id\":\"841u000001\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>Yayın tarihi: 3 Kasım 2026</i>\"}},{\"id\":\"841ud00002\",\"type\":\"paragraph\",\"data\":{\"text\":\"Yamaha X-MAX 250, şehir içi kullanımda da uzun yolda da tercih edilen bir maxi scooter. Ancak her scooter gibi düzenli kontrol ister: varyatör grubu, frenler, filtreler ve motorun yağlama sistemi zamanla aşınır. Bu rehberde X-MAX 250'nin bakımında hangi parça gruplarına dikkat etmeniz gerektiğini, belirtilere göre nasıl karar verebileceğinizi ve <a href=\\\"/x-max-250\\\">X-MAX 250 ürün sayfamızda</a> bulabileceğiniz parça seçeneklerini sade bir dille anlatıyoruz.\"}},{\"id\":\"841ud00003\",\"type\":\"header\",\"data\":{\"text\":\"Bakıma Nereden Başlamalı?\",\"level\":2}},{\"id\":\"841ud00004\",\"type\":\"paragraph\",\"data\":{\"text\":\"Bakım aralıkları, yağ cinsi ve kapasitesi, sıkma torkları gibi kesin değerler motorun model yılına göre değişebilir. Bu yüzden önce aracınızın kullanım kılavuzundaki bakım tablosunu esas alın. Kılavuza ulaşamıyorsanız yetkili servisten teyit etmeniz en güvenlisidir. Rehberdeki genel kontrol mantığı ise her X-MAX 250 sahibi için işe yarar:\"}},{\"id\":\"841ud00005\",\"type\":\"list\",\"data\":{\"style\":\"unordered\",\"items\":[\"Motor yağı seviyesini ve rengini düzenli olarak kontrol edin; yağ seçiminde <a href=\\\"/blog/motosiklet-yagi-secimi-10w-40-jaso-ma-ve-mb-farki\\\">JASO MA ve MB farkını</a> bilmek işinizi kolaylaştırır.\",\"Fren balatalarının kalınlığına ve disk yüzeyine bakın.\",\"Hava filtresi ile debriyaj filtresinin kirlenme durumunu inceleyin.\",\"Varyatör kapağını açtığınızda kayış, makara ve balataları gözle kontrol edin.\",\"Lastik basıncını ve diş derinliğini kontrol edin; bu konuda <a href=\\\"/blog/motosiklet-lastik-secimi-ve-dogru-lastik-basinci\\\">lastik seçimi ve basınç rehberimiz</a> yardımcı olur.\"]}},{\"id\":\"841ud00006\",\"type\":\"paragraph\",\"data\":{\"text\":\"Yedek parça ararken ürün adında geçen model ve model yılı aralığına dikkat edin. Örneğin bazı parçalar 2018-2022 arası araçlar için, bazıları 2010-2017 arası için listelenir. Emin olamadığınız durumda <a href=\\\"/pages/iletisim\\\">bizimle iletişime geçebilirsiniz</a>.\"}},{\"id\":\"841ud00007\",\"type\":\"header\",\"data\":{\"text\":\"Varyatör ve Aktarma Grubu\",\"level\":2}},{\"id\":\"841ud00008\",\"type\":\"image\",\"data\":{\"file\":{\"url\":\"__IMG_collage__\"},\"caption\":\"X-MAX 250 için kayış, debriyaj balatası, arka balata ve hava filtresi seçenekleri – Soydaş Motosiklet\",\"withBorder\":false,\"stretched\":false,\"withBackground\":false}},{\"id\":\"841ud00009\",\"type\":\"paragraph\",\"data\":{\"text\":\"Scooterlarda gücü arka tekere ileten varyatör sistemi, bakımda en çok ihmal edilen bölümlerden biridir. Kayış, ağırlıklar (rulolar), mars ve debriyaj balatası birlikte çalıştığı için birinde oluşan aşınma diğerlerini de etkileyebilir. Detaylı bilgi için varyatör bakımı yazımızı okuyabilirsiniz.\"}},{\"id\":\"841ud0000a\",\"type\":\"paragraph\",\"data\":{\"text\":\"Şu belirtiler varyatör grubuna bakma zamanının geldiğini gösterebilir:\"}},{\"id\":\"841ud0000b\",\"type\":\"list\",\"data\":{\"style\":\"unordered\",\"items\":[\"Kalkışta titreme veya sarsıntı\",\"Gaza rağmen yetersiz ivmelenme\",\"Hızlanırken motor devrinin yükselip hızın artmaması\",\"Varyatör bölgesinden gelen alışılmadık sesler veya koku\"]}},{\"id\":\"841ud0000c\",\"type\":\"paragraph\",\"data\":{\"text\":\"Parça tarafında, <a href=\\\"/yamaha-kayis-b5x-e7641-00-orjinal-yamaha-x-max-250\\\">orijinal Yamaha kayış</a> ve <a href=\\\"/yamaha-debriyaj-balatasi-orjinal---yamaha-x-max-250-300-2018-2026-b74-e6620-00\\\">orijinal Yamaha debriyaj balatası</a> seçenekleri mevcut. Ağırlık setlerinde ise farklı gram değerleri ve ölçüler bulunur; örneğin <a href=\\\"/bando-agirlik-seti-bwr-003-11gr-20x12-yamaha-x-max-250-x-city-250-majesty-250\\\">11 gr 20x12 ölçülü Bando ağırlık seti</a> gibi seçenekler ürün adında gram ve ölçü bilgisiyle yer alır. Hangi ağırlığın aracınıza uygun olduğunu kullanım kılavuzu veya servis bilgisiyle teyit edin. Ayrıca kayış, balata ve ağırlıkları takımın bütünü olarak değerlendirmek daha sağlıklıdır.\"}},{\"id\":\"841ud0000d\",\"type\":\"header\",\"data\":{\"text\":\"Fren Sistemi\",\"level\":2}},{\"id\":\"841ud0000e\",\"type\":\"paragraph\",\"data\":{\"text\":\"X-MAX 250 gibi ağır bir scooterda fren sistemi güvenliğin en kritik parçasıdır. Balata kalınlığı azaldığında metal parça diske temas edebilir, bu da diski aşındırır ve fren performansını düşürür. Fren sesi, çekme sırasında titreme veya kolda sertlik fark ederseniz kontrolü ertelemeyin. Balata değişim zamanını anlamak için fren balatası rehberimize göz atabilirsiniz.\"}},{\"id\":\"841ud0000f\",\"type\":\"paragraph\",\"data\":{\"text\":\"Ön tarafta <a href=\\\"/monero-gold-on-disk-balata-yamaha-x-max-250-honda-cbr-250\\\">Monero ön disk balata</a>, arka tarafta ise <a href=\\\"/brenta-organik-arka-disk-balata-ft3150-yamaha-x-max-250\\\">Brenta organik arka disk balata</a> gibi seçenekler bulunuyor. Balata değişirken kaliper yayı, fren kolu ve disk durumunu da birlikte kontrol etmek mantıklıdır. Daha geniş seçim için <a href=\\\"/fren-balata\\\">fren balata kategorimizi</a> inceleyebilirsiniz.\"}},{\"id\":\"841ue0000g\",\"type\":\"image\",\"data\":{\"file\":{\"url\":\"__IMG_inline__\"},\"caption\":\"Düzenli kontrol, scooter parçalarının ömrünü ve sürüş güvenliğini doğrudan etkiler (Fotoğraf: <a href=\\\"https://pixabay.com/users/lastudios90-8096225/\\\">lastudios90</a> / <a href=\\\"https://pixabay.com/\\\">Pixabay</a>)\",\"withBorder\":false,\"stretched\":false,\"withBackground\":false}},{\"id\":\"841ue0000h\",\"type\":\"header\",\"data\":{\"text\":\"Filtreler, Yağlama ve Motor Parçaları\",\"level\":2}},{\"id\":\"841ue0000i\",\"type\":\"paragraph\",\"data\":{\"text\":\"Motorun temiz havayla çalışması ve yağlamanın düzgün olması uzun ömür için temel şarttır. Hava filtresi tıkandığında yakıt tüketimi artabilir ve performans düşebilir. X-MAX 250 için <a href=\\\"/hiflo-hava-filtresi-hfa4301-yamaha-x-max-250-300\\\">Hiflo hava filtresi</a> gibi seçenekler yanında MSR ve Monero markalı filtre ürünleri de mevcut. Varyatör bölgesini temiz hava ile besleyen debriyaj filtresi için de ayrı ürünler bulunuyor.\"}},{\"id\":\"841ue0000j\",\"type\":\"paragraph\",\"data\":{\"text\":\"Motor yağı ve yağ filtresi ürünlerine <a href=\\\"/yaglar\\\">yağlar kategorimizden</a> ulaşabilirsiniz. Daha kapsamlı onarımlarda ise eksantrik zinciri, subap takımı, conta takımı, yağ pompası ve silindir gibi parçalar gündeme gelir. Bunlarda mutlaka ürün adındaki model yılı aralığını kontrol edin; çünkü 2010-2017 ve 2018 sonrası araçlar için farklı ürünler listelenir. Tüm bu parçalara <a href=\\\"/yedek-parca\\\">yedek parça kategorisinden</a> göz atabilirsiniz.\"}},{\"id\":\"841ue0000k\",\"type\":\"header\",\"data\":{\"text\":\"Belirtiye Göre Hızlı Kontrol Tablosu\",\"level\":2}},{\"id\":\"841ue0000l\",\"type\":\"paragraph\",\"data\":{\"text\":\"Aşağıdaki tablo, sık görülen belirtileri ilgili sistemle eşleştirir. Kesin teşhis için aracın fiziksel kontrolü gerekir.\"}},{\"id\":\"841ue0000m\",\"type\":\"table\",\"data\":{\"withHeadings\":true,\"content\":[[\"<b>Belirti</b>\",\"<b>Kontrol edilecek bölüm</b>\",\"<b>Akla gelen parça grubu</b>\"],[\"Kalkışta titreme, ivmelenme düşüklüğü\",\"Varyatör\",\"Kayış, ağırlık seti, debriyaj balatası\"],[\"Fren sırasında ses veya zayıf tepki\",\"Fren sistemi\",\"Balata, disk, kaliper yayı\"],[\"Güç kaybı, yakıt tüketiminde artış\",\"Hava ve yakıt girişi\",\"Hava filtresi, gaz kelebek sensörü\"],[\"Rölantide düzensizlik\",\"Ateşleme ve gaz sistemi\",\"Ateşleme bobini, gaz teli\"],[\"Titreşim veya yatak sesi\",\"Motor askısı ve şasi bağlantıları\",\"Motor askısı, askı mili\"]]}},{\"id\":\"841ue0000n\",\"type\":\"header\",\"data\":{\"text\":\"Koruma ve Konfor Aksesuarları\",\"level\":2}},{\"id\":\"841ue0000o\",\"type\":\"paragraph\",\"data\":{\"text\":\"Mekanik bakımın yanında günlük kullanımı kolaylaştıran aksesuarlar da var. Navigasyon kullanıyorsanız model uyumu ürün adında belirtilen <a href=\\\"/modimot-telefon-tutucu-ve-navigaston-aparati-yamaha-x-max-250-2023-2024\\\">Modimot telefon tutucu</a> işinizi görebilir. Sürüş sırasında eller için ise <a href=\\\"/trz-el-koruma-delux-yamaha-x-max-250\\\">TRZ el koruma</a> seçeneği bulunuyor. Kask seçimi için de kask seçimi rehberimizi inceleyebilirsiniz.\"}},{\"id\":\"841ue0000p\",\"type\":\"header\",\"data\":{\"text\":\"Sık Sorulan Sorular\",\"level\":2}},{\"id\":\"841ue0000q\",\"type\":\"header\",\"data\":{\"text\":\"Kayış ve debriyaj balatası birlikte mi değiştirilmeli?\",\"level\":3}},{\"id\":\"841ue0000r\",\"type\":\"paragraph\",\"data\":{\"text\":\"Zorunlu değildir; ancak varyatör kapağı zaten açıldığında kayış, ağırlıklar, makara ve balatanın hepsinin durumunu kontrol etmek mantıklıdır. Aşınma seviyesi ve değişim aralığı için aracınızın kullanım kılavuzuna bakın.\"}},{\"id\":\"841ue0000s\",\"type\":\"header\",\"data\":{\"text\":\"Parçanın aracıma uyup uymadığını nasıl anlarım?\",\"level\":3}},{\"id\":\"841ue0000t\",\"type\":\"paragraph\",\"data\":{\"text\":\"Ürün adındaki model ve model yılı aralığını kontrol edin, mümkünse eski parçanın üzerindeki kodla karşılaştırın. Yine emin değilseniz <a href=\\\"/pages/iletisim\\\">iletişim sayfamızdan</a> bize yazın.\"}},{\"id\":\"841ue0000u\",\"type\":\"header\",\"data\":{\"text\":\"Balata değişiminde disk de değişmeli mi?\",\"level\":3}},{\"id\":\"841ue0000v\",\"type\":\"paragraph\",\"data\":{\"text\":\"Her balata değişiminde disk değişimi gerekmez. Disk yüzeyinde derin çizik, dalgalanma veya kılavuzdaki sınırın altında kalınlık varsa değişim gündeme gelir. Bu ölçüm için kullanım kılavuzundaki değerlere başvurun.\"}},{\"id\":\"841ue0000w\",\"type\":\"paragraph\",\"data\":{\"text\":\"Yamaha X-MAX 250'nin bakımı, varyatör, fren ve filtre gruplarını düzenli kontrol etmekle başlar. Doğru parçayı seçmek için ürün adındaki model uyumuna bakmanız yeterli. Parça seçiminde yardım isterseniz <a href=\\\"/pages/iletisim\\\">iletişim sayfamızdan</a> Soydaş Motosiklet ekibine ulaşabilirsiniz.\"}},{\"id\":\"841ue0000x\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>Kapak fotoğrafı: <a href=\\\"https://pixabay.com/users/Herrfilm-236802/\\\">Herrfilm</a> / <a href=\\\"https://pixabay.com/\\\">Pixabay</a></i>\"}}],\"version\":\"2.28.2\"}",
   "removedLinks": []
 }
