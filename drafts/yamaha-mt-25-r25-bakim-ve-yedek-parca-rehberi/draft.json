@@ -1,0 +1,324 @@
+{
+  "topic": "Yamaha MT-25 ve R25 Bakım ve Yedek Parça Rehberi",
+  "approved": true,
+  "qualityIssues": [],
+  "words": 1009,
+  "createdAt": "2026-11-09T05:18:47.884Z",
+  "model": "claude-sonnet-5-5",
+  "title": "Yamaha MT-25 ve R25 Bakım ve Yedek Parça Rehberi",
+  "slug": "yamaha-mt-25-r25-bakim-ve-yedek-parca-rehberi",
+  "shortDescription": "Yamaha MT-25 ve R25 için yağ, filtre, fren, zincir dişli ve motor parçalarında bakım ipuçları ile model yılına göre doğru parça seçimi.",
+  "seoTitle": "Yamaha MT-25 ve R25 Bakım Rehberi | Soydaş Motosiklet",
+  "seoDescription": "Yamaha MT-25 ve R25 için yağ, filtre, fren balatası, zincir dişli ve motor parçalarında bakım ipuçları ile model yılına göre doğru parça seçimi rehberi.",
+  "images": {
+    "cover": "cover.jpg",
+    "inline": "inline.jpg",
+    "collage": "collage.jpg"
+  },
+  "coverPhoto": {
+    "provider": "pixabay",
+    "id": "384921",
+    "user": "WebDonut",
+    "link": "https://pixabay.com/photos/biker-motorcycle-man-stunt-person-384921/"
+  },
+  "blocks": [
+    {
+      "id": "t9j5o00001",
+      "type": "paragraph",
+      "data": {
+        "text": "<i>Yayın tarihi: 9 Kasım 2026</i>"
+      }
+    },
+    {
+      "id": "t9j6100002",
+      "type": "paragraph",
+      "data": {
+        "text": "Yamaha MT-25 ve YZF-R25, günlük şehir kullanımından hafta sonu turlarına kadar geniş bir alanda tercih edilen 250 cc sınıfı motosikletler. MT-25 çıplak (naked) gövdesiyle, R25 ise tam kaportalı yapısıyla öne çıksa da motor ve şasi tarafında ortak noktaları çok. Bu nedenle bakım mantığı ve birçok yedek parça iki model arasında benzerlik gösteriyor. Bu rehberde yağ ve filtre bakımından fren sistemine, zincir dişli setinden motor alt parçalarına kadar dikkat etmeniz gereken noktaları ve parça seçerken bakmanız gereken ayrıntıları topladık."
+      }
+    },
+    {
+      "id": "t9j6200003",
+      "type": "header",
+      "data": {
+        "text": "Bakıma Başlamadan Önce: Model Yılı ve Kılavuz",
+        "level": 2
+      }
+    },
+    {
+      "id": "t9j6200004",
+      "type": "paragraph",
+      "data": {
+        "text": "MT-25 ve R25 için ürün adlarında çoğu zaman her iki model birlikte yazılır. Yine de bazı parçalar model yılına göre ayrışır. Örneğin ayna, far camı ve gidon gibi parçalarda <b>2014-2018</b> ile <b>2019-2024</b> arası R25 versiyonları ayrı ürünler olarak listelenir; kontak seti ve oksijen sensörü gibi elektrik parçalarında da 2014-2018 aralığı belirtilir. Sipariş vermeden önce ürün adındaki model ve yıl bilgisini aracınızla karşılaştırın."
+      }
+    },
+    {
+      "id": "t9j6200005",
+      "type": "paragraph",
+      "data": {
+        "text": "Kesin bakım aralıkları, yağ cinsi ve miktarı gibi değerler için ana kaynağınız Yamaha kullanım kılavuzu olmalı. Yamaha MT-25 kullanım kılavuzuna göre motor yağı seviyesi her sürüşten önce kontrol edilmeli; yağ ve yağ filtresi kartuşu ise periyodik bakım çizelgesindeki aralıklarda değiştirilmeli. Aynı kılavuz, lastik hava basıncının soğuk lastikte ölçülüp ayarlanmasını ve gaz kolu boşluğunun 3,0–5,0 mm aralığında olmasını belirtiyor. Aracınızın model yılına göre farklılık olabileceği için kesin değerleri kendi kullanım kılavuzunuzdan teyit edin."
+      }
+    },
+    {
+      "id": "t9j6200006",
+      "type": "list",
+      "data": {
+        "style": "unordered",
+        "items": [
+          "Her sürüşten önce yağ seviyesini kontrol penceresinden bakın.",
+          "Lastik basıncını lastikler soğukken ölçün.",
+          "Gaz kolu boşluğunu ve el/ayak kumandalarının serbest hareketini düzenli kontrol edin.",
+          "Periyodik bakım çizelgesindeki supap ayarı gibi işlemleri yetkili servise yaptırın."
+        ]
+      }
+    },
+    {
+      "id": "t9j6200007",
+      "type": "header",
+      "data": {
+        "text": "Yağ, Yağ Filtresi ve Hava Filtresi",
+        "level": 2
+      }
+    },
+    {
+      "id": "t9j6200008",
+      "type": "image",
+      "data": {
+        "file": {
+          "url": "__IMG_collage__"
+        },
+        "caption": "MT-25 ve R25 için balata, zincir dişli seti ve filtre seçenekleri – Soydaş Motosiklet",
+        "withBorder": false,
+        "stretched": false,
+        "withBackground": false
+      }
+    },
+    {
+      "id": "t9j6200009",
+      "type": "paragraph",
+      "data": {
+        "text": "Motor ömrünü en çok etkileyen bakım kalemi yağ değişimidir. Yağ değişiminde filtreyi de yenilemek, eski filtrede biriken partiküllerin taze yağa karışmasını önler. Yağ seçiminde viskozite ve JASO standardı konusunda kılavuzdaki öneriye uyun; farkları anlamak için <a href=\"/blog/motosiklet-yagi-secimi-10w-40-jaso-ma-ve-mb-farki\">motosiklet yağı seçimi rehberimize</a> göz atabilirsiniz. Motor yağlarını <a href=\"/yaglar\">yağlar kategorisinde</a> inceleyebilirsiniz."
+      }
+    },
+    {
+      "id": "t9j620000a",
+      "type": "paragraph",
+      "data": {
+        "text": "Filtre tarafında iki yol var: <a href=\"/yamaha-yag-filtresi-orjinal-yamaha-r25-mt25-mt-07\">orijinal Yamaha yağ filtresi</a> (R25, MT-25 ve MT-07 için) veya ürün adında YZF-R25 uyumu belirtilen Hiflo HF141 ve Khan KF141 gibi alternatifler. Hava filtresinde ise <a href=\"/hiflo-hava-filtresi-hfa4507-yamaha-mt25-2015-2022-yzf-r25-2015-2023\">Hiflo HFA4507 hava filtresi</a>, MT-25 için 2015-2022, YZF-R25 için 2015-2023 yıllarını kapsıyor. Tozlu yollarda ve şehir trafiğinde hava filtresini çizelgedeki zamandan önce de gözle kontrol etmek faydalı olur. Tüm seçenekler için <a href=\"/filtre-grubu\">filtre grubu</a> sayfasına bakabilirsiniz."
+      }
+    },
+    {
+      "id": "t9j620000b",
+      "type": "header",
+      "data": {
+        "text": "Fren Sistemi: Balata ve Diskler",
+        "level": 2
+      }
+    },
+    {
+      "id": "t9j620000c",
+      "type": "paragraph",
+      "data": {
+        "text": "Hafif ve hızlı bir motosiklette fren performansı doğrudan güvenliğinizi etkiler. Balata kalınlığını düzenli kontrol edin; ince kalan balata hem fren hissini düşürür hem de diske zarar verebilir. Değişim zamanını daha ayrıntılı anlamak için <a href=\"/blog/motosiklet-fren-balatasi-ne-zaman-degisir\">fren balatası ne zaman değişir</a> yazımızı okuyabilirsiniz."
+      }
+    },
+    {
+      "id": "t9j620000d",
+      "type": "paragraph",
+      "data": {
+        "text": "MT-25 ve R25 için ön balatada <a href=\"/brenta-organik-on-disk-balata-ft3175-yamaha-mt25-r25\">Brenta organik ön disk balata (FT3175)</a> ve Boss yarı sinterli ön balata (BS663) seçenekleri var. Arka tarafta ise <a href=\"/boss-disk-balata-arka-bs662-yamaha-mt25-r25\">Boss arka disk balata (BS662)</a>, Brenta FT3195 ve Isong arka balata bulunuyor. Genel olarak organik balatalar daha yumuşak bir fren hissi verirken yarı sinterli balatalar sürüş tarzına göre farklı bir karakter sunabilir. Balata aşınmışsa diskin yüzeyini de kontrol edin; diskler için ön tarafta Gear5 OEM ön fren diski, arkada orijinal Yamaha arka fren diski seçenekleri mevcut. Tüm ürünler <a href=\"/fren-balata\">fren balata</a> kategorisinde yer alıyor."
+      }
+    },
+    {
+      "id": "t9j620000e",
+      "type": "header",
+      "data": {
+        "text": "Zincir ve Dişli Seti",
+        "level": 2
+      }
+    },
+    {
+      "id": "t9j620000f",
+      "type": "image",
+      "data": {
+        "file": {
+          "url": "__IMG_inline__"
+        },
+        "caption": "Zincir ve dişli aşınması düzenli kontrol gerektirir (Fotoğraf: <a href=\"https://pixabay.com/users/SplitShire-364019/\">SplitShire</a> / <a href=\"https://pixabay.com/\">Pixabay</a>)",
+        "withBorder": false,
+        "stretched": false,
+        "withBackground": false
+      }
+    },
+    {
+      "id": "t9j620000g",
+      "type": "paragraph",
+      "data": {
+        "text": "Zincir, ön (pinyon) ve arka dişli bir bütün olarak aşınır. Yeni zinciri eski dişlilerle kullanmak zincirin ömrünü kısaltır; bu yüzden set olarak değiştirmek genellikle daha sağlıklıdır. Gerginlik ayarı ve yağlama için kılavuzdaki talimatları izleyin. Ayrıntılar için zincir dişli seti seçimi ve değişimi yazısına bakabilirsiniz."
+      }
+    },
+    {
+      "id": "t9j620000h",
+      "type": "paragraph",
+      "data": {
+        "text": "Ürün adında YZF-R25 2015-2022 uyumu yazan <a href=\"/did-celik-x-ring-zincir-disli-set-jt-disli-yamaha-yzf-r25-2015-2022\">DID çelik X-ring zincir dişli seti (JT dişli)</a> ve Sunstar dişli ile gelen versiyonu bulunuyor. Orijinal tercih edenler için Yamaha zincir dişli seti de mevcut. Arka dişliyi tek başına yenilemek isterseniz Gear5 OEM arka dişli 41T, 43T ve 50T seçenekleri ürün adlarında belirtilmiş; diş sayısı hız ve çekiş karakterini değiştirdiği için bu tercihi bilinçli yapın. Seçenekleri <a href=\"/zincir-ve-zincir-disli-setler\">zincir ve zincir dişli setler</a> sayfasında görebilirsiniz."
+      }
+    },
+    {
+      "id": "t9j620000i",
+      "type": "header",
+      "data": {
+        "text": "Motor Alt Parçaları ve Contalar",
+        "level": 2
+      }
+    },
+    {
+      "id": "t9j620000j",
+      "type": "paragraph",
+      "data": {
+        "text": "Motor açılan bir bakım veya onarımda kullanılan parçalar da listede yer alıyor: orijinal Yamaha silindir komple, silindir alt ve üst contası, karter contası, stator kapak contası, krank, eksantrik zinciri, yağ pompası ve yağ pompa dişlisi gibi ürünlerin adlarında R25 ve MT25 uyumu belirtiliyor. Debriyaj tarafında orijinal Yamaha debriyaj balatası ve kaplin lastiği, elektrik tarafında stator ve kontak seti (2014-2018) bulunuyor. Bu tür işlemler özel alet ve bilgi gerektirdiğinden yetkili servis veya deneyimli bir atölyede yaptırılmalı. Tüm seçenekler <a href=\"/yedek-parca\">yedek parça</a> kategorisinde toplanıyor."
+      }
+    },
+    {
+      "id": "t9j620000k",
+      "type": "header",
+      "data": {
+        "text": "Koruma ve Görünüm Parçaları",
+        "level": 2
+      }
+    },
+    {
+      "id": "t9j620000l",
+      "type": "paragraph",
+      "data": {
+        "text": "Depo ve mesnet çevresindeki çizikler, ilk bakışta motosikletin görünümünü bozar. Gogo tank pad ve mesnet pad setleri, R25 2019-2024 ve R25 2014-2018 için ürün adlarında belirtilen renk seçenekleriyle geliyor. Ayrıca Gear5 depo tutamacı, ayna takımı ve far camı gibi ürünler de modele özel olarak listeleniyor. Model sayfalarını <a href=\"/mt-25\">MT-25</a> ve <a href=\"/r-25\">R-25</a> kategorilerinden de gezebilirsiniz."
+      }
+    },
+    {
+      "id": "t9j620000m",
+      "type": "header",
+      "data": {
+        "text": "Bakım Takip Tablosu",
+        "level": 2
+      }
+    },
+    {
+      "id": "t9j620000n",
+      "type": "table",
+      "data": {
+        "withHeadings": true,
+        "content": [
+          [
+            "<b>Bakım kalemi</b>",
+            "<b>Ne zaman</b>",
+            "<b>İlgili ürün grubu</b>"
+          ],
+          [
+            "Motor yağı seviyesi",
+            "Her sürüşten önce (kullanım kılavuzu)",
+            "Motor yağı"
+          ],
+          [
+            "Yağ ve yağ filtresi değişimi",
+            "Kılavuzdaki periyodik bakım çizelgesine göre",
+            "Yağ filtresi"
+          ],
+          [
+            "Hava filtresi",
+            "Çizelgeye göre; kirliliği gözle kontrol edin",
+            "Hava filtresi"
+          ],
+          [
+            "Lastik basıncı",
+            "Soğuk lastikte, düzenli aralıklarla",
+            "Lastik"
+          ],
+          [
+            "Gaz kolu boşluğu",
+            "Düzenli; kılavuz değeri 3,0–5,0 mm",
+            "Gaz teli"
+          ],
+          [
+            "Fren balatası ve diski",
+            "Aşınma ve yüzey durumuna göre",
+            "Balata, disk"
+          ],
+          [
+            "Zincir ve dişliler",
+            "Gerginlik, yağlama ve aşınma kontrolüyle",
+            "Zincir dişli seti"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "t9j620000o",
+      "type": "header",
+      "data": {
+        "text": "Sık Sorulan Sorular",
+        "level": 2
+      }
+    },
+    {
+      "id": "t9j620000p",
+      "type": "header",
+      "data": {
+        "text": "MT-25 ve R25 parçaları birbirine uyar mı?",
+        "level": 3
+      }
+    },
+    {
+      "id": "t9j620000q",
+      "type": "paragraph",
+      "data": {
+        "text": "Motor, fren ve zincir dişli grubunda birçok ürünün adında iki model birlikte yazılıyor. Ancak ayna, far camı, gidon ve elektrik parçalarında model yılı farkı olabiliyor. Uyumu yalnızca ürün adındaki model ve yıl bilgisine göre değerlendirin; emin olamazsanız bize yazın."
+      }
+    },
+    {
+      "id": "t9j620000r",
+      "type": "header",
+      "data": {
+        "text": "Yağ ve yağ filtresi ne zaman değişmeli?",
+        "level": 3
+      }
+    },
+    {
+      "id": "t9j620000s",
+      "type": "paragraph",
+      "data": {
+        "text": "Yamaha kullanım kılavuzu, yağ ve filtre kartuşunun periyodik bakım çizelgesindeki aralıklarda değiştirilmesini söylüyor. Kesin kilometre ve süre için aracınızın kendi kullanım kılavuzuna bakın. Ağır kullanımda veya kısa mesafeli sürüşlerde çizelgeyi sıkı takip etmek iyi olur."
+      }
+    },
+    {
+      "id": "t9j620000t",
+      "type": "header",
+      "data": {
+        "text": "Zinciri değiştirirken dişlileri de değiştirmek şart mı?",
+        "level": 3
+      }
+    },
+    {
+      "id": "t9j620000u",
+      "type": "paragraph",
+      "data": {
+        "text": "Zorunlu olmasa da aşınmış dişliler yeni zincirin ömrünü kısaltır. Dişlilerin uçları sivrilmiş veya kanca şeklini almışsa set olarak değiştirmek daha doğru olur."
+      }
+    },
+    {
+      "id": "t9j620000v",
+      "type": "paragraph",
+      "data": {
+        "text": "Doğru bakım, MT-25 ve R25'nin performansını ve güvenliğini uzun süre korumanın en basit yoludur. Ürün uyumu veya parça seçimi konusunda sorunuz varsa <a href=\"/pages/iletisim\">iletişim sayfamızdan</a> bize ulaşabilirsiniz."
+      }
+    },
+    {
+      "id": "t9j620000w",
+      "type": "paragraph",
+      "data": {
+        "text": "<i>Kapak fotoğrafı: <a href=\"https://pixabay.com/users/WebDonut-322038/\">WebDonut</a> / <a href=\"https://pixabay.com/\">Pixabay</a></i>"
+      }
+    }
+  ],
+  "contentHtml": "<html lang=\"en\">\n          <style>.ikas-editor-v1>table,td,th{border:1px solid #e8e8eb;border-collapse:collapse;font-size:14px}.ikas-editor-v1>th,td{padding:6px 12px}.ikas-editor-v1 ul,.ikas-editor-v1 ol{padding-left:20px}.ikas-editor-v1 ul li{list-style-type:disc;margin:8px 0 8px 16px}.ikas-editor-v1 ol li{list-style-type:decimal;margin:8px 0 8px 16px}.ikas-editor-v1 li{margin:8px 0 8px 16px}.ikas-editor-v1 code{display:block;white-space:pre-wrap}.ikas-editor-v1 blockquote{margin-inline-start:0;border-left:3px solid rgb(41 41 41);padding-left:23px}.ikas-editor-v1 figure{margin-inline:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0;width:100%}.ikas-editor-v1 img{max-width:800px;object-fit:cover;object-position:center}.ikas-editor-v1 img.img-bg{padding:1.5em!important;background:#cdd1e0!important}.ikas-editor-v1 img.img-fullwidth{width:100%!important;max-width:100%!important;margin:0 auto!important}.ikas-editor-v1 figcaption{text-align:center;padding-top:6px;word-break:break-word;font-size:12px;background:0 0;z-index:{};}.ikas-editor-v1 .embed-youtube{width:100%;height:400px}.ikas-editor-v1 a{color:#0070f3;text-decoration:underline;cursor:pointer}.ikas-editor-v1 a:hover{opacity:.8}.products-container{display:flex;flex-direction:column;gap:10px}.product-block-container{margin:0 auto;cursor:pointer;flex:1;display:flex;gap:20px;padding:10px 0}.product-image{width:120px;height:120px;object-fit:cover;border-radius:4px;flex-shrink:0}.product-name{font-size:15px;font-weight:500;width:100%;margin:0 0 4px}.product-brand{font-size:13px;font-weight:400;color:#adb5bd;margin:0 0 4px}.product-discount-price,.product-price{width:fit-content;font-size:16px;font-weight:500;color:#000}.product-price{margin:6px 0 0}.product-discount-price{margin:6px 8px 0 0;text-decoration:line-through}.ikas-editor-v1 table b{font-weight:bold}.ikas-editor-v1 table i{font-style:italic}</style>\n          <div class=\"ikas-editor-v1\">\n          <p class=\"editor-paragraph\"> <i>Yayın tarihi: 9 Kasım 2026</i> </p><p class=\"editor-paragraph\"> Yamaha MT-25 ve YZF-R25, günlük şehir kullanımından hafta sonu turlarına kadar geniş bir alanda tercih edilen 250 cc sınıfı motosikletler. MT-25 çıplak (naked) gövdesiyle, R25 ise tam kaportalı yapısıyla öne çıksa da motor ve şasi tarafında ortak noktaları çok. Bu nedenle bakım mantığı ve birçok yedek parça iki model arasında benzerlik gösteriyor. Bu rehberde yağ ve filtre bakımından fren sistemine, zincir dişli setinden motor alt parçalarına kadar dikkat etmeniz gereken noktaları ve parça seçerken bakmanız gereken ayrıntıları topladık. </p><h2>Bakıma Başlamadan Önce: Model Yılı ve Kılavuz</h2><p class=\"editor-paragraph\"> MT-25 ve R25 için ürün adlarında çoğu zaman her iki model birlikte yazılır. Yine de bazı parçalar model yılına göre ayrışır. Örneğin ayna, far camı ve gidon gibi parçalarda <b>2014-2018</b> ile <b>2019-2024</b> arası R25 versiyonları ayrı ürünler olarak listelenir; kontak seti ve oksijen sensörü gibi elektrik parçalarında da 2014-2018 aralığı belirtilir. Sipariş vermeden önce ürün adındaki model ve yıl bilgisini aracınızla karşılaştırın. </p><p class=\"editor-paragraph\"> Kesin bakım aralıkları, yağ cinsi ve miktarı gibi değerler için ana kaynağınız Yamaha kullanım kılavuzu olmalı. Yamaha MT-25 kullanım kılavuzuna göre motor yağı seviyesi her sürüşten önce kontrol edilmeli; yağ ve yağ filtresi kartuşu ise periyodik bakım çizelgesindeki aralıklarda değiştirilmeli. Aynı kılavuz, lastik hava basıncının soğuk lastikte ölçülüp ayarlanmasını ve gaz kolu boşluğunun 3,0–5,0 mm aralığında olmasını belirtiyor. Aracınızın model yılına göre farklılık olabileceği için kesin değerleri kendi kullanım kılavuzunuzdan teyit edin. </p><ul><li>Her sürüşten önce yağ seviyesini kontrol penceresinden bakın.</li><li>Lastik basıncını lastikler soğukken ölçün.</li><li>Gaz kolu boşluğunu ve el/ayak kumandalarının serbest hareketini düzenli kontrol edin.</li><li>Periyodik bakım çizelgesindeki supap ayarı gibi işlemleri yetkili servise yaptırın.</li></ul><h2>Yağ, Yağ Filtresi ve Hava Filtresi</h2><figure class=\"editor-fig-img\"><img class=\"editor-img   \" src=\"__IMG_collage__\" alt=\"MT-25 ve R25 için balata, zincir dişli seti ve filtre seçenekleri – Soydaş Motosiklet\" width=\"1080\" height=\"360\" style=\"max-width: 100%; aspect-ratio: 1080 / 360;\"><figcaption class=\"editor-fig-cap\">MT-25 ve R25 için balata, zincir dişli seti ve filtre seçenekleri – Soydaş Motosiklet</figcaption></figure><p class=\"editor-paragraph\"> Motor ömrünü en çok etkileyen bakım kalemi yağ değişimidir. Yağ değişiminde filtreyi de yenilemek, eski filtrede biriken partiküllerin taze yağa karışmasını önler. Yağ seçiminde viskozite ve JASO standardı konusunda kılavuzdaki öneriye uyun; farkları anlamak için <a href=\"/blog/motosiklet-yagi-secimi-10w-40-jaso-ma-ve-mb-farki\">motosiklet yağı seçimi rehberimize</a> göz atabilirsiniz. Motor yağlarını <a href=\"/yaglar\">yağlar kategorisinde</a> inceleyebilirsiniz. </p><p class=\"editor-paragraph\"> Filtre tarafında iki yol var: <a href=\"/yamaha-yag-filtresi-orjinal-yamaha-r25-mt25-mt-07\">orijinal Yamaha yağ filtresi</a> (R25, MT-25 ve MT-07 için) veya ürün adında YZF-R25 uyumu belirtilen Hiflo HF141 ve Khan KF141 gibi alternatifler. Hava filtresinde ise <a href=\"/hiflo-hava-filtresi-hfa4507-yamaha-mt25-2015-2022-yzf-r25-2015-2023\">Hiflo HFA4507 hava filtresi</a>, MT-25 için 2015-2022, YZF-R25 için 2015-2023 yıllarını kapsıyor. Tozlu yollarda ve şehir trafiğinde hava filtresini çizelgedeki zamandan önce de gözle kontrol etmek faydalı olur. Tüm seçenekler için <a href=\"/filtre-grubu\">filtre grubu</a> sayfasına bakabilirsiniz. </p><h2>Fren Sistemi: Balata ve Diskler</h2><p class=\"editor-paragraph\"> Hafif ve hızlı bir motosiklette fren performansı doğrudan güvenliğinizi etkiler. Balata kalınlığını düzenli kontrol edin; ince kalan balata hem fren hissini düşürür hem de diske zarar verebilir. Değişim zamanını daha ayrıntılı anlamak için <a href=\"/blog/motosiklet-fren-balatasi-ne-zaman-degisir\">fren balatası ne zaman değişir</a> yazımızı okuyabilirsiniz. </p><p class=\"editor-paragraph\"> MT-25 ve R25 için ön balatada <a href=\"/brenta-organik-on-disk-balata-ft3175-yamaha-mt25-r25\">Brenta organik ön disk balata (FT3175)</a> ve Boss yarı sinterli ön balata (BS663) seçenekleri var. Arka tarafta ise <a href=\"/boss-disk-balata-arka-bs662-yamaha-mt25-r25\">Boss arka disk balata (BS662)</a>, Brenta FT3195 ve Isong arka balata bulunuyor. Genel olarak organik balatalar daha yumuşak bir fren hissi verirken yarı sinterli balatalar sürüş tarzına göre farklı bir karakter sunabilir. Balata aşınmışsa diskin yüzeyini de kontrol edin; diskler için ön tarafta Gear5 OEM ön fren diski, arkada orijinal Yamaha arka fren diski seçenekleri mevcut. Tüm ürünler <a href=\"/fren-balata\">fren balata</a> kategorisinde yer alıyor. </p><h2>Zincir ve Dişli Seti</h2><figure class=\"editor-fig-img\"><img class=\"editor-img   \" src=\"__IMG_inline__\" alt=\"Zincir ve dişli aşınması düzenli kontrol gerektirir (Fotoğraf: SplitShire / Pixabay)\" width=\"1080\" height=\"675\" style=\"max-width: 100%; aspect-ratio: 1080 / 675;\"><figcaption class=\"editor-fig-cap\">Zincir ve dişli aşınması düzenli kontrol gerektirir (Fotoğraf: <a href=\"https://pixabay.com/users/SplitShire-364019/\">SplitShire</a> / <a href=\"https://pixabay.com/\">Pixabay</a>)</figcaption></figure><p class=\"editor-paragraph\"> Zincir, ön (pinyon) ve arka dişli bir bütün olarak aşınır. Yeni zinciri eski dişlilerle kullanmak zincirin ömrünü kısaltır; bu yüzden set olarak değiştirmek genellikle daha sağlıklıdır. Gerginlik ayarı ve yağlama için kılavuzdaki talimatları izleyin. Ayrıntılar için zincir dişli seti seçimi ve değişimi yazısına bakabilirsiniz. </p><p class=\"editor-paragraph\"> Ürün adında YZF-R25 2015-2022 uyumu yazan <a href=\"/did-celik-x-ring-zincir-disli-set-jt-disli-yamaha-yzf-r25-2015-2022\">DID çelik X-ring zincir dişli seti (JT dişli)</a> ve Sunstar dişli ile gelen versiyonu bulunuyor. Orijinal tercih edenler için Yamaha zincir dişli seti de mevcut. Arka dişliyi tek başına yenilemek isterseniz Gear5 OEM arka dişli 41T, 43T ve 50T seçenekleri ürün adlarında belirtilmiş; diş sayısı hız ve çekiş karakterini değiştirdiği için bu tercihi bilinçli yapın. Seçenekleri <a href=\"/zincir-ve-zincir-disli-setler\">zincir ve zincir dişli setler</a> sayfasında görebilirsiniz. </p><h2>Motor Alt Parçaları ve Contalar</h2><p class=\"editor-paragraph\"> Motor açılan bir bakım veya onarımda kullanılan parçalar da listede yer alıyor: orijinal Yamaha silindir komple, silindir alt ve üst contası, karter contası, stator kapak contası, krank, eksantrik zinciri, yağ pompası ve yağ pompa dişlisi gibi ürünlerin adlarında R25 ve MT25 uyumu belirtiliyor. Debriyaj tarafında orijinal Yamaha debriyaj balatası ve kaplin lastiği, elektrik tarafında stator ve kontak seti (2014-2018) bulunuyor. Bu tür işlemler özel alet ve bilgi gerektirdiğinden yetkili servis veya deneyimli bir atölyede yaptırılmalı. Tüm seçenekler <a href=\"/yedek-parca\">yedek parça</a> kategorisinde toplanıyor. </p><h2>Koruma ve Görünüm Parçaları</h2><p class=\"editor-paragraph\"> Depo ve mesnet çevresindeki çizikler, ilk bakışta motosikletin görünümünü bozar. Gogo tank pad ve mesnet pad setleri, R25 2019-2024 ve R25 2014-2018 için ürün adlarında belirtilen renk seçenekleriyle geliyor. Ayrıca Gear5 depo tutamacı, ayna takımı ve far camı gibi ürünler de modele özel olarak listeleniyor. Model sayfalarını <a href=\"/mt-25\">MT-25</a> ve <a href=\"/r-25\">R-25</a> kategorilerinden de gezebilirsiniz. </p><h2>Bakım Takip Tablosu</h2><table><tbody><tr><td><b>Bakım kalemi</b></td><td><b>Ne zaman</b></td><td><b>İlgili ürün grubu</b></td></tr><tr><td>Motor yağı seviyesi</td><td>Her sürüşten önce (kullanım kılavuzu)</td><td>Motor yağı</td></tr><tr><td>Yağ ve yağ filtresi değişimi</td><td>Kılavuzdaki periyodik bakım çizelgesine göre</td><td>Yağ filtresi</td></tr><tr><td>Hava filtresi</td><td>Çizelgeye göre; kirliliği gözle kontrol edin</td><td>Hava filtresi</td></tr><tr><td>Lastik basıncı</td><td>Soğuk lastikte, düzenli aralıklarla</td><td>Lastik</td></tr><tr><td>Gaz kolu boşluğu</td><td>Düzenli; kılavuz değeri 3,0–5,0 mm</td><td>Gaz teli</td></tr><tr><td>Fren balatası ve diski</td><td>Aşınma ve yüzey durumuna göre</td><td>Balata, disk</td></tr><tr><td>Zincir ve dişliler</td><td>Gerginlik, yağlama ve aşınma kontrolüyle</td><td>Zincir dişli seti</td></tr></tbody></table><h2>Sık Sorulan Sorular</h2><h3>MT-25 ve R25 parçaları birbirine uyar mı?</h3><p class=\"editor-paragraph\"> Motor, fren ve zincir dişli grubunda birçok ürünün adında iki model birlikte yazılıyor. Ancak ayna, far camı, gidon ve elektrik parçalarında model yılı farkı olabiliyor. Uyumu yalnızca ürün adındaki model ve yıl bilgisine göre değerlendirin; emin olamazsanız bize yazın. </p><h3>Yağ ve yağ filtresi ne zaman değişmeli?</h3><p class=\"editor-paragraph\"> Yamaha kullanım kılavuzu, yağ ve filtre kartuşunun periyodik bakım çizelgesindeki aralıklarda değiştirilmesini söylüyor. Kesin kilometre ve süre için aracınızın kendi kullanım kılavuzuna bakın. Ağır kullanımda veya kısa mesafeli sürüşlerde çizelgeyi sıkı takip etmek iyi olur. </p><h3>Zinciri değiştirirken dişlileri de değiştirmek şart mı?</h3><p class=\"editor-paragraph\"> Zorunlu olmasa da aşınmış dişliler yeni zincirin ömrünü kısaltır. Dişlilerin uçları sivrilmiş veya kanca şeklini almışsa set olarak değiştirmek daha doğru olur. </p><p class=\"editor-paragraph\"> Doğru bakım, MT-25 ve R25'nin performansını ve güvenliğini uzun süre korumanın en basit yoludur. Ürün uyumu veya parça seçimi konusunda sorunuz varsa <a href=\"/pages/iletisim\">iletişim sayfamızdan</a> bize ulaşabilirsiniz. </p><p class=\"editor-paragraph\"> <i>Kapak fotoğrafı: <a href=\"https://pixabay.com/users/WebDonut-322038/\">WebDonut</a> / <a href=\"https://pixabay.com/\">Pixabay</a></i> </p>\n          </div>\n          </html>\n  ",
+  "contentData": "{\"time\":1794201527885,\"blocks\":[{\"id\":\"t9j5o00001\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>Yayın tarihi: 9 Kasım 2026</i>\"}},{\"id\":\"t9j6100002\",\"type\":\"paragraph\",\"data\":{\"text\":\"Yamaha MT-25 ve YZF-R25, günlük şehir kullanımından hafta sonu turlarına kadar geniş bir alanda tercih edilen 250 cc sınıfı motosikletler. MT-25 çıplak (naked) gövdesiyle, R25 ise tam kaportalı yapısıyla öne çıksa da motor ve şasi tarafında ortak noktaları çok. Bu nedenle bakım mantığı ve birçok yedek parça iki model arasında benzerlik gösteriyor. Bu rehberde yağ ve filtre bakımından fren sistemine, zincir dişli setinden motor alt parçalarına kadar dikkat etmeniz gereken noktaları ve parça seçerken bakmanız gereken ayrıntıları topladık.\"}},{\"id\":\"t9j6200003\",\"type\":\"header\",\"data\":{\"text\":\"Bakıma Başlamadan Önce: Model Yılı ve Kılavuz\",\"level\":2}},{\"id\":\"t9j6200004\",\"type\":\"paragraph\",\"data\":{\"text\":\"MT-25 ve R25 için ürün adlarında çoğu zaman her iki model birlikte yazılır. Yine de bazı parçalar model yılına göre ayrışır. Örneğin ayna, far camı ve gidon gibi parçalarda <b>2014-2018</b> ile <b>2019-2024</b> arası R25 versiyonları ayrı ürünler olarak listelenir; kontak seti ve oksijen sensörü gibi elektrik parçalarında da 2014-2018 aralığı belirtilir. Sipariş vermeden önce ürün adındaki model ve yıl bilgisini aracınızla karşılaştırın.\"}},{\"id\":\"t9j6200005\",\"type\":\"paragraph\",\"data\":{\"text\":\"Kesin bakım aralıkları, yağ cinsi ve miktarı gibi değerler için ana kaynağınız Yamaha kullanım kılavuzu olmalı. Yamaha MT-25 kullanım kılavuzuna göre motor yağı seviyesi her sürüşten önce kontrol edilmeli; yağ ve yağ filtresi kartuşu ise periyodik bakım çizelgesindeki aralıklarda değiştirilmeli. Aynı kılavuz, lastik hava basıncının soğuk lastikte ölçülüp ayarlanmasını ve gaz kolu boşluğunun 3,0–5,0 mm aralığında olmasını belirtiyor. Aracınızın model yılına göre farklılık olabileceği için kesin değerleri kendi kullanım kılavuzunuzdan teyit edin.\"}},{\"id\":\"t9j6200006\",\"type\":\"list\",\"data\":{\"style\":\"unordered\",\"items\":[\"Her sürüşten önce yağ seviyesini kontrol penceresinden bakın.\",\"Lastik basıncını lastikler soğukken ölçün.\",\"Gaz kolu boşluğunu ve el/ayak kumandalarının serbest hareketini düzenli kontrol edin.\",\"Periyodik bakım çizelgesindeki supap ayarı gibi işlemleri yetkili servise yaptırın.\"]}},{\"id\":\"t9j6200007\",\"type\":\"header\",\"data\":{\"text\":\"Yağ, Yağ Filtresi ve Hava Filtresi\",\"level\":2}},{\"id\":\"t9j6200008\",\"type\":\"image\",\"data\":{\"file\":{\"url\":\"__IMG_collage__\"},\"caption\":\"MT-25 ve R25 için balata, zincir dişli seti ve filtre seçenekleri – Soydaş Motosiklet\",\"withBorder\":false,\"stretched\":false,\"withBackground\":false}},{\"id\":\"t9j6200009\",\"type\":\"paragraph\",\"data\":{\"text\":\"Motor ömrünü en çok etkileyen bakım kalemi yağ değişimidir. Yağ değişiminde filtreyi de yenilemek, eski filtrede biriken partiküllerin taze yağa karışmasını önler. Yağ seçiminde viskozite ve JASO standardı konusunda kılavuzdaki öneriye uyun; farkları anlamak için <a href=\\\"/blog/motosiklet-yagi-secimi-10w-40-jaso-ma-ve-mb-farki\\\">motosiklet yağı seçimi rehberimize</a> göz atabilirsiniz. Motor yağlarını <a href=\\\"/yaglar\\\">yağlar kategorisinde</a> inceleyebilirsiniz.\"}},{\"id\":\"t9j620000a\",\"type\":\"paragraph\",\"data\":{\"text\":\"Filtre tarafında iki yol var: <a href=\\\"/yamaha-yag-filtresi-orjinal-yamaha-r25-mt25-mt-07\\\">orijinal Yamaha yağ filtresi</a> (R25, MT-25 ve MT-07 için) veya ürün adında YZF-R25 uyumu belirtilen Hiflo HF141 ve Khan KF141 gibi alternatifler. Hava filtresinde ise <a href=\\\"/hiflo-hava-filtresi-hfa4507-yamaha-mt25-2015-2022-yzf-r25-2015-2023\\\">Hiflo HFA4507 hava filtresi</a>, MT-25 için 2015-2022, YZF-R25 için 2015-2023 yıllarını kapsıyor. Tozlu yollarda ve şehir trafiğinde hava filtresini çizelgedeki zamandan önce de gözle kontrol etmek faydalı olur. Tüm seçenekler için <a href=\\\"/filtre-grubu\\\">filtre grubu</a> sayfasına bakabilirsiniz.\"}},{\"id\":\"t9j620000b\",\"type\":\"header\",\"data\":{\"text\":\"Fren Sistemi: Balata ve Diskler\",\"level\":2}},{\"id\":\"t9j620000c\",\"type\":\"paragraph\",\"data\":{\"text\":\"Hafif ve hızlı bir motosiklette fren performansı doğrudan güvenliğinizi etkiler. Balata kalınlığını düzenli kontrol edin; ince kalan balata hem fren hissini düşürür hem de diske zarar verebilir. Değişim zamanını daha ayrıntılı anlamak için <a href=\\\"/blog/motosiklet-fren-balatasi-ne-zaman-degisir\\\">fren balatası ne zaman değişir</a> yazımızı okuyabilirsiniz.\"}},{\"id\":\"t9j620000d\",\"type\":\"paragraph\",\"data\":{\"text\":\"MT-25 ve R25 için ön balatada <a href=\\\"/brenta-organik-on-disk-balata-ft3175-yamaha-mt25-r25\\\">Brenta organik ön disk balata (FT3175)</a> ve Boss yarı sinterli ön balata (BS663) seçenekleri var. Arka tarafta ise <a href=\\\"/boss-disk-balata-arka-bs662-yamaha-mt25-r25\\\">Boss arka disk balata (BS662)</a>, Brenta FT3195 ve Isong arka balata bulunuyor. Genel olarak organik balatalar daha yumuşak bir fren hissi verirken yarı sinterli balatalar sürüş tarzına göre farklı bir karakter sunabilir. Balata aşınmışsa diskin yüzeyini de kontrol edin; diskler için ön tarafta Gear5 OEM ön fren diski, arkada orijinal Yamaha arka fren diski seçenekleri mevcut. Tüm ürünler <a href=\\\"/fren-balata\\\">fren balata</a> kategorisinde yer alıyor.\"}},{\"id\":\"t9j620000e\",\"type\":\"header\",\"data\":{\"text\":\"Zincir ve Dişli Seti\",\"level\":2}},{\"id\":\"t9j620000f\",\"type\":\"image\",\"data\":{\"file\":{\"url\":\"__IMG_inline__\"},\"caption\":\"Zincir ve dişli aşınması düzenli kontrol gerektirir (Fotoğraf: <a href=\\\"https://pixabay.com/users/SplitShire-364019/\\\">SplitShire</a> / <a href=\\\"https://pixabay.com/\\\">Pixabay</a>)\",\"withBorder\":false,\"stretched\":false,\"withBackground\":false}},{\"id\":\"t9j620000g\",\"type\":\"paragraph\",\"data\":{\"text\":\"Zincir, ön (pinyon) ve arka dişli bir bütün olarak aşınır. Yeni zinciri eski dişlilerle kullanmak zincirin ömrünü kısaltır; bu yüzden set olarak değiştirmek genellikle daha sağlıklıdır. Gerginlik ayarı ve yağlama için kılavuzdaki talimatları izleyin. Ayrıntılar için zincir dişli seti seçimi ve değişimi yazısına bakabilirsiniz.\"}},{\"id\":\"t9j620000h\",\"type\":\"paragraph\",\"data\":{\"text\":\"Ürün adında YZF-R25 2015-2022 uyumu yazan <a href=\\\"/did-celik-x-ring-zincir-disli-set-jt-disli-yamaha-yzf-r25-2015-2022\\\">DID çelik X-ring zincir dişli seti (JT dişli)</a> ve Sunstar dişli ile gelen versiyonu bulunuyor. Orijinal tercih edenler için Yamaha zincir dişli seti de mevcut. Arka dişliyi tek başına yenilemek isterseniz Gear5 OEM arka dişli 41T, 43T ve 50T seçenekleri ürün adlarında belirtilmiş; diş sayısı hız ve çekiş karakterini değiştirdiği için bu tercihi bilinçli yapın. Seçenekleri <a href=\\\"/zincir-ve-zincir-disli-setler\\\">zincir ve zincir dişli setler</a> sayfasında görebilirsiniz.\"}},{\"id\":\"t9j620000i\",\"type\":\"header\",\"data\":{\"text\":\"Motor Alt Parçaları ve Contalar\",\"level\":2}},{\"id\":\"t9j620000j\",\"type\":\"paragraph\",\"data\":{\"text\":\"Motor açılan bir bakım veya onarımda kullanılan parçalar da listede yer alıyor: orijinal Yamaha silindir komple, silindir alt ve üst contası, karter contası, stator kapak contası, krank, eksantrik zinciri, yağ pompası ve yağ pompa dişlisi gibi ürünlerin adlarında R25 ve MT25 uyumu belirtiliyor. Debriyaj tarafında orijinal Yamaha debriyaj balatası ve kaplin lastiği, elektrik tarafında stator ve kontak seti (2014-2018) bulunuyor. Bu tür işlemler özel alet ve bilgi gerektirdiğinden yetkili servis veya deneyimli bir atölyede yaptırılmalı. Tüm seçenekler <a href=\\\"/yedek-parca\\\">yedek parça</a> kategorisinde toplanıyor.\"}},{\"id\":\"t9j620000k\",\"type\":\"header\",\"data\":{\"text\":\"Koruma ve Görünüm Parçaları\",\"level\":2}},{\"id\":\"t9j620000l\",\"type\":\"paragraph\",\"data\":{\"text\":\"Depo ve mesnet çevresindeki çizikler, ilk bakışta motosikletin görünümünü bozar. Gogo tank pad ve mesnet pad setleri, R25 2019-2024 ve R25 2014-2018 için ürün adlarında belirtilen renk seçenekleriyle geliyor. Ayrıca Gear5 depo tutamacı, ayna takımı ve far camı gibi ürünler de modele özel olarak listeleniyor. Model sayfalarını <a href=\\\"/mt-25\\\">MT-25</a> ve <a href=\\\"/r-25\\\">R-25</a> kategorilerinden de gezebilirsiniz.\"}},{\"id\":\"t9j620000m\",\"type\":\"header\",\"data\":{\"text\":\"Bakım Takip Tablosu\",\"level\":2}},{\"id\":\"t9j620000n\",\"type\":\"table\",\"data\":{\"withHeadings\":true,\"content\":[[\"<b>Bakım kalemi</b>\",\"<b>Ne zaman</b>\",\"<b>İlgili ürün grubu</b>\"],[\"Motor yağı seviyesi\",\"Her sürüşten önce (kullanım kılavuzu)\",\"Motor yağı\"],[\"Yağ ve yağ filtresi değişimi\",\"Kılavuzdaki periyodik bakım çizelgesine göre\",\"Yağ filtresi\"],[\"Hava filtresi\",\"Çizelgeye göre; kirliliği gözle kontrol edin\",\"Hava filtresi\"],[\"Lastik basıncı\",\"Soğuk lastikte, düzenli aralıklarla\",\"Lastik\"],[\"Gaz kolu boşluğu\",\"Düzenli; kılavuz değeri 3,0–5,0 mm\",\"Gaz teli\"],[\"Fren balatası ve diski\",\"Aşınma ve yüzey durumuna göre\",\"Balata, disk\"],[\"Zincir ve dişliler\",\"Gerginlik, yağlama ve aşınma kontrolüyle\",\"Zincir dişli seti\"]]}},{\"id\":\"t9j620000o\",\"type\":\"header\",\"data\":{\"text\":\"Sık Sorulan Sorular\",\"level\":2}},{\"id\":\"t9j620000p\",\"type\":\"header\",\"data\":{\"text\":\"MT-25 ve R25 parçaları birbirine uyar mı?\",\"level\":3}},{\"id\":\"t9j620000q\",\"type\":\"paragraph\",\"data\":{\"text\":\"Motor, fren ve zincir dişli grubunda birçok ürünün adında iki model birlikte yazılıyor. Ancak ayna, far camı, gidon ve elektrik parçalarında model yılı farkı olabiliyor. Uyumu yalnızca ürün adındaki model ve yıl bilgisine göre değerlendirin; emin olamazsanız bize yazın.\"}},{\"id\":\"t9j620000r\",\"type\":\"header\",\"data\":{\"text\":\"Yağ ve yağ filtresi ne zaman değişmeli?\",\"level\":3}},{\"id\":\"t9j620000s\",\"type\":\"paragraph\",\"data\":{\"text\":\"Yamaha kullanım kılavuzu, yağ ve filtre kartuşunun periyodik bakım çizelgesindeki aralıklarda değiştirilmesini söylüyor. Kesin kilometre ve süre için aracınızın kendi kullanım kılavuzuna bakın. Ağır kullanımda veya kısa mesafeli sürüşlerde çizelgeyi sıkı takip etmek iyi olur.\"}},{\"id\":\"t9j620000t\",\"type\":\"header\",\"data\":{\"text\":\"Zinciri değiştirirken dişlileri de değiştirmek şart mı?\",\"level\":3}},{\"id\":\"t9j620000u\",\"type\":\"paragraph\",\"data\":{\"text\":\"Zorunlu olmasa da aşınmış dişliler yeni zincirin ömrünü kısaltır. Dişlilerin uçları sivrilmiş veya kanca şeklini almışsa set olarak değiştirmek daha doğru olur.\"}},{\"id\":\"t9j620000v\",\"type\":\"paragraph\",\"data\":{\"text\":\"Doğru bakım, MT-25 ve R25'nin performansını ve güvenliğini uzun süre korumanın en basit yoludur. Ürün uyumu veya parça seçimi konusunda sorunuz varsa <a href=\\\"/pages/iletisim\\\">iletişim sayfamızdan</a> bize ulaşabilirsiniz.\"}},{\"id\":\"t9j620000w\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>Kapak fotoğrafı: <a href=\\\"https://pixabay.com/users/WebDonut-322038/\\\">WebDonut</a> / <a href=\\\"https://pixabay.com/\\\">Pixabay</a></i>\"}}],\"version\":\"2.28.2\"}",
+  "removedLinks": []
+}
