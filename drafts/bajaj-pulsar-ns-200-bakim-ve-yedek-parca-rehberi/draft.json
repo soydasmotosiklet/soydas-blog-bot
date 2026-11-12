@@ -1,0 +1,316 @@
+{
+  "topic": "Bajaj Pulsar NS 200 Bakım ve Yedek Parça Rehberi",
+  "approved": true,
+  "qualityIssues": [],
+  "words": 848,
+  "createdAt": "2026-11-12T05:12:27.306Z",
+  "model": "claude-sonnet-5-5",
+  "title": "Bajaj Pulsar NS 200 Bakım ve Yedek Parça Rehberi",
+  "slug": "bajaj-pulsar-ns-200-bakim-ve-yedek-parca-rehberi",
+  "shortDescription": "Pulsar NS 200 için periyodik bakım, yağ ve filtre, zincir-dişli, fren ve aksesuar seçimini üretici kaynaklarına dayanarak anlatan pratik rehber.",
+  "seoTitle": "Bajaj Pulsar NS 200 Bakım ve Yedek Parça | Soydaş Motosiklet",
+  "seoDescription": "Pulsar NS 200 için yağ, filtre, buji, zincir-dişli ve fren bakımı; kılavuz kaynaklı bilgiler ve model uyumlu yedek parça seçenekleri bu rehberde.",
+  "images": {
+    "cover": "cover.jpg",
+    "inline": "inline.jpg",
+    "collage": "collage.jpg"
+  },
+  "coverPhoto": {
+    "provider": "pixabay",
+    "id": "6567596",
+    "user": "t0masx1",
+    "link": "https://pixabay.com/photos/motorcycle-engine-transportation-6567596/"
+  },
+  "blocks": [
+    {
+      "id": "3cxi300001",
+      "type": "paragraph",
+      "data": {
+        "text": "<i>Yayın tarihi: 12 Kasım 2026</i>"
+      }
+    },
+    {
+      "id": "3cxig00002",
+      "type": "paragraph",
+      "data": {
+        "text": "Bajaj Pulsar NS 200, sıvı soğutmalı tek silindirli motoru ve üç bujili ateşleme sistemiyle şehir içinde de uzun yolda da kullanılan popüler bir naked sport motosiklettir. Bu karakterdeki bir motorda düzenli bakım, hem performansı hem de parça ömrünü doğrudan etkiler. Bu rehberde Bajaj'ın yayımladığı kullanıcı kılavuzu ve bakım çizelgesindeki bilgilere dayanarak temel bakım kalemlerini, hangi parçaya ne zaman bakılması gerektiğini ve yedek parça seçerken nelere dikkat edeceğinizi özetliyoruz."
+      }
+    },
+    {
+      "id": "3cxig00003",
+      "type": "header",
+      "data": {
+        "text": "Periyodik Bakımın Temelleri",
+        "level": 2
+      }
+    },
+    {
+      "id": "3cxig00004",
+      "type": "paragraph",
+      "data": {
+        "text": "Pulsar NS 200 kullanıcı kılavuzu, motor yağı seviyesinin düzenli kontrol edilmesini ve periyodik bakım tablosuna uyulmasını istiyor. Kılavuzdaki kontrol noktaları arasında yağ seviyesi, buji, zincir gevşekliği, fren balataları ve kumanda kabloları öne çıkıyor. Aşağıdaki tabloda Bajaj'ın yayımladığı belgelerden derlenen başlıca değerleri bulabilirsiniz."
+      }
+    },
+    {
+      "id": "3cxih00005",
+      "type": "table",
+      "data": {
+        "withHeadings": true,
+        "content": [
+          [
+            "<b>Kalem</b>",
+            "<b>Bajaj belgelerindeki bilgi</b>"
+          ],
+          [
+            "Yağ miktarı (bakımda)",
+            "1200 ml (Pulsar NS 200 kullanıcı kılavuzu)"
+          ],
+          [
+            "Zincir gevşekliği",
+            "15–25 mm (Pulsar NS 200 kullanıcı kılavuzu)"
+          ],
+          [
+            "Zincir yağlama",
+            "O-ring zincir için her 500 km'de müşteri tarafından yağlama (Bajaj bakım çizelgesi)"
+          ],
+          [
+            "Buji değişimi",
+            "Her 20.000 km'de (Bajaj bakım çizelgesi)"
+          ],
+          [
+            "Hava filtresi",
+            "Her 15.000 km'de değişim, aralarda temizlik (Bajaj bakım çizelgesi)"
+          ],
+          [
+            "Yağ filtresi",
+            "Her yağ değişiminde yenileme (Bajaj bakım çizelgesi)"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "3cxih00006",
+      "type": "paragraph",
+      "data": {
+        "text": "Önemli bir not: Bajaj'ın farklı model yılları için yayımladığı belgelerde yağ değişim aralığı ve buji aralığı gibi değerler değişebiliyor. Örneğin eski kullanıcı kılavuzunda ilk bakımdan sonra her 5.000 km'de yağ değişimi belirtilirken, BS-VI kılavuzunda önerilen yağ ile 10.000 km'lik değişim aralığı yer alıyor. Bu yüzden kesin değer için aracınızın kendi kullanım kılavuzuna bakmanızı öneririz."
+      }
+    },
+    {
+      "id": "3cxih00007",
+      "type": "header",
+      "data": {
+        "text": "Motor Yağı, Filtreler ve Buji",
+        "level": 2
+      }
+    },
+    {
+      "id": "3cxih00008",
+      "type": "paragraph",
+      "data": {
+        "text": "Pulsar NS 200 kılavuzları 20W50 viskoziteli, JASO MA standardına uygun motosiklet yağı önerir; BS-VI kılavuzunda ayrıca 10W50 sentetik seçeneği de geçer. Motosiklet yağı seçerken JASO sınıfına dikkat etmek gerekir; farkı <a href=\"/blog/motosiklet-yagi-secimi-10w-40-jaso-ma-ve-mb-farki\">motosiklet yağı seçimi rehberimizde</a> ayrıntılı anlattık. Güncel seçeneklere <a href=\"/yaglar\">yağlar</a> kategorisinden ulaşabilirsiniz."
+      }
+    },
+    {
+      "id": "3cxih00009",
+      "type": "paragraph",
+      "data": {
+        "text": "Yağ değişiminde filtreyi de yenilemek gerekir. Bajaj bakım çizelgesi de yağ filtresinin her yağ değişiminde değiştirilmesini söylüyor. Model uyumlu seçeneklerden <a href=\"/bajaj-yag-filtresi-orjinal-bajaj-pulsar-ns-200-rs-200-dominar-250\">orijinal Bajaj yağ filtresi</a>, <a href=\"/hiflo-yag-filtresi-hf655-bajaj-pulsar-ns-200-dominar-400-ktm-200-duke-ktm-390-duke-dominar-250-d\">Hiflo HF655 yağ filtresi</a> ve <a href=\"/monero-yag-filtresi-bajaj-pulsar-ns-200-rs-200\">Monero yağ filtresi</a> bulunuyor."
+      }
+    },
+    {
+      "id": "3cxih0000a",
+      "type": "list",
+      "data": {
+        "style": "unordered",
+        "items": [
+          "<b>Yağ seviyesi:</b> Kılavuz, seviyenin göstergedeki alt ve üst işaret arasında tutulmasını ister. Kontrolü motor düz zeminde dururken yapın.",
+          "<b>Hava filtresi:</b> Tozlu yollarda sık temizlik gerekir. Değişim için <a href=\"/boss-hava-filtre-elemani-bs6302-bajaj-pulsar-ns-200-rs-200\">Boss hava filtre elemanı</a> veya <a href=\"/monero-hava-filtre-elemani-bajaj-pulsar-ns-200-rs-200\">Monero hava filtre elemanı</a> uygundur.",
+          "<b>Buji ve buji başlığı:</b> Ateşleme düzensizliği, zor çalışma ve performans kaybında bujileri ve başlıkları kontrol edin. <a href=\"/bajaj-buji-orjinal-bajaj-pulsar-ns-200-rs-200\">Orijinal Bajaj buji</a> ve <a href=\"/bajaj-orta-buji-basligi-dk111011-orjinal-bajaj-pulsar-ns-200\">orta buji başlığı</a> bu iş için mevcut.",
+          "<b>Buji aralığı:</b> Kılavuzlar arasında farklı değerler yer aldığından ayar öncesinde kendi aracınızın kılavuzunu kontrol edin."
+        ]
+      }
+    },
+    {
+      "id": "3cxih0000b",
+      "type": "image",
+      "data": {
+        "file": {
+          "url": "__IMG_inline__"
+        },
+        "caption": "Pulsar NS 200'de zincir ve dişli bakımı düzenli kontrol gerektirir (Fotoğraf: <a href=\"https://pixabay.com/users/Republica-24347/\">Republica</a> / <a href=\"https://pixabay.com/\">Pixabay</a>)",
+        "withBorder": false,
+        "stretched": false,
+        "withBackground": false
+      }
+    },
+    {
+      "id": "3cxih0000c",
+      "type": "header",
+      "data": {
+        "text": "Zincir, Dişli ve Fren Parçaları",
+        "level": 2
+      }
+    },
+    {
+      "id": "3cxih0000d",
+      "type": "image",
+      "data": {
+        "file": {
+          "url": "__IMG_collage__"
+        },
+        "caption": "Pulsar NS 200 için zincir-dişli, fren balatası ve filtre seçenekleri – Soydaş Motosiklet",
+        "withBorder": false,
+        "stretched": false,
+        "withBackground": false
+      }
+    },
+    {
+      "id": "3cxih0000e",
+      "type": "paragraph",
+      "data": {
+        "text": "NS 200'ün O-ring zinciri, Bajaj bakım çizelgesine göre her 500 km'de yağlanmalıdır. Zincir gevşekliği kılavuzda 15–25 mm olarak veriliyor. Zincir sürekli aşırı gergin ya da çok gevşek kalırsa hem zincir hem de dişliler hızlı yıpranır. Değişimde zincir, ön dişli ve arka dişlinin birlikte yenilenmesi doğru yaklaşımdır. Ayrıntılar için <a href=\"/blog/motosiklet-zincir-disli-seti-secimi-ve-degisim-rehberi\">zincir dişli seti seçimi ve değişim rehberimize</a> göz atabilirsiniz."
+      }
+    },
+    {
+      "id": "3cxih0000f",
+      "type": "paragraph",
+      "data": {
+        "text": "Ürün adında 14T ön ve 40T arka dişli bilgisi geçen setler arasında <a href=\"/choho-zincir-disli-set-14t-40t-bajaj-pulsar-ns-200-rs-200\">Choho zincir dişli seti</a> ve <a href=\"/gear5-on-arka-disli-set-14t-40t-bajaj-pulsar-ns-200\">Gear5 ön-arka dişli seti</a> var. Yalnızca arka dişliyi değiştirecekseniz <a href=\"/monero-arka-disli-40t-bajaj-pulsar-ns-200\">Monero 40T arka dişli</a> seçeneğine bakabilirsiniz. Tüm seçenekler <a href=\"/zincir-ve-zincir-disli-setler\">zincir ve zincir dişli setler</a> kategorisinde yer alıyor."
+      }
+    },
+    {
+      "id": "3cxih0000g",
+      "type": "paragraph",
+      "data": {
+        "text": "Fren tarafında balata kalınlığını ve disk yüzeyini düzenli kontrol edin. Ön fren için <a href=\"/bajaj-on-disk-balata-orjinal-bajaj-pulsar-ns-200-rs-200-discover\">orijinal Bajaj ön disk balata</a> ve <a href=\"/ask-on-disk-balata-bajaj-discover-pulsar-ns-200-pulsar-rs-200\">ASK ön disk balata</a>, arka fren için <a href=\"/ask-arka-disk-balata-bajaj-pulsar-ns-200-rs-200\">ASK arka disk balata</a> mevcut. Disk değişimi gerekirse <a href=\"/bajaj-on-fren-diski-jr131026-orjinal-bajaj-pulsar-ns-200\">ön fren diski</a> ve <a href=\"/monero-arka-fren-diski-bajaj-pulsar-ns-200\">arka fren diski</a> ürünleri de var. Değişim zamanını anlamak için fren balatası ne zaman değişir yazımızı okuyabilirsiniz. Diğer ürünler için <a href=\"/disk-balata\">disk balata</a> kategorisine bakın."
+      }
+    },
+    {
+      "id": "3cxih0000h",
+      "type": "header",
+      "data": {
+        "text": "Gidon, Koruma ve Aksesuar Seçenekleri",
+        "level": 2
+      }
+    },
+    {
+      "id": "3cxih0000i",
+      "type": "paragraph",
+      "data": {
+        "text": "Bakımın yanında düşme ve sürtünmeye karşı koruma ile sürüş konforu da önemlidir. Aşağıdaki başlıklar NS 200 için sık tercih edilen kalemleri özetliyor."
+      }
+    },
+    {
+      "id": "3cxih0000j",
+      "type": "list",
+      "data": {
+        "style": "unordered",
+        "items": [
+          "<b>Koruma:</b> <a href=\"/gogo-koruma-takozu-bajaj-pulsar-ns-200-2014-2024\">GoGo koruma takozu</a> olası devrilmelerde şasi ve motor çevresindeki hasarı azaltmaya yardımcı olur.",
+          "<b>Manetler:</b> <a href=\"/gear5-spor-manet-siyah-bajaj-pulsar-ns-200\">Gear5 spor manet</a> farklı renk seçenekleriyle sunuluyor; sinyal ve park modüllü modeller de var.",
+          "<b>Görünüm:</b> <a href=\"/gogo-tank-pad-set-siyah-kirmizi-004-bajaj-pulsar-ns-200-rs-200\">Tank pad seti</a> ve sticker setleriyle depo yüzeyini koruyabilirsiniz.",
+          "<b>Ayna ve ön takım:</b> <a href=\"/monero-ayna-takimi-bajaj-pulsar-ns-200\">Monero ayna takımı</a> ile kırılan ya da gevşeyen aynalar yenilenebilir."
+        ]
+      }
+    },
+    {
+      "id": "3cxih0000k",
+      "type": "paragraph",
+      "data": {
+        "text": "Model bazında tüm parçaları görmek için <a href=\"/pulsar-ns-200\">Pulsar NS 200</a> kategorisini, marka geneli için <a href=\"/bajaj\">Bajaj</a> kategorisini kullanabilirsiniz."
+      }
+    },
+    {
+      "id": "3cxih0000l",
+      "type": "header",
+      "data": {
+        "text": "Parça Seçerken Kontrol Listesi",
+        "level": 2
+      }
+    },
+    {
+      "id": "3cxih0000m",
+      "type": "list",
+      "data": {
+        "style": "ordered",
+        "items": [
+          "Ürün adında Pulsar NS 200 uyumunun yazdığından emin olun.",
+          "Aracınızın model yılına ait kullanım kılavuzundaki değerleri esas alın.",
+          "Zincir değişiminde zinciri ve iki dişliyi birlikte düşünün.",
+          "Yağ değişiminde filtreyi ve gerekiyorsa sızdırmazlık elemanlarını yenileyin.",
+          "Fren parçalarını takım olarak, sağ-sol veya ön-arka dengesini gözeterek değiştirin."
+        ]
+      }
+    },
+    {
+      "id": "3cxih0000n",
+      "type": "header",
+      "data": {
+        "text": "Sık Sorulan Sorular",
+        "level": 2
+      }
+    },
+    {
+      "id": "3cxih0000o",
+      "type": "header",
+      "data": {
+        "text": "Pulsar NS 200'ün motor yağı kapasitesi nedir?",
+        "level": 3
+      }
+    },
+    {
+      "id": "3cxih0000p",
+      "type": "paragraph",
+      "data": {
+        "text": "Bajaj kullanıcı kılavuzuna göre bakımda yenileme miktarı 1200 ml, motor revizyonunda ise 1400 ml'dir. Model yılınıza göre değişebileceği için kendi kılavuzunuzu da kontrol edin."
+      }
+    },
+    {
+      "id": "3cxih0000q",
+      "type": "header",
+      "data": {
+        "text": "Zincir ne sıklıkla yağlanmalı?",
+        "level": 3
+      }
+    },
+    {
+      "id": "3cxih0000r",
+      "type": "paragraph",
+      "data": {
+        "text": "Bajaj bakım çizelgesi O-ring zincirin her 500 km'de yağlanmasını belirtir. Yağmurlu ya da tozlu yollardan sonra zinciri temizleyip yeniden yağlamak da iyi bir alışkanlıktır."
+      }
+    },
+    {
+      "id": "3cxih0000s",
+      "type": "header",
+      "data": {
+        "text": "Hangi parçaları birlikte değiştirmeliyim?",
+        "level": 3
+      }
+    },
+    {
+      "id": "3cxih0000t",
+      "type": "paragraph",
+      "data": {
+        "text": "Zincir, ön dişli ve arka dişli birlikte aşınır; birlikte yenilenmeleri en sağlıklısıdır. Yağ değişiminde yağ filtresini, bakımda da gerekiyorsa hava filtresi ve bujiyi kontrol edin."
+      }
+    },
+    {
+      "id": "3cxih0000u",
+      "type": "paragraph",
+      "data": {
+        "text": "Pulsar NS 200 bakımını kılavuzdaki aralıklara göre planlamak, beklenmedik arızaları azaltır. Doğru parçayı seçmekte tereddüt ederseniz <a href=\"/pages/iletisim\">iletişim sayfamızdan</a> bize ulaşabilir, ürün seçimi konusunda destek alabilirsiniz. Bakım için diğer parçalara <a href=\"/yedek-parca\">yedek parça</a> kategorisinden de göz atabilirsiniz."
+      }
+    },
+    {
+      "id": "3cxih0000v",
+      "type": "paragraph",
+      "data": {
+        "text": "<i>Kapak fotoğrafı: <a href=\"https://pixabay.com/users/t0masx1-19735594/\">t0masx1</a> / <a href=\"https://pixabay.com/\">Pixabay</a></i>"
+      }
+    }
+  ],
+  "contentHtml": "<html lang=\"en\">\n          <style>.ikas-editor-v1>table,td,th{border:1px solid #e8e8eb;border-collapse:collapse;font-size:14px}.ikas-editor-v1>th,td{padding:6px 12px}.ikas-editor-v1 ul,.ikas-editor-v1 ol{padding-left:20px}.ikas-editor-v1 ul li{list-style-type:disc;margin:8px 0 8px 16px}.ikas-editor-v1 ol li{list-style-type:decimal;margin:8px 0 8px 16px}.ikas-editor-v1 li{margin:8px 0 8px 16px}.ikas-editor-v1 code{display:block;white-space:pre-wrap}.ikas-editor-v1 blockquote{margin-inline-start:0;border-left:3px solid rgb(41 41 41);padding-left:23px}.ikas-editor-v1 figure{margin-inline:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0;width:100%}.ikas-editor-v1 img{max-width:800px;object-fit:cover;object-position:center}.ikas-editor-v1 img.img-bg{padding:1.5em!important;background:#cdd1e0!important}.ikas-editor-v1 img.img-fullwidth{width:100%!important;max-width:100%!important;margin:0 auto!important}.ikas-editor-v1 figcaption{text-align:center;padding-top:6px;word-break:break-word;font-size:12px;background:0 0;z-index:{};}.ikas-editor-v1 .embed-youtube{width:100%;height:400px}.ikas-editor-v1 a{color:#0070f3;text-decoration:underline;cursor:pointer}.ikas-editor-v1 a:hover{opacity:.8}.products-container{display:flex;flex-direction:column;gap:10px}.product-block-container{margin:0 auto;cursor:pointer;flex:1;display:flex;gap:20px;padding:10px 0}.product-image{width:120px;height:120px;object-fit:cover;border-radius:4px;flex-shrink:0}.product-name{font-size:15px;font-weight:500;width:100%;margin:0 0 4px}.product-brand{font-size:13px;font-weight:400;color:#adb5bd;margin:0 0 4px}.product-discount-price,.product-price{width:fit-content;font-size:16px;font-weight:500;color:#000}.product-price{margin:6px 0 0}.product-discount-price{margin:6px 8px 0 0;text-decoration:line-through}.ikas-editor-v1 table b{font-weight:bold}.ikas-editor-v1 table i{font-style:italic}</style>\n          <div class=\"ikas-editor-v1\">\n          <p class=\"editor-paragraph\"> <i>Yayın tarihi: 12 Kasım 2026</i> </p><p class=\"editor-paragraph\"> Bajaj Pulsar NS 200, sıvı soğutmalı tek silindirli motoru ve üç bujili ateşleme sistemiyle şehir içinde de uzun yolda da kullanılan popüler bir naked sport motosiklettir. Bu karakterdeki bir motorda düzenli bakım, hem performansı hem de parça ömrünü doğrudan etkiler. Bu rehberde Bajaj'ın yayımladığı kullanıcı kılavuzu ve bakım çizelgesindeki bilgilere dayanarak temel bakım kalemlerini, hangi parçaya ne zaman bakılması gerektiğini ve yedek parça seçerken nelere dikkat edeceğinizi özetliyoruz. </p><h2>Periyodik Bakımın Temelleri</h2><p class=\"editor-paragraph\"> Pulsar NS 200 kullanıcı kılavuzu, motor yağı seviyesinin düzenli kontrol edilmesini ve periyodik bakım tablosuna uyulmasını istiyor. Kılavuzdaki kontrol noktaları arasında yağ seviyesi, buji, zincir gevşekliği, fren balataları ve kumanda kabloları öne çıkıyor. Aşağıdaki tabloda Bajaj'ın yayımladığı belgelerden derlenen başlıca değerleri bulabilirsiniz. </p><table><tbody><tr><td><b>Kalem</b></td><td><b>Bajaj belgelerindeki bilgi</b></td></tr><tr><td>Yağ miktarı (bakımda)</td><td>1200 ml (Pulsar NS 200 kullanıcı kılavuzu)</td></tr><tr><td>Zincir gevşekliği</td><td>15–25 mm (Pulsar NS 200 kullanıcı kılavuzu)</td></tr><tr><td>Zincir yağlama</td><td>O-ring zincir için her 500 km'de müşteri tarafından yağlama (Bajaj bakım çizelgesi)</td></tr><tr><td>Buji değişimi</td><td>Her 20.000 km'de (Bajaj bakım çizelgesi)</td></tr><tr><td>Hava filtresi</td><td>Her 15.000 km'de değişim, aralarda temizlik (Bajaj bakım çizelgesi)</td></tr><tr><td>Yağ filtresi</td><td>Her yağ değişiminde yenileme (Bajaj bakım çizelgesi)</td></tr></tbody></table><p class=\"editor-paragraph\"> Önemli bir not: Bajaj'ın farklı model yılları için yayımladığı belgelerde yağ değişim aralığı ve buji aralığı gibi değerler değişebiliyor. Örneğin eski kullanıcı kılavuzunda ilk bakımdan sonra her 5.000 km'de yağ değişimi belirtilirken, BS-VI kılavuzunda önerilen yağ ile 10.000 km'lik değişim aralığı yer alıyor. Bu yüzden kesin değer için aracınızın kendi kullanım kılavuzuna bakmanızı öneririz. </p><h2>Motor Yağı, Filtreler ve Buji</h2><p class=\"editor-paragraph\"> Pulsar NS 200 kılavuzları 20W50 viskoziteli, JASO MA standardına uygun motosiklet yağı önerir; BS-VI kılavuzunda ayrıca 10W50 sentetik seçeneği de geçer. Motosiklet yağı seçerken JASO sınıfına dikkat etmek gerekir; farkı <a href=\"/blog/motosiklet-yagi-secimi-10w-40-jaso-ma-ve-mb-farki\">motosiklet yağı seçimi rehberimizde</a> ayrıntılı anlattık. Güncel seçeneklere <a href=\"/yaglar\">yağlar</a> kategorisinden ulaşabilirsiniz. </p><p class=\"editor-paragraph\"> Yağ değişiminde filtreyi de yenilemek gerekir. Bajaj bakım çizelgesi de yağ filtresinin her yağ değişiminde değiştirilmesini söylüyor. Model uyumlu seçeneklerden <a href=\"/bajaj-yag-filtresi-orjinal-bajaj-pulsar-ns-200-rs-200-dominar-250\">orijinal Bajaj yağ filtresi</a>, <a href=\"/hiflo-yag-filtresi-hf655-bajaj-pulsar-ns-200-dominar-400-ktm-200-duke-ktm-390-duke-dominar-250-d\">Hiflo HF655 yağ filtresi</a> ve <a href=\"/monero-yag-filtresi-bajaj-pulsar-ns-200-rs-200\">Monero yağ filtresi</a> bulunuyor. </p><ul><li><b>Yağ seviyesi:</b> Kılavuz, seviyenin göstergedeki alt ve üst işaret arasında tutulmasını ister. Kontrolü motor düz zeminde dururken yapın.</li><li><b>Hava filtresi:</b> Tozlu yollarda sık temizlik gerekir. Değişim için <a href=\"/boss-hava-filtre-elemani-bs6302-bajaj-pulsar-ns-200-rs-200\">Boss hava filtre elemanı</a> veya <a href=\"/monero-hava-filtre-elemani-bajaj-pulsar-ns-200-rs-200\">Monero hava filtre elemanı</a> uygundur.</li><li><b>Buji ve buji başlığı:</b> Ateşleme düzensizliği, zor çalışma ve performans kaybında bujileri ve başlıkları kontrol edin. <a href=\"/bajaj-buji-orjinal-bajaj-pulsar-ns-200-rs-200\">Orijinal Bajaj buji</a> ve <a href=\"/bajaj-orta-buji-basligi-dk111011-orjinal-bajaj-pulsar-ns-200\">orta buji başlığı</a> bu iş için mevcut.</li><li><b>Buji aralığı:</b> Kılavuzlar arasında farklı değerler yer aldığından ayar öncesinde kendi aracınızın kılavuzunu kontrol edin.</li></ul><figure class=\"editor-fig-img\"><img class=\"editor-img   \" src=\"__IMG_inline__\" alt=\"Pulsar NS 200'de zincir ve dişli bakımı düzenli kontrol gerektirir (Fotoğraf: Republica / Pixabay)\" width=\"1080\" height=\"675\" style=\"max-width: 100%; aspect-ratio: 1080 / 675;\"><figcaption class=\"editor-fig-cap\">Pulsar NS 200'de zincir ve dişli bakımı düzenli kontrol gerektirir (Fotoğraf: <a href=\"https://pixabay.com/users/Republica-24347/\">Republica</a> / <a href=\"https://pixabay.com/\">Pixabay</a>)</figcaption></figure><h2>Zincir, Dişli ve Fren Parçaları</h2><figure class=\"editor-fig-img\"><img class=\"editor-img   \" src=\"__IMG_collage__\" alt=\"Pulsar NS 200 için zincir-dişli, fren balatası ve filtre seçenekleri – Soydaş Motosiklet\" width=\"1080\" height=\"360\" style=\"max-width: 100%; aspect-ratio: 1080 / 360;\"><figcaption class=\"editor-fig-cap\">Pulsar NS 200 için zincir-dişli, fren balatası ve filtre seçenekleri – Soydaş Motosiklet</figcaption></figure><p class=\"editor-paragraph\"> NS 200'ün O-ring zinciri, Bajaj bakım çizelgesine göre her 500 km'de yağlanmalıdır. Zincir gevşekliği kılavuzda 15–25 mm olarak veriliyor. Zincir sürekli aşırı gergin ya da çok gevşek kalırsa hem zincir hem de dişliler hızlı yıpranır. Değişimde zincir, ön dişli ve arka dişlinin birlikte yenilenmesi doğru yaklaşımdır. Ayrıntılar için <a href=\"/blog/motosiklet-zincir-disli-seti-secimi-ve-degisim-rehberi\">zincir dişli seti seçimi ve değişim rehberimize</a> göz atabilirsiniz. </p><p class=\"editor-paragraph\"> Ürün adında 14T ön ve 40T arka dişli bilgisi geçen setler arasında <a href=\"/choho-zincir-disli-set-14t-40t-bajaj-pulsar-ns-200-rs-200\">Choho zincir dişli seti</a> ve <a href=\"/gear5-on-arka-disli-set-14t-40t-bajaj-pulsar-ns-200\">Gear5 ön-arka dişli seti</a> var. Yalnızca arka dişliyi değiştirecekseniz <a href=\"/monero-arka-disli-40t-bajaj-pulsar-ns-200\">Monero 40T arka dişli</a> seçeneğine bakabilirsiniz. Tüm seçenekler <a href=\"/zincir-ve-zincir-disli-setler\">zincir ve zincir dişli setler</a> kategorisinde yer alıyor. </p><p class=\"editor-paragraph\"> Fren tarafında balata kalınlığını ve disk yüzeyini düzenli kontrol edin. Ön fren için <a href=\"/bajaj-on-disk-balata-orjinal-bajaj-pulsar-ns-200-rs-200-discover\">orijinal Bajaj ön disk balata</a> ve <a href=\"/ask-on-disk-balata-bajaj-discover-pulsar-ns-200-pulsar-rs-200\">ASK ön disk balata</a>, arka fren için <a href=\"/ask-arka-disk-balata-bajaj-pulsar-ns-200-rs-200\">ASK arka disk balata</a> mevcut. Disk değişimi gerekirse <a href=\"/bajaj-on-fren-diski-jr131026-orjinal-bajaj-pulsar-ns-200\">ön fren diski</a> ve <a href=\"/monero-arka-fren-diski-bajaj-pulsar-ns-200\">arka fren diski</a> ürünleri de var. Değişim zamanını anlamak için fren balatası ne zaman değişir yazımızı okuyabilirsiniz. Diğer ürünler için <a href=\"/disk-balata\">disk balata</a> kategorisine bakın. </p><h2>Gidon, Koruma ve Aksesuar Seçenekleri</h2><p class=\"editor-paragraph\"> Bakımın yanında düşme ve sürtünmeye karşı koruma ile sürüş konforu da önemlidir. Aşağıdaki başlıklar NS 200 için sık tercih edilen kalemleri özetliyor. </p><ul><li><b>Koruma:</b> <a href=\"/gogo-koruma-takozu-bajaj-pulsar-ns-200-2014-2024\">GoGo koruma takozu</a> olası devrilmelerde şasi ve motor çevresindeki hasarı azaltmaya yardımcı olur.</li><li><b>Manetler:</b> <a href=\"/gear5-spor-manet-siyah-bajaj-pulsar-ns-200\">Gear5 spor manet</a> farklı renk seçenekleriyle sunuluyor; sinyal ve park modüllü modeller de var.</li><li><b>Görünüm:</b> <a href=\"/gogo-tank-pad-set-siyah-kirmizi-004-bajaj-pulsar-ns-200-rs-200\">Tank pad seti</a> ve sticker setleriyle depo yüzeyini koruyabilirsiniz.</li><li><b>Ayna ve ön takım:</b> <a href=\"/monero-ayna-takimi-bajaj-pulsar-ns-200\">Monero ayna takımı</a> ile kırılan ya da gevşeyen aynalar yenilenebilir.</li></ul><p class=\"editor-paragraph\"> Model bazında tüm parçaları görmek için <a href=\"/pulsar-ns-200\">Pulsar NS 200</a> kategorisini, marka geneli için <a href=\"/bajaj\">Bajaj</a> kategorisini kullanabilirsiniz. </p><h2>Parça Seçerken Kontrol Listesi</h2><ol><li>Ürün adında Pulsar NS 200 uyumunun yazdığından emin olun.</li><li>Aracınızın model yılına ait kullanım kılavuzundaki değerleri esas alın.</li><li>Zincir değişiminde zinciri ve iki dişliyi birlikte düşünün.</li><li>Yağ değişiminde filtreyi ve gerekiyorsa sızdırmazlık elemanlarını yenileyin.</li><li>Fren parçalarını takım olarak, sağ-sol veya ön-arka dengesini gözeterek değiştirin.</li></ol><h2>Sık Sorulan Sorular</h2><h3>Pulsar NS 200'ün motor yağı kapasitesi nedir?</h3><p class=\"editor-paragraph\"> Bajaj kullanıcı kılavuzuna göre bakımda yenileme miktarı 1200 ml, motor revizyonunda ise 1400 ml'dir. Model yılınıza göre değişebileceği için kendi kılavuzunuzu da kontrol edin. </p><h3>Zincir ne sıklıkla yağlanmalı?</h3><p class=\"editor-paragraph\"> Bajaj bakım çizelgesi O-ring zincirin her 500 km'de yağlanmasını belirtir. Yağmurlu ya da tozlu yollardan sonra zinciri temizleyip yeniden yağlamak da iyi bir alışkanlıktır. </p><h3>Hangi parçaları birlikte değiştirmeliyim?</h3><p class=\"editor-paragraph\"> Zincir, ön dişli ve arka dişli birlikte aşınır; birlikte yenilenmeleri en sağlıklısıdır. Yağ değişiminde yağ filtresini, bakımda da gerekiyorsa hava filtresi ve bujiyi kontrol edin. </p><p class=\"editor-paragraph\"> Pulsar NS 200 bakımını kılavuzdaki aralıklara göre planlamak, beklenmedik arızaları azaltır. Doğru parçayı seçmekte tereddüt ederseniz <a href=\"/pages/iletisim\">iletişim sayfamızdan</a> bize ulaşabilir, ürün seçimi konusunda destek alabilirsiniz. Bakım için diğer parçalara <a href=\"/yedek-parca\">yedek parça</a> kategorisinden de göz atabilirsiniz. </p><p class=\"editor-paragraph\"> <i>Kapak fotoğrafı: <a href=\"https://pixabay.com/users/t0masx1-19735594/\">t0masx1</a> / <a href=\"https://pixabay.com/\">Pixabay</a></i> </p>\n          </div>\n          </html>\n  ",
+  "contentData": "{\"time\":1794460347307,\"blocks\":[{\"id\":\"3cxi300001\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>Yayın tarihi: 12 Kasım 2026</i>\"}},{\"id\":\"3cxig00002\",\"type\":\"paragraph\",\"data\":{\"text\":\"Bajaj Pulsar NS 200, sıvı soğutmalı tek silindirli motoru ve üç bujili ateşleme sistemiyle şehir içinde de uzun yolda da kullanılan popüler bir naked sport motosiklettir. Bu karakterdeki bir motorda düzenli bakım, hem performansı hem de parça ömrünü doğrudan etkiler. Bu rehberde Bajaj'ın yayımladığı kullanıcı kılavuzu ve bakım çizelgesindeki bilgilere dayanarak temel bakım kalemlerini, hangi parçaya ne zaman bakılması gerektiğini ve yedek parça seçerken nelere dikkat edeceğinizi özetliyoruz.\"}},{\"id\":\"3cxig00003\",\"type\":\"header\",\"data\":{\"text\":\"Periyodik Bakımın Temelleri\",\"level\":2}},{\"id\":\"3cxig00004\",\"type\":\"paragraph\",\"data\":{\"text\":\"Pulsar NS 200 kullanıcı kılavuzu, motor yağı seviyesinin düzenli kontrol edilmesini ve periyodik bakım tablosuna uyulmasını istiyor. Kılavuzdaki kontrol noktaları arasında yağ seviyesi, buji, zincir gevşekliği, fren balataları ve kumanda kabloları öne çıkıyor. Aşağıdaki tabloda Bajaj'ın yayımladığı belgelerden derlenen başlıca değerleri bulabilirsiniz.\"}},{\"id\":\"3cxih00005\",\"type\":\"table\",\"data\":{\"withHeadings\":true,\"content\":[[\"<b>Kalem</b>\",\"<b>Bajaj belgelerindeki bilgi</b>\"],[\"Yağ miktarı (bakımda)\",\"1200 ml (Pulsar NS 200 kullanıcı kılavuzu)\"],[\"Zincir gevşekliği\",\"15–25 mm (Pulsar NS 200 kullanıcı kılavuzu)\"],[\"Zincir yağlama\",\"O-ring zincir için her 500 km'de müşteri tarafından yağlama (Bajaj bakım çizelgesi)\"],[\"Buji değişimi\",\"Her 20.000 km'de (Bajaj bakım çizelgesi)\"],[\"Hava filtresi\",\"Her 15.000 km'de değişim, aralarda temizlik (Bajaj bakım çizelgesi)\"],[\"Yağ filtresi\",\"Her yağ değişiminde yenileme (Bajaj bakım çizelgesi)\"]]}},{\"id\":\"3cxih00006\",\"type\":\"paragraph\",\"data\":{\"text\":\"Önemli bir not: Bajaj'ın farklı model yılları için yayımladığı belgelerde yağ değişim aralığı ve buji aralığı gibi değerler değişebiliyor. Örneğin eski kullanıcı kılavuzunda ilk bakımdan sonra her 5.000 km'de yağ değişimi belirtilirken, BS-VI kılavuzunda önerilen yağ ile 10.000 km'lik değişim aralığı yer alıyor. Bu yüzden kesin değer için aracınızın kendi kullanım kılavuzuna bakmanızı öneririz.\"}},{\"id\":\"3cxih00007\",\"type\":\"header\",\"data\":{\"text\":\"Motor Yağı, Filtreler ve Buji\",\"level\":2}},{\"id\":\"3cxih00008\",\"type\":\"paragraph\",\"data\":{\"text\":\"Pulsar NS 200 kılavuzları 20W50 viskoziteli, JASO MA standardına uygun motosiklet yağı önerir; BS-VI kılavuzunda ayrıca 10W50 sentetik seçeneği de geçer. Motosiklet yağı seçerken JASO sınıfına dikkat etmek gerekir; farkı <a href=\\\"/blog/motosiklet-yagi-secimi-10w-40-jaso-ma-ve-mb-farki\\\">motosiklet yağı seçimi rehberimizde</a> ayrıntılı anlattık. Güncel seçeneklere <a href=\\\"/yaglar\\\">yağlar</a> kategorisinden ulaşabilirsiniz.\"}},{\"id\":\"3cxih00009\",\"type\":\"paragraph\",\"data\":{\"text\":\"Yağ değişiminde filtreyi de yenilemek gerekir. Bajaj bakım çizelgesi de yağ filtresinin her yağ değişiminde değiştirilmesini söylüyor. Model uyumlu seçeneklerden <a href=\\\"/bajaj-yag-filtresi-orjinal-bajaj-pulsar-ns-200-rs-200-dominar-250\\\">orijinal Bajaj yağ filtresi</a>, <a href=\\\"/hiflo-yag-filtresi-hf655-bajaj-pulsar-ns-200-dominar-400-ktm-200-duke-ktm-390-duke-dominar-250-d\\\">Hiflo HF655 yağ filtresi</a> ve <a href=\\\"/monero-yag-filtresi-bajaj-pulsar-ns-200-rs-200\\\">Monero yağ filtresi</a> bulunuyor.\"}},{\"id\":\"3cxih0000a\",\"type\":\"list\",\"data\":{\"style\":\"unordered\",\"items\":[\"<b>Yağ seviyesi:</b> Kılavuz, seviyenin göstergedeki alt ve üst işaret arasında tutulmasını ister. Kontrolü motor düz zeminde dururken yapın.\",\"<b>Hava filtresi:</b> Tozlu yollarda sık temizlik gerekir. Değişim için <a href=\\\"/boss-hava-filtre-elemani-bs6302-bajaj-pulsar-ns-200-rs-200\\\">Boss hava filtre elemanı</a> veya <a href=\\\"/monero-hava-filtre-elemani-bajaj-pulsar-ns-200-rs-200\\\">Monero hava filtre elemanı</a> uygundur.\",\"<b>Buji ve buji başlığı:</b> Ateşleme düzensizliği, zor çalışma ve performans kaybında bujileri ve başlıkları kontrol edin. <a href=\\\"/bajaj-buji-orjinal-bajaj-pulsar-ns-200-rs-200\\\">Orijinal Bajaj buji</a> ve <a href=\\\"/bajaj-orta-buji-basligi-dk111011-orjinal-bajaj-pulsar-ns-200\\\">orta buji başlığı</a> bu iş için mevcut.\",\"<b>Buji aralığı:</b> Kılavuzlar arasında farklı değerler yer aldığından ayar öncesinde kendi aracınızın kılavuzunu kontrol edin.\"]}},{\"id\":\"3cxih0000b\",\"type\":\"image\",\"data\":{\"file\":{\"url\":\"__IMG_inline__\"},\"caption\":\"Pulsar NS 200'de zincir ve dişli bakımı düzenli kontrol gerektirir (Fotoğraf: <a href=\\\"https://pixabay.com/users/Republica-24347/\\\">Republica</a> / <a href=\\\"https://pixabay.com/\\\">Pixabay</a>)\",\"withBorder\":false,\"stretched\":false,\"withBackground\":false}},{\"id\":\"3cxih0000c\",\"type\":\"header\",\"data\":{\"text\":\"Zincir, Dişli ve Fren Parçaları\",\"level\":2}},{\"id\":\"3cxih0000d\",\"type\":\"image\",\"data\":{\"file\":{\"url\":\"__IMG_collage__\"},\"caption\":\"Pulsar NS 200 için zincir-dişli, fren balatası ve filtre seçenekleri – Soydaş Motosiklet\",\"withBorder\":false,\"stretched\":false,\"withBackground\":false}},{\"id\":\"3cxih0000e\",\"type\":\"paragraph\",\"data\":{\"text\":\"NS 200'ün O-ring zinciri, Bajaj bakım çizelgesine göre her 500 km'de yağlanmalıdır. Zincir gevşekliği kılavuzda 15–25 mm olarak veriliyor. Zincir sürekli aşırı gergin ya da çok gevşek kalırsa hem zincir hem de dişliler hızlı yıpranır. Değişimde zincir, ön dişli ve arka dişlinin birlikte yenilenmesi doğru yaklaşımdır. Ayrıntılar için <a href=\\\"/blog/motosiklet-zincir-disli-seti-secimi-ve-degisim-rehberi\\\">zincir dişli seti seçimi ve değişim rehberimize</a> göz atabilirsiniz.\"}},{\"id\":\"3cxih0000f\",\"type\":\"paragraph\",\"data\":{\"text\":\"Ürün adında 14T ön ve 40T arka dişli bilgisi geçen setler arasında <a href=\\\"/choho-zincir-disli-set-14t-40t-bajaj-pulsar-ns-200-rs-200\\\">Choho zincir dişli seti</a> ve <a href=\\\"/gear5-on-arka-disli-set-14t-40t-bajaj-pulsar-ns-200\\\">Gear5 ön-arka dişli seti</a> var. Yalnızca arka dişliyi değiştirecekseniz <a href=\\\"/monero-arka-disli-40t-bajaj-pulsar-ns-200\\\">Monero 40T arka dişli</a> seçeneğine bakabilirsiniz. Tüm seçenekler <a href=\\\"/zincir-ve-zincir-disli-setler\\\">zincir ve zincir dişli setler</a> kategorisinde yer alıyor.\"}},{\"id\":\"3cxih0000g\",\"type\":\"paragraph\",\"data\":{\"text\":\"Fren tarafında balata kalınlığını ve disk yüzeyini düzenli kontrol edin. Ön fren için <a href=\\\"/bajaj-on-disk-balata-orjinal-bajaj-pulsar-ns-200-rs-200-discover\\\">orijinal Bajaj ön disk balata</a> ve <a href=\\\"/ask-on-disk-balata-bajaj-discover-pulsar-ns-200-pulsar-rs-200\\\">ASK ön disk balata</a>, arka fren için <a href=\\\"/ask-arka-disk-balata-bajaj-pulsar-ns-200-rs-200\\\">ASK arka disk balata</a> mevcut. Disk değişimi gerekirse <a href=\\\"/bajaj-on-fren-diski-jr131026-orjinal-bajaj-pulsar-ns-200\\\">ön fren diski</a> ve <a href=\\\"/monero-arka-fren-diski-bajaj-pulsar-ns-200\\\">arka fren diski</a> ürünleri de var. Değişim zamanını anlamak için fren balatası ne zaman değişir yazımızı okuyabilirsiniz. Diğer ürünler için <a href=\\\"/disk-balata\\\">disk balata</a> kategorisine bakın.\"}},{\"id\":\"3cxih0000h\",\"type\":\"header\",\"data\":{\"text\":\"Gidon, Koruma ve Aksesuar Seçenekleri\",\"level\":2}},{\"id\":\"3cxih0000i\",\"type\":\"paragraph\",\"data\":{\"text\":\"Bakımın yanında düşme ve sürtünmeye karşı koruma ile sürüş konforu da önemlidir. Aşağıdaki başlıklar NS 200 için sık tercih edilen kalemleri özetliyor.\"}},{\"id\":\"3cxih0000j\",\"type\":\"list\",\"data\":{\"style\":\"unordered\",\"items\":[\"<b>Koruma:</b> <a href=\\\"/gogo-koruma-takozu-bajaj-pulsar-ns-200-2014-2024\\\">GoGo koruma takozu</a> olası devrilmelerde şasi ve motor çevresindeki hasarı azaltmaya yardımcı olur.\",\"<b>Manetler:</b> <a href=\\\"/gear5-spor-manet-siyah-bajaj-pulsar-ns-200\\\">Gear5 spor manet</a> farklı renk seçenekleriyle sunuluyor; sinyal ve park modüllü modeller de var.\",\"<b>Görünüm:</b> <a href=\\\"/gogo-tank-pad-set-siyah-kirmizi-004-bajaj-pulsar-ns-200-rs-200\\\">Tank pad seti</a> ve sticker setleriyle depo yüzeyini koruyabilirsiniz.\",\"<b>Ayna ve ön takım:</b> <a href=\\\"/monero-ayna-takimi-bajaj-pulsar-ns-200\\\">Monero ayna takımı</a> ile kırılan ya da gevşeyen aynalar yenilenebilir.\"]}},{\"id\":\"3cxih0000k\",\"type\":\"paragraph\",\"data\":{\"text\":\"Model bazında tüm parçaları görmek için <a href=\\\"/pulsar-ns-200\\\">Pulsar NS 200</a> kategorisini, marka geneli için <a href=\\\"/bajaj\\\">Bajaj</a> kategorisini kullanabilirsiniz.\"}},{\"id\":\"3cxih0000l\",\"type\":\"header\",\"data\":{\"text\":\"Parça Seçerken Kontrol Listesi\",\"level\":2}},{\"id\":\"3cxih0000m\",\"type\":\"list\",\"data\":{\"style\":\"ordered\",\"items\":[\"Ürün adında Pulsar NS 200 uyumunun yazdığından emin olun.\",\"Aracınızın model yılına ait kullanım kılavuzundaki değerleri esas alın.\",\"Zincir değişiminde zinciri ve iki dişliyi birlikte düşünün.\",\"Yağ değişiminde filtreyi ve gerekiyorsa sızdırmazlık elemanlarını yenileyin.\",\"Fren parçalarını takım olarak, sağ-sol veya ön-arka dengesini gözeterek değiştirin.\"]}},{\"id\":\"3cxih0000n\",\"type\":\"header\",\"data\":{\"text\":\"Sık Sorulan Sorular\",\"level\":2}},{\"id\":\"3cxih0000o\",\"type\":\"header\",\"data\":{\"text\":\"Pulsar NS 200'ün motor yağı kapasitesi nedir?\",\"level\":3}},{\"id\":\"3cxih0000p\",\"type\":\"paragraph\",\"data\":{\"text\":\"Bajaj kullanıcı kılavuzuna göre bakımda yenileme miktarı 1200 ml, motor revizyonunda ise 1400 ml'dir. Model yılınıza göre değişebileceği için kendi kılavuzunuzu da kontrol edin.\"}},{\"id\":\"3cxih0000q\",\"type\":\"header\",\"data\":{\"text\":\"Zincir ne sıklıkla yağlanmalı?\",\"level\":3}},{\"id\":\"3cxih0000r\",\"type\":\"paragraph\",\"data\":{\"text\":\"Bajaj bakım çizelgesi O-ring zincirin her 500 km'de yağlanmasını belirtir. Yağmurlu ya da tozlu yollardan sonra zinciri temizleyip yeniden yağlamak da iyi bir alışkanlıktır.\"}},{\"id\":\"3cxih0000s\",\"type\":\"header\",\"data\":{\"text\":\"Hangi parçaları birlikte değiştirmeliyim?\",\"level\":3}},{\"id\":\"3cxih0000t\",\"type\":\"paragraph\",\"data\":{\"text\":\"Zincir, ön dişli ve arka dişli birlikte aşınır; birlikte yenilenmeleri en sağlıklısıdır. Yağ değişiminde yağ filtresini, bakımda da gerekiyorsa hava filtresi ve bujiyi kontrol edin.\"}},{\"id\":\"3cxih0000u\",\"type\":\"paragraph\",\"data\":{\"text\":\"Pulsar NS 200 bakımını kılavuzdaki aralıklara göre planlamak, beklenmedik arızaları azaltır. Doğru parçayı seçmekte tereddüt ederseniz <a href=\\\"/pages/iletisim\\\">iletişim sayfamızdan</a> bize ulaşabilir, ürün seçimi konusunda destek alabilirsiniz. Bakım için diğer parçalara <a href=\\\"/yedek-parca\\\">yedek parça</a> kategorisinden de göz atabilirsiniz.\"}},{\"id\":\"3cxih0000v\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>Kapak fotoğrafı: <a href=\\\"https://pixabay.com/users/t0masx1-19735594/\\\">t0masx1</a> / <a href=\\\"https://pixabay.com/\\\">Pixabay</a></i>\"}}],\"version\":\"2.28.2\"}",
+  "removedLinks": []
+}
