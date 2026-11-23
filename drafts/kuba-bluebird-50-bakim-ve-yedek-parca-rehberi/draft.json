@@ -1,0 +1,352 @@
+{
+  "topic": "Kuba Bluebird 50 Bakım ve Yedek Parça Rehberi",
+  "approved": true,
+  "qualityIssues": [],
+  "words": 882,
+  "createdAt": "2026-11-23T14:40:51.201Z",
+  "model": "claude-sonnet-5-5",
+  "title": "Kuba Bluebird 50 Bakım ve Yedek Parça Rehberi",
+  "slug": "kuba-bluebird-50-bakim-ve-yedek-parca-rehberi",
+  "shortDescription": "Kuba Bluebird 50 için düzenli bakım kalemleri, kaporta, conta, sinyal ve gidon gibi sık değişen parçalar ve doğru parça seçimi için pratik ipuçları.",
+  "seoTitle": "Kuba Bluebird 50 Bakım ve Yedek Parça | Soydaş Motosiklet",
+  "seoDescription": "Kuba Bluebird 50 bakımında nelere bakılmalı? Yağ, buji, fren, kaporta, conta, sinyal ve gidon gibi parçalarda doğru seçim için pratik rehber.",
+  "images": {
+    "cover": "cover.jpg",
+    "inline": "inline.jpg",
+    "collage": "collage.jpg"
+  },
+  "coverPhoto": {
+    "provider": "pixabay",
+    "id": "2303137",
+    "user": "KleeAlee",
+    "link": "https://pixabay.com/photos/vespa-white-wall-scooter-bike-2303137/"
+  },
+  "blocks": [
+    {
+      "id": "di9kg00001",
+      "type": "paragraph",
+      "data": {
+        "text": "<i>Yayın tarihi: 23 Kasım 2026</i>"
+      }
+    },
+    {
+      "id": "di9ku00002",
+      "type": "paragraph",
+      "data": {
+        "text": "Kuba Bluebird 50, şehir içi kısa mesafelerde pratik bir ulaşım arayan sürücülerin tercih ettiği otomatik vitesli bir scooter. Günlük kullanımda sık sık dur-kalk yapan, park halinde duran ve her hava koşuluna maruz kalan bir araç olduğu için bakımı ihmal edildiğinde küçük sorunlar hızla büyüyebilir. Bu rehberde Bluebird 50 için düzenli kontrol edilmesi gereken noktaları, sık değişen parça gruplarını ve doğru parça seçimi için dikkat edilecek ayrıntıları bir araya getirdik."
+      }
+    },
+    {
+      "id": "di9ku00003",
+      "type": "header",
+      "data": {
+        "text": "Bakıma Başlamadan Önce: Kılavuz Her Şeyden Önce Gelir",
+        "level": 2
+      }
+    },
+    {
+      "id": "di9ku00004",
+      "type": "paragraph",
+      "data": {
+        "text": "Kuba Bluebird 50 ile ilgili internette dolaşan bakım aralıkları ve yağ miktarları kaynaktan kaynağa değişiyor. İlk bakım kilometresi, periyodik bakım aralığı ve yağ kapasitesi gibi değerler için en güvenilir kaynak, aracınızla birlikte verilen kullanım kılavuzu ve Kuba Motor'un yayımladığı katalog ile kullanım kılavuzudur. Bu yazıda kesin kilometre veya litre değerleri vermiyoruz; <b>kesin değer için aracınızın kullanım kılavuzuna bakmanızı</b> öneririz."
+      }
+    },
+    {
+      "id": "di9ku00005",
+      "type": "paragraph",
+      "data": {
+        "text": "Genel bir kural olarak, ilk bakımı kılavuzda belirtilen sürede yaptırmak ve sonraki bakımları düzenli sürdürmek motor ömrü açısından en önemli adımdır. Motor yağı seviyesini yağ çubuğundan sık sık kontrol etmek de en basit ama en etkili alışkanlıktır. Yağ seçimi hakkında genel bilgi için <a href=\"/blog/motosiklet-yagi-secimi-10w-40-jaso-ma-ve-mb-farki\">motosiklet yağı seçimi rehberimize</a> göz atabilir, uygun ürünleri <a href=\"/yaglar\">yağlar kategorisinde</a> inceleyebilirsiniz."
+      }
+    },
+    {
+      "id": "di9ku00006",
+      "type": "header",
+      "data": {
+        "text": "Düzenli Kontrol Edilmesi Gereken Bakım Kalemleri",
+        "level": 2
+      }
+    },
+    {
+      "id": "di9ku00007",
+      "type": "paragraph",
+      "data": {
+        "text": "Bluebird 50 gibi küçük hacimli scooterlarda bakımın büyük kısmı birkaç temel kalemde toplanır. Aşağıdaki liste, hangi noktalara düzenli bakmanız gerektiğini özetliyor:"
+      }
+    },
+    {
+      "id": "di9ku00008",
+      "type": "list",
+      "data": {
+        "style": "unordered",
+        "items": [
+          "<b>Motor yağı:</b> Seviyeyi yağ çubuğuyla düz zeminde kontrol edin, değişimi kılavuzdaki periyoda göre yapın.",
+          "<b>Buji:</b> Renk ve tırnak aralığı kontrol edilmeli, aşınmışsa değiştirilmelidir.",
+          "<b>Hava filtresi:</b> Tıkanan filtre yakıt tüketimini artırır ve performansı düşürür.",
+          "<b>Fren sistemi:</b> Balata kalınlığı, fren teli ve kol boşluğu düzenli bakılmalıdır.",
+          "<b>Lastikler:</b> Basınç ve diş derinliği hem güvenliği hem yol tutuşu etkiler.",
+          "<b>Akü ve elektrik:</b> Sinyal, stop, far ve korna çalışması sık sık denenmelidir.",
+          "<b>Gaz teli:</b> Gaz kolunun boşluğu ve geri dönüşü kontrol edilmelidir."
+        ]
+      }
+    },
+    {
+      "id": "di9ku00009",
+      "type": "paragraph",
+      "data": {
+        "text": "Fren balatasının ne zaman değişmesi gerektiğini merak ediyorsanız <a href=\"/blog/motosiklet-fren-balatasi-ne-zaman-degisir\">fren balatası değişim yazımız</a> işinize yarayacaktır. Otomatik vitesli scooterlarda aktarma sisteminin (kayış, makara, debriyaj) durumu da zaman içinde kontrol edilmesi gereken bir başka konudur; ayrıntılar için scooter varyatör bakımı rehberine bakabilirsiniz."
+      }
+    },
+    {
+      "id": "di9ku0000a",
+      "type": "header",
+      "data": {
+        "text": "Bluebird 50 İçin Sık Değişen Parça Grupları",
+        "level": 2
+      }
+    },
+    {
+      "id": "di9ku0000b",
+      "type": "paragraph",
+      "data": {
+        "text": "Aşağıdaki ürünler ürün adlarında Kuba Bluebird'e uyumlu olduğu belirtilen parçalardır. Satın almadan önce aracınızdaki mevcut parçayla karşılaştırmanız her zaman iyi bir alışkanlıktır. Tüm model parçalarını <a href=\"/bluebird-50\">Bluebird 50 kategorisinde</a>, genel Kuba ürünlerini ise <a href=\"/kuba\">Kuba kategorisinde</a> bulabilirsiniz."
+      }
+    },
+    {
+      "id": "di9ku0000c",
+      "type": "image",
+      "data": {
+        "file": {
+          "url": "__IMG_collage__"
+        },
+        "caption": "Kuba Bluebird 50 için conta, kaporta, paspas ve motor askısı seçenekleri – Soydaş Motosiklet",
+        "withBorder": false,
+        "stretched": false,
+        "withBackground": false
+      }
+    },
+    {
+      "id": "di9ku0000d",
+      "type": "header",
+      "data": {
+        "text": "Conta ve Motor Parçaları",
+        "level": 3
+      }
+    },
+    {
+      "id": "di9ku0000e",
+      "type": "paragraph",
+      "data": {
+        "text": "Motor açıldığında ya da yağ sızıntısı fark edildiğinde conta yenilemek gerekir. <a href=\"/monero-conta-takimi---kuba-bluebird-50\">Monero Kuba Bluebird 50 conta takımı</a> bu iş için hazır set olarak sunuluyor. Motor titreşiminin arttığını düşünüyorsanız <a href=\"/gear5-motor-askisi-kuba-blueberry-bluebird\">Gear5 motor askısı</a> da kontrol edilecek parçalar arasındadır. Daha geniş seçenek için <a href=\"/contalar\">contalar kategorisine</a> göz atabilirsiniz."
+      }
+    },
+    {
+      "id": "di9ku0000f",
+      "type": "header",
+      "data": {
+        "text": "Kaporta ve Gövde Parçaları",
+        "level": 3
+      }
+    },
+    {
+      "id": "di9ku0000g",
+      "type": "paragraph",
+      "data": {
+        "text": "Düşme, park sırasında çarpma veya güneş nedeniyle solan gövde parçalarında komple set yenilemek hem görünümü hem de bütünlüğü geri kazandırır. <a href=\"/monero-kaporta-set-gri---kuba-bluebird-50\">Monero Kuba Bluebird 50 gri kaporta seti</a> ile <a href=\"/monero-ic-torpido---kuba-bluebird-50\">iç torpido</a> bu gruptaki seçeneklerden. Gövdeyle ilgili tüm ürünler için <a href=\"/kaporta-setler\">kaporta setleri</a> sayfasına bakabilirsiniz."
+      }
+    },
+    {
+      "id": "di9ku0000h",
+      "type": "header",
+      "data": {
+        "text": "Aydınlatma ve Gidon Parçaları",
+        "level": 3
+      }
+    },
+    {
+      "id": "di9ku0000i",
+      "type": "paragraph",
+      "data": {
+        "text": "Sinyal grenajları, düşmelerde ya da küçük darbelerde ilk kırılan parçalardandır. <a href=\"/monero-sinyal-grenaji-kapakli-mavi-kuba-bluebird\">Kapaklı mavi sinyal grenajı</a> ve <a href=\"/monero-arka-sinyal-takimi---kuba-bluebird\">arka sinyal takımı</a> bu ihtiyacı karşılar. Eğilmiş bir gidon ise sürüş güvenliğini doğrudan etkilediği için <a href=\"/monero-gidon-direksiyon-kuba-bluebird-blueberry\">Monero gidon direksiyon</a> seçeneğini değerlendirebilirsiniz."
+      }
+    },
+    {
+      "id": "di9ku0000j",
+      "type": "header",
+      "data": {
+        "text": "Hangi Parça Hangi Belirtiyle Değiştirilmeli?",
+        "level": 2
+      }
+    },
+    {
+      "id": "di9ku0000k",
+      "type": "paragraph",
+      "data": {
+        "text": "Aşağıdaki tablo, sık karşılaşılan durumlarda hangi parça grubuna bakmanız gerektiğini gösteren genel bir özet sunar. Bu tablo kesin arıza teşhisi değil, kontrol için bir başlangıç noktasıdır."
+      }
+    },
+    {
+      "id": "di9ku0000l",
+      "type": "table",
+      "data": {
+        "withHeadings": true,
+        "content": [
+          [
+            "<b>Belirti</b>",
+            "<b>Kontrol Edilecek Alan</b>",
+            "<b>İlgili Parça Grubu</b>"
+          ],
+          [
+            "Motor çevresinde yağ izi",
+            "Birleşim yüzeyleri",
+            "Conta takımı"
+          ],
+          [
+            "Sinyal yanmıyor veya kırık",
+            "Grenaj ve ampul bağlantısı",
+            "Sinyal grenajı, sinyal takımı"
+          ],
+          [
+            "Gidon yana çekiyor",
+            "Gidon ve ön takım",
+            "Gidon direksiyon, ön masa"
+          ],
+          [
+            "Motorda aşırı titreşim",
+            "Motor bağlantıları",
+            "Motor askısı"
+          ],
+          [
+            "Gövdede çatlak veya solma",
+            "Kaporta parçaları",
+            "Kaporta seti, iç torpido"
+          ],
+          [
+            "Ayak basma alanı aşınmış",
+            "Paspas",
+            "Kauçuk paspas"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "di9kv0000m",
+      "type": "image",
+      "data": {
+        "file": {
+          "url": "__IMG_inline__"
+        },
+        "caption": "Scooter bakımında düzenli kontrol, küçük arızaların büyümesini önler (Fotoğraf: <a href=\"https://pixabay.com/users/wal_172619-12138562/\">wal_172619</a> / <a href=\"https://pixabay.com/\">Pixabay</a>)",
+        "withBorder": false,
+        "stretched": false,
+        "withBackground": false
+      }
+    },
+    {
+      "id": "di9kv0000n",
+      "type": "header",
+      "data": {
+        "text": "Sürüş Konforu ve Koruma İçin Aksesuarlar",
+        "level": 2
+      }
+    },
+    {
+      "id": "di9kv0000o",
+      "type": "paragraph",
+      "data": {
+        "text": "Bakım yalnızca mekanik parçalardan ibaret değildir. Ayak bölgesini çamur ve aşınmadan korumak için <a href=\"/gear5-paspas-siyah-kaucuk-kuba-bluebird\">Gear5 siyah kauçuk paspas</a>, rüzgâr ve yağmura karşı korunmak için <a href=\"/monero-siperlik-cami-fitilli-universal-3-5-mm-40x43-cm---kuba-bluebird-50\">siperlik camı</a> kullanışlı seçeneklerdir. Ön tarafta düşme sonrası hasar gördüyseniz <a href=\"/monero-on-masa-kuba-blueberry-bluebird\">Monero ön masa</a> ürününe de bakabilirsiniz. Daha fazla parça için <a href=\"/yedek-parca\">yedek parça kategorisi</a> geniş bir seçki sunar."
+      }
+    },
+    {
+      "id": "di9kv0000p",
+      "type": "header",
+      "data": {
+        "text": "Doğru Parça Seçimi İçin Pratik İpuçları",
+        "level": 2
+      }
+    },
+    {
+      "id": "di9kv0000q",
+      "type": "list",
+      "data": {
+        "style": "ordered",
+        "items": [
+          "Eski parçayı çıkarmadan önce fotoğrafını çekin; bağlantı noktalarını ve konumunu karşılaştırmak kolaylaşır.",
+          "Ürün adında modelinizin yazıp yazmadığını kontrol edin; Bluebird ve Blueberry gibi benzer isimli modellerde ayrıntılara dikkat edin.",
+          "Kaporta setlerinde renk ve parça sayısını doğrulayın.",
+          "Conta gibi motor içi parçaları takarken yüzeylerin temiz olmasına dikkat edin.",
+          "Emin olmadığınız durumlarda parça numarası veya fotoğrafla bize danışın."
+        ]
+      }
+    },
+    {
+      "id": "di9kv0000r",
+      "type": "header",
+      "data": {
+        "text": "Sık Sorulan Sorular",
+        "level": 2
+      }
+    },
+    {
+      "id": "di9kv0000s",
+      "type": "header",
+      "data": {
+        "text": "Kuba Bluebird 50'de hangi yağ kullanılmalı?",
+        "level": 3
+      }
+    },
+    {
+      "id": "di9kv0000t",
+      "type": "paragraph",
+      "data": {
+        "text": "Yağ viskozitesi ve miktarı için Kuba Motor'un kullanım kılavuzundaki öneriyi esas almalısınız. Farklı sitelerde birbirinden farklı değerler yer aldığı için yalnızca kılavuzdaki bilgiye güvenmek en doğrusu. Yağ seçimiyle ilgili genel bilgileri yağ seçimi yazımızda bulabilirsiniz."
+      }
+    },
+    {
+      "id": "di9kv0000u",
+      "type": "header",
+      "data": {
+        "text": "Bluebird 50 bakımı ne sıklıkla yapılmalı?",
+        "level": 3
+      }
+    },
+    {
+      "id": "di9kv0000v",
+      "type": "paragraph",
+      "data": {
+        "text": "İlk bakım ve sonraki periyotlar için kullanım kılavuzundaki kilometre değerlerini takip edin. Bunun yanında yağ seviyesi, lastik basıncı, fren ve aydınlatma gibi kalemleri kilometreden bağımsız olarak sık aralıklarla kontrol etmek iyi bir alışkanlıktır."
+      }
+    },
+    {
+      "id": "di9kv0000w",
+      "type": "header",
+      "data": {
+        "text": "Kaporta setini satın alırken nelere dikkat etmeliyim?",
+        "level": 3
+      }
+    },
+    {
+      "id": "di9kv0000x",
+      "type": "paragraph",
+      "data": {
+        "text": "Modelin doğru olduğundan, renk seçiminden ve set içindeki parça sayısından emin olun. Bluebird 50 için ürün adında modeli yazan setleri tercih etmeniz uyum açısından daha güvenlidir."
+      }
+    },
+    {
+      "id": "di9kv0000y",
+      "type": "paragraph",
+      "data": {
+        "text": "Kuba Bluebird 50'nin uzun ömürlü ve sorunsuz çalışması, düzenli kontrol ve doğru parça seçimiyle mümkün. Hangi parçanın aracınıza uygun olduğundan emin değilseniz <a href=\"/pages/iletisim\">iletişim sayfamızdan</a> bize ulaşabilirsiniz."
+      }
+    },
+    {
+      "id": "di9kv0000z",
+      "type": "paragraph",
+      "data": {
+        "text": "<i>Kapak fotoğrafı: <a href=\"https://pixabay.com/users/KleeAlee-732063/\">KleeAlee</a> / <a href=\"https://pixabay.com/\">Pixabay</a></i>"
+      }
+    }
+  ],
+  "contentHtml": "<html lang=\"en\">\n          <style>.ikas-editor-v1>table,td,th{border:1px solid #e8e8eb;border-collapse:collapse;font-size:14px}.ikas-editor-v1>th,td{padding:6px 12px}.ikas-editor-v1 ul,.ikas-editor-v1 ol{padding-left:20px}.ikas-editor-v1 ul li{list-style-type:disc;margin:8px 0 8px 16px}.ikas-editor-v1 ol li{list-style-type:decimal;margin:8px 0 8px 16px}.ikas-editor-v1 li{margin:8px 0 8px 16px}.ikas-editor-v1 code{display:block;white-space:pre-wrap}.ikas-editor-v1 blockquote{margin-inline-start:0;border-left:3px solid rgb(41 41 41);padding-left:23px}.ikas-editor-v1 figure{margin-inline:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0;width:100%}.ikas-editor-v1 img{max-width:800px;object-fit:cover;object-position:center}.ikas-editor-v1 img.img-bg{padding:1.5em!important;background:#cdd1e0!important}.ikas-editor-v1 img.img-fullwidth{width:100%!important;max-width:100%!important;margin:0 auto!important}.ikas-editor-v1 figcaption{text-align:center;padding-top:6px;word-break:break-word;font-size:12px;background:0 0;z-index:{};}.ikas-editor-v1 .embed-youtube{width:100%;height:400px}.ikas-editor-v1 a{color:#0070f3;text-decoration:underline;cursor:pointer}.ikas-editor-v1 a:hover{opacity:.8}.products-container{display:flex;flex-direction:column;gap:10px}.product-block-container{margin:0 auto;cursor:pointer;flex:1;display:flex;gap:20px;padding:10px 0}.product-image{width:120px;height:120px;object-fit:cover;border-radius:4px;flex-shrink:0}.product-name{font-size:15px;font-weight:500;width:100%;margin:0 0 4px}.product-brand{font-size:13px;font-weight:400;color:#adb5bd;margin:0 0 4px}.product-discount-price,.product-price{width:fit-content;font-size:16px;font-weight:500;color:#000}.product-price{margin:6px 0 0}.product-discount-price{margin:6px 8px 0 0;text-decoration:line-through}.ikas-editor-v1 table b{font-weight:bold}.ikas-editor-v1 table i{font-style:italic}</style>\n          <div class=\"ikas-editor-v1\">\n          <p class=\"editor-paragraph\"> <i>Yayın tarihi: 23 Kasım 2026</i> </p><p class=\"editor-paragraph\"> Kuba Bluebird 50, şehir içi kısa mesafelerde pratik bir ulaşım arayan sürücülerin tercih ettiği otomatik vitesli bir scooter. Günlük kullanımda sık sık dur-kalk yapan, park halinde duran ve her hava koşuluna maruz kalan bir araç olduğu için bakımı ihmal edildiğinde küçük sorunlar hızla büyüyebilir. Bu rehberde Bluebird 50 için düzenli kontrol edilmesi gereken noktaları, sık değişen parça gruplarını ve doğru parça seçimi için dikkat edilecek ayrıntıları bir araya getirdik. </p><h2>Bakıma Başlamadan Önce: Kılavuz Her Şeyden Önce Gelir</h2><p class=\"editor-paragraph\"> Kuba Bluebird 50 ile ilgili internette dolaşan bakım aralıkları ve yağ miktarları kaynaktan kaynağa değişiyor. İlk bakım kilometresi, periyodik bakım aralığı ve yağ kapasitesi gibi değerler için en güvenilir kaynak, aracınızla birlikte verilen kullanım kılavuzu ve Kuba Motor'un yayımladığı katalog ile kullanım kılavuzudur. Bu yazıda kesin kilometre veya litre değerleri vermiyoruz; <b>kesin değer için aracınızın kullanım kılavuzuna bakmanızı</b> öneririz. </p><p class=\"editor-paragraph\"> Genel bir kural olarak, ilk bakımı kılavuzda belirtilen sürede yaptırmak ve sonraki bakımları düzenli sürdürmek motor ömrü açısından en önemli adımdır. Motor yağı seviyesini yağ çubuğundan sık sık kontrol etmek de en basit ama en etkili alışkanlıktır. Yağ seçimi hakkında genel bilgi için <a href=\"/blog/motosiklet-yagi-secimi-10w-40-jaso-ma-ve-mb-farki\">motosiklet yağı seçimi rehberimize</a> göz atabilir, uygun ürünleri <a href=\"/yaglar\">yağlar kategorisinde</a> inceleyebilirsiniz. </p><h2>Düzenli Kontrol Edilmesi Gereken Bakım Kalemleri</h2><p class=\"editor-paragraph\"> Bluebird 50 gibi küçük hacimli scooterlarda bakımın büyük kısmı birkaç temel kalemde toplanır. Aşağıdaki liste, hangi noktalara düzenli bakmanız gerektiğini özetliyor: </p><ul><li><b>Motor yağı:</b> Seviyeyi yağ çubuğuyla düz zeminde kontrol edin, değişimi kılavuzdaki periyoda göre yapın.</li><li><b>Buji:</b> Renk ve tırnak aralığı kontrol edilmeli, aşınmışsa değiştirilmelidir.</li><li><b>Hava filtresi:</b> Tıkanan filtre yakıt tüketimini artırır ve performansı düşürür.</li><li><b>Fren sistemi:</b> Balata kalınlığı, fren teli ve kol boşluğu düzenli bakılmalıdır.</li><li><b>Lastikler:</b> Basınç ve diş derinliği hem güvenliği hem yol tutuşu etkiler.</li><li><b>Akü ve elektrik:</b> Sinyal, stop, far ve korna çalışması sık sık denenmelidir.</li><li><b>Gaz teli:</b> Gaz kolunun boşluğu ve geri dönüşü kontrol edilmelidir.</li></ul><p class=\"editor-paragraph\"> Fren balatasının ne zaman değişmesi gerektiğini merak ediyorsanız <a href=\"/blog/motosiklet-fren-balatasi-ne-zaman-degisir\">fren balatası değişim yazımız</a> işinize yarayacaktır. Otomatik vitesli scooterlarda aktarma sisteminin (kayış, makara, debriyaj) durumu da zaman içinde kontrol edilmesi gereken bir başka konudur; ayrıntılar için scooter varyatör bakımı rehberine bakabilirsiniz. </p><h2>Bluebird 50 İçin Sık Değişen Parça Grupları</h2><p class=\"editor-paragraph\"> Aşağıdaki ürünler ürün adlarında Kuba Bluebird'e uyumlu olduğu belirtilen parçalardır. Satın almadan önce aracınızdaki mevcut parçayla karşılaştırmanız her zaman iyi bir alışkanlıktır. Tüm model parçalarını <a href=\"/bluebird-50\">Bluebird 50 kategorisinde</a>, genel Kuba ürünlerini ise <a href=\"/kuba\">Kuba kategorisinde</a> bulabilirsiniz. </p><figure class=\"editor-fig-img\"><img class=\"editor-img   \" src=\"__IMG_collage__\" alt=\"Kuba Bluebird 50 için conta, kaporta, paspas ve motor askısı seçenekleri – Soydaş Motosiklet\" width=\"1080\" height=\"360\" style=\"max-width: 100%; aspect-ratio: 1080 / 360;\"><figcaption class=\"editor-fig-cap\">Kuba Bluebird 50 için conta, kaporta, paspas ve motor askısı seçenekleri – Soydaş Motosiklet</figcaption></figure><h3>Conta ve Motor Parçaları</h3><p class=\"editor-paragraph\"> Motor açıldığında ya da yağ sızıntısı fark edildiğinde conta yenilemek gerekir. <a href=\"/monero-conta-takimi---kuba-bluebird-50\">Monero Kuba Bluebird 50 conta takımı</a> bu iş için hazır set olarak sunuluyor. Motor titreşiminin arttığını düşünüyorsanız <a href=\"/gear5-motor-askisi-kuba-blueberry-bluebird\">Gear5 motor askısı</a> da kontrol edilecek parçalar arasındadır. Daha geniş seçenek için <a href=\"/contalar\">contalar kategorisine</a> göz atabilirsiniz. </p><h3>Kaporta ve Gövde Parçaları</h3><p class=\"editor-paragraph\"> Düşme, park sırasında çarpma veya güneş nedeniyle solan gövde parçalarında komple set yenilemek hem görünümü hem de bütünlüğü geri kazandırır. <a href=\"/monero-kaporta-set-gri---kuba-bluebird-50\">Monero Kuba Bluebird 50 gri kaporta seti</a> ile <a href=\"/monero-ic-torpido---kuba-bluebird-50\">iç torpido</a> bu gruptaki seçeneklerden. Gövdeyle ilgili tüm ürünler için <a href=\"/kaporta-setler\">kaporta setleri</a> sayfasına bakabilirsiniz. </p><h3>Aydınlatma ve Gidon Parçaları</h3><p class=\"editor-paragraph\"> Sinyal grenajları, düşmelerde ya da küçük darbelerde ilk kırılan parçalardandır. <a href=\"/monero-sinyal-grenaji-kapakli-mavi-kuba-bluebird\">Kapaklı mavi sinyal grenajı</a> ve <a href=\"/monero-arka-sinyal-takimi---kuba-bluebird\">arka sinyal takımı</a> bu ihtiyacı karşılar. Eğilmiş bir gidon ise sürüş güvenliğini doğrudan etkilediği için <a href=\"/monero-gidon-direksiyon-kuba-bluebird-blueberry\">Monero gidon direksiyon</a> seçeneğini değerlendirebilirsiniz. </p><h2>Hangi Parça Hangi Belirtiyle Değiştirilmeli?</h2><p class=\"editor-paragraph\"> Aşağıdaki tablo, sık karşılaşılan durumlarda hangi parça grubuna bakmanız gerektiğini gösteren genel bir özet sunar. Bu tablo kesin arıza teşhisi değil, kontrol için bir başlangıç noktasıdır. </p><table><tbody><tr><td><b>Belirti</b></td><td><b>Kontrol Edilecek Alan</b></td><td><b>İlgili Parça Grubu</b></td></tr><tr><td>Motor çevresinde yağ izi</td><td>Birleşim yüzeyleri</td><td>Conta takımı</td></tr><tr><td>Sinyal yanmıyor veya kırık</td><td>Grenaj ve ampul bağlantısı</td><td>Sinyal grenajı, sinyal takımı</td></tr><tr><td>Gidon yana çekiyor</td><td>Gidon ve ön takım</td><td>Gidon direksiyon, ön masa</td></tr><tr><td>Motorda aşırı titreşim</td><td>Motor bağlantıları</td><td>Motor askısı</td></tr><tr><td>Gövdede çatlak veya solma</td><td>Kaporta parçaları</td><td>Kaporta seti, iç torpido</td></tr><tr><td>Ayak basma alanı aşınmış</td><td>Paspas</td><td>Kauçuk paspas</td></tr></tbody></table><figure class=\"editor-fig-img\"><img class=\"editor-img   \" src=\"__IMG_inline__\" alt=\"Scooter bakımında düzenli kontrol, küçük arızaların büyümesini önler (Fotoğraf: wal_172619 / Pixabay)\" width=\"1080\" height=\"675\" style=\"max-width: 100%; aspect-ratio: 1080 / 675;\"><figcaption class=\"editor-fig-cap\">Scooter bakımında düzenli kontrol, küçük arızaların büyümesini önler (Fotoğraf: <a href=\"https://pixabay.com/users/wal_172619-12138562/\">wal_172619</a> / <a href=\"https://pixabay.com/\">Pixabay</a>)</figcaption></figure><h2>Sürüş Konforu ve Koruma İçin Aksesuarlar</h2><p class=\"editor-paragraph\"> Bakım yalnızca mekanik parçalardan ibaret değildir. Ayak bölgesini çamur ve aşınmadan korumak için <a href=\"/gear5-paspas-siyah-kaucuk-kuba-bluebird\">Gear5 siyah kauçuk paspas</a>, rüzgâr ve yağmura karşı korunmak için <a href=\"/monero-siperlik-cami-fitilli-universal-3-5-mm-40x43-cm---kuba-bluebird-50\">siperlik camı</a> kullanışlı seçeneklerdir. Ön tarafta düşme sonrası hasar gördüyseniz <a href=\"/monero-on-masa-kuba-blueberry-bluebird\">Monero ön masa</a> ürününe de bakabilirsiniz. Daha fazla parça için <a href=\"/yedek-parca\">yedek parça kategorisi</a> geniş bir seçki sunar. </p><h2>Doğru Parça Seçimi İçin Pratik İpuçları</h2><ol><li>Eski parçayı çıkarmadan önce fotoğrafını çekin; bağlantı noktalarını ve konumunu karşılaştırmak kolaylaşır.</li><li>Ürün adında modelinizin yazıp yazmadığını kontrol edin; Bluebird ve Blueberry gibi benzer isimli modellerde ayrıntılara dikkat edin.</li><li>Kaporta setlerinde renk ve parça sayısını doğrulayın.</li><li>Conta gibi motor içi parçaları takarken yüzeylerin temiz olmasına dikkat edin.</li><li>Emin olmadığınız durumlarda parça numarası veya fotoğrafla bize danışın.</li></ol><h2>Sık Sorulan Sorular</h2><h3>Kuba Bluebird 50'de hangi yağ kullanılmalı?</h3><p class=\"editor-paragraph\"> Yağ viskozitesi ve miktarı için Kuba Motor'un kullanım kılavuzundaki öneriyi esas almalısınız. Farklı sitelerde birbirinden farklı değerler yer aldığı için yalnızca kılavuzdaki bilgiye güvenmek en doğrusu. Yağ seçimiyle ilgili genel bilgileri yağ seçimi yazımızda bulabilirsiniz. </p><h3>Bluebird 50 bakımı ne sıklıkla yapılmalı?</h3><p class=\"editor-paragraph\"> İlk bakım ve sonraki periyotlar için kullanım kılavuzundaki kilometre değerlerini takip edin. Bunun yanında yağ seviyesi, lastik basıncı, fren ve aydınlatma gibi kalemleri kilometreden bağımsız olarak sık aralıklarla kontrol etmek iyi bir alışkanlıktır. </p><h3>Kaporta setini satın alırken nelere dikkat etmeliyim?</h3><p class=\"editor-paragraph\"> Modelin doğru olduğundan, renk seçiminden ve set içindeki parça sayısından emin olun. Bluebird 50 için ürün adında modeli yazan setleri tercih etmeniz uyum açısından daha güvenlidir. </p><p class=\"editor-paragraph\"> Kuba Bluebird 50'nin uzun ömürlü ve sorunsuz çalışması, düzenli kontrol ve doğru parça seçimiyle mümkün. Hangi parçanın aracınıza uygun olduğundan emin değilseniz <a href=\"/pages/iletisim\">iletişim sayfamızdan</a> bize ulaşabilirsiniz. </p><p class=\"editor-paragraph\"> <i>Kapak fotoğrafı: <a href=\"https://pixabay.com/users/KleeAlee-732063/\">KleeAlee</a> / <a href=\"https://pixabay.com/\">Pixabay</a></i> </p>\n          </div>\n          </html>\n  ",
+  "contentData": "{\"time\":1795444851201,\"blocks\":[{\"id\":\"di9kg00001\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>Yayın tarihi: 23 Kasım 2026</i>\"}},{\"id\":\"di9ku00002\",\"type\":\"paragraph\",\"data\":{\"text\":\"Kuba Bluebird 50, şehir içi kısa mesafelerde pratik bir ulaşım arayan sürücülerin tercih ettiği otomatik vitesli bir scooter. Günlük kullanımda sık sık dur-kalk yapan, park halinde duran ve her hava koşuluna maruz kalan bir araç olduğu için bakımı ihmal edildiğinde küçük sorunlar hızla büyüyebilir. Bu rehberde Bluebird 50 için düzenli kontrol edilmesi gereken noktaları, sık değişen parça gruplarını ve doğru parça seçimi için dikkat edilecek ayrıntıları bir araya getirdik.\"}},{\"id\":\"di9ku00003\",\"type\":\"header\",\"data\":{\"text\":\"Bakıma Başlamadan Önce: Kılavuz Her Şeyden Önce Gelir\",\"level\":2}},{\"id\":\"di9ku00004\",\"type\":\"paragraph\",\"data\":{\"text\":\"Kuba Bluebird 50 ile ilgili internette dolaşan bakım aralıkları ve yağ miktarları kaynaktan kaynağa değişiyor. İlk bakım kilometresi, periyodik bakım aralığı ve yağ kapasitesi gibi değerler için en güvenilir kaynak, aracınızla birlikte verilen kullanım kılavuzu ve Kuba Motor'un yayımladığı katalog ile kullanım kılavuzudur. Bu yazıda kesin kilometre veya litre değerleri vermiyoruz; <b>kesin değer için aracınızın kullanım kılavuzuna bakmanızı</b> öneririz.\"}},{\"id\":\"di9ku00005\",\"type\":\"paragraph\",\"data\":{\"text\":\"Genel bir kural olarak, ilk bakımı kılavuzda belirtilen sürede yaptırmak ve sonraki bakımları düzenli sürdürmek motor ömrü açısından en önemli adımdır. Motor yağı seviyesini yağ çubuğundan sık sık kontrol etmek de en basit ama en etkili alışkanlıktır. Yağ seçimi hakkında genel bilgi için <a href=\\\"/blog/motosiklet-yagi-secimi-10w-40-jaso-ma-ve-mb-farki\\\">motosiklet yağı seçimi rehberimize</a> göz atabilir, uygun ürünleri <a href=\\\"/yaglar\\\">yağlar kategorisinde</a> inceleyebilirsiniz.\"}},{\"id\":\"di9ku00006\",\"type\":\"header\",\"data\":{\"text\":\"Düzenli Kontrol Edilmesi Gereken Bakım Kalemleri\",\"level\":2}},{\"id\":\"di9ku00007\",\"type\":\"paragraph\",\"data\":{\"text\":\"Bluebird 50 gibi küçük hacimli scooterlarda bakımın büyük kısmı birkaç temel kalemde toplanır. Aşağıdaki liste, hangi noktalara düzenli bakmanız gerektiğini özetliyor:\"}},{\"id\":\"di9ku00008\",\"type\":\"list\",\"data\":{\"style\":\"unordered\",\"items\":[\"<b>Motor yağı:</b> Seviyeyi yağ çubuğuyla düz zeminde kontrol edin, değişimi kılavuzdaki periyoda göre yapın.\",\"<b>Buji:</b> Renk ve tırnak aralığı kontrol edilmeli, aşınmışsa değiştirilmelidir.\",\"<b>Hava filtresi:</b> Tıkanan filtre yakıt tüketimini artırır ve performansı düşürür.\",\"<b>Fren sistemi:</b> Balata kalınlığı, fren teli ve kol boşluğu düzenli bakılmalıdır.\",\"<b>Lastikler:</b> Basınç ve diş derinliği hem güvenliği hem yol tutuşu etkiler.\",\"<b>Akü ve elektrik:</b> Sinyal, stop, far ve korna çalışması sık sık denenmelidir.\",\"<b>Gaz teli:</b> Gaz kolunun boşluğu ve geri dönüşü kontrol edilmelidir.\"]}},{\"id\":\"di9ku00009\",\"type\":\"paragraph\",\"data\":{\"text\":\"Fren balatasının ne zaman değişmesi gerektiğini merak ediyorsanız <a href=\\\"/blog/motosiklet-fren-balatasi-ne-zaman-degisir\\\">fren balatası değişim yazımız</a> işinize yarayacaktır. Otomatik vitesli scooterlarda aktarma sisteminin (kayış, makara, debriyaj) durumu da zaman içinde kontrol edilmesi gereken bir başka konudur; ayrıntılar için scooter varyatör bakımı rehberine bakabilirsiniz.\"}},{\"id\":\"di9ku0000a\",\"type\":\"header\",\"data\":{\"text\":\"Bluebird 50 İçin Sık Değişen Parça Grupları\",\"level\":2}},{\"id\":\"di9ku0000b\",\"type\":\"paragraph\",\"data\":{\"text\":\"Aşağıdaki ürünler ürün adlarında Kuba Bluebird'e uyumlu olduğu belirtilen parçalardır. Satın almadan önce aracınızdaki mevcut parçayla karşılaştırmanız her zaman iyi bir alışkanlıktır. Tüm model parçalarını <a href=\\\"/bluebird-50\\\">Bluebird 50 kategorisinde</a>, genel Kuba ürünlerini ise <a href=\\\"/kuba\\\">Kuba kategorisinde</a> bulabilirsiniz.\"}},{\"id\":\"di9ku0000c\",\"type\":\"image\",\"data\":{\"file\":{\"url\":\"__IMG_collage__\"},\"caption\":\"Kuba Bluebird 50 için conta, kaporta, paspas ve motor askısı seçenekleri – Soydaş Motosiklet\",\"withBorder\":false,\"stretched\":false,\"withBackground\":false}},{\"id\":\"di9ku0000d\",\"type\":\"header\",\"data\":{\"text\":\"Conta ve Motor Parçaları\",\"level\":3}},{\"id\":\"di9ku0000e\",\"type\":\"paragraph\",\"data\":{\"text\":\"Motor açıldığında ya da yağ sızıntısı fark edildiğinde conta yenilemek gerekir. <a href=\\\"/monero-conta-takimi---kuba-bluebird-50\\\">Monero Kuba Bluebird 50 conta takımı</a> bu iş için hazır set olarak sunuluyor. Motor titreşiminin arttığını düşünüyorsanız <a href=\\\"/gear5-motor-askisi-kuba-blueberry-bluebird\\\">Gear5 motor askısı</a> da kontrol edilecek parçalar arasındadır. Daha geniş seçenek için <a href=\\\"/contalar\\\">contalar kategorisine</a> göz atabilirsiniz.\"}},{\"id\":\"di9ku0000f\",\"type\":\"header\",\"data\":{\"text\":\"Kaporta ve Gövde Parçaları\",\"level\":3}},{\"id\":\"di9ku0000g\",\"type\":\"paragraph\",\"data\":{\"text\":\"Düşme, park sırasında çarpma veya güneş nedeniyle solan gövde parçalarında komple set yenilemek hem görünümü hem de bütünlüğü geri kazandırır. <a href=\\\"/monero-kaporta-set-gri---kuba-bluebird-50\\\">Monero Kuba Bluebird 50 gri kaporta seti</a> ile <a href=\\\"/monero-ic-torpido---kuba-bluebird-50\\\">iç torpido</a> bu gruptaki seçeneklerden. Gövdeyle ilgili tüm ürünler için <a href=\\\"/kaporta-setler\\\">kaporta setleri</a> sayfasına bakabilirsiniz.\"}},{\"id\":\"di9ku0000h\",\"type\":\"header\",\"data\":{\"text\":\"Aydınlatma ve Gidon Parçaları\",\"level\":3}},{\"id\":\"di9ku0000i\",\"type\":\"paragraph\",\"data\":{\"text\":\"Sinyal grenajları, düşmelerde ya da küçük darbelerde ilk kırılan parçalardandır. <a href=\\\"/monero-sinyal-grenaji-kapakli-mavi-kuba-bluebird\\\">Kapaklı mavi sinyal grenajı</a> ve <a href=\\\"/monero-arka-sinyal-takimi---kuba-bluebird\\\">arka sinyal takımı</a> bu ihtiyacı karşılar. Eğilmiş bir gidon ise sürüş güvenliğini doğrudan etkilediği için <a href=\\\"/monero-gidon-direksiyon-kuba-bluebird-blueberry\\\">Monero gidon direksiyon</a> seçeneğini değerlendirebilirsiniz.\"}},{\"id\":\"di9ku0000j\",\"type\":\"header\",\"data\":{\"text\":\"Hangi Parça Hangi Belirtiyle Değiştirilmeli?\",\"level\":2}},{\"id\":\"di9ku0000k\",\"type\":\"paragraph\",\"data\":{\"text\":\"Aşağıdaki tablo, sık karşılaşılan durumlarda hangi parça grubuna bakmanız gerektiğini gösteren genel bir özet sunar. Bu tablo kesin arıza teşhisi değil, kontrol için bir başlangıç noktasıdır.\"}},{\"id\":\"di9ku0000l\",\"type\":\"table\",\"data\":{\"withHeadings\":true,\"content\":[[\"<b>Belirti</b>\",\"<b>Kontrol Edilecek Alan</b>\",\"<b>İlgili Parça Grubu</b>\"],[\"Motor çevresinde yağ izi\",\"Birleşim yüzeyleri\",\"Conta takımı\"],[\"Sinyal yanmıyor veya kırık\",\"Grenaj ve ampul bağlantısı\",\"Sinyal grenajı, sinyal takımı\"],[\"Gidon yana çekiyor\",\"Gidon ve ön takım\",\"Gidon direksiyon, ön masa\"],[\"Motorda aşırı titreşim\",\"Motor bağlantıları\",\"Motor askısı\"],[\"Gövdede çatlak veya solma\",\"Kaporta parçaları\",\"Kaporta seti, iç torpido\"],[\"Ayak basma alanı aşınmış\",\"Paspas\",\"Kauçuk paspas\"]]}},{\"id\":\"di9kv0000m\",\"type\":\"image\",\"data\":{\"file\":{\"url\":\"__IMG_inline__\"},\"caption\":\"Scooter bakımında düzenli kontrol, küçük arızaların büyümesini önler (Fotoğraf: <a href=\\\"https://pixabay.com/users/wal_172619-12138562/\\\">wal_172619</a> / <a href=\\\"https://pixabay.com/\\\">Pixabay</a>)\",\"withBorder\":false,\"stretched\":false,\"withBackground\":false}},{\"id\":\"di9kv0000n\",\"type\":\"header\",\"data\":{\"text\":\"Sürüş Konforu ve Koruma İçin Aksesuarlar\",\"level\":2}},{\"id\":\"di9kv0000o\",\"type\":\"paragraph\",\"data\":{\"text\":\"Bakım yalnızca mekanik parçalardan ibaret değildir. Ayak bölgesini çamur ve aşınmadan korumak için <a href=\\\"/gear5-paspas-siyah-kaucuk-kuba-bluebird\\\">Gear5 siyah kauçuk paspas</a>, rüzgâr ve yağmura karşı korunmak için <a href=\\\"/monero-siperlik-cami-fitilli-universal-3-5-mm-40x43-cm---kuba-bluebird-50\\\">siperlik camı</a> kullanışlı seçeneklerdir. Ön tarafta düşme sonrası hasar gördüyseniz <a href=\\\"/monero-on-masa-kuba-blueberry-bluebird\\\">Monero ön masa</a> ürününe de bakabilirsiniz. Daha fazla parça için <a href=\\\"/yedek-parca\\\">yedek parça kategorisi</a> geniş bir seçki sunar.\"}},{\"id\":\"di9kv0000p\",\"type\":\"header\",\"data\":{\"text\":\"Doğru Parça Seçimi İçin Pratik İpuçları\",\"level\":2}},{\"id\":\"di9kv0000q\",\"type\":\"list\",\"data\":{\"style\":\"ordered\",\"items\":[\"Eski parçayı çıkarmadan önce fotoğrafını çekin; bağlantı noktalarını ve konumunu karşılaştırmak kolaylaşır.\",\"Ürün adında modelinizin yazıp yazmadığını kontrol edin; Bluebird ve Blueberry gibi benzer isimli modellerde ayrıntılara dikkat edin.\",\"Kaporta setlerinde renk ve parça sayısını doğrulayın.\",\"Conta gibi motor içi parçaları takarken yüzeylerin temiz olmasına dikkat edin.\",\"Emin olmadığınız durumlarda parça numarası veya fotoğrafla bize danışın.\"]}},{\"id\":\"di9kv0000r\",\"type\":\"header\",\"data\":{\"text\":\"Sık Sorulan Sorular\",\"level\":2}},{\"id\":\"di9kv0000s\",\"type\":\"header\",\"data\":{\"text\":\"Kuba Bluebird 50'de hangi yağ kullanılmalı?\",\"level\":3}},{\"id\":\"di9kv0000t\",\"type\":\"paragraph\",\"data\":{\"text\":\"Yağ viskozitesi ve miktarı için Kuba Motor'un kullanım kılavuzundaki öneriyi esas almalısınız. Farklı sitelerde birbirinden farklı değerler yer aldığı için yalnızca kılavuzdaki bilgiye güvenmek en doğrusu. Yağ seçimiyle ilgili genel bilgileri yağ seçimi yazımızda bulabilirsiniz.\"}},{\"id\":\"di9kv0000u\",\"type\":\"header\",\"data\":{\"text\":\"Bluebird 50 bakımı ne sıklıkla yapılmalı?\",\"level\":3}},{\"id\":\"di9kv0000v\",\"type\":\"paragraph\",\"data\":{\"text\":\"İlk bakım ve sonraki periyotlar için kullanım kılavuzundaki kilometre değerlerini takip edin. Bunun yanında yağ seviyesi, lastik basıncı, fren ve aydınlatma gibi kalemleri kilometreden bağımsız olarak sık aralıklarla kontrol etmek iyi bir alışkanlıktır.\"}},{\"id\":\"di9kv0000w\",\"type\":\"header\",\"data\":{\"text\":\"Kaporta setini satın alırken nelere dikkat etmeliyim?\",\"level\":3}},{\"id\":\"di9kv0000x\",\"type\":\"paragraph\",\"data\":{\"text\":\"Modelin doğru olduğundan, renk seçiminden ve set içindeki parça sayısından emin olun. Bluebird 50 için ürün adında modeli yazan setleri tercih etmeniz uyum açısından daha güvenlidir.\"}},{\"id\":\"di9kv0000y\",\"type\":\"paragraph\",\"data\":{\"text\":\"Kuba Bluebird 50'nin uzun ömürlü ve sorunsuz çalışması, düzenli kontrol ve doğru parça seçimiyle mümkün. Hangi parçanın aracınıza uygun olduğundan emin değilseniz <a href=\\\"/pages/iletisim\\\">iletişim sayfamızdan</a> bize ulaşabilirsiniz.\"}},{\"id\":\"di9kv0000z\",\"type\":\"paragraph\",\"data\":{\"text\":\"<i>Kapak fotoğrafı: <a href=\\\"https://pixabay.com/users/KleeAlee-732063/\\\">KleeAlee</a> / <a href=\\\"https://pixabay.com/\\\">Pixabay</a></i>\"}}],\"version\":\"2.28.2\"}",
+  "removedLinks": []
+}
