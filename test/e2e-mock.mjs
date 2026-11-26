@@ -9,6 +9,8 @@ process.env.AUTO_APPROVE = 'false'; // test onay akışını da doğrular
 process.env.PEXELS_API_KEY = MP === 'pexels' ? 'p' : '';
 process.env.PIXABAY_API_KEY = MP === 'pixabay' ? 'x' : '';
 process.env.UNSPLASH_ACCESS_KEY = MP === 'unsplash' ? 'u' : '';
+process.env.GEMINI_API_KEY = MP === 'gemini' ? 'g' : '';
+let geminiCalls = 0, checks = 0;
 
 const img = (w, h, c) => sharp({ create: { width: w, height: h, channels: 3, background: c } })
   .composite([{ input: Buffer.from(`<svg width="${w}" height="${h}"><circle cx="${w / 2}" cy="${h / 2}" r="${Math.min(w, h) / 3}" fill="#c33"/></svg>`) }]).jpeg().toBuffer();
@@ -52,6 +54,13 @@ globalThis.fetch = async (input, init = {}) => {
   if (u.startsWith('https://soydasmotosiklet.com/')) return R('ok');
   if (u.includes('cdn.myikas.com/images/m/')) return R(new Uint8Array(await img(800, 800, '#fff')));
   if (u.includes('/v1/models')) return R({ data: [{ id: 'claude-sonnet-test' }] });
+  if (u.includes('generativelanguage.googleapis.com/v1beta/interactions')) {
+    geminiCalls++;
+    const q = JSON.parse(body);
+    if (!q.response_format || q.response_format.aspect_ratio !== '16:9') return R({ error: 'format' }, 400);
+    return R({ id: 'i1', outputs: [{ type: 'text', text: 'ok' }, { type: 'image', mime_type: 'image/jpeg', data: (await img(1376, 768, '#456')).toString('base64') }] });
+  }
+  if (u.includes('/v1/messages') && body.includes('UYGUN DEĞİL yaz')) { checks++; return R({ content: [{ type: 'text', text: checks === 1 ? 'UYGUN DEĞİL\nThe front wheel is deformed.' : 'UYGUN\nLooks like a real photo.' }] }); }
   if (u.includes('/v1/messages') && String(init.body || '').includes('"type":"image"')) { globalThis.__picked = (globalThis.__picked || 0) + 1; return R({ content: [{ type: 'text', text: '2' }] }); }
   if (u.includes('/v1/messages')) { gen++; return R({ stop_reason: 'tool_use', content: [{ type: 'tool_use', name: 'kaydet_yazi', input: gen === 1 ? badPost : post }] }); }
   if (u.startsWith('https://pixabay.com/api/')) return R({ hits: [1, 2].map((id) => ({ id, tags: new URL(u).searchParams.get('q'), imageWidth: 4000, imageHeight: 2600, user: 'pixuser', user_id: 9, pageURL: `https://pixabay.com/photos/x-${id}/`, largeImageURL: `https://pixabay.com/get/${id}_1280.jpg`, webformatURL: `https://pixabay.com/get/${id}_640.jpg` })) });
@@ -125,6 +134,7 @@ const synced = await syncPublished();
 ok(synced.length === 1 && !fs.existsSync(dir), 'senkron: yayına giren taslak temizlendi');
 const state = JSON.parse(fs.readFileSync('state/published.json', 'utf8'));
 ok(state.some((s) => s.slug === draft.slug), 'yayın kaydı tutuldu');
+if (MP === 'gemini') ok(geminiCalls === 3 && checks === 3 && draft.coverPhoto?.provider === 'gemini' && !draft.contentHtml.includes('Kapak fotoğrafı') && !draft.contentHtml.includes('(Fotoğraf'), 'Gemini: denetimden geçmeyen görsel yeniden üretildi, künye satırı yok');
 if (MP === 'pixabay') ok(globalThis.__picked >= 1 && draft.coverPhoto?.id === '2', 'kapak fotoğrafı görsel olarak seçildi (2. aday)');
 fs.writeFileSync('state/published.json', '[]\n');
 console.log('Tümü başarılı (' + MP + ').');
