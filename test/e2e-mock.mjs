@@ -60,7 +60,7 @@ globalThis.fetch = async (input, init = {}) => {
     if (!q.response_format || q.response_format.aspect_ratio !== '16:9') return R({ error: 'format' }, 400);
     return R({ id: 'i1', outputs: [{ type: 'text', text: 'ok' }, { type: 'image', mime_type: 'image/jpeg', data: (await img(1376, 768, '#456')).toString('base64') }] });
   }
-  if (u.includes('/v1/messages') && body.includes('UYGUN DEĞİL yaz')) { checks++; return R({ content: [{ type: 'text', text: checks === 1 ? 'UYGUN DEĞİL\nThe front wheel is deformed.' : 'UYGUN\nLooks like a real photo.' }] }); }
+  if (u.includes('/v1/messages') && body.includes('PUAN: <sayı>')) { checks++; return R({ content: [{ type: 'text', text: checks === 1 ? 'PUAN: 4\nThe front wheel is deformed.' : 'PUAN: 8\nLooks like a real photo.' }] }); }
   if (u.includes('/v1/messages') && String(init.body || '').includes('"type":"image"')) { globalThis.__picked = (globalThis.__picked || 0) + 1; return R({ content: [{ type: 'text', text: '2' }] }); }
   if (u.includes('/v1/messages')) { gen++; return R({ stop_reason: 'tool_use', content: [{ type: 'tool_use', name: 'kaydet_yazi', input: gen === 1 ? badPost : post }] }); }
   if (u.startsWith('https://pixabay.com/api/')) return R({ hits: [1, 2].map((id) => ({ id, tags: new URL(u).searchParams.get('q'), imageWidth: 4000, imageHeight: 2600, user: 'pixuser', user_id: 9, pageURL: `https://pixabay.com/photos/x-${id}/`, largeImageURL: `https://pixabay.com/get/${id}_1280.jpg`, webformatURL: `https://pixabay.com/get/${id}_640.jpg` })) });
