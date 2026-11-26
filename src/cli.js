@@ -109,7 +109,8 @@ async function main() {
       const only = arg('only');
       let ok = 0;
       for (const item of list.filter((x) => !only || x.slug === only)) {
-        if (fs.existsSync(path.join('fixes', item.slug, 'fix.json')) && !arg('force')) { console.log('Zaten hazır, atlandı:', item.slug); continue; }
+        const fj = path.join('fixes', item.slug, 'fix.json');
+        if (!arg('force') && fs.existsSync(fj) && JSON.parse(fs.readFileSync(fj, 'utf8')).provider === 'gemini') { console.log('Zaten hazır, atlandı:', item.slug); continue; }
         try { await refreshOne(item); ok++; } catch (e) { console.log('✗', item.slug, e.message); }
       }
       console.log(`Toplu görsel yenileme bitti: ${ok} yazı.`);
