@@ -13,6 +13,7 @@ import { loadSiteIndex, relevantProducts, productImageUrl, urlOk, fold, publishe
 import { checkPost, wordCount, autoFix } from './quality.js';
 import { generatePost } from './content.js';
 import { searchPhotos, downloadPhoto, pickBestPhoto, makeCover, makeProductCover, makeInline, makeCollage, credit, servedSize } from './images.js';
+import { makeAiPhoto, aiPhoto } from './gemini.js';
 import { renderBlocksHtml, wrapContent, toContentData, blocksToMarkdown, blockId } from './render.js';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
@@ -63,6 +64,27 @@ export const trDate = (d = new Date()) =>
   d.toLocaleDateString('tr-TR', { timeZone: 'Europe/Istanbul', day: 'numeric', month: 'long', year: 'numeric' });
 
 export async function makePhotos(post, productBufs = [], log = console.log) {
+  const topic = post.title;
+  // 1) Gemini ile gerçekçi görsel (anahtar varsa). Kapakta model/parça doğruluğu için Google araması açık.
+  if (config.gemini.apiKey) {
+    const coverScene = post.coverScene || `A realistic photo illustrating the topic "${topic}" for a motorcycle and scooter parts store`;
+    const inlineScene = post.inlineScene || `Close-up of a mechanic's gloved hands servicing the parts discussed in "${topic}" in a clean motorcycle workshop`;
+    log('Gemini ile kapak üretiliyor…');
+    const coverRaw = await makeAiPhoto(coverScene, { topic, purpose: 'kapak', search: true, log });
+    if (coverRaw) {
+      log('Gemini ile yazı içi görsel üretiliyor…');
+      const inlineRaw = await makeAiPhoto(inlineScene, { topic, purpose: 'yazı içi', refs: productBufs.slice(0, 3), search: true, log });
+      return {
+        coverPhoto: aiPhoto('cover'),
+        coverBuf: await makeCover(coverRaw),
+        inlinePhoto: inlineRaw ? aiPhoto('inline') : null,
+        inlineBuf: inlineRaw ? await makeInline(inlineRaw) : null,
+      };
+    }
+    log('Gemini kapak denetimi geçemedi: stok fotoğraf aramasına geçiliyor.');
+  }
+
+  // 2) Yedek: stok fotoğraf (Pixabay vb.) + Claude seçimi; o da yoksa ürün fotoğraflarından kapak.
   const gather = async (queries, exclude = []) => {
     const out = [];
     for (const q of queries.filter(Boolean)) {
@@ -71,7 +93,6 @@ export async function makePhotos(post, productBufs = [], log = console.log) {
     }
     return out;
   };
-  const topic = post.title;
   // Önce en spesifik arama; Claude hiçbirini beğenmezse giderek genelleşen aramalar.
   const pickRound = async (rounds, opts, exclude = []) => {
     for (const qs of rounds) {
@@ -193,12 +214,13 @@ export async function createDraft({ topic: forcedTopic, feedback } = {}) {
         blocks.push({ id: blockId(), type: 'image', data: { file: { url: IMG('collage') }, caption: b.caption || '', withBorder: false, stretched: false, withBackground: false } });
       } else if (b.slot === 'photo' && inlineBuf && !imageSizes[IMG('inline')]) {
         imageSizes[IMG('inline')] = servedSize(1200, 750);
-        const cap = `${b.caption ? b.caption + ' ' : ''}(${credit(inlinePhoto)})`;
+        const cr = credit(inlinePhoto);
+        const cap = cr ? `${b.caption ? b.caption + ' ' : ''}(${cr})` : b.caption || '';
         blocks.push({ id: blockId(), type: 'image', data: { file: { url: IMG('inline') }, caption: cap, withBorder: false, stretched: false, withBackground: false } });
       }
     }
   }
-  if (coverPhoto) blocks.push({ id: blockId(), type: 'paragraph', data: { text: `<i>${credit(coverPhoto, 'Kapak fotoğrafı')}</i>` } });
+  if (credit(coverPhoto)) blocks.push({ id: blockId(), type: 'paragraph', data: { text: `<i>${credit(coverPhoto, 'Kapak fotoğrafı')}</i>` } });
 
   let slug = fold(post.slug || topic);
   if (liveSlugs.includes(slug) || listDrafts().some((d) => d.slug === slug)) slug = `${slug}-2`; // kılavuz: adreste yıl olmaz
@@ -239,7 +261,9 @@ export function draftIssueBody(draft) {
   const words = draft.blocks.map((b) => JSON.stringify(b.data)).join(' ').replace(/<[^>]+>/g, ' ').split(/\s+/).length;
   const base = `${RAW}/drafts/${draft.slug}`;
   const md = blocksToMarkdown(draft.blocks).replace(/__IMG_(\w+)__/g, (m, k) => `${base}/${draft.images[k]}`);
-  const src = draft.coverPhoto
+  const src = draft.coverPhoto?.provider === 'gemini'
+    ? 'Gemini ile üretildi (Claude denetiminden geçti)'
+    : draft.coverPhoto
     ? `[${draft.coverPhoto.user} / ${{ pexels: 'Pexels', pixabay: 'Pixabay', unsplash: 'Unsplash' }[draft.coverPhoto.provider]}](${draft.coverPhoto.link})`
     : 'Mağaza ürün fotoğraflarından üretildi';
   return `<!-- draft:${draft.slug} -->

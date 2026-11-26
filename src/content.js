@@ -23,7 +23,7 @@ const POST_TOOL = {
   description: 'Tamamlanan blog yazısını yapılandırılmış olarak kaydeder.',
   input_schema: {
     type: 'object',
-    required: ['title', 'slug', 'shortDescription', 'seoTitle', 'seoDescription', 'coverQuery', 'inlineQuery', 'collageProducts', 'blocks'],
+    required: ['title', 'slug', 'shortDescription', 'seoTitle', 'seoDescription', 'coverQuery', 'inlineQuery', 'coverScene', 'inlineScene', 'collageProducts', 'blocks'],
     properties: {
       title: { type: 'string', description: 'Yazı başlığı (verilen konu başlığı)' },
       slug: { type: 'string', description: 'Kısa (≤60), Türkçe karaktersiz, küçük harf, tireli, yılsız URL' },
@@ -33,6 +33,14 @@ const POST_TOOL = {
       coverQuery: { type: 'string', description: 'Kapak için İNGİLİZCE stok fotoğraf arama ifadesi (2-4 kelime, somut nesne, ör. "motorcycle brake disc")' },
       coverQueryAlt: { type: 'string', description: 'Yedek İngilizce kapak araması (daha genel)' },
       inlineQuery: { type: 'string', description: 'İçerik fotoğrafı için İNGİLİZCE stok fotoğraf araması (kapaktan farklı)' },
+      coverScene: {
+        type: 'string',
+        description: 'Kapak görselinin İNGİLİZCE sahne tarifi (1-2 cümle), yapay zekâ ile gerçekçi fotoğraf üretilecek. Model rehberinde aracı TAM adıyla ve gövde tipiyle yaz (ör. "A Honda PCX 160 (2021+) maxi-scooter in matte grey parked on a cobblestone street in Istanbul, three-quarter front view"). Parça/bakım konusunda ilgili parçayı motosiklet üzerinde veya atölyede göster (ör. "Close-up of a new O-ring drive chain and rear sprocket on a naked motorcycle in a clean workshop"). Yazı, logo, insan yüzü isteme.',
+      },
+      inlineScene: {
+        type: 'string',
+        description: 'Yazı içi görselin İNGİLİZCE sahne tarifi (kapaktan farklı): yazıda anlatılan bakım/parça işleminin yakın çekimi (ör. "A mechanic\'s gloved hands fitting new brake pads into a scooter front caliper on a workbench"). Belirli model ise o modelin ilgili bölgesini göster.',
+      },
       collageProducts: {
         type: 'array', items: { type: 'string' },
         description: 'Ürün kolajı için verilen ürün listesinden 3-4 ürün yolu (ör. "/motul-c2-..."). Uygun ürün yoksa boş dizi.',

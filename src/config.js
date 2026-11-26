@@ -22,6 +22,11 @@ export const config = {
     model: env.CLAUDE_MODEL || '', // boşsa en yeni Sonnet modeli otomatik seçilir
     webSearch: (env.CLAUDE_WEB_SEARCH || 'true') !== 'false',
   },
+  gemini: {
+    apiKey: env.GEMINI_API_KEY,
+    model: env.GEMINI_IMAGE_MODEL || 'gemini-nano-banana-2.1', // Nano Banana (görsel üretimi)
+    fallbackModel: env.GEMINI_FALLBACK_MODEL || 'gemini-2.5-flash-image',
+  },
   pixabay: {
     apiKey: env.PIXABAY_API_KEY,
   },

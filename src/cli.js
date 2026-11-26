@@ -34,6 +34,26 @@ async function testIkas() {
   console.log('   Blog/görsel işlemleri :', pick(schema.mutations).join(', ') || '(yok)');
 }
 
+async function refreshOne({ slug, title, coverScene, inlineScene, coverQuery, inlineQuery }) {
+  console.log(`\n=== ${title} (${slug})`);
+  const post = { title, coverScene, inlineScene, coverQuery: coverQuery || inlineQuery, coverQueryAlt: inlineQuery, inlineQuery: inlineQuery || coverQuery };
+  const { coverPhoto, coverBuf, inlinePhoto, inlineBuf } = await makePhotos(post);
+  if (!coverPhoto) throw new Error('Uygun görsel üretilemedi (GEMINI_API_KEY / PIXABAY_API_KEY tanımlı mı?)');
+  const dir = path.join('fixes', slug);
+  fs.rmSync(dir, { recursive: true, force: true });
+  fs.mkdirSync(dir, { recursive: true });
+  fs.writeFileSync(path.join(dir, 'cover.jpg'), coverBuf);
+  const fix = { slug, provider: coverPhoto.provider, coverCredit: credit(coverPhoto, 'Kapak fotoğrafı'), images: { cover: 'cover.jpg' }, createdAt: new Date().toISOString() };
+  if (inlinePhoto) {
+    fs.writeFileSync(path.join(dir, 'inline.jpg'), inlineBuf);
+    fix.images.inline = 'inline.jpg';
+    fix.inlineCredit = credit(inlinePhoto);
+    fix.inlineSize = { width: 1080, height: 675 };
+  }
+  fs.writeFileSync(path.join(dir, 'fix.json'), JSON.stringify(fix, null, 2));
+  console.log('Görseller hazır:', dir, coverPhoto.provider);
+}
+
 async function main() {
   switch (cmd) {
     case 'test-ikas':
@@ -79,22 +99,20 @@ async function main() {
     }
     case 'refresh-images': {
       const slug = rest[0];
-      if (!slug || !arg('title') || !arg('cover')) throw new Error('Kullanım: refresh-images <slug> --title "..." --cover "query" [--inline "query"]');
-      const post = { title: arg('title'), coverQuery: arg('cover'), coverQueryAlt: arg('cover-alt') || arg('inline'), inlineQuery: arg('inline') || arg('cover') };
-      const { coverPhoto, coverBuf, inlinePhoto, inlineBuf } = await makePhotos(post);
-      if (!coverPhoto) throw new Error('Uygun fotoğraf bulunamadı (PIXABAY_API_KEY tanımlı mı?)');
-      const dir = path.join('fixes', slug);
-      fs.mkdirSync(dir, { recursive: true });
-      fs.writeFileSync(path.join(dir, 'cover.jpg'), coverBuf);
-      const fix = { slug, coverCredit: credit(coverPhoto, 'Kapak fotoğrafı'), images: { cover: 'cover.jpg' } };
-      if (inlinePhoto) {
-        fs.writeFileSync(path.join(dir, 'inline.jpg'), inlineBuf);
-        fix.images.inline = 'inline.jpg';
-        fix.inlineCredit = credit(inlinePhoto);
-        fix.inlineSize = { width: 1080, height: 675 };
+      if (!slug || !arg('title')) throw new Error('Kullanım: refresh-images <slug> --title "..." [--scene "eng"] [--inline-scene "eng"] [--cover "query"] [--inline "query"]');
+      await refreshOne({ slug, title: arg('title'), coverScene: arg('scene'), inlineScene: arg('inline-scene'), coverQuery: arg('cover'), inlineQuery: arg('inline') });
+      return;
+    }
+    case 'refresh-list': {
+      // gorsel-listesi.json: [{ slug, title, coverScene, inlineScene }] — yayındaki yazıların görsellerini toplu yeniler
+      const list = JSON.parse(fs.readFileSync(arg('file') || 'gorsel-listesi.json', 'utf8'));
+      const only = arg('only');
+      let ok = 0;
+      for (const item of list.filter((x) => !only || x.slug === only)) {
+        if (fs.existsSync(path.join('fixes', item.slug, 'fix.json')) && !arg('force')) { console.log('Zaten hazır, atlandı:', item.slug); continue; }
+        try { await refreshOne(item); ok++; } catch (e) { console.log('✗', item.slug, e.message); }
       }
-      fs.writeFileSync(path.join(dir, 'fix.json'), JSON.stringify(fix, null, 2));
-      console.log('Görseller hazır:', dir, coverPhoto.links.html, inlinePhoto?.links.html || '');
+      console.log(`Toplu görsel yenileme bitti: ${ok} yazı.`);
       return;
     }
     default:

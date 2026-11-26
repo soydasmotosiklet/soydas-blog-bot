@@ -144,6 +144,7 @@ export async function downloadPhoto(photo, params) {
 }
 
 export const credit = (photo, label = 'Fotoğraf') => {
+  if (!photo || photo.provider === 'gemini') return ''; // yapay zekâ ile üretilen görselde kaynak satırı yok
   if (photo.provider === 'pixabay') {
     return `${label}: <a href="${photo.user.links.html}">${escapeHtml(photo.user.name)}</a> / <a href="https://pixabay.com/">Pixabay</a>`;
   }
