@@ -1,11 +1,13 @@
 {
   "slug": "motosiklet-lastik-secimi-ve-dogru-lastik-basinci",
-  "coverCredit": "Kapak fotoğrafı: <a href=\"https://pixabay.com/users/paulbr75-2938186/\">paulbr75</a> / <a href=\"https://pixabay.com/\">Pixabay</a>",
+  "provider": "gemini",
+  "coverCredit": "",
   "images": {
     "cover": "cover.jpg",
     "inline": "inline.jpg"
   },
-  "inlineCredit": "Fotoğraf: <a href=\"https://pixabay.com/users/manfredrichter-4055600/\">manfredrichter</a> / <a href=\"https://pixabay.com/\">Pixabay</a>",
+  "createdAt": "2026-11-26T22:24:07.589Z",
+  "inlineCredit": "",
   "inlineSize": {
     "width": 1080,
     "height": 675

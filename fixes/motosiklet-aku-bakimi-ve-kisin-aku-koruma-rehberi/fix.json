@@ -1,11 +1,13 @@
 {
   "slug": "motosiklet-aku-bakimi-ve-kisin-aku-koruma-rehberi",
-  "coverCredit": "Kapak fotoğrafı: <a href=\"https://pixabay.com/users/SplitShire-364019/\">SplitShire</a> / <a href=\"https://pixabay.com/\">Pixabay</a>",
+  "provider": "gemini",
+  "coverCredit": "",
   "images": {
     "cover": "cover.jpg",
     "inline": "inline.jpg"
   },
-  "inlineCredit": "Fotoğraf: <a href=\"https://pixabay.com/users/Paul_Henri-6735189/\">Paul_Henri</a> / <a href=\"https://pixabay.com/\">Pixabay</a>",
+  "createdAt": "2026-11-26T22:20:42.671Z",
+  "inlineCredit": "",
   "inlineSize": {
     "width": 1080,
     "height": 675
