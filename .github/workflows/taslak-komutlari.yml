@@ -21,7 +21,7 @@ jobs:
       (startsWith(github.event.comment.body, '/yayinla') || startsWith(github.event.comment.body, '/yayınla') ||
        startsWith(github.event.comment.body, '/yeniden') || startsWith(github.event.comment.body, '/iptal'))
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 35
     env:
       GH_TOKEN: ${{ github.token }}
       ISSUE: ${{ github.event.issue.number }}
@@ -29,6 +29,8 @@ jobs:
       COMMENT: ${{ github.event.comment.body }}
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GEMINI_IMAGE_MODEL: ${{ vars.GEMINI_IMAGE_MODEL }}
       PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
       CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL }}
     steps:
