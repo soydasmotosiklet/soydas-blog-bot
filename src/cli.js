@@ -37,10 +37,10 @@ async function testIkas() {
 async function refreshOne({ slug, title, coverScene, inlineScene, coverQuery, inlineQuery }) {
   console.log(`\n=== ${title} (${slug})`);
   const post = { title, coverScene, inlineScene, coverQuery: coverQuery || inlineQuery, coverQueryAlt: inlineQuery, inlineQuery: inlineQuery || coverQuery };
-  const { coverPhoto, coverBuf, inlinePhoto, inlineBuf } = await makePhotos(post);
-  if (!coverPhoto) throw new Error('Uygun görsel üretilemedi (GEMINI_API_KEY / PIXABAY_API_KEY tanımlı mı?)');
   const dir = path.join('fixes', slug);
   fs.rmSync(dir, { recursive: true, force: true });
+  const { coverPhoto, coverBuf, inlinePhoto, inlineBuf } = await makePhotos(post, [], console.log, { saveDir: path.join(dir, 'denemeler') });
+  if (!coverPhoto) throw new Error('Uygun görsel üretilemedi (GEMINI_API_KEY / PIXABAY_API_KEY tanımlı mı?)');
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, 'cover.jpg'), coverBuf);
   const fix = { slug, provider: coverPhoto.provider, coverCredit: credit(coverPhoto, 'Kapak fotoğrafı'), images: { cover: 'cover.jpg' }, createdAt: new Date().toISOString() };

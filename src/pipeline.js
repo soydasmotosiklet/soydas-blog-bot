@@ -63,17 +63,17 @@ const collectLinks = (blocks) => {
 export const trDate = (d = new Date()) =>
   d.toLocaleDateString('tr-TR', { timeZone: 'Europe/Istanbul', day: 'numeric', month: 'long', year: 'numeric' });
 
-export async function makePhotos(post, productBufs = [], log = console.log) {
+export async function makePhotos(post, productBufs = [], log = console.log, { saveDir = null } = {}) {
   const topic = post.title;
   // 1) Gemini ile gerçekçi görsel (anahtar varsa). Kapakta model/parça doğruluğu için Google araması açık.
   if (config.gemini.apiKey) {
     const coverScene = post.coverScene || `A realistic photo illustrating the topic "${topic}" for a motorcycle and scooter parts store`;
     const inlineScene = post.inlineScene || `Close-up of a mechanic's gloved hands servicing the parts discussed in "${topic}" in a clean motorcycle workshop`;
     log('Gemini ile kapak üretiliyor…');
-    const coverRaw = await makeAiPhoto(coverScene, { topic, purpose: 'kapak', search: true, log });
+    const coverRaw = await makeAiPhoto(coverScene, { topic, purpose: 'kapak', search: true, log, saveDir });
     if (coverRaw) {
       log('Gemini ile yazı içi görsel üretiliyor…');
-      const inlineRaw = await makeAiPhoto(inlineScene, { topic, purpose: 'yazı içi', refs: productBufs.slice(0, 3), search: true, log });
+      const inlineRaw = await makeAiPhoto(inlineScene, { topic, purpose: 'yazı içi', refs: productBufs.slice(0, 3), search: true, log, saveDir });
       return {
         coverPhoto: aiPhoto('cover'),
         coverBuf: await makeCover(coverRaw),

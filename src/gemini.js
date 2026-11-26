@@ -72,9 +72,11 @@ export async function geminiImage(scene, { refs = [], aspect = '16:9', size = '2
   }
 }
 
-/** Claude ile üretilen görseli denetler: gerçekçi mi, konuyla/modelle uyumlu mu, yazı/logo/bozukluk var mı. */
+/**
+ * Claude ile üretilen görseli puanlar (0-10). Model detaylarında küçük farklar kabul; ciddi sorunlar puanı düşürür.
+ */
 export async function checkImage(buf, { topic, scene, purpose }) {
-  if (!config.claude.apiKey) return { ok: true, reason: 'denetim yok' };
+  if (!config.claude.apiKey) return { score: 8, reason: 'denetim yok' };
   const prev = await sharp(buf).resize(1024, 640, { fit: 'inside' }).jpeg({ quality: 80 }).toBuffer();
   const { pickModel } = await import('./content.js');
   const res = await fetch('https://api.anthropic.com/v1/messages', {
@@ -90,11 +92,11 @@ export async function checkImage(buf, { topic, scene, purpose }) {
           {
             type: 'text',
             text: `Bu görsel bir motosiklet yedek parça mağazasının "${topic}" başlıklı blog yazısının ${purpose} görseli olacak. İstenen sahne: "${scene}".
-Sıkı denetle:
-1) Gerçek bir fotoğraf gibi mi görünüyor (yapay zekâ/3D/çizim hissi yok)?
-2) İstenen araç tipi ve parça doğru mu? Belirli bir model istendiyse gövde tipi, far, kaporta ve jant yapısı o modele benziyor mu (ör. scooter istendiyse scooter, naked istendiyse naked)?
-3) Okunur yazı, logo, plaka, filigran, eriyen/fazla/eksik parça, bozuk tekerlek/zincir/el yok mu?
-İlk satıra yalnızca UYGUN veya UYGUN DEĞİL yaz; ikinci satıra kısa gerekçe (İngilizce, düzeltme talimatı olarak).`,
+Bir blog editörü gibi 0-10 arası puan ver. Ölçüt: okuyucu bunu gerçek bir fotoğraf sanar mı ve konuya uygun mu?
+PUANI CİDDİ DÜŞÜREN (en fazla 4) sorunlar: çizim/3D/plastik oyuncak görünümü; yanlış araç tipi (scooter yerine motosiklet vb.); bariz bozukluk (eriyen/fazla/eksik parça, bozuk tekerlek, anlamsız mekanik); üstüne bindirilmiş yazı/filigran; okunur plaka; konu dışı sahne.
+KÜÇÜK kusurlar (puanı en fazla 1-2 düşürür): modelin far/kaporta detayında küçük farklar, araç üzerindeki doğal model yazısı veya amblem, biraz fazla temiz/parlak görünüm.
+Yanıt biçimi — ilk satır: PUAN: <sayı>
+ikinci satır: varsa en önemli sorunlar için İngilizce, kısa düzeltme talimatı.`,
           },
         ],
       }],
@@ -102,17 +104,22 @@ Sıkı denetle:
   });
   const j = await res.json().catch(() => ({}));
   const txt = String(j.content?.find?.((x) => x.type === 'text')?.text || '').trim();
-  if (!txt) return { ok: true, reason: 'denetim yanıtı yok' };
-  const [first, ...restLines] = txt.split('\n');
-  return { ok: /^\W*UYGUN\b/i.test(first) && !/DEĞİL|DEGIL/i.test(first), reason: restLines.join(' ').trim() || first };
+  const m = txt.match(/PUAN\s*:\s*(\d+(?:[.,]\d+)?)/i);
+  if (!m) return { score: 6, reason: txt.slice(0, 200) || 'denetim yanıtı yok' };
+  return { score: parseFloat(m[1].replace(',', '.')), reason: txt.split('\n').slice(1).join(' ').trim() };
 }
 
+export const AI_MIN_SCORE = 7; // bu puan ve üstü hemen kabul
+export const AI_FLOOR = 6; // denemelerin en iyisi en az bu puandaysa kullanılır
+
 /**
- * Üret → denetle → gerekirse düzeltme notuyla yeniden üret (en fazla `tries` kez).
- * Hiçbiri geçmezse null (çağıran stok fotoğrafa / ürün kapağına düşer).
+ * Üret → puanla → gerekirse düzeltme notuyla yeniden üret (en fazla `tries` kez).
+ * ≥7 olan ilk görsel kabul edilir; yoksa en iyi deneme ≥6 ise o, değilse null (stok fotoğrafa düşülür).
+ * saveDir verilirse tüm denemeler incelemek için kaydedilir.
  */
-export async function makeAiPhoto(scene, { topic, purpose, refs = [], search = false, tries = 3, log = console.log } = {}) {
+export async function makeAiPhoto(scene, { topic, purpose, refs = [], search = false, tries = 3, log = console.log, saveDir = null } = {}) {
   let extra = '';
+  let best = null;
   for (let i = 1; i <= tries; i++) {
     let buf;
     try {
@@ -123,10 +130,17 @@ export async function makeAiPhoto(scene, { topic, purpose, refs = [], search = f
     }
     if (!buf) { log(`  Gemini görsel döndürmedi (${purpose}, deneme ${i})`); continue; }
     const v = await checkImage(buf, { topic, scene, purpose });
-    log(`  ${purpose} denetimi (deneme ${i}):`, v.ok ? 'UYGUN' : 'UYGUN DEĞİL', '-', v.reason);
-    if (v.ok) return buf;
+    log(`  ${purpose} denetimi (deneme ${i}): PUAN ${v.score} - ${v.reason}`);
+    if (saveDir) {
+      const fs = await import('node:fs');
+      fs.mkdirSync(saveDir, { recursive: true });
+      fs.writeFileSync(`${saveDir}/${purpose.replace(/\W+/g, '-')}-${i}-puan${v.score}.jpg`, await sharp(buf).resize(1280, 720, { fit: 'inside' }).jpeg({ quality: 80 }).toBuffer());
+    }
+    if (!best || v.score > best.score) best = { buf, score: v.score };
+    if (v.score >= AI_MIN_SCORE) return buf;
     extra = `Fix these problems from the previous attempt: ${v.reason}`;
   }
+  if (best && best.score >= AI_FLOOR) { log(`  ${purpose}: en iyi deneme kullanılıyor (puan ${best.score})`); return best.buf; }
   return null;
 }
 
